@@ -401,3 +401,6 @@ await copyFile(
 
 console.log(`Built ${Object.keys(pages).length} course pages.`);
 
+// Reused by scripts/build-pages.mjs to emit a static site for GitHub Pages.
+export { pages, notFound };
+

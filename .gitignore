@@ -2,6 +2,7 @@ node_modules/
 .next/
 .open-next/
 dist/
+_site/
 *.log
 *.tsbuildinfo
 .DS_Store
