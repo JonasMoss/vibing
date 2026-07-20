@@ -4,29 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build && node scripts/prepare-hosting.mjs",
-    "start": "vinext start",
-    "typecheck": "tsc --noEmit"
+    "dev": "node scripts/dev-site.mjs",
+    "build": "node scripts/build-site.mjs",
+    "start": "node scripts/serve-site.mjs",
+    "check": "node scripts/check-site.mjs"
   },
   "dependencies": {
-    "marked": "^15.0.12",
-    "next": "^16.2.10",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.30",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.3",
-    "@vitejs/plugin-rsc": "^0.5.28",
-    "react-server-dom-webpack": "^19.2.6",
-    "typescript": "^5.8.3",
-    "vinext": "^1.0.0-beta.2",
-    "vite": "^8.1.5"
-  },
-  "overrides": {
-    "postcss": "^8.5.10"
+    "marked": "^15.0.12"
   }
 }
