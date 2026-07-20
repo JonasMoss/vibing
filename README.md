@@ -34,5 +34,5 @@ npm run dev
 - `app/` and `components/` — website presentation and interaction
 
 The opening deck is a normal webpage. Use the arrow keys to move through it and
-`F` to enter or leave fullscreen.
-
+`F` to enter or leave fullscreen. The site uses vinext so the same small
+Next-style application builds directly for the course host.

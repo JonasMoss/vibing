@@ -1,8 +1,9 @@
-import fs from "node:fs";
-import path from "node:path";
 import { marked } from "marked";
-
-const contentRoot = path.join(process.cwd(), "content");
+import courseOverview from "@/content/course-overview.md?raw";
+import dayOne from "@/content/day-1.md?raw";
+import dayTwo from "@/content/day-2.md?raw";
+import dayThree from "@/content/day-3.md?raw";
+import openingSlides from "@/content/slides/opening.md?raw";
 
 marked.use({
   gfm: true,
@@ -58,15 +59,30 @@ export function getDay(slug: string): Day | undefined {
 }
 
 export function readMarkdown(relativePath: string): string {
-  const source = fs.readFileSync(path.join(contentRoot, relativePath), "utf8");
+  const pages: Record<string, string> = {
+    "course-overview.md": courseOverview,
+    "day-1.md": dayOne,
+    "day-2.md": dayTwo,
+    "day-3.md": dayThree,
+  };
+  const source = pages[relativePath];
+
+  if (!source) {
+    throw new Error(`Unknown course page: ${relativePath}`);
+  }
+
   return markdownToHtml(source);
 }
 
 export function readSlides(slug: string): string[] {
-  const source = fs.readFileSync(
-    path.join(contentRoot, "slides", `${slug}.md`),
-    "utf8",
-  );
+  const decks: Record<string, string> = {
+    opening: openingSlides,
+  };
+  const source = decks[slug];
+
+  if (!source) {
+    throw new Error(`Unknown slide deck: ${slug}`);
+  }
 
   return source
     .split(/\n---\n/g)
