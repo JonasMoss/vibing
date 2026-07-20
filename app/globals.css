@@ -107,7 +107,7 @@ a {
 }
 
 .hero-grid {
-  align-items: end;
+  align-items: flex-end;
   display: grid;
   gap: 80px;
   grid-template-columns: minmax(0, 1fr) 310px;
@@ -405,7 +405,7 @@ a {
 }
 
 .section-heading {
-  align-items: end;
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
   margin-bottom: 54px;
@@ -461,7 +461,7 @@ a {
 }
 
 .day-card-top {
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
@@ -576,7 +576,7 @@ a {
 }
 
 .day-hero-grid {
-  align-items: start;
+  align-items: flex-start;
   display: grid;
   gap: 70px;
   grid-template-columns: 170px 1fr;
@@ -905,7 +905,7 @@ a {
   }
 
   .section-heading {
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 24px;
   }
@@ -943,7 +943,7 @@ a {
 
 @media (max-width: 560px) {
   .hero-kicker {
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 8px;
   }
