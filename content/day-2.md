@@ -6,22 +6,46 @@ part of its output against the source.
 The point is neither blind trust nor ritual scepticism. The point is a workflow
 in which fast work can still be checked.
 
-## Morning — references that do not lie
+## Morning — references, and your first *skill*
 
-We start with a reference list containing deliberate traps: nonexistent papers,
-incorrect DOIs, incomplete details, and inconsistent formatting.
+You have already met plain text and git: `.bib` is a bibliography as text, `.qmd`
+mixes prose, code, and citations in one readable file, and `.gitignore` tells git
+which files to leave alone. We put all three to work — and package the result so
+you never explain it twice.
 
-Ask the agent to:
+### Gather what you need
 
-1. identify every work;
-2. verify it using an independent source;
-3. create clean BibTeX;
-4. record what it could not verify;
-5. link each decision to evidence.
+Point the agent at a topic, a rough reading list, or a pile of half-remembered
+titles, and have it:
 
-Then try the same process on references from your own work.
+1. resolve each work to a real paper — title, authors, year, DOI (inventing a
+   citation is failure, not a shortcut);
+2. download the open-access PDFs into a **gitignored** `references/pdf/` folder;
+3. write a one- or two-line note on each into `references/notes.md`;
+4. add a verified BibTeX entry to `references.bib`;
+5. list what it *could not* get — with DOIs — in `references/to-fetch.md`, so you
+   can grab those through the library yourself.
+
+Then say: **"turn that workflow into a skill."** The agent writes the skill file;
+you never learn its format. Next time, "gather refs on X" just works.
+
+Skills aren't essential — you can do most of this course without them. They earn
+their keep only for routines you *repeat* and want done identically.
+
+> Memory is the AI remembering you. A skill is you writing it down — so it happens
+> the same way every time, and you can hand it to a colleague.
+
+### Clean what you have
+
+Now the other direction. We start from a reference list with deliberate traps —
+nonexistent papers, wrong DOIs, missing details, inconsistent formatting — and
+ask the agent to identify every work, verify it against an independent source,
+produce clean BibTeX, and record what it could not confirm. Then run it on a
+bibliography from your own work.
 
 > A polished bibliography is not evidence of a correct bibliography.
+
+Full walkthrough: `handouts/references.md`.
 
 ## Afternoon — a literature sweep
 

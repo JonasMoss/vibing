@@ -20,15 +20,25 @@ const escapeHtml = (value) =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 
-const [styles, overviewSource, dayOneSource, dayTwoSource, dayThreeSource, openingSource] =
-  await Promise.all([
-    read("site/styles.css"),
-    read("content/course-overview.md"),
-    read("content/day-1.md"),
-    read("content/day-2.md"),
-    read("content/day-3.md"),
-    read("content/slides/opening.md"),
-  ]);
+const [
+  styles,
+  overviewSource,
+  dayOneSource,
+  dayTwoSource,
+  dayThreeSource,
+  openingSource,
+  powerSource,
+  howItWorksSource,
+] = await Promise.all([
+  read("site/styles.css"),
+  read("content/course-overview.md"),
+  read("content/day-1.md"),
+  read("content/day-2.md"),
+  read("content/day-3.md"),
+  read("content/slides/opening.md"),
+  read("content/slides/power.md"),
+  read("content/slides/how-it-works.md"),
+]);
 
 const days = [
   {
@@ -240,14 +250,15 @@ function renderDay(day, index) {
   });
 }
 
-const slides = openingSource
-  .split(/\n---\n/g)
-  .map((slide) => slide.trim())
-  .filter(Boolean)
-  .map(markdown);
+function renderDeck({ title, kicker, source }) {
+  const slides = source
+    .split(/\n---\n/g)
+    .map((slide) => slide.trim())
+    .filter(Boolean)
+    .map(markdown);
 
-const slideData = JSON.stringify(slides).replaceAll("<", "\\u003c");
-const slideScript = `
+  const slideData = JSON.stringify(slides).replaceAll("<", "\\u003c");
+  const slideScript = `
 (() => {
   const slides = ${slideData};
   let current = 0;
@@ -303,11 +314,11 @@ const slideScript = `
   goTo(0);
 })();`;
 
-const slideBody = `
+  const slideBody = `
 <main class="deck-shell">
   <header class="deck-header">
     <a href="/">← Course</a>
-    <div><span>Day 1 · 10:00</span><strong>Opening: give the model hands</strong></div>
+    <div><span>${kicker}</span><strong>${title}</strong></div>
     <button data-action="fullscreen" type="button">Fullscreen <kbd>F</kbd></button>
   </header>
   <section class="slide slide-1" aria-live="polite">
@@ -324,6 +335,36 @@ const slideBody = `
   </footer>
 </main>`;
 
+  return documentPage({
+    title,
+    description: `${title} — AI in the terminal.`,
+    body: slideBody,
+    includeHeader: false,
+    script: slideScript,
+  });
+}
+
+const decks = [
+  {
+    slug: "opening",
+    title: "Opening: give the model hands",
+    kicker: "Day 1 · 10:00",
+    source: openingSource,
+  },
+  {
+    slug: "power",
+    title: "What these things can actually do",
+    kicker: "Day 1 · the capability tour",
+    source: powerSource,
+  },
+  {
+    slug: "how-it-works",
+    title: "How these things actually work",
+    kicker: "Day 1 · the mental model",
+    source: howItWorksSource,
+  },
+];
+
 const pages = {
   "/": documentPage({
     title: "Course hub",
@@ -331,14 +372,11 @@ const pages = {
       "AI in the terminal: Claude Code and Codex for research and teaching.",
     body: homeBody,
   }),
-  "/slides/opening": documentPage({
-    title: "Opening: give the model hands",
-    description: "Opening slides for AI in the terminal.",
-    body: slideBody,
-    includeHeader: false,
-    script: slideScript,
-  }),
 };
+
+for (const deck of decks) {
+  pages[`/slides/${deck.slug}`] = renderDeck(deck);
+}
 
 for (const [index, day] of days.entries()) {
   pages[`/days/${day.slug}`] = renderDay(day, index);

@@ -42,6 +42,16 @@ curiosity.
 
 ### 10:00–10:45 · Welcome + capability talk #1 (I-drive)
 
+- **Recommended open (banked — then feel it out live):**
+  1. *2-min triage, machines open* — "run the install command; hands up, green
+     if it works, red if not; don't fight it." Group A is set free, you learn who's
+     broken before spending anything, nobody debugs yet.
+  2. *POWER deck, machines closed* (~40 min) — undivided attention. The awe **is**
+     the motivation, so don't split it with setup struggle.
+  3. *how-it-works* immediately after — the deck's last slide hands straight into it.
+  4. *setup + first contact* for the rest of the morning — demo as the launch,
+     pairs (A helps the reds), full runway. Demo goes **after** how-it-works: model
+     first, then the model made visible.
 - Who I am, what the three days look like, why "in the terminal" at all.
 - The pitch: chat AIs are consultants behind glass; filesystem AIs are
   interns at your desk. Same brain, hands attached.
@@ -49,6 +59,15 @@ curiosity.
   folder and clean it up by talking to it (speech-to-text, ideally) —
   the whole course in 5 minutes. Don't explain, just show.
 - Expectation-setting: this course is typing, not listening.
+- **Spine of this block is the POWER deck** (`content/slides/power.md`,
+  `/slides/power`) — ~21 slides. On its own it's a full ~45 min, so keep
+  welcome + demo tight or let this slot breathe into the next one.
+- **Slide 19 — resist opening the floor (the monologue trap).** After the deck's
+  "what I don't know" beat: (a) show of hands — "whose field has a cheap, honest
+  check?" — narrate the split; (b) 30-sec neighbour turn — "what's your verifier,
+  or is there none?"; (c) park it — "back to this Thursday." Take a plenary answer
+  only if the room is contained: one sentence, hard stop at two. The pair-share is
+  the pressure valve — the monologuer gets a listener without costing the room.
 - *Note:* stragglers will trickle in until 10:20 — front-load the
   things that are fine to miss.
 
@@ -131,17 +150,26 @@ universal stuff.
   disaster, both teach).
 - Fix lingering setup issues *now*; day 2 has no slack for it later.
 
-### 10:30–12:00 · References that don't lie (I-drive 20 min, You-drive 70)
+### 10:30–12:00 · References + your first skill (I-drive 20 min, You-drive 70)
 
-- The hook: hallucinated citations are the most famous LLM failure —
-  and the most fixable, because references are *checkable*.
-- Demo: take a reference list (provided: 15 entries, 3 subtly fake,
-  2 with wrong DOIs), ask the AI to verify every entry against the
-  web, produce a clean BibTeX file with a verification report.
-- Exercise: they do the same on the provided list, then on a reference
-  list from one of their own papers. Bring-your-own-bibliography.
-- Sub-skills that ride along: what BibTeX is, asking the AI to fetch
-  and check DOIs, "show me your evidence" prompting.
+- Frame: references make the ideal first *skill* — real, universal, and
+  *checkable*, so hallucination has nowhere to hide.
+- **Gather what you need (the worked example):** point the AI at a short
+  wishlist; it resolves each to a real paper (title/authors/year/DOI),
+  downloads the open-access PDFs into a **gitignored** `references/pdf/`,
+  writes a one-line note per paper, builds `references.bib`, and lists the
+  DOIs it *couldn't* get in `references/to-fetch.md` for manual library fetch.
+- **Make it a skill:** once it works, say "turn that workflow into a skill" —
+  the AI writes the skill file; they never learn the format. Frame with the
+  checklist analogy ("memory is the AI remembering you; a skill is you writing it
+  down"), and be honest that skills are an *optional* power-up for repeated
+  routines — you can do a lot without them.
+- **Clean what you have:** the provided trap list (15 entries, 3 subtly
+  fake, 2 wrong DOIs) — verify against the web, produce clean BibTeX with a
+  report. Then bring-your-own-bibliography.
+- Teaching payoff: `.bib` and notes are text → tracked; PDFs are binary and
+  copyrighted → gitignored. The gitignore lesson lands on real stakes.
+- Handout: `handouts/references.md`.
 
 ### 12:00–13:00 · Lunch
 
@@ -252,10 +280,12 @@ Quarto block → demo. Never cut the take-home artifact time.
 ## Materials to build (extracted TODO)
 
 - [ ] Pre-course email with install instructions (PowerShell first)
-- [ ] One-page terminal cheat sheet (print)
+- [x] One-page terminal cheat sheet (print) — `handouts/terminal-cheatsheet.md`
 - [ ] `decrap-me.zip` — the premade horror folder
 - [ ] Warm-up exercise sheet (day 1 morning)
 - [ ] Reference list with 3 fakes + 2 wrong DOIs (day 2)
+- [ ] Short "gather-refs" wishlist: 4–5 papers, some open-access, some
+      paywalled, so the DOI-handoff step actually fires (day 2)
 - [ ] Folder of ~10 open-access PDFs on AI in higher education (day 2)
 - [ ] Readable demo dataset + demo script outline (day 2 stats demo)
 - [ ] Fallback syllabus for the course factory (day 3)

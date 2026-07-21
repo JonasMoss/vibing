@@ -20,7 +20,7 @@ See `schedule-detailed.md` for block-by-block timings and instructor notes.
 | Time | Block |
 |---|---|
 | 10:00–10:30 | Recap, homework debrief, setup leftovers |
-| 10:30–12:00 | References that don't lie: BibTeX, DOIs, citation checking |
+| 10:30–12:00 | References + your first **skill**: gather papers, clean BibTeX, DOIs |
 | 12:00–13:00 | Lunch |
 | 13:00–14:15 | Literature sweep: 10 PDFs → an overview table |
 | 14:15–14:30 | Break |
