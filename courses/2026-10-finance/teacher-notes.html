@@ -2336,10 +2336,11 @@ vertical-align: -.125em;
 <li><strong>Tested 14 October on a BI PC:</strong> the Claude Code install needed no admin rights, but asked for <code>.local\bin</code> to be added to PATH by hand. Fixed: the Claude install is now two lines, the second adds it to the user PATH.</li>
 <li><strong>Not tested on a BI PC:</strong> right-click → <strong>Open in Terminal</strong>, <code>explorer .</code>, and whether <strong>Documents</strong> sits in OneDrive. If it does, keep practice folders in the home folder (where <code>mkdir practice</code> puts them): git and OneDrive syncing don’t mix well. Demo all three on your own Windows laptop live.</li>
 </ul></li>
-<li><strong>Pick your demo papers.</strong>
+<li><strong>Demo papers: chosen.</strong>
 <ul>
-<li>One from your own field for “Take a paper apart”, where you can judge the answer live.</li>
-<li>A finance paper for the referee panel: one of the two NBER papers from the September pilot. The pilot outputs are in <code>scratch/examples/paper-critique/pilot/</code>, local only, because they make unverified claims about named papers.</li>
+<li>“Take a paper apart”: your own pick.</li>
+<li>Referee panel: Nagel, “Seemingly Virtuous Complexity in Return Prediction”, NBER w34104 (<a href="https://www.nber.org/papers/w34104" class="uri">https://www.nber.org/papers/w34104</a>; NBER downloads directly). The pilot answers are in <code>scratch/examples/paper-critique/pilot/</code>, local only.</li>
+<li>Replication card: Fama and French (1993), Table 2 (see “Your own work” below).</li>
 </ul></li>
 <li><strong>The Foldnes example.</strong> Make only the airtight claim: <em>the paper they cite does not exist; the DOI resolves to a 2022 editorial acknowledgement.</em> Don’t say “the method doesn’t exist” unless you’ve settled it with Foldnes. Details are in <code>scratch/examples/references/README.md</code>.</li>
 <li><strong>Brief Ludvik.</strong> In the morning he roams the install, Windows first. In the afternoon he’s a second help desk. Tell him the rule: two minutes stuck, hand up.</li>
@@ -2679,7 +2680,7 @@ That’s why the rule has to be written down. Then: <em>“Comment: good catch, 
 <ul>
 <li><strong>Walk the room.</strong> Ask “what are you trying?”, not “is it working?”</li>
 <li><strong>Stuck people:</strong> suggest <em>“What’s here? What’s missing? What would you do first?”</em> on a real folder, after a commit.</li>
-<li><strong>The replication card</strong> is the one to push for this room: Ken French’s data library is public and agents can download from it, so a classic table plus “does it still hold today?” is doable in 20 minutes. Have one paper and table in mind to suggest.</li>
+<li><strong>The replication card</strong> is the one to push for this room: Ken French’s data library is public and agents can download from it, so a classic table plus “does it still hold today?” is doable in 20 minutes. The target: Fama and French (1993), <em>JFE</em> 33, Table 2, July 1963 to December 1991, 342 months. Published monthly means: RM−RF 0.43% (sd 4.54, t = 1.76), SMB 0.27% (2.89, t = 1.73), HML 0.40% (2.54, t = 2.91). Today’s library won’t match to the decimal (CRSP has been revised since, and the factor construction updated): close but not exact is the expected result, and “why not exact?” is a good question to ask the agent. “Does it still hold?” leads straight into the value-premium debate from <code>knows</code>.</li>
 <li><strong>Close:</strong> <em>“What will you try on Monday?”</em> Get three answers out loud. Remind them the handout has everything, including what we skipped.</li>
 </ul>
 </section>

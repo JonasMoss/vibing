@@ -86,12 +86,12 @@ slides.
      and whether **Documents** sits in OneDrive. If it does, keep practice folders
      in the home folder (where `mkdir practice` puts them): git and OneDrive
      syncing don't mix well. Demo all three on your own Windows laptop live.
-5. **Pick your demo papers.**
-   - One from your own field for "Take a paper apart", where you can judge the
-     answer live.
-   - A finance paper for the referee panel: one of the two NBER papers from the
-     September pilot. The pilot outputs are in `scratch/examples/paper-critique/pilot/`,
-     local only, because they make unverified claims about named papers.
+5. **Demo papers: chosen.**
+   - "Take a paper apart": your own pick.
+   - Referee panel: Nagel, "Seemingly Virtuous Complexity in Return Prediction",
+     NBER w34104 (<https://www.nber.org/papers/w34104>; NBER downloads directly).
+     The pilot answers are in `scratch/examples/paper-critique/pilot/`, local only.
+   - Replication card: Fama and French (1993), Table 2 (see "Your own work" below).
 6. **The Foldnes example.** Make only the airtight claim: *the paper they cite does
    not exist; the DOI resolves to a 2022 editorial acknowledgement.* Don't say "the
    method doesn't exist" unless you've settled it with Foldnes. Details are in
@@ -450,8 +450,13 @@ connection on the demo repository. Not yet tested.
   first?"* on a real folder, after a commit.
 - **The replication card** is the one to push for this room: Ken French's data
   library is public and agents can download from it, so a classic table plus
-  "does it still hold today?" is doable in 20 minutes. Have one paper and table
-  in mind to suggest.
+  "does it still hold today?" is doable in 20 minutes. The target: Fama and French
+  (1993), *JFE* 33, Table 2, July 1963 to December 1991, 342 months. Published
+  monthly means: RM−RF 0.43% (sd 4.54, t = 1.76), SMB 0.27% (2.89, t = 1.73), HML
+  0.40% (2.54, t = 2.91). Today's library won't match to the decimal (CRSP has
+  been revised since, and the factor construction updated): close but not exact
+  is the expected result, and "why not exact?" is a good question to ask the agent.
+  "Does it still hold?" leads straight into the value-premium debate from `knows`.
 - **Close:** *"What will you try on Monday?"* Get three answers out loud. Remind
   them the handout has everything, including what we skipped.
 

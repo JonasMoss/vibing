@@ -50,7 +50,13 @@ offline, project, or email.
 4. Write `debrief.md` in the folder: what worked, what to change. From then on
    that is the only file in the folder that changes.
 
-## The old website
+## The web page
 
-vibing.jonasmoss.com was taken down in October 2026. Its last state is the git
-tag `site-final` (`git checkout site-final` to look at it).
+vibing.jonasmoss.com is a plain static page, served by GitHub Pages straight from
+`main` (no build step): `index.html` here lists the courses, and each course folder
+has its own `index.html` with the course files, the handout and every deck in a
+pane. To add a course, copy the previous course's `index.html` and add a card to
+the root `index.html`.
+
+The old, bigger course site was taken down in October 2026; its last state is the
+local git tag `site-final`. Never push that tag: see `AGENTS.md`.

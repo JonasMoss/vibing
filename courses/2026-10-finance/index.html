@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finance · AI in the terminal</title>
+<style>
+  :root { --paper: #f4f0e8; --ink: #17201f; --coral: #f0674d; --muted: #5c6763; --white: #fffdf8; --line: #d9d1c3; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; background: var(--paper); color: var(--ink);
+         font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+  nav { width: 270px; flex: none; height: 100%; overflow-y: auto; padding: 18px 16px 24px;
+        border-right: 2px solid var(--ink); background: var(--paper); }
+  nav .back { font-size: 13px; color: var(--muted); text-decoration: none; }
+  nav .back:hover { color: var(--coral); }
+  nav h1 { font-size: 21px; line-height: 1.15; margin: 10px 0 2px; }
+  nav .when { font-size: 13px; color: var(--muted); margin: 0 0 14px; }
+  nav h2 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted);
+           margin: 18px 0 6px; padding-bottom: 3px; border-bottom: 2px solid var(--ink); }
+  nav a.item { display: block; padding: 5px 8px; margin: 1px 0; border-radius: 7px;
+               color: var(--ink); text-decoration: none; font-size: 15px; }
+  nav a.item:hover { background: var(--white); }
+  nav a.item.active { background: var(--coral); color: var(--ink); font-weight: 700; }
+  nav a.item small { color: var(--muted); font-weight: 400; }
+  nav a.item.active small { color: var(--ink); }
+  nav .zip { display: block; margin: 4px 0 2px; padding: 9px 10px; border: 2px solid var(--coral);
+             border-radius: 9px; background: var(--white); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 15px; }
+  nav .zip span { display: block; font-weight: 400; font-size: 12px; color: var(--muted); }
+  nav .zip:hover { background: #fde9e4; }
+  main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+  .bar { display: flex; align-items: center; gap: 14px; padding: 7px 14px; font-size: 13px;
+         border-bottom: 1px solid var(--line); color: var(--muted); }
+  .bar b { color: var(--ink); font-size: 14px; }
+  .bar a { color: var(--coral); font-weight: 700; text-decoration: none; margin-left: auto; }
+  .bar a:hover { text-decoration: underline; }
+  iframe { flex: 1; width: 100%; border: 0; background: var(--white); }
+</style>
+</head>
+<body>
+<nav>
+  <a class="back" href="../../index.html">← All courses</a>
+  <h1>AI in the terminal: Finance</h1>
+  <p class="when">Fri 16 October 2026 · A2 Blue 1</p>
+
+  <a class="zip" href="course-files.zip" download>Course files (zip)<span>Handout + practice folders · tinyurl.com/684nc8er</span></a>
+
+  <h2>Material</h2>
+  <a class="item" href="handout.html">Handout</a>
+  <a class="item" href="teacher-notes.html">Teacher notes</a>
+
+  <h2>Start</h2>
+  <a class="item" href="decks/menu.html">Menu <small>· the hub</small></a>
+
+  <h2>Morning · everyone</h2>
+  <a class="item" href="decks/power.html">What these things can do</a>
+  <a class="item" href="decks/how.html">How it works</a>
+  <a class="item" href="decks/setup.html">Get it running</a>
+  <a class="item" href="decks/cleanup.html">Do something tedious</a>
+  <a class="item" href="decks/knows.html">What it knows about you</a>
+  <a class="item" href="decks/paper.html">Take a paper apart</a>
+
+  <h2>Afternoon · you choose</h2>
+  <a class="item" href="decks/review.html">Referee panel</a>
+  <a class="item" href="decks/refs.html">References</a>
+  <a class="item" href="decks/trail.html">Leave a trail</a>
+  <a class="item" href="decks/notes.html">Notes and structure</a>
+
+  <h2>Any time</h2>
+  <a class="item" href="decks/own.html">Your own work</a>
+  <a class="item" href="decks/agents.html">The project file</a>
+  <a class="item" href="decks/github.html">GitHub</a>
+  <a class="item" href="decks/mcp.html">Connectors</a>
+  <a class="item" href="decks/more.html">More capability</a>
+</nav>
+<main>
+  <div class="bar">
+    <b id="title">Menu</b>
+    <span>Click the slide, then use the arrow keys · F for full screen · Esc for the overview</span>
+    <a id="newtab" href="decks/menu.html" target="_blank" rel="noopener">Open in a new tab ↗</a>
+  </div>
+  <iframe id="pane" name="pane" allow="fullscreen" allowfullscreen title="Slides"></iframe>
+</main>
+<script>
+  const items = [...document.querySelectorAll("nav a.item")];
+  const pane = document.getElementById("pane");
+  const title = document.getElementById("title");
+  const newtab = document.getElementById("newtab");
+  function show(href, push, navigate = true) {
+    const item = items.find(a => a.getAttribute("href") === href) || items.find(a => a.getAttribute("href") === "decks/menu.html");
+    href = item.getAttribute("href");
+    items.forEach(a => a.classList.toggle("active", a === item));
+    title.textContent = item.firstChild.textContent.trim();
+    newtab.href = href;
+    if (navigate) pane.src = href;
+    if (push) history.replaceState(null, "", "#" + href.replace(/^decks\//, "").replace(/\.html$/, ""));
+  }
+  items.forEach(a => a.addEventListener("click", e => { e.preventDefault(); show(a.getAttribute("href"), true); pane.focus(); }));
+  // Keep the sidebar in step when a deck's own links (the Menu footer, menu cards) move the pane.
+  pane.addEventListener("load", () => {
+    try {
+      const file = pane.contentWindow.location.pathname.split("/").pop();
+      const item = items.find(a => a.getAttribute("href").split("/").pop() === file);
+      if (item && !item.classList.contains("active")) show(item.getAttribute("href"), true, false);
+    } catch (e) { /* opened from disk: some browsers block this; harmless */ }
+  });
+  const h = location.hash.slice(1);
+  const start = h ? (["handout", "teacher-notes"].includes(h) ? h + ".html" : "decks/" + h + ".html") : "decks/menu.html";
+  show(start, false);
+</script>
+</body>
+</html>

@@ -38,6 +38,7 @@ went out with Dagfinn's email).
 | `teacher-notes.qmd` → `.html` | For the instructor: before-Friday checklist, run sheet, a card per module. |
 | `props/` | `decrap-me.zip` (Do something tedious), `messy-project.zip` (Leave a trail), `references-practice.zip` (DOI check). The handout links to them on GitHub `main`. |
 | `course-files.zip` | What participants download on the day: the handout plus the three practice zips. Built by `make-course-files.py` after rendering; linked from the menu deck. |
+| `index.html` | The course page on vibing.jonasmoss.com: course files, handout, teacher notes, and every deck in a pane. Plain HTML; edit by hand. |
 | `docs.scss` | Look of the handout and teacher notes. |
 
 Render everything from the repo root: `quarto render courses/2026-10-finance`.

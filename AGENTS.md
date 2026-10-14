@@ -137,10 +137,13 @@ debrief.md           written after the course: what worked, what to change
   self-contained `.html`** (`embed-resources: true`) next to it. Render with
   `quarto render courses/<folder>`. **Commit the rendered HTML**: it is what was
   shown, and what gets emailed to participants afterwards.
-- There is **no website.** The old course site (vibing.jonasmoss.com) was taken
-  down in October 2026; its source is at the git tag `site-final`. Props
-  reach participants as links in the handout or as files handed out in the
-  room.
+- **The web page is plain static HTML**, served by GitHub Pages from `main` at
+  vibing.jonasmoss.com, with no build step: the root `index.html` lists the
+  courses, and each course has an `index.html` (course files, handout, every deck
+  in a pane). Participants download `course-files.zip` (handout plus props) from a
+  short link on the menu deck. The old course site is at the local tag
+  `site-final`; **never push that tag** (it contains a prop built from real
+  student data).
 - `scratch/` is allowed to be messy and out of date. Nothing in a course may
   depend on it. Its decks are in the old site's Markdown format and need
   converting to Quarto when copied into a course. See `scratch/README.md`.

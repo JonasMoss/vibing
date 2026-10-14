@@ -10,7 +10,7 @@ Bring the real thing. Commit first, then let it try.
 
 ```{=html}
 <div class="starters">
-  <div class="card lead"><b>A replication</b><span>Get the Fama–French factors from Ken French's website and reproduce [a table from a classic paper]. Then extend it to today: does it still hold?</span></div>
+  <div class="card lead"><b>A replication</b><span>Get the Fama–French factors from Ken French's website and reproduce the factor summary statistics in Table 2 of Fama and French (1993), July 1963 to December 1991. Then extend it to today: does it still hold?</span></div>
   <div class="card"><b>A project folder</b><span>What's here? What's missing? What would you do first?</span></div>
   <div class="card"><b>A draft</b><span>Where is the argument weakest?</span></div>
   <div class="card"><b>A referee report you got</b><span>Draft a response plan, point by point.</span></div>
