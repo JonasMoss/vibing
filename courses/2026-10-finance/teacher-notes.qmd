@@ -59,27 +59,19 @@ slides.
 
 # Before Friday
 
-1. **TODO: fix every practice-file link.** Decide where the props live: GitHub
-   links into `props/` (they only work once this folder is merged to `main` and
-   pushed), or short tinyurl links pointing there. Then replace:
-   - the placeholder `tinyurl.com/TODO-messy-project` on the `trail` deck ("The
-     folder");
-   - the three handout links, in sections 2 (`decrap-me.zip`), 6
-     (`references-practice.zip`) and 7 (`messy-project.zip`);
-   - any other link in the decks (`grep -n "TODO\|github.com" decks/*.qmd`).
-
-   Then test all three in a browser.
+1. **Links: done.** All practice files are on GitHub `main` and tested. The
+   handout's download prompts (sections 2, 6, 7) use the GitHub links; the decks
+   point to the handout.
 2. **TODO: go through Leave a trail in more detail.** It overlaps with the
    morning's cleanup: both organise a messy folder with a git save point. One
    option: refocus the exercise on reproducing Table 1 from the raw survey
    export, so the planted problem surfaces there.
 3. **Course files.** `course-files.zip` (handout plus the three practice zips) is
-   what people download, from the link on the menu deck ("Get the course files").
-   **TODO:** make the tinyurl, pointing at
-   `https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/course-files.zip`,
-   and replace `tinyurl.com/TODO-course` in `decks/menu.qmd`. After any change to
-   the handout or a prop: re-render, then `python3 make-course-files.py`, commit,
-   push.
+   what people download, from the link on the menu deck ("Get the course files"):
+   **tinyurl.com/684nc8er**, which points at
+   `https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/course-files.zip`.
+   After any change to the handout or a prop: re-render, then
+   `python3 make-course-files.py`, commit, push.
    Bring the zip on a USB stick too.
 4. **Test on a BI-managed Windows laptop**, on campus wifi: install, log in, one
    prompt, one PDF read, and **git without admin rights** (the portable route).

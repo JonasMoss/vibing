@@ -39,7 +39,7 @@ date: "16 October 2026"
 
 ## Get the course files {#files}
 
-[tinyurl.com/TODO-course]{style="font-size: 1.4em; font-weight: 800; color: #f0674d;"}
+[tinyurl.com/684nc8er]{style="font-size: 1.4em; font-weight: 800; color: #f0674d;"}
 
 - Download, unzip, and open **handout.html** in your browser.
 - Every prompt from today is in it, with a copy button, including what we don't

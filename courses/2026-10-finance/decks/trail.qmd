@@ -13,12 +13,9 @@ A paper you're writing with Kari Nordmann: *Monthly or yearly? Price framing and
 willingness to pay.* A survey experiment, cleaned in Excel, written up in Word.
 Fictional, and completely typical.
 
-Start the agent in an empty folder:
-
-::: {.prompt}
-Download [tinyurl.com/TODO-messy-project]{style="color: #f0674d;"} into this folder
-and unzip it.
-:::
+Start the agent in an empty folder, and paste the **download prompt from the
+handout, section 7**. (Or unzip `practice/messy-project.zip` from the course files
+yourself.)
 
 ## What's in it
 

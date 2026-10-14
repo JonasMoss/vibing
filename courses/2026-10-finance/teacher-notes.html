@@ -2328,15 +2328,9 @@ vertical-align: -.125em;
 <section id="before-friday" class="level1">
 <h1>Before Friday</h1>
 <ol type="1">
-<li><strong>TODO: fix every practice-file link.</strong> Decide where the props live: GitHub links into <code>props/</code> (they only work once this folder is merged to <code>main</code> and pushed), or short tinyurl links pointing there. Then replace:
-<ul>
-<li>the placeholder <code>tinyurl.com/TODO-messy-project</code> on the <code>trail</code> deck (“The folder”);</li>
-<li>the three handout links, in sections 2 (<code>decrap-me.zip</code>), 6 (<code>references-practice.zip</code>) and 7 (<code>messy-project.zip</code>);</li>
-<li>any other link in the decks (<code>grep -n &quot;TODO\|github.com&quot; decks/*.qmd</code>).</li>
-</ul>
-Then test all three in a browser.</li>
+<li><strong>Links: done.</strong> All practice files are on GitHub <code>main</code> and tested. The handout’s download prompts (sections 2, 6, 7) use the GitHub links; the decks point to the handout.</li>
 <li><strong>TODO: go through Leave a trail in more detail.</strong> It overlaps with the morning’s cleanup: both organise a messy folder with a git save point. One option: refocus the exercise on reproducing Table 1 from the raw survey export, so the planted problem surfaces there.</li>
-<li><strong>Course files.</strong> <code>course-files.zip</code> (handout plus the three practice zips) is what people download, from the link on the menu deck (“Get the course files”). <strong>TODO:</strong> make the tinyurl, pointing at <code>https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/course-files.zip</code>, and replace <code>tinyurl.com/TODO-course</code> in <code>decks/menu.qmd</code>. After any change to the handout or a prop: re-render, then <code>python3 make-course-files.py</code>, commit, push. Bring the zip on a USB stick too.</li>
+<li><strong>Course files.</strong> <code>course-files.zip</code> (handout plus the three practice zips) is what people download, from the link on the menu deck (“Get the course files”): <strong>tinyurl.com/684nc8er</strong>, which points at <code>https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/course-files.zip</code>. After any change to the handout or a prop: re-render, then <code>python3 make-course-files.py</code>, commit, push. Bring the zip on a USB stick too.</li>
 <li><strong>Test on a BI-managed Windows laptop</strong>, on campus wifi: install, log in, one prompt, one PDF read, and <strong>git without admin rights</strong> (the portable route). Also check that <code>/usage</code> (Claude Code) and <code>/status</code> (Codex) still show the plan limits in Friday’s versions. Dagfinn’s Codex install stalled in August until he picked the restricted (unelevated) mode. Codex reading PDFs on bare Windows is still untested.
 <ul>
 <li><strong>Tested 14 October on a BI PC:</strong> the Claude Code install needed no admin rights, but asked for <code>.local\bin</code> to be added to PATH by hand. Fixed: the Claude install is now two lines, the second adds it to the user PATH.</li>
