@@ -39,11 +39,12 @@ date: "16 October 2026"
 
 ## Get the course files {#files}
 
-[tinyurl.com/684nc8er]{style="font-size: 1.4em; font-weight: 800; color: #f0674d;"}
+[vibing.jonasmoss.com]{style="font-size: 1.4em; font-weight: 800; color: #f0674d;"}
 
-- Download, unzip, and open **handout.html** in your browser.
-- Every prompt from today is in it, with a copy button, including what we don't
-  get to.
+- Click **Finance**. The **handout** is there, and **Course files** downloads it
+  with the practice folders as one zip.
+- Every prompt from today is in the handout, with a copy button, including what we
+  don't get to. So are all the slides.
 - The morning is for everyone, in order. The afternoon blocks work in any order:
   we pick them together.
 

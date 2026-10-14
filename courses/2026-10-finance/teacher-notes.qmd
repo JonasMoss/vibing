@@ -67,10 +67,9 @@ slides.
    option: refocus the exercise on reproducing Table 1 from the raw survey
    export, so the planted problem surfaces there.
 3. **Course files.** `course-files.zip` (handout plus the three practice zips) is
-   what people download, from the link on the menu deck ("Get the course files"):
-   **tinyurl.com/684nc8er**, which points at
-   `https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/course-files.zip`.
-   After any change to the handout or a prop: re-render, then
+   what people download from the course page, **vibing.jonasmoss.com** → Finance
+   (on the menu deck's "Get the course files" slide). The page also has the
+   handout and every deck. After any change to the handout or a prop: re-render, then
    `python3 make-course-files.py`, commit, push.
    Bring the zip on a USB stick too.
 4. **Test on a BI-managed Windows laptop**, on campus wifi: install, log in, one
@@ -457,6 +456,13 @@ connection on the demo repository. Not yet tested.
   been revised since, and the factor construction updated): close but not exact
   is the expected result, and "why not exact?" is a good question to ask the agent.
   "Does it still hold?" leads straight into the value-premium debate from `knows`.
+  - **Checked 14 October** (library file built from the August 2026 CRSP), monthly
+    %, mean (t): same sample, RM−RF 0.41 (1.65), SMB 0.26 (1.67), HML 0.38 (2.75):
+    within 0.02 of the paper.
+  - **After the paper, January 1992 to August 2026** (416 months): RM−RF 0.76
+    (3.56), SMB 0.06 (0.36), HML 0.23 (1.40). The size premium is gone and value
+    has halved, while the market did better. That's the punchline people find
+    themselves.
 - **Close:** *"What will you try on Monday?"* Get three answers out loud. Remind
   them the handout has everything, including what we skipped.
 
