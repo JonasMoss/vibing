@@ -1,0 +1,63 @@
+---
+title: "AI in the terminal"
+subtitle: "A research day for the Department of Finance"
+author: "Jonas Moss · Data Science and Analytics"
+date: "16 October 2026"
+---
+
+## Today {#menu}
+
+```{=html}
+<div class="menu">
+  <div>
+    <p class="menu-head">Morning · everyone</p>
+    <a class="card" href="power.html"><b>What these things can do</b><span>The frontier, before we touch a keyboard</span></a>
+    <a class="card" href="how.html"><b>How it works</b><span>What's inside, and usage limits</span></a>
+    <a class="card" href="setup.html"><b>Get it running</b><span>Install, git, log in, first contact</span></a>
+    <a class="card" href="cleanup.html"><b>Do something tedious</b><span>Clean up a messy folder, with a save point</span></a>
+    <a class="card" href="knows.html"><b>What it knows about you</b><span>Context, and your profile</span></a>
+    <a class="card" href="paper.html"><b>Take a paper apart</b><span>Its biggest problem, then a fix</span></a>
+  </div>
+  <div class="pick">
+    <p class="menu-head">Afternoon · you choose</p>
+    <a class="card" href="review.html"><b>Referee panel</b><span>Simulated referees, one fresh session each</span></a>
+    <a class="card" href="refs.html"><b>References</b><span>Search, papers in the folder, DOI and claim checks</span></a>
+    <a class="card" href="trail.html"><b>Leave a trail</b><span>A messy project, and the rerun test</span></a>
+    <a class="card" href="notes.html"><b>Notes and structure</b><span>A paper folder, notes the agent keeps</span></a>
+  </div>
+  <div>
+    <p class="menu-head">Any time</p>
+    <a class="card" href="own.html"><b>Your own work</b><span>Bring the real thing</span></a>
+    <a class="card" href="agents.html"><b>The project file</b><span>AGENTS.md: tell it once</span></a>
+    <a class="card" href="github.html"><b>GitHub</b><span>A copy in the cloud, co-authors</span></a>
+    <a class="card" href="mcp.html"><b>Connectors</b><span>Email, calendar, Drive</span></a>
+    <a class="card" href="notes.html#/skills"><b>Skills</b><span>If you ask</span></a>
+    <a class="card" href="more.html"><b>More capability</b><span>Security, benchmarks, demos</span></a>
+  </div>
+</div>
+```
+
+## Get the course files {#files}
+
+[tinyurl.com/TODO-course]{style="font-size: 1.4em; font-weight: 800; color: #f0674d;"}
+
+- Download, unzip, and open **handout.html** in your browser.
+- Every prompt from today is in it, with a copy button, including what we don't
+  get to.
+- The morning is for everyone, in order. The afternoon blocks work in any order:
+  we pick them together.
+
+## Before we talk: start the install {#start}
+
+1. Click **Start**, type `powershell`, open **Windows PowerShell** (not the "x86" one).
+2. Paste the lines for your tool, press Enter, and leave it running (lid open).
+
+```powershell
+# Claude subscription (both lines):
+irm https://claude.ai/install.ps1 | iex
+[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path","User") + ";$env:USERPROFILE\.local\bin", "User")
+# ChatGPT subscription:
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+```
+
+Mac: handout, section 1. It downloads while we talk.

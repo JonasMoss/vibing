@@ -1,0 +1,96 @@
+---
+pagetitle: "Notes and structure"
+---
+
+# Notes and structure {#notes background-color="#f0674d"}
+
+Where things go, and how the agent keeps track of a project for you.
+
+## Four questions about your project
+
+1. What do you re-explain **every single time**? → the project file.
+2. Where does **undone work** live? → a to-do file, not your head or your inbox.
+3. Where are you **allowed to be wrong**? → notes, drafts, scratch.
+4. What could you **never rebuild**? → raw data, the manuscript. Protect it.
+
+The questions are mine; the answers are yours. Everyone already has a filing
+system. It just isn't written down.
+
+## My paper folder
+
+```{=html}
+<pre><code>my-paper/
+├── AGENTS.md       the rules, for the agent
+├── README.md       for people: what this is, how to rerun it
+├── STATUS.md       where we are, what's next
+├── manuscript/     everything that ends up in the PDF
+├── code/           everything that computes
+├── results/        the numbers the paper relies on
+<b>├── dev/            notes, drafts, talks: in git, not published</b>
+<b style="color:#f0674d;">└── local/          downloaded papers, raw runs: not in git</b></code></pre>
+```
+
+My four answers: `AGENTS.md`, `STATUS.md`, `dev/`, and `manuscript/` with
+`results/`. It's a skill: every new paper starts like this.
+
+## dev/ or local/?
+
+| | In git and on GitHub | Published |
+|------------|--------|--------|
+| `manuscript/` `code/` `results/` | yes | yes |
+| **`dev/`** | yes | no |
+| **`local/`{style="color:#f0674d;"}** | [no]{style="color:#f0674d;"} | [no]{style="color:#f0674d;"} |
+
+- **`dev/`** is work in progress: backed up, and your co-authors see it.
+- **`local/`{style="color:#f0674d;"}** is listed in `.gitignore`, a text file
+  that tells git what to leave alone. PDFs you may not share, big raw files.
+- Setting it up: *"Keep local/ out of git."*
+
+## Ask for a structure, not a template
+
+::: {.prompt}
+Here is how I work: [your four answers]. Propose a folder structure for this
+paper and a project file that says where things go. Show me first; don't move
+anything.
+:::
+
+Argue with it. Then *"Go ahead"*, and *"Commit"* if you use git.
+
+## Notes the agent keeps for you
+
+::: {.prompt}
+At the end of each session, add what we did and what's next to notes/log.md.
+:::
+
+::: {.prompt}
+Keep literature/notes.md: one paragraph per paper we read, with the pages that matter.
+:::
+
+Next time, start with:
+
+::: {.prompt}
+Read the project file and the log, then tell me where we left off.
+:::
+
+## The project file
+
+`AGENTS.md` in the folder. Both tools read it at every start.
+
+- What the paper is, and where things go.
+- The rules, for example:
+  - *"Never edit anything in data/raw."*
+  - *"Download papers into literature/, or give me the DOI."*
+  - *"Only cite references with a verified DOI."*
+- Plain text: open it in Notepad and edit it yourself.
+
+More: [the project file](agents.html).
+
+## Skills {#skills}
+
+> Memory is the AI remembering you. A skill is you writing it down.
+
+- A saved workflow with a name and a note on when to use it.
+- Worth it for a routine you **repeat**, want done **the same way every time**, or
+  want to **hand to a colleague**.
+- Make one by asking: *"Turn what we just did into a skill called tidy-paper."*
+- You never touch the file format. Most things work fine without skills.

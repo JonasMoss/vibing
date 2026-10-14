@@ -1,0 +1,135 @@
+---
+pagetitle: "GitHub"
+---
+
+# GitHub {#github background-color="#f0674d"}
+
+A safe copy of your project in the cloud, if you want one.
+
+## git and GitHub
+
+```{=html}
+{{< include images/git-branches.svg >}}
+```
+
+> OneDrive keeps your files in sync. GitHub keeps every version, and who changed what.
+
+## Why a researcher might want it
+
+- **Backup with history.** Not `final_v3_REALLY_final.docx`.
+- **Co-authors on one folder.** No more emailing files back and forth.
+- **Replication packages.** Journals increasingly ask for code and data. A GitHub
+  repository, archived on Zenodo, gets a DOI you can cite.
+- **Course pages.** Plain text in, a web page out, updated with every push.
+
+## Set up, once
+
+1. Make a free account at **github.com**. Private repositories are free.
+2. Then ask the agent:
+
+::: {.prompt}
+Install the GitHub command-line tool and log me in.
+:::
+
+It installs `gh` and opens your browser to log in. Approve, and you're done.
+
+## Put a folder on GitHub
+
+::: {.prompt}
+Put this folder on GitHub as a private repository called [name]. Check .gitignore
+first: no PDFs, no raw data, nothing confidential.
+:::
+
+After that, whenever you've committed something worth keeping:
+
+::: {.prompt}
+Push my latest changes.
+:::
+
+**Laptop dead?** On the new one: *"Download my repository [name] into this
+folder."* Everything is back, with its whole history.
+
+## Working with a co-author
+
+- You: *"Add [their GitHub username] as a collaborator."*
+- They: *"Download [the repository link] into this folder."*
+- Every session: *"Pull the latest changes."* Work. *"Commit and push."*
+- Both edited the same file? *"Merge our changes and show me what you did."*
+
+Or they **propose** changes instead of pushing them. That's a pull request.
+
+## Pull requests: propose, don't push {#pr}
+
+```{=html}
+{{< include images/pr-flow.svg >}}
+```
+
+Nothing lands in your project until you say **merge**. The discussion stays attached
+to the change. *It's referee-and-revise, for a folder.*
+
+## Live: Jonas and Ludvik {#demo}
+
+1. **Jonas** puts a folder on GitHub and adds Ludvik.
+2. **Ludvik** downloads it, makes a change on a branch, and opens a pull request.
+3. **Jonas** reads it, tests it, and comments.
+4. **Ludvik** fixes it. **Jonas** merges.
+
+Neither of us types a git command. The prompts are on the next two slides.
+
+## Their side
+
+::: {.prompt}
+Make a new branch, [the change], commit it, push it, and open a pull request to
+[owner] that explains what you changed and why.
+:::
+
+The agent makes the branch, writes the description and opens the pull request.
+They never see a git command.
+
+## Your side
+
+::: {.prompt}
+Are there open pull requests on this repository? Summarise them.
+:::
+
+::: {.prompt}
+Check out the pull request and test it. Does everything still run? Do any numbers change?
+:::
+
+Then one of:
+
+- *"Comment on the pull request: [your question]."*
+- *"Merge it, then pull the latest changes."*
+
+## Exercise: in pairs {#pairs}
+
+Both: a GitHub account, and *"Install the GitHub command-line tool and log me in."*
+
+1. **A:** *"Put this folder on GitHub as a private repository called [name], and add
+   [B's username] as a collaborator."*
+2. **B:** *"Accept the GitHub invitation from [A's username], and download
+   [A's username]/[name] into this folder."*
+3. **B:** *"Make a new branch, [your change], and open a pull request that explains it."*
+4. **A:** *"Any open pull requests? Summarise them."* Comment, or merge. Then swap.
+
+## Keep an eye on it
+
+- **GitHub tells you.** *Watch* the repository: an email, or a push notification
+  in the GitHub app, for every new pull request.
+- **Claude Code, while it's open,** can check on a timer:
+
+::: {.prompt}
+/loop 10m check for new pull requests on this repository, and summarise any new ones.
+:::
+
+- **A reviewer on GitHub itself.** Connect the Claude or Codex app to the
+  repository once. Then a comment with `@claude` or `@codex review` on a pull
+  request gets you a review.
+
+## Public or private
+
+- **Private by default.** Only you and the people you invite can see it.
+- **Public** only for things you'd publish anyway: a replication package, a course page.
+- **History is forever.** A file you "delete" later is still in the history. So
+  never commit passwords, student data or confidential data in the first place.
+- Research data: check the data agreement before it goes to any cloud service.

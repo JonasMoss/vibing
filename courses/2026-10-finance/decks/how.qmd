@@ -1,0 +1,50 @@
+---
+pagetitle: "How it works"
+---
+
+# How it works {#how background-color="#f0674d"}
+
+What's inside, and what it costs. Four slides.
+
+## What an LLM is
+
+```{=html}
+{{< include images/llm-training-and-use.svg >}}
+```
+
+Training makes the model. Thinking happens on **your** question: the longer it
+thinks, the better the answer, and the more of your plan it uses.
+
+## Prompt engineering (RIP)
+
+:::: {.columns}
+::: {.column width="55%"}
+![Kojima et al. (2022), *Large Language Models are Zero-Shot Reasoners*](images/kojima-step-by-step.png)
+:::
+::: {.column width="45%"}
+- 2022 trick: add *"let's think step by step"*, and maths goes from 18% to 79%.
+- Now it's built in: that's the **thinking** stage.
+- Magic words and templates? Mostly noise now.
+:::
+::::
+
+## What an agent is
+
+- An LLM **with tools**: it reads and writes files, runs programs, searches the web.
+- **On your computer**, in the folder you start it in.
+- It asks before it does anything big. **You say go.**
+- A chat window only sees what you paste into it. **The agent works on the files themselves.**
+
+Claude Code and Codex are agents.
+
+## Usage limits
+
+Every answer costs computing power. The strong models and long thinking cost the most.
+
+- **Claude Pro** runs out sooner within a **five-hour window**. **ChatGPT Plus** runs
+  out sooner over a **week**. Higher plans give many times more.
+- **What eats it:** long sessions, big files, the strongest model, long thinking.
+- **See where you stand:** `/usage` in Claude Code, `/status` in Codex.
+- **Hit the limit?** Wait for the reset, switch to a Fast model with `/model`, or
+  pair up. Hitting it every day? A higher plan is the fix.
+

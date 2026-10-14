@@ -1,0 +1,9 @@
+Table 1. Willingness to pay (NOK) by price framing
+
+condition     n     mean      sd
+monthly     104    544.1   174.0
+yearly      116    490.9   172.1
+
+N = 220
+difference (monthly - yearly): 53.2 NOK
+permutation p-value (10,000 draws): 0.024

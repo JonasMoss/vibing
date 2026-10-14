@@ -1,0 +1,1 @@
+We ran an A/B test on our website. Version A: 48 purchases from 1,000 visitors. Version B: 62 purchases from 1,000 visitors. Is B better?

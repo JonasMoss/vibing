@@ -1,0 +1,49 @@
+---
+pagetitle: "Connectors"
+---
+
+# Connectors {#mcp background-color="#f0674d"}
+
+Your email, calendar and files, in the same conversation.
+
+## What MCP is
+
+```{=html}
+{{< include images/mcp-plug.svg >}}
+```
+
+**MCP** is a standard plug. A **connector** is one plug: the agent then uses your
+email, calendar or files the same way it uses your folder.
+
+## Switch it on
+
+1. Go to `claude.ai/customize/connectors`. Pick **Gmail**, **Google Calendar** or
+   **Google Drive** → **Connect**. Log in with Google and approve.
+2. Start a new Claude Code session and type `/mcp`. It's in the list.
+
+[Codex supports MCP too. Ask it how to connect yours.]{.small .muted}
+
+## Email
+
+::: {.prompt}
+Find all my emails from [name] this month. One line each: date, subject, what they
+want.
+:::
+
+::: {.prompt}
+Draft a reply. Show it to me before you send it.
+:::
+
+## Calendar
+
+::: {.prompt}
+What does my week look like? Find two free hours for writing, and put them in my
+calendar.
+:::
+
+## Drive
+
+::: {.prompt}
+Find the referee report on [paper] in my Google Drive, and draft a response plan,
+point by point.
+:::

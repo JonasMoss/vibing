@@ -1,0 +1,234 @@
+/*-- scss:defaults --*/
+$paper: #f4f0e8;
+$paper-deep: #e8e0d3;
+$ink: #17201f;
+$muted: #5c6763;
+$coral: #f0674d;
+$coral-dark: #b8432d;
+$yellow: #f1c84b;
+$white: #fffdf8;
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $coral-dark;
+$selection-bg: $yellow;
+$font-family-sans-serif: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+$presentation-font-size-root: 41px;
+$code-block-font-size: 0.72em;
+$blockquote-color: $ink;
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-color: $ink;
+$presentation-heading-font-weight: 800;
+$presentation-heading-letter-spacing: -0.03em;
+$presentation-h1-font-size: 2.3em;
+$presentation-h2-font-size: 1.55em;
+$presentation-h3-font-size: 1.1em;
+$code-block-bg: $white;
+$code-color: $ink;
+
+/*-- scss:rules --*/
+.reveal .slides section {
+  line-height: 1.3;
+}
+
+.reveal h2 {
+  margin-bottom: 0.6em;
+}
+
+.reveal strong {
+  font-weight: 850;
+}
+
+.reveal blockquote {
+  background: none;
+  border-left: 8px solid $ink;
+  box-shadow: none;
+  font-family: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+  font-style: italic;
+  margin: 0.8em 0 0;
+  padding: 0.1em 0 0.1em 0.8em;
+  width: 92%;
+}
+
+.reveal table {
+  font-size: 0.72em;
+  width: 100%;
+}
+
+.reveal table th,
+.reveal table td {
+  border-bottom: 2px solid rgba(23, 32, 31, 0.3);
+  padding: 0.35em 0.6em;
+}
+
+.reveal code {
+  background: $white;
+  padding: 0 0.15em;
+}
+
+.reveal pre code {
+  line-height: 1.35;
+  white-space: pre-wrap;
+}
+
+/* Section dividers: coral, big title. */
+.reveal .slides section.level1 h1 {
+  font-size: 2.6em;
+  line-height: 0.95;
+  margin-top: 1.4em;
+}
+
+.reveal .slides section.level1 p {
+  font-size: 1.1em;
+}
+
+/* Prompts the room types: a box, so they read as "say this". */
+.reveal .prompt {
+  background: $white;
+  border-left: 8px solid $coral;
+  font-style: italic;
+  margin: 0.5em 0;
+  padding: 0.35em 0.7em;
+}
+
+.reveal .small {
+  font-size: 0.7em;
+}
+
+.reveal .muted {
+  color: $muted;
+}
+
+/* Inline SVG diagrams carried over from the old decks. */
+.reveal .diagram {
+  display: block;
+  height: auto;
+  margin: 0.2em 0;
+  max-height: 46vh;
+  width: 100%;
+}
+
+.reveal .diagram text {
+  font-family: $font-family-sans-serif;
+}
+
+.reveal .want {
+  font-size: 1.1em;
+  font-weight: 850;
+}
+
+.reveal tr.fragment.visible td {
+  background: $coral;
+}
+
+/* The menu: cards that jump to a section. */
+.reveal .menu {
+  display: grid;
+  gap: 0.5em 0.9em;
+  grid-template-columns: 1fr 1fr 0.8fr;
+  margin-top: 0.2em;
+}
+
+.reveal .menu-head {
+  border-bottom: 3px solid $ink;
+  font-size: 0.55em;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.3em;
+  text-transform: uppercase;
+}
+
+.reveal .menu a.card {
+  background: $white;
+  border: 2px solid $ink;
+  border-radius: 12px;
+  color: $ink;
+  display: block;
+  margin: 0 0 0.35em;
+  padding: 0.3em 0.5em;
+  text-decoration: none;
+}
+
+.reveal .menu a.card:hover {
+  background: $yellow;
+}
+
+.reveal .menu a.card b {
+  display: block;
+  font-size: 0.68em;
+  line-height: 1.15;
+}
+
+.reveal .menu a.card span {
+  color: $muted;
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.25;
+}
+
+.reveal .menu .pick a.card {
+  border-color: $coral;
+  border-width: 3px;
+}
+
+.reveal .footer a {
+  font-weight: 800;
+}
+
+/* Long commands wrap instead of running off the slide. */
+.reveal pre,
+.reveal pre code,
+.reveal pre > code.sourceCode {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap !important;
+}
+
+.reveal pre > code.sourceCode > span {
+  display: inline;
+}
+
+/* A shorter diagram, for slides that also carry three bullets. */
+.reveal .diagram-sm .diagram {
+  max-height: 34vh;
+}
+
+
+/* Starting points in the own-work deck: cards with a prompt each. */
+.reveal .starters {
+  display: grid;
+  gap: 0.45em 0.8em;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.3em;
+}
+
+.reveal .starters .card {
+  background: $white;
+  border: 2px solid $ink;
+  border-radius: 12px;
+  padding: 0.35em 0.6em 0.4em;
+}
+
+.reveal .starters .card.lead {
+  border-color: $coral;
+  border-width: 3px;
+}
+
+.reveal .starters .card b {
+  display: block;
+  font-size: 0.7em;
+  line-height: 1.2;
+}
+
+.reveal .starters .card span {
+  display: block;
+  font-size: 0.58em;
+  font-style: italic;
+  line-height: 1.3;
+  margin-top: 0.2em;
+}
+
+/* The terminal cheat sheet in setup: bigger than the default table text. */
+.reveal .cheat table {
+  font-size: 0.92em;
+}

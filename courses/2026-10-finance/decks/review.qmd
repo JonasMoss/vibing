@@ -1,0 +1,79 @@
+---
+pagetitle: "Referee panel"
+---
+
+# Referee panel {#review background-color="#f0674d"}
+
+Who will referee your paper, and what will they say? Find out before you submit.
+
+## The panel
+
+```{=html}
+{{< include images/referee-panel.svg >}}
+```
+
+Fresh sessions read the paper cold, like real referees. **Names carry a lot:** *"as
+Campbell Harvey would"* brings the factor zoo and the t > 3 bar with it.
+
+## 1. Who would referee this?
+
+::: {.prompt}
+Who are the five most likely referees for this paper, judging by its references?
+One line each: what would they care about?
+:::
+
+Argue with the list. Add the one you fear most.
+
+## 2. Ask how it's done
+
+The underused move: **ask the agent how to do the job before you ask it to do it.**
+
+::: {.prompt}
+I want simulated referee reports on this paper. How does a good finance referee
+work? How deep should they go? Should they try to reproduce the main results?
+Propose a procedure.
+:::
+
+Argue with it. Then: *"Save what we agreed as reviews/how-to-referee.md."*
+
+## 3. One fresh session per referee
+
+Type `/clear`, then:
+
+::: {.prompt}
+Referee this paper as [name] would, following reviews/how-to-referee.md. Save it as
+reviews/[name].md.
+:::
+
+Repeat for each referee.
+
+::: {.small}
+In a hurry? Run them side by side: a second window with its own `claude` or
+`codex`, or in Claude Code: *"Run the referees as parallel subagents."*
+:::
+
+## 4. Not what you wanted?
+
+**Change the procedure, not the report.** For example:
+
+- *"Go deeper on identification."*
+- *"Try to reproduce Table 2."*
+- *"Check whether the data are available."*
+- *"One page. No summary of the paper."*
+
+Edit `how-to-referee.md`, `/clear`, rerun. Doing this for every paper? *"Turn the
+procedure into a skill called referee-panel."*
+
+## 5. The editor
+
+`/clear`, then:
+
+::: {.prompt}
+You're the editor. Read the reports in reviews/. Where do the referees agree, where
+do they disagree, and what must be fixed before submission?
+:::
+
+## Worth knowing
+
+- Your own paper, before a real referee sees it. Or a published one, for practice.
+- Different tools find different problems. Compare with your neighbour.

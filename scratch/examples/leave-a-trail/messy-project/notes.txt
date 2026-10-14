@@ -1,0 +1,5 @@
+14.03 exported from nettskjema -> survey_export_2026-03-14.csv
+removed the speeders (under 1 min) in excel -> data_clean_FINAL.csv
+table 1 = analysis_v2 (NOT the old one)
+the crazy WTP ones?? ask Kari
+send draft to Kari before easter

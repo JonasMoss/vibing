@@ -1,0 +1,11 @@
+<svg class="diagram" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A main line of commits on your laptop. A branch splits off to try something, gets two commits, and merges back. Beside it, GitHub holds the same history; push sends it there, pull fetches it.">
+<defs><marker id="git-push" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker><marker id="git-pull" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker></defs>
+<text x="40" y="100" font-size="24" font-weight="800" letter-spacing="2" fill="#5c6763">YOUR LAPTOP</text>
+<line x1="40" y1="150" x2="700" y2="150" stroke="#17201f" stroke-width="5"/>
+<circle cx="90" cy="150" r="20" fill="#17201f"/>
+<circle cx="230" cy="150" r="20" fill="#17201f"/>
+<circle cx="550" cy="150" r="20" fill="#17201f"/>
+<circle cx="680" cy="150" r="20" fill="#17201f"/>
+<g class="fragment" data-fragment-index="1"><path d="M 230 150 C 270 260, 290 260, 330 260 L 450 260 C 490 260, 510 150, 550 150" fill="none" stroke="#f0674d" stroke-width="5"/><circle cx="350" cy="260" r="18" fill="#f0674d"/><circle cx="440" cy="260" r="18" fill="#f0674d"/><text x="395" y="312" text-anchor="middle" font-size="24" font-weight="700" fill="#f0674d">a branch: try something, merge it back</text></g>
+<g class="fragment" data-fragment-index="2"><rect x="880" y="80" width="300" height="140" rx="18" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/><text x="1030" y="142" text-anchor="middle" font-size="36" font-weight="800" fill="#17201f">GitHub</text><text x="1030" y="182" text-anchor="middle" font-size="22" fill="#5c6763">the same history, online</text><line x1="720" y1="126" x2="866" y2="126" stroke="#f0674d" stroke-width="5" marker-end="url(#git-push)"/><text x="793" y="110" text-anchor="middle" font-size="26" font-weight="800" fill="#f0674d">push</text><line x1="866" y1="174" x2="720" y2="174" stroke="#17201f" stroke-width="5" marker-end="url(#git-pull)"/><text x="793" y="214" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">pull</text></g>
+</svg>

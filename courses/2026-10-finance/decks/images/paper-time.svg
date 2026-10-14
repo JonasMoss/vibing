@@ -1,0 +1,15 @@
+<svg class="diagram" viewBox="0 0 1200 330" preserveAspectRatio="xMinYMid meet" role="img" aria-label="Where your time goes. The usual way: weeks of reading, then a little judging. With the agent: one minute of reading, ten minutes for a fix, and most of your time judging.">
+<text x="0" y="116.0" font-size="28" font-weight="800" fill="#17201f">The usual way</text>
+<rect x="250" y="70" width="760" height="74" rx="10" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="274" y="116.0" font-size="26" fill="#17201f">Reading the paper and the literature: <tspan font-weight="800">weeks</tspan></text>
+<rect x="1010" y="70" width="160" height="74" rx="10" fill="#f0674d" stroke="#17201f" stroke-width="3"/>
+<text x="1090.0" y="116.0" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">judging</text>
+<g class="fragment" data-fragment-index="1">
+<text x="0" y="266.0" font-size="28" font-weight="800" fill="#f0674d">With the agent</text>
+<rect x="250" y="220" width="22" height="74" rx="6" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<rect x="272" y="220" width="50" height="74" rx="6" fill="#e8e0d3" stroke="#17201f" stroke-width="3" stroke-dasharray="6 4"/>
+<rect x="322" y="220" width="848" height="74" rx="10" fill="#f0674d" stroke="#17201f" stroke-width="3"/>
+<text x="746.0" y="266.0" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">judging: the problem, the fix, the field</text>
+<text x="250" y="206" font-size="22" fill="#5c6763">it reads: 1 min · it tries a fix: 10 min</text>
+</g>
+</svg>

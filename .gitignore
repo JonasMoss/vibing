@@ -1,8 +1,27 @@
-node_modules/
-.next/
-.open-next/
-dist/
-_site/
-*.log
-*.tsbuildinfo
 .DS_Store
+*.log
+
+# Quarto render leftovers. Rendered single-file .html IS committed (it is the
+# record of what a course showed); these intermediate folders are not.
+.quarto/
+*_files/
+*.quarto_ipynb
+
+# Real student data, private screenshots, anything that must never be
+# published from this public repo. One rule, no exceptions.
+private/
+**/WISEflow*/
+**/2025H*/
+
+# Third-party copyrighted PDFs. The tracked artefact is always the README or
+# the fetch script that rebuilds them, never the PDFs themselves.
+scratch/examples/litsweep/pdfs/
+scratch/examples/litsweep.zip
+scratch/examples/references/pdf/
+scratch/links/strategy-canon/pdfs/
+scratch/links/recent-cross-field/*.pdf
+
+# Pilot runs of the paper-critique exercise: unverified claims about named,
+# real papers. Keep local; do not publish from this public repo.
+scratch/examples/paper-critique/pilot/
+**/paper-critique/pilot/
