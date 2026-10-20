@@ -2179,6 +2179,7 @@ vertical-align: -.125em;
   <ul class="collapse">
   <li><a href="#get-it-running" id="toc-get-it-running" class="nav-link" data-scroll-target="#get-it-running">Get it running</a></li>
   <li><a href="#save-points-git" id="toc-save-points-git" class="nav-link" data-scroll-target="#save-points-git">Save points (git)</a></li>
+  <li><a href="#what-it-can-touch" id="toc-what-it-can-touch" class="nav-link" data-scroll-target="#what-it-can-touch">What it can touch</a></li>
   <li><a href="#do-something-tedious" id="toc-do-something-tedious" class="nav-link" data-scroll-target="#do-something-tedious">Do something tedious</a></li>
   <li><a href="#what-it-knows-about-you" id="toc-what-it-knows-about-you" class="nav-link" data-scroll-target="#what-it-knows-about-you">What it knows about you</a></li>
   <li><a href="#take-a-paper-apart" id="toc-take-a-paper-apart" class="nav-link" data-scroll-target="#take-a-paper-apart">Take a paper apart</a></li>
@@ -2202,7 +2203,7 @@ vertical-align: -.125em;
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Teacher notes</h1>
-<p class="subtitle lead">AI in the terminal · Department of Finance · Friday 16 October 2026</p>
+<p class="subtitle lead">AI in the terminal · Department of Strategy and Entrepreneurship · 22 and 23 October 2026 · work in progress</p>
 </div>
 
 
@@ -2269,61 +2270,66 @@ vertical-align: -.125em;
 <td>30–35</td>
 </tr>
 <tr class="even">
+<td><code>access</code></td>
+<td>What it can touch: how far each tool reaches, what leaves the laptop, the dial, auto mode, what we tried, why lots of access, three ways to say no, training switches, personal data. Three exercises</td>
+<td>20–25</td>
+</tr>
+<tr class="odd">
 <td><code>cleanup</code></td>
 <td>Do something tedious: the WISEflow export, with a git save point and an undo</td>
 <td>25</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>knows</code></td>
 <td>Context, who is asking, the Berger demo, does it matter in your field, how you work, your profile</td>
 <td>20</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>paper</code></td>
 <td>Take a paper apart; ends on the afternoon choice</td>
 <td>50</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>review</code></td>
 <td>Referee panel</td>
 <td>~40</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>refs</code></td>
 <td>Search (exercise), papers in the folder, DOI check, claim check</td>
 <td>40–60</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>trail</code></td>
 <td>Organise a folder, the rerun test, what the rerun found</td>
 <td>~50</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>notes</code></td>
 <td>Four questions, structure, notes, project file, skills</td>
 <td>20–30</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>own</code></td>
 <td>Open lab and close</td>
 <td>30+</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>agents</code></td>
 <td>If asked: the project file, one <code>AGENTS.md</code> for both tools, asking for changes</td>
 <td>10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>github</code></td>
 <td>If asked: git vs GitHub, setup, co-authors, public or private</td>
 <td>10</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>mcp</code></td>
 <td>If asked: connectors (MCP), switching one on, one example each for email, calendar, Drive</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>more</code></td>
 <td>Backup: security, benchmarks, Eco, Concord, prompting; the long capability talk</td>
 <td>as needed</td>
@@ -2547,6 +2553,44 @@ vertical-align: -.125em;
 </ul></li>
 </ul>
 </section>
+<section id="what-it-can-touch" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-can-touch">What it can touch</h2>
+<p>About 20–25 minutes, straight after git: 19 slides, three exercises. New for Strategy: in Finance the room was far more worried about access than expected, and got worked up when the agent opened the PDFs in the cleanup.</p>
+<ul>
+<li><strong>Why Finance got worked up:</strong> since Claude Code 2.1.283 (September), <em>auto</em> is the starting mode for interactive sessions on every plan. Reading files in the folder needs no question, so the agent simply opened the PDFs. Say this out loud: it explains what they saw.</li>
+<li><strong>The stance, plainly:</strong> lots of access, on purpose (my own <code>defaultMode</code> is <code>auto</code>). The 50th “yes” is never read; git makes mistakes cheap; auto mode stops what matters. Restrict the few things that matter, mostly by keeping them out of the folder.</li>
+<li><strong>Exercises:</strong>
+<ol type="1">
+<li><em>Where am I?</em> (2 min): see the mode, Shift+Tab, ask what it may do unasked.</li>
+<li><em>A fence around the interviews</em> (5 min): a deny rule in <code>founders-study</code>, restart, try to read a transcript.</li>
+<li><em>Check your switch</em> (1 min): the training setting on their own account.</li>
+</ol></li>
+<li><strong>What we tried</strong> (20 October, a throwaway folder, <code>claude -p</code> with every prompt refused, so “asks” shows as blocked; Codex <code>exec</code> in <code>workspace-write</code>):
+<ul>
+<li>Claude, manual: reads in the folder and read-only commands (<code>ls</code>, <code>git status</code>) run; reading elsewhere (even via <code>cat</code>), writing, deleting and web pages all ask.</li>
+<li>Claude, auto: edits, Python, reading outside the folder (interactive sessions ask once first, with four choices), a web page, <code>rm -rf data</code>, even <code>git reset --hard &amp;&amp; git clean -fdx</code> went ahead. Posting a file to an outside address was stopped: <em>“denied by the Claude Code auto mode classifier. Reason: [Data Exfiltration]”</em>.</li>
+<li>“Revert to the last commit” also works in auto mode (tested): the classifier weighs what you asked for. The docs list <code>git restore .</code> as blocked by default, so the explicit request is what makes it go.</li>
+<li>Codex sandbox (Linux): reads anywhere, writes in the project and <code>/tmp</code>, a write to the home folder failed (“read-only file system”), network off.</li>
+<li>The deny rule <code>Read(./interviews/**)</code>: blocked Claude’s Read, <code>cat</code>, <code>cp</code> and a Python one-liner, but <code>grep -r Kari .</code> printed the transcript. Hence “a fence, not a wall”.</li>
+</ul></li>
+<li><strong>Sources</strong> (official docs, checked 20 October 2026):
+<ul>
+<li>Permission modes, starting mode, Shift+Tab order, auto mode’s blocked and allowed lists: code.claude.com/docs/en/permission-modes. Auto works on all plans with recent models; Team and Enterprise admins can switch it off.</li>
+<li>Settings files and rule syntax (<code>deny</code>, then <code>ask</code>, then <code>allow</code>): code.claude.com/docs/en/permissions and /settings. On Windows, <code>~/.claude</code> is <code>%USERPROFILE%\.claude</code>.</li>
+<li>Claude’s shell sandbox: off by default, and <em>“On native Windows, Claude Code runs commands unsandboxed”</em> (WSL2 needed). code.claude.com/docs/en/sandboxing.</li>
+<li>Training: one consumer setting covers Claude Code; retention 5 years with training on, 30 days off. code.claude.com/docs/en/data-usage.</li>
+<li>Codex presets (Ask for approval, Approve for me, Full access), the auto-review reviewer agent, permission profiles that can deny reads, the Windows sandbox (elevated and unelevated; unelevated can’t deny reads): learn.chatgpt.com/docs/sandboxing, /permissions, /windows/windows-sandbox.</li>
+<li>ChatGPT: training controls apply to Codex; Business, Edu and Enterprise don’t train by default. help.openai.com, “Using Codex with your ChatGPT plan”.</li>
+</ul></li>
+<li><strong>Handle with care:</strong>
+<ul>
+<li><strong>Labels on the settings pages</strong> (“Help improve Claude”, “Improve the model for everyone”) weren’t verified for October 2026. That’s why the exercise sends people to the page instead of naming the switch. Check your own account before Thursday.</li>
+<li><strong>“It sends what it reads”</strong> is the honest short version, not a guarantee: a command’s output can include many files, and connectors add other data flows.</li>
+<li><strong>Personal data:</strong> don’t claim what BI’s rules say unless you’ve checked. “Your consent forms and data plan decide” is safe.</li>
+</ul></li>
+<li><strong>If someone asks about <code>--dangerously-skip-permissions</code>:</strong> it skips all checks; only for a throwaway machine. Not something to try on a work laptop.</li>
+</ul>
+</section>
 <section id="do-something-tedious" class="level2">
 <h2 class="anchored" data-anchor-id="do-something-tedious">Do something tedious</h2>
 <p>About 25 minutes. The prop is <code>props/decrap-me.zip</code>, a synthetic WISEflow export: 15 group submissions with junk file names, cover sheets, and an empty grade sheet in submission order.</p>
@@ -2694,7 +2738,7 @@ vertical-align: -.125em;
 <section id="github-if-asked" class="level2">
 <h2 class="anchored" data-anchor-id="github-if-asked">GitHub, if asked</h2>
 <ul>
-<li><strong>The deck:</strong> <code>github.html</code>, about 10 minutes; section 11 of the handout.</li>
+<li><strong>The deck:</strong> <code>github.html</code>, about 10 minutes; section 12 of the handout.</li>
 <li><strong>The one-liner:</strong> git is save points on your laptop, GitHub is the copy in the cloud. OneDrive syncs files; GitHub keeps every version and who made it.</li>
 <li><strong>Setup is one prompt</strong> once they have an account: <em>“Install the GitHub command-line tool and log me in.”</em> On Windows the agent runs <code>winget install --id GitHub.cli -e</code>, then <code>gh auth login</code>, which opens the browser. Not tested on a BI-managed laptop; if winget is blocked, the installer is at <a href="https://cli.github.com" class="uri">https://cli.github.com</a>.</li>
 <li><strong>The selling point for finance:</strong> replication packages. A repository archived on Zenodo gets a DOI.</li>
@@ -2719,7 +2763,7 @@ That’s why the rule has to be written down. Then: <em>“Comment: good catch, 
 <li><strong>Ludvik:</strong> <em>“Address Jonas’s comment and push.”</em> <strong>You:</strong> <em>“Merge it.”</em></li>
 <li><strong>Show the pull request page in the browser:</strong> the description, the comment, the commits, the merge. <em>“That page is the whole history of the decision.”</em></li>
 </ol>
-<p><strong>Then the pairs exercise</strong> (deck slide “Exercise: in pairs”, handout section 11), about 15 minutes: A puts a folder on GitHub and adds B; B accepts, downloads, and opens a pull request; A reviews and merges; swap. Everyone needs a GitHub account and <code>gh</code> logged in first, which is the slow part: start that during the demo. Accepting the invitation through the agent goes through the GitHub API (<code>gh api user/repository_invitations</code>); if the agent fumbles, the invitation email has a button.</p>
+<p><strong>Then the pairs exercise</strong> (deck slide “Exercise: in pairs”, handout section 12), about 15 minutes: A puts a folder on GitHub and adds B; B accepts, downloads, and opens a pull request; A reviews and merges; swap. Everyone needs a GitHub account and <code>gh</code> logged in first, which is the slow part: start that during the demo. Accepting the invitation through the agent goes through the GitHub API (<code>gh api user/repository_invitations</code>); if the agent fumbles, the invitation email has a button.</p>
 <p><strong>Optional, if set up beforehand:</strong> comment <code>@claude</code> (or <code>@codex review</code>) on the pull request, and let the room watch a review appear on GitHub. This needs the Claude GitHub app (<code>/install-github-app</code> in Claude Code) or Codex’s GitHub connection on the demo repository. Not yet tested.</p>
 </section>
 </section>

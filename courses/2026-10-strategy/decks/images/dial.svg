@@ -1,0 +1,24 @@
+<svg class="diagram" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A dial with four stops: ask every time, accept edits, auto, skip all checks. Claude Code starts at auto, which is also my setting. Codex's presets: ask for approval, approve for me, full access.">
+<line x1="140" y1="170" x2="1040" y2="170" stroke="#c9c0b2" stroke-width="14" stroke-linecap="round"/>
+<circle cx="140" cy="170" r="16" fill="#17201f" stroke="#f4f0e8" stroke-width="4"/>
+<text x="140" y="232" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">Ask every time</text>
+<text x="140" y="264" text-anchor="middle" font-size="20" font-family="Cascadia Code, Consolas, monospace" fill="#5c6763">manual</text>
+<circle cx="420" cy="170" r="16" fill="#17201f" stroke="#f4f0e8" stroke-width="4"/>
+<text x="420" y="232" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">Accept edits</text>
+<text x="420" y="264" text-anchor="middle" font-size="20" font-family="Cascadia Code, Consolas, monospace" fill="#5c6763">acceptEdits</text>
+<circle cx="720" cy="170" r="24" fill="#f0674d" stroke="#f4f0e8" stroke-width="4"/>
+<text x="720" y="232" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Auto</text>
+<text x="720" y="264" text-anchor="middle" font-size="20" font-family="Cascadia Code, Consolas, monospace" fill="#5c6763">auto</text>
+<circle cx="1040" cy="170" r="16" fill="#17201f" stroke="#f4f0e8" stroke-width="4"/>
+<text x="1040" y="232" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">Skip all checks</text>
+<text x="1040" y="264" text-anchor="middle" font-size="20" font-family="Cascadia Code, Consolas, monospace" fill="#5c6763">bypassPermissions</text>
+<text x="720" y="70" text-anchor="middle" font-size="24" font-weight="800" fill="#b8432d">Claude Code starts here</text>
+<text x="720" y="100" text-anchor="middle" font-size="22" fill="#5c6763">and it’s my setting</text>
+<line x1="720" y1="112" x2="720" y2="140" stroke="#f0674d" stroke-width="3"/>
+<text x="40" y="330" font-size="22" font-weight="800" fill="#5c6763">Codex:</text>
+<text x="280" y="330" text-anchor="middle" font-size="24" fill="#17201f">Ask for approval</text>
+<text x="720" y="330" text-anchor="middle" font-size="24" fill="#17201f">Approve for me</text>
+<text x="1040" y="330" text-anchor="middle" font-size="24" fill="#17201f">Full access</text>
+<text x="140" y="385" font-size="21" fill="#5c6763">← more questions</text>
+<text x="1040" y="385" text-anchor="end" font-size="21" fill="#5c6763">fewer questions →</text>
+</svg>

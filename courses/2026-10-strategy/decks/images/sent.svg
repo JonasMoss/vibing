@@ -1,0 +1,32 @@
+<svg class="diagram" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Your laptop holds twenty files; the agent opened three. What you type plus those three files go to the AI company. The other seventeen stay on your laptop.">
+<defs><marker id="sent-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<text x="40" y="40" font-size="20" font-weight="800" letter-spacing="2" fill="#5c6763">YOUR LAPTOP</text>
+<rect x="40" y="56" width="440" height="300" rx="16" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<path d="M78,82 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M99,82 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M160,82 h21 l9,9 v31 h-30 z" fill="#fbd9d1" stroke="#b8432d" stroke-width="2.5"/><path d="M181,82 v9 h9" fill="none" stroke="#b8432d" stroke-width="2.5"/>
+<path d="M242,82 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M263,82 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M324,82 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M345,82 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M406,82 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M427,82 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M78,148 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M99,148 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M160,148 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M181,148 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M242,148 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M263,148 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M324,148 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M345,148 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M406,148 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M427,148 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M78,214 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M99,214 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M160,214 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M181,214 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M242,214 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M263,214 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M324,214 h21 l9,9 v31 h-30 z" fill="#fbd9d1" stroke="#b8432d" stroke-width="2.5"/><path d="M345,214 v9 h9" fill="none" stroke="#b8432d" stroke-width="2.5"/>
+<path d="M406,214 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M427,214 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M78,280 h21 l9,9 v31 h-30 z" fill="#fbd9d1" stroke="#b8432d" stroke-width="2.5"/><path d="M99,280 v9 h9" fill="none" stroke="#b8432d" stroke-width="2.5"/>
+<path d="M160,280 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M181,280 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M242,280 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M263,280 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M324,280 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M345,280 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<path d="M406,280 h21 l9,9 v31 h-30 z" fill="#fffdf8" stroke="#5c6763" stroke-width="2"/><path d="M427,280 v9 h9" fill="none" stroke="#5c6763" stroke-width="2"/>
+<text x="260" y="390" text-anchor="middle" font-size="23" fill="#5c6763">the other 17 files stay here</text>
+<line x1="500" y1="200" x2="790" y2="200" stroke="#f0674d" stroke-width="6" marker-end="url(#sent-c)"/>
+<text x="645" y="160" text-anchor="middle" font-size="25" font-weight="800" fill="#17201f">what you type</text>
+<text x="645" y="250" text-anchor="middle" font-size="25" font-weight="800" fill="#b8432d">+ the 3 files it opened</text>
+<rect x="810" y="110" width="350" height="180" rx="90" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="985" y="192" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">The AI company</text>
+<text x="985" y="230" text-anchor="middle" font-size="22" fill="#5c6763">Anthropic or OpenAI</text>
+</svg>

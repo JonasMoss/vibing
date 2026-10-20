@@ -1,6 +1,6 @@
 ---
 title: "AI in the terminal"
-subtitle: "The handout · Department of Finance · 16 October 2026"
+subtitle: "The handout · Department of Strategy and Entrepreneurship · 22 and 23 October 2026 · work in progress"
 author: "Jonas Moss, Department of Data Science and Analytics"
 format:
   html:
@@ -297,9 +297,9 @@ Speech-to-text makes long prompts painless, and long prompts get better answers.
 - **What it reads is sent to the AI company.** Treat it like uploading to a cloud
   service. Keep out personal data (students, interview subjects) and confidential
   material.
-- **Tired of approving every step?** Codex: run `codex --full-auto`, which stops
-  asking but stays inside its sandbox. Claude Code: **Shift+Tab** to "accept
-  edits", which approves edits in the folder but still asks before anything else.
+- **How much it does without asking:** Claude Code starts in *auto* mode, where
+  routine work runs and a second model stops risky steps. Codex works inside a
+  sandbox. Both, and how to restrict them: section 3.
 
 # Save points (git)
 
@@ -435,7 +435,104 @@ repositories. This course's page, vibing.jonasmoss.com, is one.
 Publish this folder as a web page with GitHub Pages.
 ```
 
-Setting up GitHub, co-authors and pull requests: section 11.
+Setting up GitHub, co-authors and pull requests: section 12.
+
+# What it can touch
+
+**Claude Code** starts in *auto* mode (since version 2.1.283, on every plan).
+Routine work in your folder runs without asking, and a second model checks the
+risky steps: it lets edits, analyses and web pages through, and stops things like
+sending your files somewhere else. **Codex** works inside a *sandbox*: it can read
+your computer, but it writes only in the project folder and stays off the internet
+unless you say yes.
+
+## What we tried
+
+A throwaway folder on 20 October, Claude Code 2.1.302 and Codex 0.162:
+
+| | Claude, manual | Claude, auto | Codex, sandbox |
+|---|---|---|---|
+| Read files in this folder | yes | yes | yes |
+| Read files elsewhere | asks | asks once | yes |
+| Edit files here | asks | yes | yes |
+| Run a program | asks | yes | yes |
+| Read a web page | asks | yes | asks |
+| Delete a folder | asks | yes (we had git) | yes |
+| Send a file elsewhere | asks | **blocked** | asks |
+
+What leaves your laptop is what you type and what the agent reads. Files it never
+opens stay home.
+
+## Where am I?
+
+In Claude Code the bottom line shows the mode; **Shift+Tab** cycles through
+*manual*, *accept edits*, *plan* and back to *auto*. In Codex, type `/permissions`.
+Then ask:
+
+```{.default .prompt}
+What can you do in this folder without asking me? What would you ask about first?
+```
+
+## Why I give it lots of access
+
+- **The 50th "yes" is never read.** Constant questions train you to click yes.
+- **Git makes mistakes cheap.** Anything in the folder comes back.
+- **Auto mode stops what matters:** your files leaving.
+
+My own setting is auto, everywhere.
+
+## Three ways to say no
+
+1. **Tell it:** *"Don't open the PDFs."* It usually listens.
+2. **A rule:** a settings file. In Claude Code that's `.claude/settings.json` in
+   the project folder; you don't write it, you ask for it. A rule stops the direct
+   ways in, not every way: in our test, a rule kept Claude's own reader, `cat`,
+   `cp` and Python out of `interviews/`, but a search across the whole folder
+   (`grep -r`) still printed a transcript.
+3. **Keep it out:** a file that isn't in the folder (or below it) has nothing to
+   offer. This is the one to use for personal data.
+
+```json
+{
+  "permissions": {
+    "deny": ["Read(./interviews/**)"]
+  }
+}
+```
+
+## Exercise: a fence around the interviews
+
+In `founders-study`, from section 2:
+
+```{.default .prompt}
+Add a rule to this project's settings so you can never read the interview transcripts. Show me the file.
+```
+
+Then `/exit`, start the agent again, and:
+
+```{.default .prompt}
+Read one of the interview transcripts.
+```
+
+Codex: ask the same. It may set up a permissions profile, or say it can't. Either
+answer is useful.
+
+## Your data and training
+
+- **Claude (Pro, Max):** one switch decides whether your chats *and* Claude Code
+  sessions train future models. On, they're kept up to 5 years; off, 30 days.
+  Find it at `claude.ai/settings/data-privacy-controls`.
+- **ChatGPT (Plus, Pro):** your data controls (Settings → Data controls) cover
+  Codex too. Business, Edu and Enterprise plans don't train by default.
+- **Off is not "nothing sent":** the model still has to read your files to work on
+  them. Off means they don't become training data.
+
+## Personal data
+
+Interview transcripts, student work, anything with names is personal data. Your
+consent forms and data plan decide where it may go, not the agent. The simple
+rule: the agent works on pseudonymised copies, and the originals live outside its
+folder.
 
 # Do something tedious
 
@@ -752,7 +849,7 @@ one prompt: *"Run the referees as parallel subagents."*
 - *One page. No summary of the paper.*
 
 Then `/clear` and rerun. If you'll do this for every paper, make the procedure a
-skill (section 9):
+skill (section 10):
 
 ```{.default .prompt}
 Turn reviews/how-to-referee.md into a skill called referee-panel.
@@ -837,7 +934,7 @@ It's slow, and it uses a good part of your usage limit. Start it, then get coffe
 The habit that makes everything else here work: every paper you need sits in the
 project folder, so the agent reads the paper itself instead of searching for it
 again, or relying on its memory of it. Make it a rule in the project file
-(section 9), once:
+(section 10), once:
 
 ```{.default .prompt}
 Add to the project file: papers go in literature/. Whenever we need one, download it there if you can get it. If you can't, give me the DOI so I can.
@@ -1241,7 +1338,7 @@ the latest changes."*
 ## Exercise: in pairs
 
 Both of you need a GitHub account and the GitHub tool (see "Set up, once"). Any
-folder works; the practice folder from section 3 already has its history.
+folder works; the practice folder from section 4 already has its history.
 
 1. **A:**
 

@@ -35,11 +35,12 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
   `scratch/examples/founders-study/make.py`), the cloud, five words, "unsure?
   ask", GitHub and GitHub Pages. Handout section 2; later handout sections and
   deck references renumbered. Facts checked, exercise tested 20 October.
-- [ ] **(c) An access deck right after git:** what it can reach, the permission
-  dial, the auto-classifiers (Claude Code's `auto` mode, Codex's
-  `--approve-for-me`), my stance (lots of access, restrict what matters), the
-  permissions files (`.claude/settings.json`, Codex `config.toml`), privacy.
-  Fact-check before writing.
+- [x] **(c) An access deck right after git** (`decks/access.qmd`, "What it can
+  touch"): 19 slides, three exercises. How far each tool reaches, what leaves the
+  laptop, the dial, auto mode's second model, a matrix of what we tested, my
+  stance, three ways to say no (with the deny-rule gap we found), the training
+  switches, personal data. Handout section 3; later sections renumbered again.
+  Behaviour tested and facts checked 20 October.
 - [ ] **(b) The agent opening the PDFs in the cleanup:** a new practice folder
   (open-access papers to rename and turn into a `.bib`), or keep the exam export
   and make privacy its point. Undecided.
@@ -50,7 +51,8 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
   of setup, a fallback after 15 minutes stuck, install drop-ins (Thursday 11:00,
   Friday 08:30).
 - [ ] **A one-page TA brief** for Ludvik and Leonardo in the teacher notes.
-- [ ] **Handout:** `codex --full-auto` no longer exists (Codex 0.162); replace it.
+- [x] **Handout:** `codex --full-auto` no longer exists (Codex 0.162); the
+  "Working safely" tip now points to section 3.
 - [ ] **Reshape for 2 × 4 hours:** strategy examples, a qualitative example, the
   teaching block, the menu deck's titles, the course page.
 - [ ] **Room:** check that it's booked.

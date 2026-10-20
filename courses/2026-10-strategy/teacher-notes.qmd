@@ -1,6 +1,6 @@
 ---
 title: "Teacher notes"
-subtitle: "AI in the terminal · Department of Finance · Friday 16 October 2026"
+subtitle: "AI in the terminal · Department of Strategy and Entrepreneurship · 22 and 23 October 2026 · work in progress"
 format:
   html:
     theme: [cosmo, docs.scss]
@@ -45,6 +45,7 @@ slides.
 | `how` | What an LLM is (training: pre-training, feedback, RL; use: thinking), prompt engineering (RIP), what an agent is, usage limits | 6 |
 | `setup` | Install, log in, git (required), which model and limits, first contact | 45 |
 | `git` | Save points: what git is, where it comes from (timeline, two charts), for the agent, vs OneDrive, .gitignore, the cloud, five words, ask about the rest, GitHub and Pages. Four exercises | 30–35 |
+| `access` | What it can touch: how far each tool reaches, what leaves the laptop, the dial, auto mode, what we tried, why lots of access, three ways to say no, training switches, personal data. Three exercises | 20–25 |
 | `cleanup` | Do something tedious: the WISEflow export, with a git save point and an undo | 25 |
 | `knows` | Context, who is asking, the Berger demo, does it matter in your field, how you work, your profile | 20 |
 | `paper` | Take a paper apart; ends on the afternoon choice | 50 |
@@ -249,6 +250,72 @@ couldn't see how git differs from Dropbox or OneDrive.
     training unless you opt out (since 24 April 2026).
   - **Git inside OneDrive** is advice, not established fact: no official
     Microsoft or git source was found that says it breaks.
+
+## What it can touch
+
+About 20–25 minutes, straight after git: 19 slides, three exercises. New for
+Strategy: in Finance the room was far more worried about access than expected, and
+got worked up when the agent opened the PDFs in the cleanup.
+
+- **Why Finance got worked up:** since Claude Code 2.1.283 (September), *auto* is
+  the starting mode for interactive sessions on every plan. Reading files in the
+  folder needs no question, so the agent simply opened the PDFs. Say this out loud:
+  it explains what they saw.
+- **The stance, plainly:** lots of access, on purpose (my own `defaultMode` is
+  `auto`). The 50th "yes" is never read; git makes mistakes cheap; auto mode stops
+  what matters. Restrict the few things that matter, mostly by keeping them out of
+  the folder.
+- **Exercises:**
+  1. *Where am I?* (2 min): see the mode, Shift+Tab, ask what it may do unasked.
+  2. *A fence around the interviews* (5 min): a deny rule in `founders-study`,
+     restart, try to read a transcript.
+  3. *Check your switch* (1 min): the training setting on their own account.
+- **What we tried** (20 October, a throwaway folder, `claude -p` with every
+  prompt refused, so "asks" shows as blocked; Codex `exec` in `workspace-write`):
+  - Claude, manual: reads in the folder and read-only commands (`ls`,
+    `git status`) run; reading elsewhere (even via `cat`), writing, deleting and
+    web pages all ask.
+  - Claude, auto: edits, Python, reading outside the folder (interactive sessions
+    ask once first, with four choices), a web page, `rm -rf data`, even
+    `git reset --hard && git clean -fdx` went ahead. Posting a file to an outside
+    address was stopped: *"denied by the Claude Code auto mode classifier.
+    Reason: [Data Exfiltration]"*.
+  - "Revert to the last commit" also works in auto mode (tested): the classifier
+    weighs what you asked for. The docs list `git restore .` as blocked by
+    default, so the explicit request is what makes it go.
+  - Codex sandbox (Linux): reads anywhere, writes in the project and `/tmp`, a
+    write to the home folder failed ("read-only file system"), network off.
+  - The deny rule `Read(./interviews/**)`: blocked Claude's Read, `cat`, `cp` and
+    a Python one-liner, but `grep -r Kari .` printed the transcript. Hence "a
+    fence, not a wall".
+- **Sources** (official docs, checked 20 October 2026):
+  - Permission modes, starting mode, Shift+Tab order, auto mode's blocked and
+    allowed lists: code.claude.com/docs/en/permission-modes. Auto works on all
+    plans with recent models; Team and Enterprise admins can switch it off.
+  - Settings files and rule syntax (`deny`, then `ask`, then `allow`):
+    code.claude.com/docs/en/permissions and /settings. On Windows,
+    `~/.claude` is `%USERPROFILE%\.claude`.
+  - Claude's shell sandbox: off by default, and *"On native Windows, Claude Code
+    runs commands unsandboxed"* (WSL2 needed). code.claude.com/docs/en/sandboxing.
+  - Training: one consumer setting covers Claude Code; retention 5 years with
+    training on, 30 days off. code.claude.com/docs/en/data-usage.
+  - Codex presets (Ask for approval, Approve for me, Full access), the
+    auto-review reviewer agent, permission profiles that can deny reads, the
+    Windows sandbox (elevated and unelevated; unelevated can't deny reads):
+    learn.chatgpt.com/docs/sandboxing, /permissions, /windows/windows-sandbox.
+  - ChatGPT: training controls apply to Codex; Business, Edu and Enterprise don't
+    train by default. help.openai.com, "Using Codex with your ChatGPT plan".
+- **Handle with care:**
+  - **Labels on the settings pages** ("Help improve Claude", "Improve the model for
+    everyone") weren't verified for October 2026. That's why the exercise sends
+    people to the page instead of naming the switch. Check your own account
+    before Thursday.
+  - **"It sends what it reads"** is the honest short version, not a guarantee: a
+    command's output can include many files, and connectors add other data flows.
+  - **Personal data:** don't claim what BI's rules say unless you've checked.
+    "Your consent forms and data plan decide" is safe.
+- **If someone asks about `--dangerously-skip-permissions`:** it skips all checks;
+  only for a throwaway machine. Not something to try on a work laptop.
 
 ## Do something tedious
 
@@ -463,7 +530,7 @@ Not taught. One slide at the end of the `notes` deck (`notes.html#/skills`) and 
 
 ## GitHub, if asked
 
-- **The deck:** `github.html`, about 10 minutes; section 11 of the handout.
+- **The deck:** `github.html`, about 10 minutes; section 12 of the handout.
 - **The one-liner:** git is save points on your laptop, GitHub is the copy in the
   cloud. OneDrive syncs files; GitHub keeps every version and who made it.
 - **Setup is one prompt** once they have an account: *"Install the GitHub
@@ -520,7 +587,7 @@ into this folder."*
 5. **Show the pull request page in the browser:** the description, the comment,
    the commits, the merge. *"That page is the whole history of the decision."*
 
-**Then the pairs exercise** (deck slide "Exercise: in pairs", handout section 11),
+**Then the pairs exercise** (deck slide "Exercise: in pairs", handout section 12),
 about 15 minutes: A puts a folder on GitHub and adds B; B accepts, downloads, and
 opens a pull request; A reviews and merges; swap. Everyone needs a GitHub account
 and `gh` logged in first, which is the slow part: start that during the demo.
