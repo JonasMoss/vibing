@@ -24,6 +24,9 @@
   a.course.wip { border-style: dashed; }
   .badge { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 6px; background: var(--ink);
            color: #f1c84b; font-size: 12px; font-weight: 800; letter-spacing: 1px; vertical-align: middle; }
+  h2.group { margin: 34px 0 12px; color: var(--muted); font-size: 13px; font-weight: 800;
+             letter-spacing: 1.5px; text-transform: uppercase; }
+  .sub + h2.group { margin-top: 0; }
   footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
   .head { display: flex; align-items: center; gap: 18px; margin: 0 0 8px; }
   .head h1 { margin: 0; }
@@ -48,10 +51,7 @@
   </div>
   <p class="sub">Claude Code and Codex for research and teaching · BI Norwegian Business School · Jonas Moss</p>
 
-  <a class="course" href="courses/2026-10-finance/index.html">
-    <b>Finance</b>
-    <span>Fri 16 October 2026 · slides, handout, course files</span>
-  </a>
+  <h2 class="group">Upcoming</h2>
   <a class="course wip" href="courses/2026-10-strategy/index.html">
     <b>Strategy and Entrepreneurship <span class="badge">WIP</span></b>
     <span>Thu 22 and Fri 23 October 2026 · work in progress, a preview</span>
@@ -61,9 +61,19 @@
     <span>Thu 3 December 2026 · in preparation</span>
   </div>
   <div class="course">
+    <b>Economics</b>
+    <span>Fri 4 December 2026 (to be confirmed) · in preparation</span>
+  </div>
+  <div class="course">
     <b>All faculty</b>
     <span>January 2027 · in preparation</span>
   </div>
+
+  <h2 class="group">Finished</h2>
+  <a class="course" href="courses/2026-10-finance/index.html">
+    <b>Finance</b>
+    <span>Fri 16 October 2026 · slides, handout, course files</span>
+  </a>
 
   <footer>Questions: jonas.moss@bi.no</footer>
 </div>

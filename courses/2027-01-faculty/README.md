@@ -24,7 +24,7 @@ Analytics for faculty from every department.
 
 ## Starting material
 
-- Copy forward from the latest department course (Marketing).
+- Copy forward from the latest department course (Economics, December).
 - The teaching day and the rest of the three-day plan are in
   `scratch/august-course/` and the matching decks, handouts and examples in
   `scratch/`.

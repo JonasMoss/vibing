@@ -43,6 +43,7 @@ departments asked for different things.
 | `courses/2026-10-finance/` | Fri 16 Oct 2026 | 1 day, 6 h |
 | `courses/2026-10-strategy/` | Thu 22 + Fri 23 Oct 2026 | 2 × 4 h |
 | `courses/2026-12-marketing/` | Thu 3 Dec 2026 | 4 h |
+| `courses/2026-12-economics/` | Fri 4 Dec 2026 (to be confirmed) | not known |
 | `courses/2027-01-faculty/` | January 2027 | probably 3 days |
 
 Common to every run:
