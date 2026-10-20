@@ -1,0 +1,20 @@
+# Shared settings for every deck in this folder. A deck's own front matter
+# overrides these. Each deck renders to one self-contained .html.
+date-format: "D MMMM YYYY"
+format:
+  revealjs:
+    theme: [default, slides.scss]
+    embed-resources: true
+    width: 1280
+    height: 800
+    margin: 0.06
+    center: false
+    hash: true
+    slide-number: c/t
+    transition: none
+    code-overflow: wrap
+    code-line-numbers: false
+    footer: "[Menu](menu.html)"
+    menu:
+      side: left
+      numbers: true

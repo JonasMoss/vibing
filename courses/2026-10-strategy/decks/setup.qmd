@@ -1,0 +1,125 @@
+---
+pagetitle: "Get it running"
+---
+
+# Get it running {#setup background-color="#f0674d"}
+
+Install, git, log in, first contact. Nobody is behind: everyone starts from zero.
+
+## Install, step by step {#install}
+
+1. **Start** → type `powershell` → **Windows PowerShell** (not "x86").
+2. Paste the lines for your tool. Wait 1–3 minutes.
+
+```powershell
+# Claude (both lines):
+irm https://claude.ai/install.ps1 | iex
+[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path","User") + ";$env:USERPROFILE\.local\bin", "User")
+# ChatGPT:
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+```
+
+3. **Close PowerShell and open it again.** This step matters.
+4. Check: `claude --version` or `codex --version` shows a number.
+
+## Log in {#login}
+
+5. Type `claude` or `codex`. Your browser opens: log in with the account you pay for.
+   Codex: choose **Sign in with ChatGPT**.
+6. Ask it: *what files are in this folder?* It answers in plain English: you're done.
+7. To quit: `/exit`.
+
+Mac, and everything that can go wrong: **handout, section 1**.
+
+## Stuck?
+
+- **"not recognized"**: close PowerShell, open a fresh one, try again.
+- **Claude Code**: run `claude doctor`. It often names the problem.
+- **Codex asks for administrator approval or a "sandbox"**: choose to continue
+  **without** elevated setup. Codex works fine that way.
+- **Download blocked or hanging**: that's the network or security software. Hand up.
+- **No subscription**: pair up with your neighbour today.
+
+## Git: save points
+
+Git lets the agent save a snapshot before it changes anything, so nothing is ever
+lost. **Everyone installs it.** You never type git commands; you ask.
+
+```powershell
+winget install --id Git.Git -e --source winget
+```
+
+- Click **Yes** when Windows asks. Then close PowerShell, open it again, and check
+  `git --version`.
+- **No admin rights?** Start the agent and ask: *"Install the portable version of
+  Git for Windows in my user folder, without admin rights, and put it on my PATH."*
+- Mac: type `git --version`; if it offers to install tools, click Install.
+
+## Which model
+
+| | Claude Code | Codex |
+|---|---|---|
+| **Good** | **Opus**, Fable | **Sol**, Astra |
+| **Fast** | Sonnet, Haiku | Luna |
+
+- **Opus** and **Sol** by default. Fable and Astra are stronger still, and very
+  expensive: they eat your limit fast.
+- **Fast** is for massive amounts of repetitive, easy work. **Luna is very cheap.**
+  Haiku is cheap, but not at Luna's level.
+- Switch with `/model`.
+
+## The terminal: all you need {#terminal}
+
+:::: {.columns .cheat}
+::: {.column width="50%"}
+**Moving around**
+
+| | |
+|---|---|
+| `cd name` | go into a folder |
+| `cd ..` | back out |
+| `ls` | what's here? |
+| `mkdir name` | make a folder |
+| `explorer .` | open it as a window |
+| `claude` | start the agent here |
+:::
+::: {.column width="50%"}
+**Keys**
+
+| | |
+|---|---|
+| **Tab** | finish the name |
+| **↑** | last command again |
+| **Ctrl+V** | paste |
+| **Ctrl+C** | stop |
+| **Ctrl+L** | clear the screen |
+| **Esc** | interrupt the agent |
+:::
+::::
+
+[No `cd` needed: right-click a folder → **Open in Terminal**. Mac: drag the folder
+onto Terminal in the Dock; `open .`; **Cmd+V**.]{.small .muted}
+
+## First contact
+
+```powershell
+mkdir practice
+cd practice
+explorer .    # the same folder, as a window (Mac: open .)
+claude        # or: codex
+```
+
+::: {.prompt}
+What files can you see here? Do not change anything.
+:::
+
+Then: **ask it to make a file, read it back to you, and delete it.** Done? You've
+used an AI agent on your own machine.
+
+Talk instead of typing: **Windows key + H** (Mac: press **Fn** twice).
+
+## Finished first?
+
+**You're the help desk.** Get your neighbour running.
+
+You'll learn more fixing someone else's laptop than watching your own succeed.

@@ -1,0 +1,16 @@
+<svg class="diagram" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Your folder goes to a fresh agent after /clear, like a new co-author, which reruns everything from scratch. Same numbers: done. Not the same: ask what's missing, fix the README, and run the test again.">
+<defs><marker id="rt-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="rt-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="10" y="30" width="260" height="110" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/><text x="140" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Your folder</text><text x="140" y="114" text-anchor="middle" font-size="21" fill="#5c6763">README, scripts, data</text>
+<line x1="270" y1="85" x2="312" y2="85" stroke="#17201f" stroke-width="4" marker-end="url(#rt-a)"/>
+<rect x="320" y="30" width="260" height="110" rx="14" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/><text x="450" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">/clear</text><text x="450" y="114" text-anchor="middle" font-size="21" fill="#5c6763">like a new co-author</text>
+<line x1="580" y1="85" x2="622" y2="85" stroke="#17201f" stroke-width="4" marker-end="url(#rt-a)"/>
+<rect x="630" y="30" width="260" height="110" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/><text x="760" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Rerun</text><text x="760" y="114" text-anchor="middle" font-size="21" fill="#5c6763">everything, from scratch</text>
+<g class="fragment" data-fragment-index="1">
+<line x1="890" y1="85" x2="932" y2="85" stroke="#f0674d" stroke-width="4" marker-end="url(#rt-c)"/>
+<rect x="940" y="30" width="250" height="110" rx="14" fill="#f0674d" stroke="#17201f" stroke-width="3"/><text x="1065" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Same numbers</text><text x="1065" y="114" text-anchor="middle" font-size="21" fill="#17201f">done</text>
+</g>
+<g class="fragment" data-fragment-index="2">
+<polyline points="760,140 760,230 140,230 140,148" fill="none" stroke="#17201f" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#rt-a)"/>
+<text x="450" y="274" text-anchor="middle" font-size="24" font-weight="800" fill="#17201f">Not the same?</text><text x="450" y="306" text-anchor="middle" font-size="21" fill="#5c6763">Ask what's missing, fix the README, run the test again.</text>
+</g>
+</svg>

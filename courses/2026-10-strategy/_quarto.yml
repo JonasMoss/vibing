@@ -1,0 +1,11 @@
+# Render settings for this course only. From the repo root:
+#   quarto render courses/2026-10-finance
+# Every document renders to one self-contained .html next to it. Only the
+# files listed here are rendered, so README.md, invite.md and props are left
+# alone. Shared deck settings live in decks/_metadata.yml.
+project:
+  type: default
+  render:
+    - decks/*.qmd
+    - handout.qmd
+    - teacher-notes.qmd

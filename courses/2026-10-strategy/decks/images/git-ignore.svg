@@ -1,0 +1,15 @@
+<svg class="diagram" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Two boxes. Saved in git: your writing, your code, your notes, small clean data. Kept out by .gitignore: personal data, passwords and keys, big files, other people's PDFs, junk files.">
+<rect x="40" y="30" width="500" height="330" rx="20" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="80" y="90" font-size="34" font-weight="800" fill="#17201f">Saved in git</text>
+<rect x="640" y="30" width="520" height="330" rx="20" fill="#fffdf8" stroke="#f0674d" stroke-width="4" stroke-dasharray="12 8"/>
+<text x="680" y="90" font-size="34" font-weight="800" fill="#b8432d">Kept out: .gitignore</text>
+<circle cx="92" cy="141" r="9" fill="#17201f"/><text x="116" y="150" font-size="28" fill="#17201f">your writing</text>
+<circle cx="92" cy="193" r="9" fill="#17201f"/><text x="116" y="202" font-size="28" fill="#17201f">your code</text>
+<circle cx="92" cy="245" r="9" fill="#17201f"/><text x="116" y="254" font-size="28" fill="#17201f">your notes</text>
+<circle cx="92" cy="297" r="9" fill="#17201f"/><text x="116" y="306" font-size="28" fill="#17201f">small, clean data</text>
+<circle cx="692" cy="137" r="9" fill="#fffdf8" stroke="#f0674d" stroke-width="3"/><text x="716" y="146" font-size="28" fill="#17201f">personal data</text>
+<circle cx="692" cy="183" r="9" fill="#fffdf8" stroke="#f0674d" stroke-width="3"/><text x="716" y="192" font-size="28" fill="#17201f">passwords and keys</text>
+<circle cx="692" cy="229" r="9" fill="#fffdf8" stroke="#f0674d" stroke-width="3"/><text x="716" y="238" font-size="28" fill="#17201f">big files</text>
+<circle cx="692" cy="275" r="9" fill="#fffdf8" stroke="#f0674d" stroke-width="3"/><text x="716" y="284" font-size="28" fill="#17201f">other people's PDFs</text>
+<circle cx="692" cy="321" r="9" fill="#fffdf8" stroke="#f0674d" stroke-width="3"/><text x="716" y="330" font-size="28" fill="#17201f">junk files</text>
+</svg>

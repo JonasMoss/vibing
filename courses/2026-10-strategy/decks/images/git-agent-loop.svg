@@ -1,0 +1,24 @@
+<svg class="diagram" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A flow: commit, then the agent works on 40 files in 30 seconds, then you ask what changed. Like it: commit. Hate it: revert.">
+<defs><marker id="loop-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="loop-arrow-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="20" y="100" width="210" height="100" rx="16" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="125" y="146" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Commit</text>
+<text x="125" y="178" text-anchor="middle" font-size="22" fill="#5c6763">a save point</text>
+<line x1="236" y1="150" x2="292" y2="150" stroke="#17201f" stroke-width="4" marker-end="url(#loop-arrow)"/>
+<rect x="300" y="100" width="300" height="100" rx="16" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="450" y="146" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">The agent works</text>
+<text x="450" y="178" text-anchor="middle" font-size="22" fill="#5c6763">40 files, 30 seconds</text>
+<line x1="606" y1="150" x2="652" y2="150" stroke="#17201f" stroke-width="4" marker-end="url(#loop-arrow)"/>
+<rect x="660" y="100" width="270" height="100" rx="16" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="795" y="146" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">“What changed?”</text>
+<text x="795" y="178" text-anchor="middle" font-size="22" fill="#5c6763">every file, every line</text>
+<g class="fragment" data-fragment-index="1">
+<path d="M 936 135 C 960 135, 960 75, 982 75" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#loop-arrow)"/>
+<rect x="990" y="30" width="190" height="90" rx="16" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="1085" y="70" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">Like it?</text>
+<text x="1085" y="102" text-anchor="middle" font-size="22" fill="#5c6763">commit</text>
+<path d="M 936 165 C 960 165, 960 225, 982 225" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#loop-arrow-coral)"/>
+<rect x="990" y="180" width="190" height="90" rx="16" fill="#fffdf8" stroke="#f0674d" stroke-width="3"/>
+<text x="1085" y="220" text-anchor="middle" font-size="26" font-weight="800" fill="#b8432d">Hate it?</text>
+<text x="1085" y="252" text-anchor="middle" font-size="22" fill="#5c6763">revert</text>
+</g>
+</svg>

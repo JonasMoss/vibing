@@ -1,0 +1,77 @@
+---
+pagetitle: "The project file"
+---
+
+# The project file {#agents background-color="#f0674d"}
+
+`AGENTS.md`: tell it about your project once, instead of every time.
+
+## Two files, one idea
+
+| | About | Read |
+|---|---|---|
+| **Your profile** | You: field, school, pet peeves | in every project |
+| **Project file** | This folder: the paper, the data, the rules | when it starts in this folder |
+
+- The chat apps have the same pair: custom instructions, and project instructions.
+- Both are plain text. Open them in Notepad and edit them yourself.
+
+## One file: AGENTS.md
+
+- **Codex** and **Claude Code** both read `AGENTS.md` in the folder you start them in.
+- One catch: if there's a `CLAUDE.md` there too, Claude Code reads that instead. So
+  keep one file, `AGENTS.md`.
+- Both also read project files in the folders **above** where you start them. So
+  start the agent in the project folder, not somewhere above it.
+
+## Getting one, and changing it
+
+You don't write it yourself. You ask:
+
+::: {.prompt}
+Write an AGENTS.md for this folder: what the project is, where things go, and the
+rules you should follow. Show me first.
+:::
+
+Changes go the same way:
+
+::: {.prompt}
+Add to AGENTS.md: never edit anything in data/raw.
+:::
+
+**Then read it.** The first draft describes the folder. Only you know the rules.
+
+## What goes in
+
+- **What this is**, in one paragraph: the paper, the question, the data.
+- **Where things go**: *"Raw data in data/raw. Papers in literature/. The paper is LaTeX, in paper/."*
+- **The rules**: *"Never edit data/raw." "Download papers into literature/; if you
+  can't, give me the DOI." "Only cite references with a verified DOI."*
+- **How to rerun it**: the one command that rebuilds the results.
+
+**Keep out:** what it can see for itself (the file list), essays, passwords, and
+anything about *you*. That goes in your profile.
+
+## The habit that pays off
+
+Corrected it twice about the same thing? Then:
+
+::: {.prompt}
+Add that to the project file.
+:::
+
+- Every correction you write down is one you never make again.
+- Short beats long: it's read at every start.
+- When it's wrong, fix the file, not the conversation.
+
+## A real one
+
+This course's own `AGENTS.md`. Every agent that works on the course reads it
+first. Four of its rules:
+
+- **Lead with capability, not caveats.** Show the impressive thing first.
+- **Strong opinions, weak terminal skills.** Assume zero shell knowledge.
+- Handouts must give **Windows (PowerShell) commands first**, macOS second.
+- **A held course is frozen.** Change nothing in it after it's taught.
+
+164 lines, and every one of them is something it no longer has to be told.

@@ -1,0 +1,27 @@
+<svg class="diagram" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Bar chart. Version control used by professional developers, Stack Overflow survey 2022: Git 96.7 percent, SVN 6.0 percent, none 1.4 percent, Mercurial 1.2 percent.">
+<line x1="330" y1="20" x2="330" y2="280" stroke="#d9d1c4" stroke-width="1"/>
+<g><title>Git: 96.65%</title>
+<rect x="0" y="20" width="1200" height="60" fill="transparent"/>
+<text x="312" y="59" text-anchor="end" font-size="30" font-weight="800" fill="#17201f">Git</text>
+<path d="M330,38.0 H1060.5 Q1064.5,38.0 1064.5,42.0 V58.0 Q1064.5,62.0 1060.5,62.0 H330 Z" fill="#d4492f"/>
+<text x="1078.5" y="59" font-size="30" font-weight="800" fill="#17201f">96.7%</text>
+</g>
+<g><title>SVN: 5.96%</title>
+<rect x="0" y="86" width="1200" height="60" fill="transparent"/>
+<text x="312" y="125" text-anchor="end" font-size="26" font-weight="400" fill="#17201f">SVN</text>
+<path d="M330,104.0 H371.3 Q375.3,104.0 375.3,108.0 V124.0 Q375.3,128.0 371.3,128.0 H330 Z" fill="#8f877b"/>
+<text x="389.3" y="125" font-size="24" font-weight="400" fill="#5c6763">6.0%</text>
+</g>
+<g><title>I don't use one: 1.38%</title>
+<rect x="0" y="152" width="1200" height="60" fill="transparent"/>
+<text x="312" y="191" text-anchor="end" font-size="26" font-weight="400" fill="#17201f">I don't use one</text>
+<path d="M330,170.0 H336.5 Q340.5,170.0 340.5,174.0 V190.0 Q340.5,194.0 336.5,194.0 H330 Z" fill="#8f877b"/>
+<text x="354.5" y="191" font-size="24" font-weight="400" fill="#5c6763">1.4%</text>
+</g>
+<g><title>Mercurial: 1.22%</title>
+<rect x="0" y="218" width="1200" height="60" fill="transparent"/>
+<text x="312" y="257" text-anchor="end" font-size="26" font-weight="400" fill="#17201f">Mercurial</text>
+<path d="M330,236.0 H335.3 Q339.3,236.0 339.3,240.0 V256.0 Q339.3,260.0 335.3,260.0 H330 Z" fill="#8f877b"/>
+<text x="353.3" y="257" font-size="24" font-weight="400" fill="#5c6763">1.2%</text>
+</g>
+</svg>

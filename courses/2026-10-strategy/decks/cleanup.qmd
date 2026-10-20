@@ -1,0 +1,51 @@
+---
+pagetitle: "Clean up a messy folder"
+---
+
+# Do something tedious {#cleanup background-color="#f0674d"}
+
+A messy folder, on your own machine. The job a chat window can't do.
+
+## The folder
+
+An exam export, the way it comes out of WISEflow:
+
+- 15 group submissions, each in a folder named like `[3-2048892] - Group 1`.
+- Inside: a cover sheet, and an "Appendix material" folder with files called
+  `EKSAMEN.pdf`, `final.pbix`, `dashboard_v3_FINAL.pbix`…
+- An empty grade sheet, in a different order from everything else.
+
+Synthetic, so safe. You'd normally spend half an hour clicking through it.
+
+## Get it, and save a point
+
+1. In your `practice` folder, paste the **download prompt from the handout,
+   section 3**. It fetches `decrap-me.zip` and unzips it.
+2. Then, **before it changes anything**:
+
+::: {.prompt}
+Set up git here and commit everything.
+:::
+
+First time? *"Set up git with my name, …, and my email, …"*
+
+**Now it can't do anything you can't undo.**
+
+## Clean it up
+
+1. *"What's in decrap-me? What would annoy a teacher about it? Don't change anything."*
+2. ***"Reorganise it so I can grade quickly: one folder per group, files named
+   by group and what they are, and the grade sheet sorted by group. Show me the
+   plan first."***
+3. **Argue with the plan.** Change at least one thing. You're the boss.
+4. *"Go ahead."*
+5. *"Make a grading table: group, participant ID, report file, dashboard file, and an empty column for the mark."*
+
+## What changed, and the undo
+
+- *"What changed since the last commit?"* Every move and rename, listed.
+- *"Commit."*
+- Now be bold: *"Delete the Marking guidance folder."* Gone?
+- *"Revert to the last commit."* It's back.
+
+> Save point first, then courage.

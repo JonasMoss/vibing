@@ -1,7 +1,8 @@
 # AI in the terminal — Department of Strategy and Entrepreneurship
 
-**Status: not started.** Build after the Finance course has been taught, by
-copying forward from `courses/2026-10-finance/`.
+**Status: in preparation.** Copied forward from Finance on 20 October. Titles,
+examples and the run sheet are still Finance's until reworked; see the checklist
+below.
 
 ## Facts
 
@@ -21,6 +22,38 @@ copying forward from `courses/2026-10-finance/`.
   Grøgaard (head of department), Siri Johnsen (DS administration).
 
 The invitation as sent is `invite.md` (`invite.docx` is the Word copy).
+
+## Changes from Finance (tentative plan)
+
+From the Finance debrief (`courses/2026-10-finance/debrief.md`). More notes may
+follow. TAs: Ludvik Slipersæter and Leonardo.
+
+- [x] **(a) A mandatory git deck right after setup** (`decks/git.qmd`, "Save
+  points"): 25 short slides and four exercises. What git is, where it comes from
+  (timeline, two charts), why it's mainly for the agent, OneDrive vs git, a
+  `.gitignore` exercise on a new prop (`props/founders-study.zip`, built by
+  `scratch/examples/founders-study/make.py`), the cloud, five words, "unsure?
+  ask", GitHub and GitHub Pages. Handout section 2; later handout sections and
+  deck references renumbered. Facts checked, exercise tested 20 October.
+- [ ] **(c) An access deck right after git:** what it can reach, the permission
+  dial, the auto-classifiers (Claude Code's `auto` mode, Codex's
+  `--approve-for-me`), my stance (lots of access, restrict what matters), the
+  permissions files (`.claude/settings.json`, Codex `config.toml`), privacy.
+  Fact-check before writing.
+- [ ] **(b) The agent opening the PDFs in the cleanup:** a new practice folder
+  (open-access papers to rename and turn into a `.bib`), or keep the exam export
+  and make privacy its point. Undecided.
+- [ ] **(d) Level differences and derailments:** TAs take questions about one
+  laptop; a parking-lot board with fixed question slots; a quick-answers deck; a
+  "Done early?" task on every exercise.
+- [ ] **(e) Nobody sits idle:** sticky notes, a TA check of every laptop at the end
+  of setup, a fallback after 15 minutes stuck, install drop-ins (Thursday 11:00,
+  Friday 08:30).
+- [ ] **A one-page TA brief** for Ludvik and Leonardo in the teacher notes.
+- [ ] **Handout:** `codex --full-auto` no longer exists (Codex 0.162); replace it.
+- [ ] **Reshape for 2 × 4 hours:** strategy examples, a qualitative example, the
+  teaching block, the menu deck's titles, the course page.
+- [ ] **Room:** check that it's booked.
 
 ## Open questions from email
 

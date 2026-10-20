@@ -1,0 +1,63 @@
+<svg class="diagram" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Left, OneDrive or Dropbox: four files, each with its own scattered versions saved automatically. Right, git: three save points, each a snapshot of all four files at once, each with a note.">
+<text x="40" y="50" font-size="32" font-weight="800" fill="#17201f">OneDrive, Dropbox</text>
+<text x="660" y="50" font-size="32" font-weight="800" fill="#17201f">git</text>
+<text x="40" y="118" font-size="22" fill="#5c6763">draft.docx</text>
+<line x1="200" y1="110" x2="545" y2="110" stroke="#c9c0b2" stroke-width="2"/>
+<circle cx="230" cy="110" r="8" fill="#5c6763"/>
+<circle cx="262" cy="110" r="8" fill="#5c6763"/>
+<circle cx="300" cy="110" r="8" fill="#5c6763"/>
+<circle cx="355" cy="110" r="8" fill="#5c6763"/>
+<circle cx="410" cy="110" r="8" fill="#5c6763"/>
+<circle cx="470" cy="110" r="8" fill="#5c6763"/>
+<circle cx="505" cy="110" r="8" fill="#5c6763"/>
+<text x="660" y="118" font-size="22" fill="#5c6763">draft.docx</text>
+<line x1="820" y1="110" x2="1165" y2="110" stroke="#c9c0b2" stroke-width="2"/>
+<text x="40" y="178" font-size="22" fill="#5c6763">interviews/</text>
+<line x1="200" y1="170" x2="545" y2="170" stroke="#c9c0b2" stroke-width="2"/>
+<circle cx="250" cy="170" r="8" fill="#5c6763"/>
+<circle cx="330" cy="170" r="8" fill="#5c6763"/>
+<circle cx="345" cy="170" r="8" fill="#5c6763"/>
+<circle cx="440" cy="170" r="8" fill="#5c6763"/>
+<circle cx="520" cy="170" r="8" fill="#5c6763"/>
+<text x="660" y="178" font-size="22" fill="#5c6763">interviews/</text>
+<line x1="820" y1="170" x2="1165" y2="170" stroke="#c9c0b2" stroke-width="2"/>
+<text x="40" y="238" font-size="22" fill="#5c6763">data.xlsx</text>
+<line x1="200" y1="230" x2="545" y2="230" stroke="#c9c0b2" stroke-width="2"/>
+<circle cx="215" cy="230" r="8" fill="#5c6763"/>
+<circle cx="290" cy="230" r="8" fill="#5c6763"/>
+<circle cx="380" cy="230" r="8" fill="#5c6763"/>
+<circle cx="395" cy="230" r="8" fill="#5c6763"/>
+<circle cx="460" cy="230" r="8" fill="#5c6763"/>
+<circle cx="530" cy="230" r="8" fill="#5c6763"/>
+<text x="660" y="238" font-size="22" fill="#5c6763">data.xlsx</text>
+<line x1="820" y1="230" x2="1165" y2="230" stroke="#c9c0b2" stroke-width="2"/>
+<text x="40" y="298" font-size="22" fill="#5c6763">table2.csv</text>
+<line x1="200" y1="290" x2="545" y2="290" stroke="#c9c0b2" stroke-width="2"/>
+<circle cx="270" cy="290" r="8" fill="#5c6763"/>
+<circle cx="360" cy="290" r="8" fill="#5c6763"/>
+<circle cx="430" cy="290" r="8" fill="#5c6763"/>
+<circle cx="490" cy="290" r="8" fill="#5c6763"/>
+<text x="660" y="298" font-size="22" fill="#5c6763">table2.csv</text>
+<line x1="820" y1="290" x2="1165" y2="290" stroke="#c9c0b2" stroke-width="2"/>
+<rect x="858" y="86" width="44" height="228" rx="22" fill="#f0674d" fill-opacity="0.16"/>
+<circle cx="880" cy="110" r="9" fill="#17201f"/>
+<circle cx="880" cy="170" r="9" fill="#17201f"/>
+<circle cx="880" cy="230" r="9" fill="#17201f"/>
+<circle cx="880" cy="290" r="9" fill="#17201f"/>
+<text x="880" y="346" text-anchor="middle" font-size="21" font-weight="700" fill="#17201f">“Coded”</text>
+<rect x="978" y="86" width="44" height="228" rx="22" fill="#f0674d" fill-opacity="0.16"/>
+<circle cx="1000" cy="110" r="9" fill="#17201f"/>
+<circle cx="1000" cy="170" r="9" fill="#17201f"/>
+<circle cx="1000" cy="230" r="9" fill="#17201f"/>
+<circle cx="1000" cy="290" r="9" fill="#17201f"/>
+<text x="1000" y="346" text-anchor="middle" font-size="21" font-weight="700" fill="#17201f">“Table 2”</text>
+<rect x="1098" y="86" width="44" height="228" rx="22" fill="#f0674d" fill-opacity="0.16"/>
+<circle cx="1120" cy="110" r="9" fill="#17201f"/>
+<circle cx="1120" cy="170" r="9" fill="#17201f"/>
+<circle cx="1120" cy="230" r="9" fill="#17201f"/>
+<circle cx="1120" cy="290" r="9" fill="#17201f"/>
+<text x="1120" y="346" text-anchor="middle" font-size="21" font-weight="700" fill="#17201f">“Pilots out”</text>
+<text x="40" y="400" font-size="23" fill="#17201f">Each file, its own versions, saved automatically.</text>
+<text x="660" y="400" font-size="23" fill="#17201f">The whole folder, when you say so, with a note.</text>
+<line x1="600" y1="20" x2="600" y2="410" stroke="#c9c0b2" stroke-width="2"/>
+</svg>
