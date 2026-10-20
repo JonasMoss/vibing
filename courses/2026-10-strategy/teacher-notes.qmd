@@ -176,6 +176,12 @@ couldn't see how git differs from Dropbox or OneDrive.
   3. *A research project* (10 min): `props/founders-study.zip`, tidy, write a
      `.gitignore` with explanations, commit, then the privacy check.
   4. *Ask* (1 min): pick a word from the chips, ask what it means.
+- **"What a save point is" is the slide people missed in Finance:** what a save
+  point has to do with the files on their computer. Two clicks: commit (a full
+  copy of every file goes into `.git`), then revert (a copy comes back out over
+  the files). Say: *the files you see are always the current version. Delete
+  `.git` and the history is gone, the files stay; copy the folder and the history
+  comes along.*
 - **The OneDrive slides are the ones to slow down on:** the per-file versions vs
   whole-folder snapshots diagram, then "40 restores vs one sentence". The line:
   *OneDrive is a backup, git is a lab notebook. Keep both.*

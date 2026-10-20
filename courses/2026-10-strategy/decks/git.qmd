@@ -13,6 +13,17 @@ Git: mainly for the agent. Very, very good for you too.
 - **Every change can be seen before it's accepted,** and undone after.
 - **Many people work at once,** and git merges their changes.
 
+## What a save point is {#savepoint}
+
+::: {.diagram-md}
+```{=html}
+{{< include images/git-savepoint.svg >}}
+```
+:::
+
+- **Commit** copies every file into the hidden `.git` folder, with a note.
+- **Revert** copies a save point back over your files.
+
 ## Where git comes from {#history}
 
 ```{=html}

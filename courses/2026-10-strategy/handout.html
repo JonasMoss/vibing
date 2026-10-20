@@ -2655,6 +2655,55 @@ vertical-align: -.125em;
 <section id="save-points-git" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Save points (git)</h1>
 <p>Git records the history of a folder: every change, when, and why. Almost all software is built with it (Linus Torvalds wrote it in 2005, for Linux), and here it is <strong>mainly for the agent</strong>. The agent can change 40 files in 30 seconds; git lets it, and you, see exactly what changed, and put it all back in one step. You never type a git command. You ask.</p>
+<svg class="diagram" viewbox="0 0 1200 410" preserveaspectratio="xMidYMid meet" role="img" aria-label="Left: the folder you see, with notes.md, data.csv and draft.docx, and a hidden .git folder. Right: inside .git, a stack of save points, each a full copy of the files with a note. Commit copies every file into .git; revert copies a save point back over your files.">
+<defs><marker id="sp-c" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d" /></marker><marker id="sp-i" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f" /></marker></defs>
+<text x="40" y="34" font-size="20" font-weight="800" letter-spacing="2" fill="#5c6763">THE FOLDER YOU SEE</text>
+<rect x="40" y="50" width="420" height="345" rx="14" fill="#fffdf8" />
+<rect x="40" y="50" width="420" height="54" rx="14" fill="#e8e0d3" />
+<rect x="40" y="80" width="420" height="24" fill="#e8e0d3" />
+<rect x="40" y="50" width="420" height="345" rx="14" fill="none" stroke="#17201f" stroke-width="3" />
+<path d="M64,68 h12 l5,5 h17 v19 h-34 z" fill="#17201f" />
+<text x="112" y="89" font-size="26" font-weight="800" fill="#17201f">practice</text>
+<path d="M70,124 h20 l8,8 v28 h-28 z" fill="#fffdf8" stroke="#17201f" stroke-width="2" /><path d="M90,124 v8 h8" fill="none" stroke="#17201f" stroke-width="2" />
+<text x="116" y="151" font-size="27" fill="#17201f">notes.md</text>
+<path d="M70,180 h20 l8,8 v28 h-28 z" fill="#fffdf8" stroke="#17201f" stroke-width="2" /><path d="M90,180 v8 h8" fill="none" stroke="#17201f" stroke-width="2" />
+<text x="116" y="207" font-size="27" fill="#17201f">data.csv</text>
+<path d="M70,236 h20 l8,8 v28 h-28 z" fill="#fffdf8" stroke="#17201f" stroke-width="2" /><path d="M90,236 v8 h8" fill="none" stroke="#17201f" stroke-width="2" />
+<text x="116" y="263" font-size="27" fill="#17201f">draft.docx</text>
+<rect x="62" y="306" width="376" height="66" rx="10" fill="none" stroke="#5c6763" stroke-width="2" stroke-dasharray="8 6" />
+<text x="82" y="347" font-size="25" font-weight="800" fill="#5c6763">.git</text>
+<text x="140" y="347" font-size="22" fill="#5c6763">hidden: the save points</text>
+<text x="720" y="34" font-size="20" font-weight="800" letter-spacing="2" fill="#5c6763">INSIDE .git</text>
+<rect x="720" y="50" width="450" height="345" rx="14" fill="none" stroke="#5c6763" stroke-width="2" stroke-dasharray="8 6" />
+<rect x="742" y="176" width="406" height="90" rx="12" fill="#fffdf8" stroke="#17201f" stroke-width="2" />
+<path d="M762,202 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M776,202 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<path d="M792,202 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M806,202 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<path d="M822,202 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M836,202 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<text x="868" y="216" font-size="23" font-weight="800" fill="#17201f">Coded 12 interviews</text>
+<text x="868" y="246" font-size="20" fill="#5c6763">Tuesday</text>
+<rect x="742" y="284" width="406" height="90" rx="12" fill="#fffdf8" stroke="#17201f" stroke-width="2" />
+<path d="M762,310 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M776,310 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<path d="M792,310 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M806,310 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<path d="M822,310 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M836,310 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<text x="868" y="324" font-size="23" font-weight="800" fill="#17201f">Started the paper</text>
+<text x="868" y="354" font-size="20" fill="#5c6763">Monday</text>
+<g class="fragment" data-fragment-index="1">
+<rect x="742" y="68" width="406" height="90" rx="12" fill="#fffdf8" stroke="#f0674d" stroke-width="3" />
+<path d="M762,94 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M776,94 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<path d="M792,94 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M806,94 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<path d="M822,94 h14 l6,6 v22 h-20 z" fill="#fffdf8" stroke="#17201f" stroke-width="1.5" /><path d="M836,94 v6 h6" fill="none" stroke="#17201f" stroke-width="1.5" />
+<text x="868" y="108" font-size="23" font-weight="800" fill="#17201f">Added Table 2</text>
+<text x="868" y="138" font-size="20" fill="#5c6763">today, 10:31</text>
+<line x1="478" y1="104" x2="728" y2="104" stroke="#f0674d" stroke-width="5" marker-end="url(#sp-c)"></line>
+<text x="600" y="84" text-anchor="middle" font-size="32" font-weight="800" fill="#b8432d">commit</text>
+</g>
+<g class="fragment" data-fragment-index="2">
+<line x1="728" y1="146" x2="478" y2="146" stroke="#17201f" stroke-width="5" marker-end="url(#sp-i)"></line>
+<text x="600" y="190" text-anchor="middle" font-size="32" font-weight="800" fill="#b8432d">revert</text>
+</g>
+</svg>
+
+<p><strong>What a save point is.</strong> The files in your folder are always just the current version. A commit copies every one of them into a hidden <code>.git</code> folder inside the project, with a note; your files don’t change. Revert copies a save point back over your files. Delete <code>.git</code> and the history is gone, but the files stay; copy the whole folder and the history comes along.</p>
 <p><strong>It isn’t OneDrive.</strong> OneDrive and Dropbox keep old versions of each file, saved automatically. Git saves the whole folder at once, when you say so, with a note saying why. OneDrive is a backup; git is a lab notebook. Keep both, but keep git projects outside folders that OneDrive syncs.</p>
 <section id="your-first-save-point" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="your-first-save-point"><span class="header-section-number">2.1</span> Your first save point</h2>

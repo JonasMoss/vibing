@@ -309,6 +309,16 @@ it is **mainly for the agent**. The agent can change 40 files in 30 seconds; git
 lets it, and you, see exactly what changed, and put it all back in one step. You
 never type a git command. You ask.
 
+```{=html}
+{{< include decks/images/git-savepoint.svg >}}
+```
+
+**What a save point is.** The files in your folder are always just the current
+version. A commit copies every one of them into a hidden `.git` folder inside the
+project, with a note; your files don't change. Revert copies a save point back
+over your files. Delete `.git` and the history is gone, but the files stay; copy
+the whole folder and the history comes along.
+
 **It isn't OneDrive.** OneDrive and Dropbox keep old versions of each file, saved
 automatically. Git saves the whole folder at once, when you say so, with a note
 saying why. OneDrive is a backup; git is a lab notebook. Keep both, but keep git

@@ -188,6 +188,11 @@ $code-color: $ink;
   display: inline;
 }
 
+/* A medium diagram, for a slide with two short lines under it. */
+.reveal .diagram-md .diagram {
+  max-height: 56vh;
+}
+
 /* A taller diagram, for a slide that is only the diagram. */
 .reveal .diagram-lg .diagram {
   max-height: 64vh;
