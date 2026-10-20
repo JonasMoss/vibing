@@ -1,6 +1,7 @@
 # AI in the terminal — Department of Finance
 
-**Status: in preparation.** Materials drafted 13 October; see the before-Friday checklist in `teacher-notes.html`.
+**Status: held 16 October 2026, frozen.** Tagged `held/2026-10-finance`. Change
+nothing here except `debrief.md`; fixes go forward into the next course.
 
 ## Facts
 
