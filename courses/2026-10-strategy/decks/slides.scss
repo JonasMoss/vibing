@@ -171,6 +171,16 @@ $code-color: $ink;
   margin-top: 0.2em;
 }
 
+.reveal .menu .pick.compact {
+  display: grid;
+  gap: 0 0.4em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reveal .menu .pick.compact .menu-head {
+  grid-column: 1 / -1;
+}
+
 .reveal .menu .pick a.card {
   border-color: $coral;
   border-width: 3px;

@@ -1,0 +1,49 @@
+Interview F08
+Date: 2026-02-08
+Founder: F08 (pseudonym)
+Firm: [FIRM], founded 2023, sector: marketplace for second-hand tools
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F08: I bought a used drill that worked for about eleven minutes. That is the short version. The longer version is that my co-founder and I had both worked around construction supplies and saw useful equipment sitting in storage while somebody down the road bought the same thing new. We thought a specialist marketplace could solve that. Better descriptions, sensible categories, proof that a seller actually had the tool. We launched in 2023 with forty listings from people we knew. I photographed half of them on my kitchen table. My partner was delighted when the concrete cutter finally left.
+
+INTERVIEWER: Who did you expect to use it?
+
+F08: Everybody with a shed, initially. Terrible target group, isn't it? Home renovators, tradespeople, small contractors. We thought the common object would make a common market. A drill is a drill. Except a professional asks about service history and invoice documentation, and a home user asks whether it can make holes in a bathroom wall. We built filters for both and pleased neither particularly. There were three hundred registered users after four months. I knew the number because I checked it every morning. I did not check completed transactions with the same enthusiasm.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F08: Summer 2024. We narrowed to verified lots from small contractors closing a project or replacing equipment. We added inspection and collection support, then sold to other small businesses. It is still second-hand tools, but we are much closer to a managed resale service than an open listing site. There are fewer sellers, larger transactions, and somebody at our end checks what is actually in the lot. We no longer pretend that putting two strangers on the same page is the whole job.
+
+INTERVIEWER: How did that begin?
+
+F08: A contractor wanted to list twenty-seven items from a finished job. He sent one blurry photograph of a locked storage cage and said the buyer could sort it out. I offered to visit because he was near another appointment. We made an inventory, photographed serial plates, and separated three broken items. The lot sold in two days. That weekend we had several hundred ordinary listings with almost nothing happening. I told my co-founder it was a nice one-off. Then the buyer asked whether we could find another lot like it. The one-off started requesting a sequel.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F08: We called the buyers who had abandoned a purchase. Not abandoned a shopping cart, because we did not really have a proper cart then, just people who stopped replying. They worried about condition, transport, and whether an invoice would be possible. Price was usually fourth or fifth. Our message had been all about bargains. We were answering the cheapest question and leaving the expensive questions unanswered. We spoke with a repair workshop, a courier, and an accountant about the paperwork. None of those conversations sounded like building a marketplace. They sounded like doing a lot of work ourselves.
+
+INTERVIEWER: Did anyone resist that work?
+
+F08: My co-founder. He had built the platform and wanted automated listing checks, not me driving around with a clipboard. He said we could not scale a van. I said we could not scale transactions we did not have. We had this argument in slightly different words every Friday for two months. There was a personal thing under it. He thought I was turning us into the kind of local trading business I had said I wanted to leave. I thought he was treating anything manual as a defeat. We both selected facts that made the other look stubborn.
+
+INTERVIEWER: Where did investors fit in?
+
+F08: Our angel investor wanted transaction volume and repeat buyers. He was not attached to the van or against it. At least that is what I said publicly. Privately he had stopped discussing a follow-on investment until we could show people paid more than once. He asked me to remove registered users from the first slide of our update. That felt brutal. It was useful. We had seven weeks of runway if an overdue customer payment did not arrive. I started the inspection visits because customers asked, but I kept doing them because we needed invoices that month.
+
+INTERVIEWER: Looking back, was it planned?
+
+F08: We always said trust would distinguish us. So yes, you can draw a straight line from that to verification and inspection. But the first inspection happened because I had an appointment nearby and did not want to lose a listing. The inventory template was a file left over from my previous job. We did not commission research and choose managed resale as our strategic position. We did a favour, charged for the next one, and then noticed the paid favour had better economics than the platform. Trust was the slogan. Carrying boxes was the discovery process.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F08: My back, briefly. We now pay someone qualified to move heavy equipment. More seriously, my co-founder stopped working full-time with us. He still owns shares and maintains parts of the system, but he took a salaried job. I cannot say that was only because of the change. He had a young child and wanted predictable income. But the argument about what kind of company we were certainly did not help. We also refunded two early sellers when we stopped promoting individual listings. They had paid for something we were no longer putting effort behind.
+
+INTERVIEWER: Has the new approach become stable?
+
+F08: More stable. We have twelve repeat business buyers and inspect perhaps three lots in a busy month. Some months there is almost nothing. I still want a more self-service system, but now I know which steps I am trying to remove. Before, automation was almost a moral position. If a human touched the transaction, we had failed. Now I ask whether that human step prevents a dispute. One disputed compressor can erase the margin on a whole lot. You can learn that in a spreadsheet, but apparently I needed to learn it beside a loading door.
+
+INTERVIEWER: What would you do differently?
+
+F08: Sell ten lots by hand before asking somebody to build the marketplace. Keep notes on every question that delays the deal. I would tell my co-founder that changing the business does not mean his work was worthless. The platform still handles records and payments; it just does not create trust by existing. And I would ask about personal runway as well as company runway. We argued about strategy as if we had equal time to wait. He had a baby coming. I had a spare room and a partner with a steady salary. Those were part of the decision too.

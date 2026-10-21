@@ -1,0 +1,49 @@
+Interview F03
+Date: 2026-02-03
+Founder: F03 (pseudonym)
+Firm: [FIRM], founded 2022, sector: maritime sensors
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F03: Three people with instrumentation backgrounds, one problem we understood. Vessel operators were replacing components on a calendar rather than according to condition. We wanted a sensor package that could tell them when maintenance was needed. Started in 2022. Our first assembly bench was a door laid across two cabinets. I mention that because now people imagine we had a laboratory. We had good instruments and an unreliable kettle. We took seed investment the following year, enough to hire an embedded systems engineer and pay for offshore testing.
+
+INTERVIEWER: Did investors shape what you built?
+
+F03: The investors had no influence on the direction. I want to be clear about that. These were technical decisions grounded in what vessels needed. People like a story where somebody with money tells engineers what to do, but that wasn't us. Our investors received reports. The founders ran the company. We knew the vibration data, we knew what failed, and we weren't going to invent a different answer because a spreadsheet looked nicer with subscription revenue in it.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F03: We stopped trying to manufacture the whole sensor package in late 2024. Instead we process data from equipment already installed on the vessel. Still condition monitoring, different place in the chain. Originally our box was supposed to be essential. Then a maintenance superintendent showed us six existing boxes and asked where we expected him to put number seven. It was a fair question. He wasn't short of measurements. He was short of someone who would tell him which measurement required action.
+
+INTERVIEWER: How much of the original work could you reuse?
+
+F03: Algorithms, some of the interface, our understanding of the operating environment. Less hardware than I'd like to admit. We had forty enclosures in storage and certificates that had cost a great deal. You can't repurpose a certificate into payroll. We ran a paid analysis on historical data from two vessels. One operator renewed after the trial. The other didn't, which gets left out when I tell the short version. Their existing supplier offered something similar as part of a larger contract.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F03: The superintendent was important. Our technical adviser too. She kept asking what decision would be different on a vessel because our product existed. We were answering with sampling rates. She wanted an action: inspect this bearing at the next port. Once we expressed it like that, the attraction of our own hardware weakened. Not technically, you understand. Commercially. Our box was good. A good box can still be an unnecessary box. I have that written above my bench now.
+
+INTERVIEWER: What happened inside the company?
+
+F03: We had five months of cash on paper, nearer three after supplier commitments. At the November board meeting the chair put a cash forecast on the screen and said no further hardware orders. The two investor directors pushed hard for the software service. They wanted signed trials within six weeks and made the next funding instalment conditional on stopping production. I argued for a parallel track. They said parallel tracks require parallel money. We didn't have it. So we cancelled the next batch before the supplier's deadline.
+
+INTERVIEWER: How did that affect the choice you made?
+
+F03: It settled the timing and, yes, it removed the option I preferred. I thought they were forcing the issue before the evidence was complete. The chair thought we had been waiting for perfect evidence for nine months. We still had to work out the service ourselves. Nobody at the board could tell us how to clean a noisy signal. But when your preferred option cannot receive funding, that changes what you call the practical option. I wasn't thinking about influence in that sense earlier.
+
+INTERVIEWER: Looking back, was it planned?
+
+F03: There was a service revenue line in our original model. It sat after hardware sales, a nice recurring addition. So we can truthfully say service was always part of the strategy. Replacing the hardware business with it was different. We discovered that path through one customer's irritation and a rather unpleasant board meeting. The orderly diagram came afterwards. On the day itself there were people arguing about whether to pay for a shipment that was already packed. Strategy had a tracking number and a cancellation fee.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F03: Our hardware lead left. He was a co-founder, and a friend before this. He said we had become consultants renting out an algorithm. I said he cared more about a circuit board than a surviving company. Both of those sentences were unfair. We still have shares together and exchange perfectly civil emails. We don't go climbing together now. That's the part the company accounts don't show. A lost friendship doesn't arrive with an invoice and a payment deadline.
+
+INTERVIEWER: Were there other costs?
+
+F03: We wrote off components and paid to exit a small workshop lease. My wife asked whether we should stop calling the investment our safety cushion. She was right. Personally I found customer calls difficult. I'm not a sales person. If something has a physical specification, I can defend it. A service asks for trust before you have all the answers. I had to learn to say, this is what we can establish in a four-week trial, instead of giving a lecture about frequencies.
+
+INTERVIEWER: What would you do differently?
+
+F03: Establish the purchasing process before building the complete device. We proved that it measured something before proving anyone could buy it. Also, put the disagreement about funding in writing sooner. We all heard the same board discussion differently. I thought there was a bridge to another prototype; they thought the bridge led to contracts. Today we have four paying operators and a smaller payroll. That's progress. I still think our sensor deserved a better trial. You can believe the decision was necessary without enjoying every part of it.

@@ -1,0 +1,49 @@
+Interview F06
+Date: 2026-02-06
+Founder: F06 (pseudonym)
+Firm: [FIRM], founded 2022, sector: hardware for ski resorts
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F06: I maintained equipment at a ski resort. My co-founder worked on industrial controls. We built a retrofit controller for boot-drying racks because old racks ran hot all night even when half the positions were empty. The controller measures occupancy and changes the heating cycle. Not glamorous. It has a box, a probe, and a manual somebody has to understand while wearing work gloves. We started the company in 2022 after testing a prototype for one winter. The customer was a rental operation, not a skier. We have kept that distinction clear from the beginning.
+
+INTERVIEWER: What did the early testing involve?
+
+F06: Wet boots. Hundreds of them. Also measuring electricity and checking whether boots were actually dry at opening time. You can save all the energy you want by leaving everything wet; that is not a product. The first installation had loose connectors after repeated cleaning. We changed the enclosure. Another rack needed a different bracket. We made one. These are normal engineering revisions. People hear that we changed things and immediately ask about our pivot. If changing a bracket is a pivot, every maintenance department is a venture studio.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F06: We have not changed direction. That may make me an awkward interview. We sell the same kind of controller, to the same kind of customer, for the same reason. It uses less electricity while keeping boots ready for the next rental. We have changed prices and installation instructions. We stopped offering one optional display because nobody read it. But the business has not turned into an app or a data platform. People have suggested both. I am comfortable saying no. Pivoting is overrated when it means treating impatience as market insight.
+
+INTERVIEWER: Was there a point when you seriously considered a different business?
+
+F06: An accelerator mentor suggested household drying cabinets. Larger market, easier story, apparently. We spent a morning estimating certification, distribution, returns, the whole thing, and decided against it. That was consideration, not a secret pivot. We did not build a domestic version or take orders. Our existing customers had a problem we could measure. Households would require us to find a new problem and learn a new sales route. A large market on a slide does not make the screws fit. I said that in the meeting and sounded grumpier than I intended.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F06: Decide to stay, you mean. Rental managers and maintenance staff. We had four paid installations after the first full season. Two managers wanted more units for another building. One wanted to wait until his budget reset. The fourth had a rack we could not economically retrofit. Three useful answers, none saying we needed to become something else. We also spoke with an electrical installer who explained why our installation time estimate was nonsense. He was right. We simplified the wiring and cut the time from most of a day to about three hours.
+
+INTERVIEWER: Did investors or a board encourage a change?
+
+F06: We have no outside equity investors. The board is the two founders and an independent accountant. She asks whether we can pay our bills and whether we are relying on one customer. Sensible questions. A fund offered an introductory meeting and talked about needing a faster growth curve. We did not pursue it. That sounds heroic if I leave out that my partner has a steady job and my co-founder still does paid installation work. We can afford to be patient because other income carries some of the risk. I would not prescribe our timetable to somebody with six weeks of salary left.
+
+INTERVIEWER: Have you been close to running out of money?
+
+F06: Close enough to delay our own pay, not close enough to miss a supplier payment. Last spring there were three months of fixed costs in the account. We had a deposit for a confirmed autumn order, but I did not count it as spare money. We took two installation jobs unrelated to our product and did not hire the salesperson we had discussed. You could call that a financing compromise. I would. It was not a change in what we offered. Staying the same direction can require changing how you pay for the journey.
+
+INTERVIEWER: Looking back, was it planned?
+
+F06: The sequence was planned: one winter of testing, a small paid batch, then wider sales after we knew failure rates. The exact dates slipped. One customer postponed renovation and another bought earlier than expected. We did not predict those things. I have an old notebook with the testing sequence, if you want to see it. I am not claiming perfect foresight. I am saying there was a stable question, whether we could dry boots reliably with less energy, and we kept answering it. We did not need a new question every quarter.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F06: Slow income. A lot of driving. Missing a family weekend because a prototype stopped cycling properly. Also arguments about patience. My co-founder wanted a mobile monitoring screen because it would make demonstrations easier. I wanted to finish the installer manual. We compromised on a local status panel and a better manual. He still thinks I make things look less exciting than they are. I think he sometimes confuses a good demonstration with a useful product. Neither of us has threatened to leave. We argue, then somebody has to load the van.
+
+INTERVIEWER: What would make you change direction?
+
+F06: If the racks disappeared, or several customers showed they could not recover the installation cost, we would reconsider. We record measured consumption rather than borrowing an optimistic number for every site. One site saved very little because its old controller was already good. We told the manager not to replace the rest. That lost an order and gained a reference. It also limits our market. I can live with a smaller honest estimate. What I would not do is rename disappointing sales as proof that every customer secretly wants a different product.
+
+INTERVIEWER: What would you do differently?
+
+F06: Charge for installation from the first unit, and make the manual before the second winter. We have thirteen installed systems now. That is thirteen, not thirteen thousand. I am pleased with them. I would ask other founders what their customers have done twice, not what new direction sounds exciting this week. Sometimes the brave thing is to keep making the same promise and get better at keeping it. That is less interesting on a stage. It is quite interesting when the first bus of skiers arrives and every boot is dry.

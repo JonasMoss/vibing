@@ -1,0 +1,49 @@
+Interview F04
+Date: 2026-02-04
+Founder: F04 (pseudonym)
+Firm: [FIRM], founded 2023, sector: edtech platform for vocational schools
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F04: I taught vocational subjects before this. The original idea was a library of short demonstrations: teachers could film a procedure, attach questions, and share it across schools. My co-founder handled the software and I recruited the first teachers. We started in 2023 with twelve teachers in three schools. I was very sure that good material would travel. I had spent years seeing people recreate essentially the same lesson. It felt wasteful, and I thought a platform would remove that waste almost automatically. I underestimated the word automatically.
+
+INTERVIEWER: What did early use look like?
+
+F04: Teachers watched things, occasionally. Uploading was another matter. A teacher would say yes in June and then September would eat her whole life. We had seventy accounts but only eight people uploading regularly. I kept organising little online sessions to encourage them. I sounded like the colleague who keeps asking whether you've completed a survey. My co-founder said we needed better onboarding. I thought we needed more schools. Neither of us wanted to ask whether the task itself was too much additional work.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F04: A trade fair in March 2025 was the turning point. I wasn't supposed to attend. A colleague couldn't use her pass, and I went because I'd already bought a train ticket for something else. In the coffee queue I met an apprenticeship coordinator. She wasn't interested in lesson videos. She asked whether apprentices could record evidence of a task and have a workplace supervisor sign it. I said probably, and opened the teacher upload screen on my phone. We were moving buttons around in our heads over paper cups.
+
+INTERVIEWER: What happened after that meeting?
+
+F04: She emailed a blank assessment form the following Monday. We hadn't promised a pilot; I hadn't even told my co-founder properly. Two weeks later we had apprentices uploading photographs of completed work. Six apprentices initially, then twenty-two. We removed the public library from their version because the employers wanted restricted access. The change became a platform for apprenticeship assessment and sign-off. I remember thinking, oh, they are using the least interesting part of our software every single day. That was quite an education.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F04: That coordinator, mostly, at the beginning. Then supervisors at four workplaces. One showed me a folder of printed photographs with signatures on the back. His question was whether we could stop him losing them between the workshop and his office. He didn't want a learning ecosystem. He wanted Friday's evidence by Friday. The fair conversation was accidental, and so was finding this particular coordinator. She happened to have a group starting the next week. Without that timing we might have talked pleasantly and done nothing.
+
+INTERVIEWER: Did money or other people affect the decision?
+
+F04: Our board wanted school licences. They weren't excited about dealing with individual employers. Then we showed them usage from the apprenticeship pilot and an employer willing to pay. Suddenly it was a strategic expansion. We also had four months of runway. I had been counting an expected school contract as if it were signed, which it wasn't. The board chair asked me to remove it from the forecast. That single deletion made the pilot look much more urgent. We stopped commissioning lesson videos in April.
+
+INTERVIEWER: Looking back, was it planned?
+
+F04: Yes, very deliberately. Our strategy was to move from content provision into the assessment workflow, where there was a clearer institutional need. We sequenced the transition: test with a small cohort, establish supervisor participation, then offer a paid service. It wasn't a sudden leap. I think people overstate luck in these stories because it sounds modest. We understood vocational education. We knew evidence and assessment mattered. The shift was an execution of that understanding, and I would describe it as a planned strategic choice.
+
+INTERVIEWER: When was that sequence written down?
+
+F04: The actual document? June, for the board pack. The first cohort started in March. Before June it was notes and conversations, and my calendar was full of visits to supervisors. But a plan doesn't have to be typed to exist. I knew we should learn with a small group. Well, we only had access to a small group, too. Those things can both be true. The June document gives the logic more clearly than the messages we sent while doing it.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F04: I had to tell teachers that the library wouldn't grow as promised. They had given their time because I asked personally. One said she felt she'd done unpaid product development for somebody else's business. That stayed with me. My co-founder was angry that I'd agreed to supervisor features before checking the work. He had a young daughter and couldn't keep absorbing evenings because I'd had another promising conversation. We had our worst argument beside a printer, of all places. Neither of us wanted the office administrator to hear.
+
+INTERVIEWER: How did you resolve that?
+
+F04: We made a rule that a customer conversation could generate a proposal, not a delivery date. And I started paying myself less rather than assuming he would work more. That didn't make everything fair, but it made the cost visible. I also missed teaching. I had thought leaving the classroom would let me help more teachers. Now I was negotiating employer access permissions. The useful product was further from my original professional identity than the unsuccessful one had been.
+
+INTERVIEWER: What would you do differently?
+
+F04: Ask who owns the problem before asking who likes the idea. Teachers liked sharing resources; coordinators were responsible for missing assessment evidence. Responsibility produces a different conversation. I'd also keep dated notes of decisions. Not to make everything bureaucratic, just so we don't spend an hour remembering whether something was agreed before or after the pilot. We now serve eleven employers through two training arrangements. It's modest, but supervisors ask for the system when it is unavailable. That is a stronger compliment than applause at a presentation.

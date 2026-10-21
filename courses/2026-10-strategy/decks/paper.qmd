@@ -61,20 +61,5 @@ A fix takes 5–10 minutes: it writes and runs code. If it asks to install Pytho
 - Best problem found?
 - Best fix?
 - Worst false alarm?
-- **Keep the folder.** The blocks you choose next all start from it.
-
-## Next: you choose
-
-```{=html}
-<div class="menu" style="grid-template-columns: 1fr 1fr;">
-  <div class="pick">
-    <a class="card" href="review.html"><b>Referee panel</b><span>Who will referee it, and what will they say?</span></a>
-    <a class="card" href="refs.html"><b>References</b><span>Search, DOI check, claim check, download</span></a>
-  </div>
-  <div class="pick">
-    <a class="card" href="trail.html"><b>Leave a trail</b><span>Git save points, a folder a co-author can rerun</span></a>
-    <a class="card" href="notes.html"><b>Notes and structure</b><span>Where things go, and how the agent keeps track</span></a>
-  </div>
-</div>
-```
-
+- **Keep the folder.** The blocks you choose later all start from it.
+- **Next: interviews.**

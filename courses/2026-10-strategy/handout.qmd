@@ -24,8 +24,8 @@ corner, paste it into Claude Code or Codex, and change the bits in
 
 **The shape of the two days:** Thursday gets you running, shows you save points and
 what the agent can touch, and has it do something tedious for you. Friday is about
-research: what it knows about you, then your paper taken apart. The blocks after
-that (sections 7–10) work in any order, on Friday or next week.
+research: what it knows about you, your paper taken apart, and interviews coded. The blocks after
+that (sections 8–11) work in any order, on Friday or next week.
 
 | | Section | What you get |
 |---|---|---|
@@ -35,13 +35,15 @@ that (sections 7–10) work in any order, on Friday or next week.
 | | 4. Do something tedious | A messy folder cleaned up, with a save point and an undo |
 | Friday | 5. What it knows about you | A profile that makes every answer fit you |
 | | 6. Take a paper apart | Its biggest problem, and an attempt at a fix |
-| Then, pick | 7. Referee panel | Simulated referee reports, and an editor's letter |
-| | 8. References | Searched, downloaded, DOI-checked, claim-checked |
-| | 9. Leave a trail | A folder a co-author can rerun |
-| | 10. Notes and structure | Where things go; a project file; notes the agent keeps |
-| Any time | 11. Your own work | Starting points for next week |
-| | 12. GitHub | A copy of the folder in the cloud; co-authors |
-| | 13. Connectors | Your email, calendar and files, if you want them |
+| | 7. Interviews | A codebook, eight transcripts coded, every quote checked |
+| Then, pick | 8. Referee panel | Simulated referee reports, and an editor's letter |
+| | 9. References | Searched, downloaded, DOI-checked, claim-checked |
+| | 10. Leave a trail | A folder a co-author can rerun |
+| | 11. Notes and structure | Where things go; a project file; notes the agent keeps |
+| Any time | 12. Your own work | Starting points for next week |
+| | 13. Teaching | Optional, end of Friday: exams, rubrics, a course page |
+| | 14. GitHub | A copy of the folder in the cloud; co-authors |
+| | 15. Connectors | Your email, calendar and files, if you want them |
 
 ::: {.floor}
 **Two rules for the day.** Don't overthink it: just use it. And when you get
@@ -438,7 +440,7 @@ repositories. This course's page, vibing.jonasmoss.com, is one.
 Publish this folder as a web page with GitHub Pages.
 ```
 
-Setting up GitHub, co-authors and pull requests: section 12.
+Setting up GitHub, co-authors and pull requests: section 14.
 
 # What it can touch
 
@@ -474,6 +476,12 @@ Then ask:
 
 ```{.default .prompt}
 What can you do in this folder without asking me? What would you ask about first?
+```
+
+Done early?
+
+```{.default .prompt}
+Show me every settings file you read, and explain each line.
 ```
 
 ## Why I give it lots of access
@@ -519,6 +527,15 @@ Read one of the interview transcripts.
 
 Codex: ask the same. It may set up a permissions profile, or say it can't. Either
 answer is useful.
+
+**Done early?** Try to get round your own rule:
+
+```{.default .prompt}
+Search every file in this folder for the word pivot.
+```
+
+Did it read the interviews? A rule blocks the direct ways in, not every way: the
+real protection is keeping the files out of the folder.
 
 ## Your data and training
 
@@ -628,6 +645,23 @@ them, and that's fine: they're papers. The consent forms are not.
 ```{.default .prompt}
 Go into founders-study. Rename the papers in literature/ as "Author Year - Title.pdf", and make a references.bib for them. Don't open anything in interviews/.
 ```
+
+## Your own tedious thing
+
+The last part of Thursday: a real folder of yours. Your downloads, an old course,
+a project from 2019. Work on a **copy**, outside OneDrive, and take a save point
+first:
+
+```{.default .prompt}
+Set up git here and commit everything.
+```
+
+```{.default .prompt}
+What's in here? What would you tidy, and why? Don't change anything yet.
+```
+
+Argue with the plan, then *"Go ahead"*, then *"What changed?"* Don't like it?
+*"Revert to the last commit."*
 
 # What it knows about you
 
@@ -798,6 +832,87 @@ install Python, say yes.
 **Then:** try it on your own working paper, before a referee does. **Keep the
 folder**: the blocks you choose next all start from it.
 
+# Interviews
+
+Eight interviews with founders who changed direction early, a codebook, and every
+quote checked. The transcripts are fictional and pseudonymised (F01 to F08), with
+an interview guide of six questions.
+
+::: {.floor}
+**The floor:** a codebook you argued with, and one theme whose quotes a script has
+checked word for word.
+:::
+
+Your own transcripts work the same way, **if your data plan allows a model to read
+them**: what the agent reads is sent (section 3). Work on pseudonymised copies, in
+a folder of their own.
+
+## Get it, and a save point
+
+Start the agent in your `practice` folder:
+
+```{.default .prompt}
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/pivot-interviews.zip into this folder and unzip it. Then go into pivot-interviews, set up git, and commit everything.
+```
+
+(Or copy `practice/pivot-interviews` from the course files.)
+
+## Is it really anonymous?
+
+```{.default .prompt}
+Read the transcripts. Is anything still identifying, even without the names? List it, with the file and line.
+```
+
+Pseudonymising by hand misses things: a first name in passing, a firm you can
+recognise from its description. Here, three things slipped through.
+
+## A codebook first
+
+```{.default .prompt}
+Read the interview guide and three transcripts. Propose a codebook: six to eight codes, each with a definition and an example. Don't code anything yet.
+```
+
+**Argue with it.** Merge two codes, split one, add the one you care about. Then
+*"Save it as coding/codebook.md and commit."*
+
+## Code all eight
+
+```{.default .prompt}
+Code all eight transcripts with the codebook. Save every coded excerpt in coding/excerpts.csv: founder, line number, code, and the exact quote.
+```
+
+```{.default .prompt}
+What are the three main themes? For each: which founders, and the two best quotes. Save it as themes.md.
+```
+
+## Every quote, checked
+
+```{.default .prompt}
+Check every quote in themes.md and excerpts.csv against the transcripts, word for word, with a script. List any that don't match exactly.
+```
+
+A script that compares text can't be charmed by a confident paraphrase. This is
+the qualitative version of "rerun the code": cheap, mechanical, and it lets you
+trust the rest.
+
+## Then push
+
+- *"Which founder doesn't fit the themes? What does that do to theme 1?"*
+- *"Does anyone contradict themselves?"*
+- *"Did they plan the change, or does it only look planned afterwards?"* (The
+  planned-or-emergent question from section 5, in your own data.)
+- *"What would a sceptical quantitative reviewer say about theme 2?"*
+
+Done early?
+
+```{.default .prompt}
+Make a table: founder by code, with counts. Which codes always come together?
+```
+
+**Who does what.** The agent reads eight interviews in a minute, proposes codes,
+finds every instance and checks every quote. You decide what a code means, judge
+the themes, and own the interpretation and the ethics.
+
 # Referee panel
 
 Who will referee your paper, and what will they say? Find out before you submit.
@@ -867,7 +982,7 @@ one prompt: *"Run the referees as parallel subagents."*
 - *One page. No summary of the paper.*
 
 Then `/clear` and rerun. If you'll do this for every paper, make the procedure a
-skill (section 10):
+skill (section 11):
 
 ```{.default .prompt}
 Turn reviews/how-to-referee.md into a skill called referee-panel.
@@ -952,7 +1067,7 @@ It's slow, and it uses a good part of your usage limit. Start it, then get coffe
 The habit that makes everything else here work: every paper you need sits in the
 project folder, so the agent reads the paper itself instead of searching for it
 again, or relying on its memory of it. Make it a rule in the project file
-(section 10), once:
+(section 11), once:
 
 ```{.default .prompt}
 Add to the project file: papers go in literature/. Whenever we need one, download it there if you can get it. If you can't, give me the DOI so I can.
@@ -1284,6 +1399,59 @@ your calendar. And don't overthink it: just use it.
   EuSpRIG. Real incidents with price tags.
 
 Questions afterwards: jonas.moss@bi.no
+
+# Teaching, if you want it
+
+Optional, and short. Many of you have taken BI's AI-for-teaching course, so this is
+only what the terminal adds to the chat: it works on the whole course folder at
+once, it makes files (a course page, slides, an exam with solutions), and next year
+it reruns.
+
+## The exam factory
+
+Describe your course in five lines, out loud if you can (**Windows key + H**;
+Mac: **Fn** twice): who takes it, what they should be able to do, and what would
+convince you they can. Then:
+
+```{.default .prompt}
+Write that up as course.md: a short description and five to eight learning outcomes. Keep my wording where it's specific; where I was vague, flag it instead of inventing precision.
+```
+
+```{.default .prompt}
+Draft 12 exam questions: four on the reading, four applying a theory to a new case, four asking for a judgement. Then a rubric for the best four.
+```
+
+```{.default .prompt}
+Which learning outcome can't be assessed as it's written?
+```
+
+That last question is the point: a rubric built on a vague outcome says the same
+thing four times, and now you find out before the exam, not at script 40.
+
+**No course at hand?** Use a fictional one, a bachelor course in organisational
+behaviour with a full session plan and reading list:
+
+```{.default .prompt}
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/ORG3402-organisational-behaviour.md into this folder. This is my course.
+```
+
+(Or copy `practice/teaching/ORG3402-organisational-behaviour.md` from the course
+files.)
+
+## A course page
+
+```{.default .prompt}
+Make a simple course web page from my notes: a schedule, the readings, and one page per session. Open it in my browser.
+```
+
+Then, if you like, *"Publish it with GitHub Pages"*: free, and this course's page is
+one (section 2, and section 14 for GitHub).
+
+## An animation
+
+```{.default .prompt}
+Make a 15-second animated SVG that explains [first-mover advantage] to first-year students. Three scenes, one caption each.
+```
 
 # GitHub, if you want it
 

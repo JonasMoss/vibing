@@ -14,7 +14,7 @@ willingness to pay.* A survey experiment, cleaned in Excel, written up in Word.
 Fictional, and completely typical.
 
 Start the agent in an empty folder, and paste the **download prompt from the
-handout, section 9**. (Or copy `practice/messy-project` from the course
+handout, section 10**. (Or copy `practice/messy-project` from the course
 files.)
 
 ## What's in it

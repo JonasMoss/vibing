@@ -1,0 +1,49 @@
+Interview F05
+Date: 2026-02-05
+Founder: F05 (pseudonym)
+Firm: [FIRM], founded 2022, sector: design studio turned SaaS
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F05: By accident, if we're being honest from the beginning. We were three designers who didn't want another agency job. In 2022 we rented two desks and borrowed a third. We did packaging, websites, the occasional presentation somebody needed yesterday. Clients liked having the founders do the work. Which is lovely until the founders need to sleep. My co-founder was the careful one, she tracked every hour. I was the one saying yes to an exciting brief before checking whether Wednesday already contained twenty hours of work.
+
+INTERVIEWER: Where did software enter the picture?
+
+F05: Approvals. Every project had this swamp of email attachments. Final, final revised, final approved except the logo. We built a little portal so clients could comment on the correct version. Nothing revolutionary, really. At first it was a private tool. We charged for the design and gave them the portal login. Our junior designer spent less time asking which PDF somebody meant. That was the original business case: get her out of email archaeology. We had no intention of becoming a software company then.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F05: Last spring. A client stopped buying design from us but asked to keep the portal. Honestly, I was offended. He wanted our filing cabinet but not our taste. Then his procurement colleague asked for a price for using it with another supplier. That made me sit up. We had imagined the software was a feature of our relationship. They regarded it as something they could buy separately. We offered a three-month licence almost as a test of whether the question was serious. They paid within a week.
+
+INTERVIEWER: Did that one licence justify a new direction?
+
+F05: Not by itself. We asked seven existing clients; three wanted a trial, two eventually paid. The others said their current system was fine. I needed to hear those refusals because I was getting carried away. A client asking to keep the filing cabinet isn't the same as a market. Still, there was a pattern. Small marketing teams, several external suppliers, no one wanting a giant project management system. Our rather unambitious tool fitted the space between their emails and their official software.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F05: Customers, our accountant, and Morten Haug at the seed fund. He said the studio could pay our wages but would never be an investable business at the scale we described. I disliked that distinction. A business that pays wages is quite an achievement. But I also wanted his money, so I started talking about recurring revenue. He pushed for a separate subscription offer and monthly retention figures. We didn't have a board seat involved yet, just the prospect of funding, which was enough to change what I spent my mornings doing.
+
+INTERVIEWER: Was there financial pressure already?
+
+F05: Two large design invoices were overdue. On the accounts we looked profitable; in the bank we had ten weeks. That's a very educational difference. My co-founder wanted to collect the invoices and return to reliable studio work. I thought subscriptions would make us less dependent on big clients. Of course subscriptions don't become large just because you urgently need them to. We accepted another branding project to fund the transition. I was pitching freedom from client deadlines while working through Sunday to meet one.
+
+INTERVIEWER: Looking back, was it planned?
+
+F05: We had talked about making a product since the first year. Designers do that, you know, over coffee, when a client has asked for the seventh revision. So I can say it was always an ambition. But this particular product arrived backwards. We built something to support our service, then a client removed the service and left the thing. The business plan followed that invoice. Our new website makes it sound like we identified a workflow problem and systematically addressed it. There were rather more hurt feelings in the actual process.
+
+INTERVIEWER: When did the studio stop being the main business?
+
+F05: It hasn't completely. Subscription income covers two salaries now; project work covers the rest. We stopped taking new packaging work in September, except for one old client. I keep saying except. My co-founder says exceptions are our business model. The investor wanted a clean break, but he wasn't offering enough money to cover one. So the deck says transition completed and the diary says client workshop on Thursday. I don't think that makes the product unreal. It does make the clean break unreal.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F05: One designer left because she wanted to design. Quite reasonably. We offered her a role in customer onboarding as if changing the title would change the work. My co-founder and I fought about whether good design was still what made us valuable. She said I was abandoning the studio because software sounded more impressive at dinner. That was unfair and also, um, not entirely without evidence. I had started describing us differently before our customers experienced anything different. She caught that before I did.
+
+INTERVIEWER: What was hardest for you?
+
+F05: Being a beginner in my own company. I could look at a visual identity and know what needed attention. I couldn't look at a renewal report and know whether a cancellation was a disaster or ordinary. I'm not a sales person, but suddenly I was booking demonstrations with people who hadn't seen our portfolio. Nobody cared about the beautiful work we'd done. They wanted to know if approvals could be exported. We traded creative judgement for a queue of permission settings. Some days I enjoy that. Some days I miss paper samples.
+
+INTERVIEWER: What would you do differently?
+
+F05: Price the portal separately much earlier, even while the studio was healthy. It would have given us evidence without asking an overdue invoice to choose our strategy. And I'd ask each colleague what work they want to be doing after the change. We discussed equity percentages before discussing Tuesday mornings. Tuesday morning is where people actually live. I'd still try the product. The second renewal from a customer who doesn't buy our design felt wonderful. Small invoice, very large feeling. It meant somebody wanted what we had built without needing us in the room.

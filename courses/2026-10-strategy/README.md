@@ -1,8 +1,7 @@
 # AI in the terminal — Department of Strategy and Entrepreneurship
 
-**Status: in preparation.** Copied forward from Finance on 20 October. Titles,
-examples and the run sheet are still Finance's until reworked; see the checklist
-below.
+**Status: in preparation.** Copied forward from Finance on 20 October, reworked
+20–21 October; see the checklist below.
 
 ## Facts
 
@@ -49,13 +48,15 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
 - [x] **Course files:** `course-files.zip` holds the practice folders unpacked, not
   zips inside a zip. The handout's download links point at this folder, not
   Finance's.
-- [ ] **(d) Level differences and derailments:** TAs take questions about one
-  laptop; a parking-lot board with fixed question slots; a quick-answers deck; a
-  "Done early?" task on every exercise.
-- [ ] **(e) Nobody sits idle:** sticky notes, a TA check of every laptop at the end
-  of setup, a fallback after 15 minutes stuck, install drop-ins (Thursday 11:00,
-  Friday 08:30).
-- [ ] **A one-page TA brief** for Ludvik and Leonardo in the teacher notes.
+- [x] **(d) Level differences and derailments** (21 October): a "Derailments"
+  page in the teacher notes. One-laptop questions go to a TA, a parking-lot
+  flipchart answered before each break, "Done early?" on the exercises, FAQ slides
+  as quick answers.
+- [x] **(e) Nobody sits idle** (21 October): sticky notes (yellow fine, pink stuck),
+  Ludvik's laptop check at 13:05, a fallback after 15 minutes stuck, install
+  drop-ins Thursday 11:00 and Friday 08:30.
+- [x] **A TA brief** for Ludvik and Leonardo in the teacher notes ("For Ludvik and
+  Leonardo"): Ludvik owns installs, Leonardo owns the room's questions.
 - [x] **Handout:** `codex --full-auto` no longer exists (Codex 0.162); the
   "Working safely" tip now points to section 3.
 - [x] **Strategy examples** (21 October): "Your field, as I imagine it" opens
@@ -64,11 +65,19 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
   the Fama–French replication; a strategy early task in setup; checks for
   interview papers in `paper` and `more`. Schools question and luck test tested
   with Codex.
-- [ ] **Reshape for 2 × 4 hours:** the run sheet and checklist in the teacher notes
-  (still Finance's one day), a qualitative example with real-looking transcripts,
-  the teaching block. Done: menu headings, the handout's shape-of-the-days table,
-  no more "after lunch".
-- [ ] **Room:** check that it's booked.
+- [x] **Two half-days** (21 October): run sheets for Thursday and Friday; the menu,
+  the course page and the handout split by day.
+- [x] **Interviews** (new deck `interviews`, handout section 7): eight fictional,
+  pseudonymised founder interviews (`props/pivot-interviews.zip`, built from
+  `scratch/examples/pivot-interviews/`), a codebook, coding, themes, every quote
+  checked by a script. Planted: three pseudonymisation slips, a contradiction, a
+  planned-or-emergent story, a case that doesn't fit.
+- [x] **Teaching** (new deck `teaching`, handout section 13): optional, end of
+  Friday. The exam factory, a course page, an animation; a fictional syllabus as
+  fallback (`props/ORG3402-organisational-behaviour.md`).
+- [ ] **Room:** check that it's booked. Line (5 October): A2 nearly full, C2 had
+  space, she'd book once the times were confirmed. No confirmation found in mail
+  (checked 21 October); ask Line.
 
 ## Open questions from email
 
@@ -79,8 +88,7 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
 ## Starting material
 
 - Copy forward from Finance.
-- Qualitative research needs its own example (interviews, documents); nothing
-  in `scratch/` covers it yet.
+- Qualitative research: `scratch/examples/pivot-interviews/` (built 21 October).
 - `scratch/links/strategy-canon/` is a strategic-management reading pile,
   instructor background.
 - For the teaching block: `scratch/handouts/course-factory.md` and

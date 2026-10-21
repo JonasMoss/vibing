@@ -96,7 +96,7 @@ paper: same title, authors and year? Make a table: OK, wrong paper, no DOI, not 
 :::
 
 - Then check three yourself: paste the DOI after `doi.org/`.
-- Practice file: a messy `.bib` with six planted traps (handout, section 8).
+- Practice file: a messy `.bib` with six planted traps (handout, section 9).
 
 ## Claim check {#claims}
 

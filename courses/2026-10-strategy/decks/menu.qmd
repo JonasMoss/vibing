@@ -22,12 +22,13 @@ date: "22 and 23 October 2026"
     <p class="menu-head">Friday · everyone</p>
     <a class="card" href="knows.html"><b>What it knows about you</b><span>Your field, context, your profile</span></a>
     <a class="card" href="paper.html"><b>Take a paper apart</b><span>Its biggest problem, then a fix</span></a>
-    <div class="pick">
+    <a class="card" href="interviews.html"><b>Interviews</b><span>A codebook, coding, every quote checked</span></a>
+    <div class="pick compact">
     <p class="menu-head later">Then · you choose</p>
-    <a class="card" href="review.html"><b>Referee panel</b><span>Simulated referees, a fresh session each</span></a>
-    <a class="card" href="refs.html"><b>References</b><span>Search, DOI checks, claim checks</span></a>
-    <a class="card" href="trail.html"><b>Leave a trail</b><span>A messy project, and the rerun test</span></a>
-    <a class="card" href="notes.html"><b>Notes and structure</b><span>A paper folder, notes the agent keeps</span></a>
+    <a class="card" href="review.html"><b>Referee panel</b></a>
+    <a class="card" href="refs.html"><b>References</b></a>
+    <a class="card" href="trail.html"><b>Leave a trail</b></a>
+    <a class="card" href="notes.html"><b>Notes and structure</b></a>
     </div>
   </div>
   <div>
@@ -36,7 +37,7 @@ date: "22 and 23 October 2026"
     <a class="card" href="agents.html"><b>The project file</b><span>AGENTS.md: tell it once</span></a>
     <a class="card" href="github.html"><b>GitHub</b><span>A copy in the cloud, co-authors</span></a>
     <a class="card" href="mcp.html"><b>Connectors</b><span>Email, calendar, Drive</span></a>
-    <a class="card" href="notes.html#/skills"><b>Skills</b><span>If you ask</span></a>
+    <a class="card" href="teaching.html"><b>Teaching</b><span>Optional, end of Friday</span></a>
     <a class="card" href="more.html"><b>More capability</b><span>Security, benchmarks, demos</span></a>
   </div>
 </div>

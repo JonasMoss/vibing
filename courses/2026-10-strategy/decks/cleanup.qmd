@@ -61,3 +61,14 @@ First time? *"Set up git with my name, …, and my email, …"*
 **Done early?** In `founders-study`: *"Rename the papers in literature/ as
 'Author Year - Title.pdf', and make a references.bib. Don't open anything in
 interviews/."* Here it *has* to read: they're papers.
+
+## Your own tedious thing {#own-tedious .your-turn background-color="#f1c84b"}
+
+A real folder of yours: downloads, an old course, a project from 2019.
+
+1. **Work on a copy,** outside OneDrive. Then *"Set up git here and commit
+   everything."*
+2. *"What's in here? What would you tidy, and why? Don't change anything yet."*
+3. Argue with the plan. Then *"Go ahead."* Then *"What changed?"*
+
+[Don't like it? *"Revert to the last commit."* That's what the save point is for.]{.small}

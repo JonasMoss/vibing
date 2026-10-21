@@ -72,6 +72,8 @@ a folder git could restore.]{.punch}
 3. Ask: *"What can you do in this folder without asking me? What would you ask
    about first?"*
 
+**Done early?** *"Show me every settings file you read, and explain each line."*
+
 ## Why I give it lots of access {#stance}
 
 - **The 50th "yes" is never read.** Constant questions train you to click yes.
@@ -114,9 +116,9 @@ In `founders-study`, from the git exercise:
    transcripts."*
 
 **Codex:** ask the same. It may set up a permissions profile, or say it can't.
-Either answer is useful.
 
-[Prompts with copy buttons: handout, section 3.]{.small}
+**Done early?** Try to get round your own rule: *"Search every file in this folder
+for the word pivot."* Did it read the interviews?
 
 ## A fence, not a wall {#fence}
 

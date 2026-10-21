@@ -1,0 +1,49 @@
+Interview F02
+Date: 2026-02-02
+Founder: F02 (pseudonym)
+Firm: [FIRM], founded 2024, sector: food-waste app
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F02: I used to close a café. You'd wrap perfectly fine sandwiches, put them in a bin, then go home and make yourself something worse for dinner. It was ridiculous. My co-founder could build an app, I knew some café managers, and we thought, well, surely this is a matching problem. Students want cheap lunch; cafés have lunch left over. We launched in spring 2024. I made the first promotional pictures on my kitchen floor because it had the best light. Very professional operation, obviously.
+
+INTERVIEWER: How did the first version work?
+
+F02: A café listed individual items and people reserved them for collection. We had fourteen venues signed up, which sounded wonderful. On a normal day four listed anything. Staff had to photograph a sandwich, price it, answer questions, hand it over, all while cleaning the machine and catching a bus. We'd designed it around the person who wanted the sandwich. We hadn't designed it around the person who had been standing up since six that morning. I should have known. That was literally my old job.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F02: Around February 2025. We moved towards workplace collection boxes: one mixed box from a kitchen, one collection window, an office coordinator organising the buyers. Fewer little transactions. The first box wasn't even in the app. A kitchen manager phoned because she'd prepared too much for a cancelled meeting. I put a message in an office group and carried two bags over myself. We earned almost nothing. But the kitchen called again the next week, which had never happened after our polished launch events.
+
+INTERVIEWER: What told you this was more than a favour?
+
+F02: Repetition. Boring repetition. Three Tuesdays in a row, the same coordinator asking whether there would be boxes. With the original app people said they loved the mission and then forgot their password. With boxes they complained if we were late. Complaints were the first sign that we had become useful. That doesn't mean all complaints are good, by the way. One person wanted a refund because she disliked carrots. We hadn't solved human nature, just lunch.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F02: Kitchen supervisors, office coordinators, and the person doing our accounts. Not in that order. The accounts person said our tiny transaction fees weren't covering payment costs and support time. We had about three months left, probably less if we counted tax properly. Our angel investor wanted us to charge a monthly kitchen fee. I said she didn't understand the community we were building. Then I went home and calculated how many sandwiches would pay my salary. It was a frightening number of sandwiches.
+
+INTERVIEWER: Did you and your co-founder agree?
+
+F02: Ingrid said we were turning a public service into an office perk. I heard that as her saying I had sold out. She meant, actually, who gets excluded if only workplaces can order? We argued for a whole evening without asking that question directly. She wanted to improve the consumer app. I wanted to stop carrying bags across town for free. We tested six weeks with two kitchens and three workplaces because neither of us trusted the other's forecast. That was a better conversation than debating what kind of people we were.
+
+INTERVIEWER: Looking back, was it planned?
+
+F02: I sometimes tell it as a move from individual demand to concentrated demand. Sounds very neat, doesn't it? We did have a slide about workplaces in the original application for support. One bullet. But the actual move started with a cancelled meeting and me having a bicycle available. If I'd been away that day, I don't know. Maybe we would have discovered it later. Maybe we'd have spent the remaining money on another campaign about forgotten sandwiches.
+
+INTERVIEWER: Was there a point you called it a pivot?
+
+F02: The investor used that word first. I resisted because it made the previous year sound like a mistake. We announced a new business service in May. Internally we had been doing it since February. The app still let individuals order until August, partly because I couldn't bear switching it off. So there isn't a clean date. There is the first box, the first subscription, the announcement, the switch-off. Pick the one that gives you the nicest anniversary.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F02: We lost a volunteer who really cared about access for students. I don't think he was wrong to leave. We kept saying we'd return to that, but we didn't put money behind it. My co-founder reduced her hours for two months. She said she was tired; I think she was also checking whether she still wanted this company. I took that personally. I was tired too, and somehow thought that gave me a monopoly on being upset.
+
+INTERVIEWER: Did the relationship recover?
+
+F02: Mostly. We now have a meeting where she can object without me immediately asking for a solution. That sounds like something from a management book, but it helps. My own cost was less noble: I missed being the cheerful food-rescue person. Selling a subscription to a facilities manager doesn't get the same applause. Saving food was our purpose; moving boxes became our job. I had to decide whether I could like the job as well as the purpose.
+
+INTERVIEWER: What would you do differently?
+
+F02: Pay attention to work at the other end of the screen. I'd do a closing shift with every pilot kitchen. Also, agree what we mean by success before the cash gets scary. We measured kilograms saved, downloads, revenue, all at once, and picked whichever number made the week look decent. Now we track repeat orders and whether kitchens renew. Still kilograms too. I haven't become a person who only counts invoices. I just need the invoices to keep the lights on while we count the food.

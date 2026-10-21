@@ -1,0 +1,47 @@
+---
+pagetitle: "Teaching"
+---
+
+# Teaching {#teaching background-color="#f0674d"}
+
+Optional, and short. What the terminal adds to the chat.
+
+## What the terminal adds {#adds}
+
+- **It works on the whole course folder:** slides, notes, old exams, at once.
+- **It makes files:** a course page, slides, an exam with solutions, a rubric.
+- **Next year, it reruns.** Change a date or a reading, and ask again.
+
+> The chat writes a paragraph. The terminal keeps the course.
+
+## The exam factory {#try-exam .your-turn background-color="#f1c84b"}
+
+1. **Describe your course in five lines,** out loud (Windows key + H): who takes
+   it, what they should be able to do, what would convince you they can.
+2. *"Draft 12 exam questions: four on the reading, four applying a theory to a new
+   case, four asking for a judgement. Then a rubric for the best four."*
+3. ***"Which learning outcome can't be assessed as it's written?"***
+
+**No course at hand?** A fictional one: handout, section 13.
+
+## A course page {#try-page .your-turn background-color="#f1c84b"}
+
+::: {.prompt}
+Make a simple course web page from my notes: a schedule, the readings, and one
+page per session. Open it in my browser.
+:::
+
+Then, if you like: *"Publish it with GitHub Pages."* This course's page is one.
+
+**Done early?** *"Make a 15-second animated SVG that explains [first-mover
+advantage] to first-years."* Like the one in the capability talk.
+
+## What you keep {#keep}
+
+- **The rubric before the exam,** not after marking has started.
+- **The weak learning outcome,** found by trying to assess it.
+- **A folder that reruns next year.**
+
+# Your course, as a folder {#close background-color="#f0674d"}
+
+Drafts are cheap now. Spend the time on the decisions.

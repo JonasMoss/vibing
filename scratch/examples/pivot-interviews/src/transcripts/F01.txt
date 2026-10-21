@@ -1,0 +1,49 @@
+Interview F01
+Date: 2026-02-01
+Founder: F01 (pseudonym)
+Firm: [FIRM], founded 2023, sector: B2B software for fish farms
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F01: We were engineers. That is probably the shortest explanation for both the company and the trouble. My co-founder had worked with feeding systems, I had worked with reporting software, and we thought we could put the information together. One screen for the whole farm. We started in autumn 2023 with our savings and a small development grant. There were two of us and then a developer three days a week. Our first office had no meeting room, so demonstrations happened beside the coffee machine. I liked that, actually. Nobody could pretend we were a big operation.
+
+INTERVIEWER: What did you think customers would buy?
+
+F01: Better decisions about feeding. Less waste, healthier fish, all those things. We had a model that looked beautiful on historical data. Six farms agreed to test it. We called them customers in our presentation, although only one had paid anything. The operations managers were friendly. They always are if you bring cake and don't ask them to install something during a shift change. I interpreted friendly as interested, interested as willing to pay. Those are three different things, apparently.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F01: January last year, roughly. We stopped selling the prediction and started selling a reporting tool. It collects records for audits. Much less glamorous. A farm manager opened our dashboard, ignored the prediction entirely, and asked whether he could print the treatment history with the dates aligned. I said yes, technically. He said, can you do it before Thursday? That Thursday was our first useful deadline. Until then our deadlines were things we made up for ourselves.
+
+INTERVIEWER: Was that enough to change the product?
+
+F01: No, no. I spent another month saying it was a side feature. Then three farms asked for the same export. One sent a screenshot with red circles around the columns she wanted. We had spent eight months improving a model nobody discussed, and suddenly people were arguing about a date column. A red circle from a customer is worth more than a room full of polite nods. That sounds wise now. At the time I was annoyed she hadn't noticed the model.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F01: The farm managers first. Also their quality people, who had never been in our initial interviews. We had spoken to the people who could admire the idea, not the people who would use it every Tuesday. Our board observer kept asking for recurring revenue. I wouldn't say he chose the direction. But he did refuse to support another six months of model development without contracts. That narrowed the conversation considerably. My co-founder called it interference. I called it a reasonable question, except when I was cross with him.
+
+INTERVIEWER: What was the cash position then?
+
+F01: Eleven weeks if we paid ourselves normally. Four months if we didn't. We used the four-month number in meetings because it sounded like a choice. There was a spreadsheet with three colours and all the colours were bad. Honestly, the customer requests had been there since November. We only became very attentive listeners when the bank balance fell. The customers supplied the direction; the bank supplied the date. I don't think either explanation works alone.
+
+INTERVIEWER: Looking back, was it planned?
+
+F01: We had always said we would follow customer needs, so in that sense, yes. But that is a very generous definition of a plan. There wasn't a document saying, build an audit exporter after Christmas. There was a hurried branch of the software, a Thursday deadline, and then a second invoice. Later I drew a slide with three phases. My co-founder laughed because phase two was originally called the temporary workaround. Now it is eighty percent of what we sell.
+
+INTERVIEWER: Do you still use that slide?
+
+F01: Yes. It explains the business quickly. I just don't show it to myself as evidence that we knew what we were doing. You need a story for a ten-minute meeting, and the actual story contains a lot of waiting for someone to answer an email. We now have nine paying sites, not nine companies, that distinction matters. The prediction is still there in a test menu. Sometimes I open it. Like visiting a boat you used to own.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F01: Pride first. I introduced myself as someone building intelligent systems and ended up fixing spreadsheet exports. My co-founder thought we were becoming an administrative supplier. He wanted two more months for the model. We stopped eating lunch together for a while because every sandwich turned into a product meeting. Our developer asked which backlog was real. That was embarrassing. She had two founders giving her incompatible priorities and both claiming the customer had spoken. We finally wrote down which work we were stopping.
+
+INTERVIEWER: And outside work?
+
+F01: My partner covered more rent for three months. She was kind about it, which somehow made it harder. I also stopped answering friends when they asked how the clever fish project was going. I could explain it to customers before I could explain it at dinner. The team recovered after we got the first annual payment. Not because money resolves everything, but because we could disagree without imagining a dismissal on Friday.
+
+INTERVIEWER: What would you do differently?
+
+F01: Ask someone to show me the last report they actually completed. Not describe their ideal future system. Sit beside them, watch the copying and pasting. And I would count paying trials separately from free ones from day one. I would still build something ambitious. I'm not converted to making tiny things forever. But I would make the ambitious thing earn its place beside a real task, rather than asking the customer to appreciate how ambitious it was.

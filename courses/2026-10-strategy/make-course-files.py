@@ -12,8 +12,12 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 TOP = "ai-in-the-terminal"
-FILES = {"handout.html": HERE / "handout.html"}
-PROPS = ["founders-study", "decrap-me", "messy-project", "references-practice"]
+FILES = {
+    "handout.html": HERE / "handout.html",
+    "practice/teaching/ORG3402-organisational-behaviour.md":
+        HERE / "props" / "ORG3402-organisational-behaviour.md",
+}
+PROPS = ["founders-study", "decrap-me", "pivot-interviews", "messy-project", "references-practice"]
 README = """AI in the terminal: Claude Code and Codex. BI, Strategy and Entrepreneurship,
 22 and 23 October 2026.
 

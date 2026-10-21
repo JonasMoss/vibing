@@ -1,0 +1,49 @@
+Interview F07
+Date: 2026-02-07
+Founder: F07 (pseudonym)
+Firm: [FIRM], founded 2023, sector: health data
+FICTIONAL PRACTICE MATERIAL. Not a real person or firm.
+
+INTERVIEWER: Tell me how the company started.
+
+F07: My co-founder and I came from engineering, but the company began with a question about occupational health. Outdoor maintenance crews work in cold, awkward conditions. Employers had weather records and incident forms, but very little connecting a particular shift with exposure and recovery. We wanted to combine environmental readings with voluntary symptom reports so occupational health teams could spot patterns. Not diagnose individuals. That distinction mattered to us from the beginning, although our early slides did not make it as clearly as I am making it now. We were better at collecting signals than explaining who needed them.
+
+INTERVIEWER: What did the first product look like?
+
+F07: A dashboard with temperature, moisture, shift duration, and a short worker check-in. The check-in asked about numbness, fatigue, that kind of thing. A health adviser helped us write it. We also made the environmental boxes because commercial ones did not give us the readings we wanted near snowmaking equipment. We were the only company in Bodø making snow sensors for ski lifts, founded by two former Statkraft engineers. That was how local customers knew us, even though we described ourselves as a health-data company. There was already a difference between our identity and what people actually bought.
+
+INTERVIEWER: When did you first change direction, and what changed?
+
+F07: In late 2024 we moved from individual exposure monitoring to team-level reporting for occupational health providers. We stopped selling a dashboard directly to site managers. The provider became the customer, and workers could complete a check-in without their line manager seeing the individual response. Environmental hardware became a supporting input rather than the centre of the sale. We had to rebuild permissions and reports. It was not just changing a label. Who could see what was basically the product, and we had treated it as a settings page.
+
+INTERVIEWER: What brought that into focus?
+
+F07: A worker representative at a pilot site asked whether a supervisor could infer who had reported exhaustion. We said we did not display names in the summary. She asked how many people had been on that shift. Three. You do not need a name when the timetable does the naming. That stopped the meeting. Later the occupational health nurse said she would use the information, but not through the manager's screen. We had spent months asking whether the sensors were accurate. She asked whether the arrangement allowed anybody to answer honestly.
+
+INTERVIEWER: What made you decide? Who did you talk to?
+
+F07: Two worker representatives, three health advisers, and a data-protection consultant. Also customers who had stopped sending check-ins. We had interpreted the decline as an interface problem, so we had made the button larger. The button was not the problem. One worker said he did not want a dashboard proving he was the tired one. I carried that sentence around for weeks. The health providers wanted aggregated trends over longer periods and a route for confidential follow-up. They were less interested in our live display, which had been my favourite part.
+
+INTERVIEWER: How did the team take that?
+
+F07: My co-founder thought we were abandoning the evidence. He said fewer individual readings meant weaker analysis. I said a precise reading from somebody who no longer trusts us is not useful evidence. That sounds very clear now. At the time I was less eloquent and slammed my laptop. He had spent eight months getting the sensor feed stable. I was asking him to stop demonstrating it as the main benefit. He heard that as me saying his work had been a mistake. It was not, but I did not make that distinction well.
+
+INTERVIEWER: Was there financial pressure too?
+
+F07: Yes. We had five pilot sites and only one paying contract. The hardware covered some costs but not development. There were ten weeks of unrestricted cash left, with a possible grant payment later. Our board member wanted a signed agreement with a health provider before supporting another bridge investment. He was careful to call it a milestone, not an instruction. When your next salary depends on the milestone, the distinction becomes fairly academic. Still, the worker meeting happened before that condition. I would not want the financial story to erase the concern that started it.
+
+INTERVIEWER: Looking back, was it planned?
+
+F07: We intended to work through health professionals eventually. I can point to that sentence in our early notes. But eventually was doing a lot of work. We thought we would first establish the manager dashboard and add a clinical partnership later. Instead the uncomfortable meeting made the original arrangement impossible to defend to ourselves. We called a provider we had met during an equipment trial. She happened to have budget for a small service evaluation. That became the next six months. We did not select the route from a neat comparison of alternatives.
+
+INTERVIEWER: What did it cost you, personally and as a team?
+
+F07: We removed features people had spent weekends making. One contractor had built individual comparison charts, beautifully clear charts, and we never released them. My co-founder and I also disagreed about how much to tell the original pilot managers. I wanted to say we had learned the setup could discourage honest reporting. He thought that made us sound irresponsible. We eventually explained the change together and offered to remove the earlier check-in records. Preparing that conversation took longer than rewriting some of the software. Trust has a development cost, but nobody had put it in our budget.
+
+INTERVIEWER: Did it change how you saw yourself?
+
+F07: I stopped introducing myself by saying we were engineers. It had become a way to claim neutrality. We chose the fields, the access rules, the default display. Those were choices about work relationships too. My husband noticed I was less excited about a new sensor and more excited when a nurse said the report fitted her appointment. I still love the technical work. I just no longer think the cleverest measurement is automatically the most useful service. We now work with two providers, slowly, and I am comfortable with slowly if participation holds up.
+
+INTERVIEWER: What would you do differently?
+
+F07: Invite the worker representative before the first live dashboard, not after. Ask who might avoid using the system and what they would be protecting by avoiding it. I would also separate a research question from a sales promise more carefully. We told managers we could reveal patterns before knowing whether enough workers would take part. That made every missing response feel like a technical defect. Sometimes silence is a response to the organisation around the tool. I would want our next product meeting to have room for that answer without somebody reaching immediately for a larger button.
