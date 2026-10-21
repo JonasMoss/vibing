@@ -87,12 +87,13 @@ slides.
      and whether **Documents** sits in OneDrive. If it does, keep practice folders
      in the home folder (where `mkdir practice` puts them): git and OneDrive
      syncing don't mix well. Demo all three on your own Windows laptop live.
-5. **Demo papers: chosen.**
-   - "Take a paper apart": your own pick.
-   - Referee panel: Nagel, "Seemingly Virtuous Complexity in Return Prediction",
-     NBER w34104 (<https://www.nber.org/papers/w34104>; NBER downloads directly).
-     The pilot answers are in `scratch/examples/paper-critique/pilot/`, local only.
-   - Replication card: Fama and French (1993), Table 2 (see "Your own work" below).
+5. **Demo papers: to choose, a strategy paper this time.**
+   - "Take a paper apart": your own pick, or one the room names on Friday morning.
+   - Referee panel: Finance used Nagel (NBER w34104). For Strategy, one open paper
+     you can download live. A candidate: Denrell and Liu (2012), "Top performers are
+     not the most impressive when extreme performance indicates unreliability",
+     *PNAS*, six pages and short enough to referee in the room.
+   - Luck-test card: no paper needed (see "Your own work" below).
 6. **The Foldnes example.** Make only the airtight claim: *the paper they cite does
    not exist; the DOI resolves to a 2022 editorial acknowledgement.* Don't say "the
    method doesn't exist" unless you've settled it with Foldnes. Details are in
@@ -326,32 +327,50 @@ in submission order.
 - **Aim:** a reorganised folder, a grading table, and one deliberate undo.
 - **The framing:** a job the chat window can't do, because it can't touch your
   files. Tedious, local, easy to judge.
-- **The git beat, from the August plan:**
-  1. Brief the task, but don't start it.
-  2. Ask the room: *"Before you hit enter, does anything about this make you
-     nervous?"* Let someone say *"what if it ruins something?"*
-  3. Answer with *"Set up git here and commit everything."* Then: *"Now it can't do
-     anything you can't undo."* The answer lands because the question is live.
-- **The undo** is on purpose: delete the Marking guidance folder, then "go back to
+- **Names only (new for Strategy).** Group and participant ID are in every folder
+  name, so the job needs no reading. In Finance the agent opened the PDFs anyway
+  (auto mode reads freely) and the room got worked up. Now the prompts say *"Work
+  from the names only; don't open the submissions"*, and the last slide, "You decide
+  what it reads", makes it the point. It follows straight on from the access deck.
+- **The git beat:** they set up git an hour ago, so this is the habit, not the
+  lesson. Brief the task, then ask *"Before you hit enter, does anything about this
+  make you nervous?"* Answer with *"Set up git here and commit everything."*
+- **The undo** is on purpose: delete the Marking guidance folder, then "revert to
   the last commit". Watching it come back is what makes git stick.
-- **Then four git slides** (about 5 minutes): what git is (a timeline diagram; click
-  for "go back"), what it's for, branches and GitHub (a diagram; two clicks), and six
-  words worth knowing. They come *after* the undo on purpose: people have felt it
-  work, now they want to know what it is. Don't go deeper than the slides. Branches
-  and push/pull come back in the GitHub deck if anyone asks.
+- **Done early?** Rename the fake papers in `founders-study/literature/` and make a
+  `.bib`, without opening `interviews/`. The opposite case: there it has to read,
+  and that's fine.
 - **Ties forward:** "Leave a trail" and the GitHub demo reuse the same save-point move.
 
 ## What it knows about you
 
 About 20 minutes. Two halves, framed honestly.
 
+- **Opens with the field, as I imagine it (new for Strategy, 3–5 minutes).** Three
+  cards: interviews and cases, regressions on firm data, "is it just luck?". Say
+  plainly that you're a statistician guessing. Then *"Tell me what I got wrong"*:
+  ask what's missing and who is which, and write their examples on the parking-lot
+  board. Use those examples in the paper and referee blocks instead of yours. The
+  last line, "the agent is in the same spot", is the bridge into the deck.
+  - Sources for the cards: Burgelman's Intel fieldwork (*Strategy Is Destiny*, 2002;
+    "Fading Memories", *ASQ* 1994); Eisenhardt (1989), "Building theories from case
+    study research"; the diversification discount (Campa and Kedia 2002, Villalonga
+    2004); luck and the CEO effect (Denrell and Liu 2012, Fitza 2014, Henderson,
+    Raynor and Ahmed 2012). Background in `scratch/links/strategy-canon/`.
 - **"Who you are" is an open question for this room.** In stats, in the terminal,
   you barely notice it; fields with schools may differ. Say exactly that, and let
-  the room find out. Pairs pick opposite schools on *"Is the value premium
-  compensation for risk, or mispricing?"* (Fama–French vs behavioural). The
-  round-up is data: *did it change, and how much?*
-  - **Untested.** Try the value-premium question once before Friday, with both
-    one-liners, so you know roughly what to expect.
+  the room find out. Pairs pick opposite schools on *"Is strategy mostly planned,
+  or does it emerge?"* (Ansoff and Porter vs Mintzberg and Burgelman). The round-up
+  is data: *did it change, and how much?*
+  - **Tested 21 October (Codex, three clean profiles):** all three answer "both".
+    The profile changes the emphasis and the vocabulary, not the verdict: the
+    planning profile defends deliberate direction and boundaries; the process
+    profile explains it through Burgelman's induced and autonomous processes. So
+    expect "it changed the framing", and ask the room whether that matters.
+  - Another question that splits schools: *"How much does the CEO matter for firm
+    performance?"* Tested the same day: every profile says "a lot, but no single
+    number"; a Denrell-and-Fitza profile leads with luck, an upper-echelons profile
+    with the bigger estimates.
 - **The Berger demo** is the tested example of a school changing the answer. The
   A/B question with no profile, then one line in the folder's `AGENTS.md`:
   *"My intellectual idol is Jim Berger."* `/clear`, ask again. (Tested with
@@ -385,12 +404,16 @@ About 20 minutes. Two halves, framed honestly.
   - People skip *"Do they address it anywhere?"* and report false alarms. Collect
     one for the round-up.
   - Generic first answers are normal; *"what's specific to this paper?"* fixes most.
-- **Honest framing:** *"I can't tell you whether a critique of a finance paper is
+- **Honest framing:** *"I can't tell you whether a critique of a strategy paper is
   right. You can."* If it fails on someone's paper, say so in the round-up. That's
   a result too.
 - **From the September pilots on two NBER finance papers:**
   - the critique took 1–1.5 minutes, the fix 5–7.5;
   - the two tools picked different "biggest problems" in the same paper.
+- **Case studies and interview papers** work too, with different pushes (on the
+  slide): *"Which claims rest on the fewest interviews?"*, *"What else would explain
+  the same quotes?"* The "fix" is then a design (a comparison case, a sampling
+  rule), not code.
 
 ## Referee panel
 
@@ -417,7 +440,7 @@ New module, not yet run with a room. About 40 minutes.
     Don't teach that today.
 - **Skill hook:** "Turn the procedure into a skill called referee-panel" connects to
   the skills slide in `notes`, if anyone asks.
-- **Demo:** the first two steps on your finance paper, live. Then one referee from
+- **Demo:** the first two steps on a strategy paper, live. Then one referee from
   a fresh session.
 
 ## References
@@ -538,7 +561,7 @@ Not taught. One slide at the end of the `notes` deck (`notes.html#/skills`) and 
   `winget install --id GitHub.cli -e`, then `gh auth login`, which opens the
   browser. Not tested on a BI-managed laptop; if winget is blocked, the installer
   is at <https://cli.github.com>.
-- **The selling point for finance:** replication packages. A repository archived
+- **The selling point for research:** replication packages. A repository archived
   on Zenodo gets a DOI.
 - **Say once:** private by default; history is forever, so data and passwords
   never go in.
@@ -557,8 +580,8 @@ Have his username ready.
 **Setup, live (2–3 minutes):** in a copy of the "Leave a trail" practice folder
 (`props/messy-project.zip`):
 *"Set up git, commit everything, put this folder on GitHub as a private repository
-called finance-demo, and add [Ludvik's username] as a collaborator."* Ludvik
-accepts the invitation (it comes by email), then: *"Download JonasMoss/finance-demo
+called strategy-demo, and add [Ludvik's username] as a collaborator."* Ludvik
+accepts the invitation (it comes by email), then: *"Download JonasMoss/strategy-demo
 into this folder."*
 
 **The pull request:**
@@ -605,22 +628,17 @@ connection on the demo repository. Not yet tested.
 - **Walk the room.** Ask "what are you trying?", not "is it working?"
 - **Stuck people:** suggest *"What's here? What's missing? What would you do
   first?"* on a real folder, after a commit.
-- **The replication card** is the one to push for this room: Ken French's data
-  library is public and agents can download from it, so a classic table plus
-  "does it still hold today?" is doable in 20 minutes. The target: Fama and French
-  (1993), *JFE* 33, Table 2, July 1963 to December 1991, 342 months. Published
-  monthly means: RM−RF 0.43% (sd 4.54, t = 1.76), SMB 0.27% (2.89, t = 1.73), HML
-  0.40% (2.54, t = 2.91). Today's library won't match to the decimal (CRSP has
-  been revised since, and the factor construction updated): close but not exact
-  is the expected result, and "why not exact?" is a good question to ask the agent.
-  "Does it still hold?" leads straight into the value-premium debate from `knows`.
-  - **Checked 14 October** (library file built from the August 2026 CRSP), monthly
-    %, mean (t): same sample, RM−RF 0.41 (1.65), SMB 0.26 (1.67), HML 0.38 (2.75):
-    within 0.02 of the paper.
-  - **After the paper, January 1992 to August 2026** (416 months): RM−RF 0.76
-    (3.56), SMB 0.06 (0.36), HML 0.23 (1.40). The size premium is gone and value
-    has halved, while the market did better. That's the punchline people find
-    themselves.
+- **The luck-test card** is the one to push for this room: no data, a classic
+  strategy question (Henderson, Raynor and Ahmed 2012, *"How long must a firm be
+  great to rule out chance?"*), and a punchline people find themselves.
+  - **Tested 21 October (Codex, 52 seconds):** 1,000 identical firms, a 50–50 year
+    each, 30 years. **51 beat the benchmark in 20 of 30 years by pure luck**
+    (49 expected); 8 had a 10-year winning streak; the longest was 14 years.
+    Searching all firms and start years, an 18-year streak is the 5% bar, 20 years
+    the 1% bar. Chosen *in advance*, 5 to 7 years would do. That last contrast is
+    the point: picking the winners afterwards is what changes the arithmetic.
+  - Good follow-ups: *"Now let skill differ a little. How often does the most
+    skilled firm come out on top?"* (Denrell and Liu's question.)
 - **Close:** *"What will you try on Monday?"* Get three answers out loud. Remind
   them the handout has everything, including what we skipped.
 

@@ -6,6 +6,27 @@ pagetitle: "What it knows about you"
 
 Context, your profile, and an experiment for your field.
 
+## Your field, as I imagine it {#field}
+
+```{=html}
+<div class="field">
+  <div><b>Interviews and cases</b><i>Go in, talk to people, build theory. Burgelman's years inside Intel; Eisenhardt's case method.</i><span><b>The agent:</b> transcripts, codes, themes, and the quote that backs each claim.</span></div>
+  <div><b>Regressions on firm data</b><i>Panels, fixed effects, selection. Do diversified firms really trade at a discount?</i><span><b>The agent:</b> writes the code, reruns it, and tries the robustness checks you'd skip.</span></div>
+  <div><b>Is it just luck?</b><i>Short methods papers: luck or skill, the CEO effect, learning from winners.</i><span><b>The agent:</b> simulates it. 1,000 firms, pure luck: how many look great?</span></div>
+</div>
+```
+
+[Entrepreneurship: the same three, about founders and new firms. I'm a statistician:
+this is a guess.]{.small .muted}
+
+## Tell me what I got wrong {#wrong}
+
+- **What's missing?** What do you actually spend your weeks on?
+- **Which one is you?** Hands up.
+- **Your examples beat mine.** Say them out loud, and we'll use them.
+
+> The agent is in the same spot: it guesses who you are, until you tell it.
+
 ## What it can see
 
 ```{=html}
@@ -63,20 +84,21 @@ different. Find out:
 1. Ask a contested question with no profile:
 
 ::: {.prompt}
-Is the value premium compensation for risk, or mispricing?
+Is strategy mostly planned, or does it emerge?
 :::
 
-2. Add one line to this folder's `AGENTS.md`: *"I'm in the
-   Fama–French tradition"*, or *"I work in behavioural finance; I read Shiller and Thaler."*
+2. Add one line to this folder's `AGENTS.md`: *"I'm in the strategic planning
+   tradition: I read Ansoff and Porter"*, or *"I study strategy as process: I read
+   Mintzberg and Burgelman."*
 3. `/clear`, ask again, and compare with a neighbour who picked the other school.
 
 ## Your profile: how you work
 
 What carries across every project: **the rules you're tired of repeating.**
 
-- *"I work in R."* (Or Stata, or Python.)
+- *"I work in Stata."* (Or R, or Python.)
 - *"Cluster standard errors by firm unless I say otherwise."*
-- *"I write in LaTeX. Never give me Word unless I ask."*
+- *"Quote interviewees by pseudonym, never by name."*
 - *"Tell me what you'll do before you change anything."*
 
 Mine, in both tools: *"This is my workstation: use at most 4 cores."* · *"Build

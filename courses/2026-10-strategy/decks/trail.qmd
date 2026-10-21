@@ -14,8 +14,8 @@ willingness to pay.* A survey experiment, cleaned in Excel, written up in Word.
 Fictional, and completely typical.
 
 Start the agent in an empty folder, and paste the **download prompt from the
-handout, section 9**. (Or unzip `practice/messy-project.zip` from the course files
-yourself.)
+handout, section 9**. (Or copy `practice/messy-project` from the course
+files.)
 
 ## What's in it
 
@@ -59,7 +59,7 @@ grad student redid it from their spreadsheet in 2013.
 
 ## Exercise: organise it
 
-1. *"Set up git here and commit everything."* Same move as this morning.
+1. *"Set up git here and commit everything."* Same move as in the cleanup.
 2. *"Organise this folder so a co-author could rerun everything. Show me the plan
    first. Don't move anything yet."*
 3. Argue with the plan. Then let it run.
@@ -91,5 +91,5 @@ An undocumented click in Excel decided the sign of the result. The rerun test fo
 
 ## Now your own folder
 
-- Copy a real project folder, or take this morning's paper folder. Work on the copy.
+- Copy a real project folder, or take your paper folder from *Take a paper apart*. Work on the copy.
 - Same steps: commit, plan, organise, README and project file, the test.

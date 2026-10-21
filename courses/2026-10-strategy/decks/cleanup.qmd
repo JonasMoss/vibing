@@ -33,10 +33,11 @@ First time? *"Set up git with my name, …, and my email, …"*
 
 ## Clean it up
 
-1. *"What's in decrap-me? What would annoy a teacher about it? Don't change anything."*
+1. *"What's in decrap-me, by file and folder names only? What would annoy a
+   teacher about it? Don't open any files, and don't change anything."*
 2. ***"Reorganise it so I can grade quickly: one folder per group, files named
-   by group and what they are, and the grade sheet sorted by group. Show me the
-   plan first."***
+   by group and what they are, and the grade sheet sorted by group. Work from
+   the names only; don't open the submissions. Show me the plan first."***
 3. **Argue with the plan.** Change at least one thing. You're the boss.
 4. *"Go ahead."*
 5. *"Make a grading table: group, participant ID, report file, dashboard file, and an empty column for the mark."*
@@ -49,3 +50,14 @@ First time? *"Set up git with my name, …, and my email, …"*
 - *"Revert to the last commit."* It's back.
 
 > Save point first, then courage.
+
+## You decide what it reads {#reads}
+
+- **Here, the names were enough:** group and ID are in every folder name.
+- **Reading is sending.** What it opens goes to the model (the last deck).
+- **Say so in the prompt:** *"Work from the names only."* *"Don't open
+  interviews/."*
+
+**Done early?** In `founders-study`: *"Rename the papers in literature/ as
+'Author Year - Title.pdf', and make a references.bib. Don't open anything in
+interviews/."* Here it *has* to read: they're papers.

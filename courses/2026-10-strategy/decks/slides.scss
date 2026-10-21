@@ -167,6 +167,10 @@ $code-color: $ink;
   line-height: 1.25;
 }
 
+.reveal .menu .menu-head.later {
+  margin-top: 0.2em;
+}
+
 .reveal .menu .pick a.card {
   border-color: $coral;
   border-width: 3px;
@@ -388,4 +392,43 @@ $code-color: $ink;
   margin-right: 0.6em;
   padding: 0.15em 0.5em;
   vertical-align: middle;
+}
+
+/* The field, as I imagine it: three cards side by side. */
+.reveal .field {
+  display: grid;
+  gap: 0.7em;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 0.3em;
+}
+
+.reveal .field div {
+  background: $white;
+  border: 2px solid $ink;
+  border-radius: 12px;
+  padding: 0.5em 0.65em 0.6em;
+}
+
+.reveal .field b {
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.15;
+}
+
+.reveal .field i {
+  display: block;
+  color: $muted;
+  font-size: 0.58em;
+  font-style: normal;
+  line-height: 1.3;
+  margin-top: 0.35em;
+}
+
+.reveal .field span {
+  display: block;
+  border-top: 2px solid $paper-deep;
+  font-size: 0.6em;
+  line-height: 1.3;
+  margin-top: 0.5em;
+  padding-top: 0.45em;
 }

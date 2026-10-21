@@ -17,28 +17,31 @@ format:
 
 # How to use this {.unnumbered}
 
-Everything from today is in here, including the parts we don't get to in the
+Everything from both days is in here, including the parts we don't get to in the
 room. Every grey box with a coral edge is a **prompt**: click the copy icon in its
 corner, paste it into Claude Code or Codex, and change the bits in
 \[square brackets\].
 
-**The shape of the day:** the morning gets you running, has the agent do something
-tedious for you, and then takes your paper apart. The afternoon blocks (sections
-5–8) work in any order, today or next week.
+**The shape of the two days:** Thursday gets you running, shows you save points and
+what the agent can touch, and has it do something tedious for you. Friday is about
+research: what it knows about you, then your paper taken apart. The blocks after
+that (sections 7–10) work in any order, on Friday or next week.
 
 | | Section | What you get |
 |---|---|---|
-| Morning | 1. Get it running | Claude Code or Codex, and git, working on your laptop |
-| | 2. Do something tedious | A messy folder cleaned up, with a save point and an undo |
-| | 3. What it knows about you | A profile that makes every answer fit you |
-| | 4. Take a paper apart | Its biggest problem, and an attempt at a fix |
-| Afternoon, pick | 5. Referee panel | Simulated referee reports, and an editor's letter |
-| | 6. References | Searched, downloaded, DOI-checked, claim-checked |
-| | 7. Leave a trail | A folder a co-author can rerun |
-| | 8. Notes and structure | Where things go; a project file; notes the agent keeps |
-| Any time | 9. Your own work | Starting points for next week |
-| | 10. GitHub | A copy of the folder in the cloud; co-authors |
-| | 11. Connectors | Your email, calendar and files, if you want them |
+| Thursday | 1. Get it running | Claude Code or Codex, and git, working on your laptop |
+| | 2. Save points | Git: what it is, why the agent needs it, your first commits |
+| | 3. What it can touch | What it does without asking, and how to rein it in |
+| | 4. Do something tedious | A messy folder cleaned up, with a save point and an undo |
+| Friday | 5. What it knows about you | A profile that makes every answer fit you |
+| | 6. Take a paper apart | Its biggest problem, and an attempt at a fix |
+| Then, pick | 7. Referee panel | Simulated referee reports, and an editor's letter |
+| | 8. References | Searched, downloaded, DOI-checked, claim-checked |
+| | 9. Leave a trail | A folder a co-author can rerun |
+| | 10. Notes and structure | Where things go; a project file; notes the agent keeps |
+| Any time | 11. Your own work | Starting points for next week |
+| | 12. GitHub | A copy of the folder in the cloud; co-authors |
+| | 13. Connectors | Your email, calendar and files, if you want them |
 
 ::: {.floor}
 **Two rules for the day.** Don't overthink it: just use it. And when you get
@@ -242,10 +245,10 @@ Done? You've used an AI agent on your own machine.
 
 If you're early, find the edge. Pick whatever tempts you:
 
-- **Something from finance.**
+- **Something from strategy.**
 
   ```{.default .prompt}
-  Price a European call with S = 100, K = 105, r = 4%, sigma = 20%, T = 1. Show the code and run it.
+  Make a one-page web page that shows Porter's five forces for Norwegian salmon farming, and open it in my browser.
   ```
 
 - **Watch it build something.** *"Write a small program that does X, and run it."*
@@ -385,7 +388,7 @@ a survey, papers, a draft. Nothing in it is real. About ten minutes.
 Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/founders-study.zip into this folder and unzip it.
 ```
 
-(Or unzip `practice/founders-study.zip` from the course files yourself.)
+(Or copy `practice/founders-study` from the course files.)
 
 ```{.default .prompt}
 Go into founders-study. Set up git, but don't commit yet. Tidy the folders the way a researcher would, and show me the plan first.
@@ -555,7 +558,7 @@ change with git.
 In your `practice` folder:
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/props/decrap-me.zip into this folder and unzip it.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/decrap-me.zip into this folder and unzip it.
 ```
 
 Then, **before it changes anything**:
@@ -576,12 +579,17 @@ Now it can't do anything you can't undo. Note the order: a save point taken
 ## Clean it up
 
 ```{.default .prompt}
-What's in decrap-me? What would annoy a teacher about it? Don't change anything.
+What's in decrap-me, by file and folder names only? What would annoy a teacher about it? Don't open any files, and don't change anything.
 ```
 
 ```{.default .prompt}
-Reorganise it so I can grade quickly: one folder per group, files named by group and what they are, and the grade sheet sorted by group. Show me the plan first.
+Reorganise it so I can grade quickly: one folder per group, files named by group and what they are, and the grade sheet sorted by group. Work from the names only; don't open the submissions. Show me the plan first.
 ```
+
+Everything it needs is in the names: the group number and the participant ID are
+in every folder name. **You decide what it reads.** It would read the submissions
+if you asked it to (to draft feedback, say), and then they're sent to the model,
+like everything it reads (section 3).
 
 **Argue with the plan.** Change at least one thing: the folder names, what happens
 to the cover sheets, whatever you'd do differently. Then *"Go ahead."*
@@ -605,13 +613,21 @@ Delete the Marking guidance folder.
 Gone? Then:
 
 ```{.default .prompt}
-Go back to the last commit.
+Revert to the last commit.
 ```
 
 It's back. **Save point first, then courage.** That's the habit for every folder you
 care about: commit, let it try, look at what changed, keep it or go back.
 
 What git is, and the words for it: section 2.
+
+**Done early? The opposite case.** In `founders-study` (section 2), the papers in
+`literature/` have names like `download (3).pdf`. Renaming those *does* mean reading
+them, and that's fine: they're papers. The consent forms are not.
+
+```{.default .prompt}
+Go into founders-study. Rename the papers in literature/ as "Author Year - Title.pdf", and make a references.bib for them. Don't open anything in interviews/.
+```
 
 # What it knows about you
 
@@ -647,23 +663,23 @@ In statistics, in the terminal, it barely matters. Fields with schools of though
 may be different. Find out with your neighbour:
 
 ```{.default .prompt}
-Is the value premium compensation for risk, or mispricing?
+Is strategy mostly planned, or does it emerge?
 ```
 
-Ask it once with no profile. Then add one line to the folder's `AGENTS.md`:
-one of you writes *"I'm in the Fama–French tradition"*, the
-other *"I work in behavioural finance; I read Shiller and Thaler."* Type `/clear`,
-ask again, and compare. Other questions that split schools: *"Do active funds beat
-index funds after fees?"*, *"Is momentum a risk factor?"*
+Ask it once with no profile. Then add one line to the folder's `AGENTS.md`: one of
+you writes *"I'm in the strategic planning tradition: I read Ansoff and Porter"*, the
+other *"I study strategy as process: I read Mintzberg and Burgelman."* Type `/clear`,
+ask again, and compare. Other questions that split schools: *"How much does the CEO
+matter for firm performance?"*, *"Should a founder write a business plan?"*
 
 ## Your profile: how you work
 
 What reliably carries across every project is **how you work**: the rules you're
 tired of repeating. For example:
 
-- *I work in R* (or Stata, or Python).
+- *I work in Stata* (or R, or Python).
 - *Cluster standard errors by firm unless I say otherwise.*
-- *I write in LaTeX. Never give me Word unless I ask.*
+- *Quote interviewees by pseudonym, never by name.*
 - *Tell me what you'll do before you change anything.*
 
 ## Two files
@@ -723,7 +739,7 @@ cd paper
 claude
 ```
 
-- **Open PDF link** (NBER, arXiv and similar):
+- **Open PDF link** (NBER, a working paper on an author's own page):
 
   ```{.default .prompt}
   Download this paper into this folder: [paste the link]
@@ -773,12 +789,14 @@ The first answer is rarely the best one.
 - *"That's generic. What's specific to this paper?"*
 - *"Show that the fix works."* It may write and run a simulation, or fetch public
   data.
+- **Interviews, not regressions?** *"Which claims rest on the fewest interviews?"*
+  *"What else would explain the same quotes?"*
 
 A fix takes **5–10 minutes**: it writes and runs code. Let it work. If it asks to
 install Python, say yes.
 
 **Then:** try it on your own working paper, before a referee does. **Keep the
-folder**: everything in the afternoon starts from it.
+folder**: the blocks you choose next all start from it.
 
 # Referee panel
 
@@ -787,7 +805,7 @@ Who will referee your paper, and what will they say? Find out before you submit.
 Real referees read your paper cold, alone, each with their own hobby-horses. A
 fresh session of the agent knows nothing but the paper and what you give it, so
 **one fresh session per referee** gives you independent reports. And names carry a
-lot: *"as Campbell Harvey would"* brings the factor zoo and the t > 3 bar with it.
+lot: *"as Jerker Denrell would"* brings survivor bias and the firms that quietly died with it.
 
 ```{=html}
 {{< include decks/images/referee-panel.svg >}}
@@ -814,7 +832,7 @@ The most underused move with these tools: **ask the agent how a job should be do
 before you ask it to do it.**
 
 ```{.default .prompt}
-I want simulated referee reports on this paper. How does a good finance referee work? How deep should they go? Should they try to reproduce the main results? Propose a procedure.
+I want simulated referee reports on this paper. How does a good referee for its journal work? How deep should they go? Should they try to reproduce the main results? Propose a procedure.
 ```
 
 Argue with it, then:
@@ -964,7 +982,7 @@ planted traps (a DOI that points to the rebuttal, a sequel that was never writte
 and so on), plus two warm-up files. Ask the agent:
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/props/references-practice.zip into this folder and unzip it. Then read messy-list.bib and do what the comment at the top says.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/references-practice.zip into this folder and unzip it. Then read messy-list.bib and do what the comment at the top says.
 ```
 
 ## Claim check
@@ -1001,7 +1019,7 @@ framing and willingness to pay.* A survey experiment, cleaned by hand in Excel,
 analysed twice and written up in Word. Start the agent in an empty folder and ask:
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-finance/props/messy-project.zip into this folder and unzip it.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/messy-project.zip into this folder and unzip it.
 ```
 
 What you get:
@@ -1226,18 +1244,21 @@ without skills. Only bother for the ones you catch yourself repeating.
 Bring the real thing. Commit first (*"Set up git here and commit everything"*),
 then let it try.
 
-- A replication, with public data:
+- A luck test, no data needed:
 
   ```{.default .prompt}
-  Get the Fama–French factors from Ken French's website and reproduce the summary statistics for RM−RF, SMB and HML in Table 2 of Fama and French (1993), July 1963 to December 1991. Then extend it to today: does it still hold?
+  Simulate 1,000 firms with identical skill and pure-luck profits for 30 years. How many would a business book call great? How long a streak would rule out chance? Show the code and run it.
   ```
+
+  Henderson, Raynor and Ahmed asked the same about real firms: *"How long must a
+  firm be great to rule out chance?"* (*Strategic Management Journal*, 2012).
 
 - A project folder: *"What's here? What's missing? What would you do first?"*
 - A dataset: *"Describe this data. What looks odd?"*
 - A draft: *"Where is the argument weakest?"*
 - A referee report you received: *"Draft a response plan, point by point."*
 - A course: *"Turn my lecture notes into exercises with solutions."*
-- A lecture animation, like the compound-interest one from the morning:
+- A lecture animation, like the compound-interest one in the capability talk:
 
   ```{.default .prompt}
   Make a 15-second animated SVG that explains [compound interest] to first-year students. Three scenes, one caption each.

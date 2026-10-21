@@ -101,7 +101,7 @@ Say *"cube-root asymptotics"* and it is already in expert mode.
 
 **But** it can't see you. So tell it who you are and what you want:
 
-> *"I teach first-year corporate finance. Explain it for that room."*
+> *"I teach first-year strategy. Explain it for that room."*
 
 The durable version of "here's who I am" is a file it reads every time.
 
@@ -233,13 +233,14 @@ On par with teams of human forecasters.
 
 > The bottleneck moved from *producing* answers to *checking* them.
 
-Finance has some of the best cheap checks there are:
+Some checks in your field are cheap:
 
-- a backtest, a placebo test, out-of-sample data;
-- a replication package that reruns;
-- a simulation where you know the true parameter.
+- a regression that reruns from the raw data;
+- a placebo: shuffle the CEOs, and see how big the "CEO effect" still looks;
+- a simulation where you know the truth;
+- for interviews: is the quote in the transcript, word for word?
 
-How far does that carry in your corner of finance? **I don't know. You do.**
+How far does that carry in your corner of strategy? **I don't know. You do.**
 
 ## What stays yours
 

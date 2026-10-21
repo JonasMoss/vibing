@@ -41,9 +41,14 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
   stance, three ways to say no (with the deny-rule gap we found), the training
   switches, personal data. Handout section 3; later sections renumbered again.
   Behaviour tested and facts checked 20 October.
-- [ ] **(b) The agent opening the PDFs in the cleanup:** a new practice folder
-  (open-access papers to rename and turn into a `.bib`), or keep the exam export
-  and make privacy its point. Undecided.
+- [x] **(b) The agent opening the PDFs in the cleanup:** the exam export can be
+  renamed from the names alone, so the cleanup prompts now say "names only; don't
+  open the submissions", and a new last slide ("You decide what it reads") makes it
+  the point. "Done early?": rename the fake papers in `founders-study/literature/`,
+  where reading is needed, without opening `interviews/`.
+- [x] **Course files:** `course-files.zip` holds the practice folders unpacked, not
+  zips inside a zip. The handout's download links point at this folder, not
+  Finance's.
 - [ ] **(d) Level differences and derailments:** TAs take questions about one
   laptop; a parking-lot board with fixed question slots; a quick-answers deck; a
   "Done early?" task on every exercise.
@@ -53,8 +58,16 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
 - [ ] **A one-page TA brief** for Ludvik and Leonardo in the teacher notes.
 - [x] **Handout:** `codex --full-auto` no longer exists (Codex 0.162); the
   "Working safely" tip now points to section 3.
-- [ ] **Reshape for 2 × 4 hours:** strategy examples, a qualitative example, the
-  teaching block, the menu deck's titles, the course page.
+- [x] **Strategy examples** (21 October): "Your field, as I imagine it" opens
+  `knows` (three cards, then "tell me what I got wrong"); the schools question is
+  planned vs emergent; Denrell replaces Campbell Harvey; a luck-test card replaces
+  the Fama–French replication; a strategy early task in setup; checks for
+  interview papers in `paper` and `more`. Schools question and luck test tested
+  with Codex.
+- [ ] **Reshape for 2 × 4 hours:** the run sheet and checklist in the teacher notes
+  (still Finance's one day), a qualitative example with real-looking transcripts,
+  the teaching block. Done: menu headings, the handout's shape-of-the-days table,
+  no more "after lunch".
 - [ ] **Room:** check that it's booked.
 
 ## Open questions from email

@@ -5,27 +5,30 @@ author: "Jonas Moss · Data Science and Analytics"
 date: "22 and 23 October 2026"
 ---
 
-## Today {#menu}
+## Two half-days {#menu}
 
 ```{=html}
 <div class="menu">
   <div>
-    <p class="menu-head">Morning · everyone</p>
+    <p class="menu-head">Thursday · everyone</p>
     <a class="card" href="power.html"><b>What these things can do</b><span>The frontier, before we touch a keyboard</span></a>
     <a class="card" href="how.html"><b>How it works</b><span>What's inside, and usage limits</span></a>
     <a class="card" href="setup.html"><b>Get it running</b><span>Install, git, log in, first contact</span></a>
     <a class="card" href="git.html"><b>Save points</b><span>Git and GitHub: what they are, five words</span></a>
     <a class="card" href="access.html"><b>What it can touch</b><span>Permissions, auto mode, your data</span></a>
     <a class="card" href="cleanup.html"><b>Do something tedious</b><span>Clean up a messy folder, with a save point</span></a>
-    <a class="card" href="knows.html"><b>What it knows about you</b><span>Context, and your profile</span></a>
-    <a class="card" href="paper.html"><b>Take a paper apart</b><span>Its biggest problem, then a fix</span></a>
   </div>
-  <div class="pick">
-    <p class="menu-head">Afternoon · you choose</p>
-    <a class="card" href="review.html"><b>Referee panel</b><span>Simulated referees, one fresh session each</span></a>
-    <a class="card" href="refs.html"><b>References</b><span>Search, papers in the folder, DOI and claim checks</span></a>
+  <div>
+    <p class="menu-head">Friday · everyone</p>
+    <a class="card" href="knows.html"><b>What it knows about you</b><span>Your field, context, your profile</span></a>
+    <a class="card" href="paper.html"><b>Take a paper apart</b><span>Its biggest problem, then a fix</span></a>
+    <div class="pick">
+    <p class="menu-head later">Then · you choose</p>
+    <a class="card" href="review.html"><b>Referee panel</b><span>Simulated referees, a fresh session each</span></a>
+    <a class="card" href="refs.html"><b>References</b><span>Search, DOI checks, claim checks</span></a>
     <a class="card" href="trail.html"><b>Leave a trail</b><span>A messy project, and the rerun test</span></a>
     <a class="card" href="notes.html"><b>Notes and structure</b><span>A paper folder, notes the agent keeps</span></a>
+    </div>
   </div>
   <div>
     <p class="menu-head">Any time</p>
@@ -45,10 +48,10 @@ date: "22 and 23 October 2026"
 
 - Click **Strategy and Entrepreneurship**. The **handout** is there, and **Course files** downloads it
   with the practice folders as one zip.
-- Every prompt from today is in the handout, with a copy button, including what we
-  don't get to. So are all the slides.
-- The morning is for everyone, in order. The afternoon blocks work in any order:
-  we pick them together.
+- Every prompt from both days is in the handout, with a copy button, including
+  what we don't get to. So are all the slides.
+- Thursday, and the start of Friday, are for everyone, in order. The coral blocks
+  work in any order: we pick them together.
 
 ## Before we talk: start the install {#start}
 

@@ -13,7 +13,7 @@ Who will referee your paper, and what will they say? Find out before you submit.
 ```
 
 Fresh sessions read the paper cold, like real referees. **Names carry a lot:** *"as
-Campbell Harvey would"* brings the factor zoo and the t > 3 bar with it.
+Jerker Denrell would"* brings survivor bias and the firms that quietly died with it.
 
 ## 1. Who would referee this?
 
@@ -29,8 +29,8 @@ Argue with the list. Add the one you fear most.
 The underused move: **ask the agent how to do the job before you ask it to do it.**
 
 ::: {.prompt}
-I want simulated referee reports on this paper. How does a good finance referee
-work? How deep should they go? Should they try to reproduce the main results?
+I want simulated referee reports on this paper. How does a good referee for its
+journal work? How deep should they go? Should they try to reproduce the main results?
 Propose a procedure.
 :::
 

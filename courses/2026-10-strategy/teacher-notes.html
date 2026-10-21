@@ -2348,11 +2348,11 @@ vertical-align: -.125em;
 <li><strong>Tested 14 October on a BI PC:</strong> the Claude Code install needed no admin rights, but asked for <code>.local\bin</code> to be added to PATH by hand. Fixed: the Claude install is now two lines, the second adds it to the user PATH.</li>
 <li><strong>Not tested on a BI PC:</strong> right-click → <strong>Open in Terminal</strong>, <code>explorer .</code>, and whether <strong>Documents</strong> sits in OneDrive. If it does, keep practice folders in the home folder (where <code>mkdir practice</code> puts them): git and OneDrive syncing don’t mix well. Demo all three on your own Windows laptop live.</li>
 </ul></li>
-<li><strong>Demo papers: chosen.</strong>
+<li><strong>Demo papers: to choose, a strategy paper this time.</strong>
 <ul>
-<li>“Take a paper apart”: your own pick.</li>
-<li>Referee panel: Nagel, “Seemingly Virtuous Complexity in Return Prediction”, NBER w34104 (<a href="https://www.nber.org/papers/w34104" class="uri">https://www.nber.org/papers/w34104</a>; NBER downloads directly). The pilot answers are in <code>scratch/examples/paper-critique/pilot/</code>, local only.</li>
-<li>Replication card: Fama and French (1993), Table 2 (see “Your own work” below).</li>
+<li>“Take a paper apart”: your own pick, or one the room names on Friday morning.</li>
+<li>Referee panel: Finance used Nagel (NBER w34104). For Strategy, one open paper you can download live. A candidate: Denrell and Liu (2012), “Top performers are not the most impressive when extreme performance indicates unreliability”, <em>PNAS</em>, six pages and short enough to referee in the room.</li>
+<li>Luck-test card: no paper needed (see “Your own work” below).</li>
 </ul></li>
 <li><strong>The Foldnes example.</strong> Make only the airtight claim: <em>the paper they cite does not exist; the DOI resolves to a 2022 editorial acknowledgement.</em> Don’t say “the method doesn’t exist” unless you’ve settled it with Foldnes. Details are in <code>scratch/examples/references/README.md</code>.</li>
 <li><strong>Brief Ludvik.</strong> In the morning he roams the install, Windows first. In the afternoon he’s a second help desk. Tell him the rule: two minutes stuck, hand up.</li>
@@ -2597,14 +2597,10 @@ vertical-align: -.125em;
 <ul>
 <li><strong>Aim:</strong> a reorganised folder, a grading table, and one deliberate undo.</li>
 <li><strong>The framing:</strong> a job the chat window can’t do, because it can’t touch your files. Tedious, local, easy to judge.</li>
-<li><strong>The git beat, from the August plan:</strong>
-<ol type="1">
-<li>Brief the task, but don’t start it.</li>
-<li>Ask the room: <em>“Before you hit enter, does anything about this make you nervous?”</em> Let someone say <em>“what if it ruins something?”</em></li>
-<li>Answer with <em>“Set up git here and commit everything.”</em> Then: <em>“Now it can’t do anything you can’t undo.”</em> The answer lands because the question is live.</li>
-</ol></li>
-<li><strong>The undo</strong> is on purpose: delete the Marking guidance folder, then “go back to the last commit”. Watching it come back is what makes git stick.</li>
-<li><strong>Then four git slides</strong> (about 5 minutes): what git is (a timeline diagram; click for “go back”), what it’s for, branches and GitHub (a diagram; two clicks), and six words worth knowing. They come <em>after</em> the undo on purpose: people have felt it work, now they want to know what it is. Don’t go deeper than the slides. Branches and push/pull come back in the GitHub deck if anyone asks.</li>
+<li><strong>Names only (new for Strategy).</strong> Group and participant ID are in every folder name, so the job needs no reading. In Finance the agent opened the PDFs anyway (auto mode reads freely) and the room got worked up. Now the prompts say <em>“Work from the names only; don’t open the submissions”</em>, and the last slide, “You decide what it reads”, makes it the point. It follows straight on from the access deck.</li>
+<li><strong>The git beat:</strong> they set up git an hour ago, so this is the habit, not the lesson. Brief the task, then ask <em>“Before you hit enter, does anything about this make you nervous?”</em> Answer with <em>“Set up git here and commit everything.”</em></li>
+<li><strong>The undo</strong> is on purpose: delete the Marking guidance folder, then “revert to the last commit”. Watching it come back is what makes git stick.</li>
+<li><strong>Done early?</strong> Rename the fake papers in <code>founders-study/literature/</code> and make a <code>.bib</code>, without opening <code>interviews/</code>. The opposite case: there it has to read, and that’s fine.</li>
 <li><strong>Ties forward:</strong> “Leave a trail” and the GitHub demo reuse the same save-point move.</li>
 </ul>
 </section>
@@ -2612,9 +2608,14 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="what-it-knows-about-you">What it knows about you</h2>
 <p>About 20 minutes. Two halves, framed honestly.</p>
 <ul>
-<li><strong>“Who you are” is an open question for this room.</strong> In stats, in the terminal, you barely notice it; fields with schools may differ. Say exactly that, and let the room find out. Pairs pick opposite schools on <em>“Is the value premium compensation for risk, or mispricing?”</em> (Fama–French vs behavioural). The round-up is data: <em>did it change, and how much?</em>
+<li><strong>Opens with the field, as I imagine it (new for Strategy, 3–5 minutes).</strong> Three cards: interviews and cases, regressions on firm data, “is it just luck?”. Say plainly that you’re a statistician guessing. Then <em>“Tell me what I got wrong”</em>: ask what’s missing and who is which, and write their examples on the parking-lot board. Use those examples in the paper and referee blocks instead of yours. The last line, “the agent is in the same spot”, is the bridge into the deck.
 <ul>
-<li><strong>Untested.</strong> Try the value-premium question once before Friday, with both one-liners, so you know roughly what to expect.</li>
+<li>Sources for the cards: Burgelman’s Intel fieldwork (<em>Strategy Is Destiny</em>, 2002; “Fading Memories”, <em>ASQ</em> 1994); Eisenhardt (1989), “Building theories from case study research”; the diversification discount (Campa and Kedia 2002, Villalonga 2004); luck and the CEO effect (Denrell and Liu 2012, Fitza 2014, Henderson, Raynor and Ahmed 2012). Background in <code>scratch/links/strategy-canon/</code>.</li>
+</ul></li>
+<li><strong>“Who you are” is an open question for this room.</strong> In stats, in the terminal, you barely notice it; fields with schools may differ. Say exactly that, and let the room find out. Pairs pick opposite schools on <em>“Is strategy mostly planned, or does it emerge?”</em> (Ansoff and Porter vs Mintzberg and Burgelman). The round-up is data: <em>did it change, and how much?</em>
+<ul>
+<li><strong>Tested 21 October (Codex, three clean profiles):</strong> all three answer “both”. The profile changes the emphasis and the vocabulary, not the verdict: the planning profile defends deliberate direction and boundaries; the process profile explains it through Burgelman’s induced and autonomous processes. So expect “it changed the framing”, and ask the room whether that matters.</li>
+<li>Another question that splits schools: <em>“How much does the CEO matter for firm performance?”</em> Tested the same day: every profile says “a lot, but no single number”; a Denrell-and-Fitza profile leads with luck, an upper-echelons profile with the bigger estimates.</li>
 </ul></li>
 <li><strong>The Berger demo</strong> is the tested example of a school changing the answer. The A/B question with no profile, then one line in the folder’s <code>AGENTS.md</code>: <em>“My intellectual idol is Jim Berger.”</em> <code>/clear</code>, ask again. (Tested with <code>CLAUDE.md</code>; Claude reads <code>AGENTS.md</code> the same way as long as there’s no <code>CLAUDE.md</code> in the folder or above it, so demo in a clean folder.)
 <ul>
@@ -2646,12 +2647,13 @@ vertical-align: -.125em;
 <li>People skip <em>“Do they address it anywhere?”</em> and report false alarms. Collect one for the round-up.</li>
 <li>Generic first answers are normal; <em>“what’s specific to this paper?”</em> fixes most.</li>
 </ul></li>
-<li><strong>Honest framing:</strong> <em>“I can’t tell you whether a critique of a finance paper is right. You can.”</em> If it fails on someone’s paper, say so in the round-up. That’s a result too.</li>
+<li><strong>Honest framing:</strong> <em>“I can’t tell you whether a critique of a strategy paper is right. You can.”</em> If it fails on someone’s paper, say so in the round-up. That’s a result too.</li>
 <li><strong>From the September pilots on two NBER finance papers:</strong>
 <ul>
 <li>the critique took 1–1.5 minutes, the fix 5–7.5;</li>
 <li>the two tools picked different “biggest problems” in the same paper.</li>
 </ul></li>
+<li><strong>Case studies and interview papers</strong> work too, with different pushes (on the slide): <em>“Which claims rest on the fewest interviews?”</em>, <em>“What else would explain the same quotes?”</em> The “fix” is then a design (a comparison case, a sampling rule), not code.</li>
 </ul>
 </section>
 <section id="referee-panel" class="level2">
@@ -2675,7 +2677,7 @@ vertical-align: -.125em;
 <li>The agent can also start <code>claude -p</code> or <code>codex exec</code> in the background itself. Don’t teach that today.</li>
 </ul></li>
 <li><strong>Skill hook:</strong> “Turn the procedure into a skill called referee-panel” connects to the skills slide in <code>notes</code>, if anyone asks.</li>
-<li><strong>Demo:</strong> the first two steps on your finance paper, live. Then one referee from a fresh session.</li>
+<li><strong>Demo:</strong> the first two steps on a strategy paper, live. Then one referee from a fresh session.</li>
 </ul>
 </section>
 <section id="references" class="level2">
@@ -2741,7 +2743,7 @@ vertical-align: -.125em;
 <li><strong>The deck:</strong> <code>github.html</code>, about 10 minutes; section 12 of the handout.</li>
 <li><strong>The one-liner:</strong> git is save points on your laptop, GitHub is the copy in the cloud. OneDrive syncs files; GitHub keeps every version and who made it.</li>
 <li><strong>Setup is one prompt</strong> once they have an account: <em>“Install the GitHub command-line tool and log me in.”</em> On Windows the agent runs <code>winget install --id GitHub.cli -e</code>, then <code>gh auth login</code>, which opens the browser. Not tested on a BI-managed laptop; if winget is blocked, the installer is at <a href="https://cli.github.com" class="uri">https://cli.github.com</a>.</li>
-<li><strong>The selling point for finance:</strong> replication packages. A repository archived on Zenodo gets a DOI.</li>
+<li><strong>The selling point for research:</strong> replication packages. A repository archived on Zenodo gets a DOI.</li>
 <li><strong>Say once:</strong> private by default; history is forever, so data and passwords never go in.</li>
 </ul>
 <section id="the-pull-request-demo-with-ludvik" class="level3">
@@ -2749,7 +2751,7 @@ vertical-align: -.125em;
 <p>About 10 minutes, live. It shows what collaboration <em>looks like</em> when neither of you types a git command.</p>
 <p><strong>Done live, from scratch.</strong> No pre-made repository. If something breaks, narrate the fix: watching the agent recover is part of the lesson.</p>
 <p><strong>Before Friday:</strong> Ludvik has a GitHub account, and <code>gh</code> installed and logged in. Have his username ready.</p>
-<p><strong>Setup, live (2–3 minutes):</strong> in a copy of the “Leave a trail” practice folder (<code>props/messy-project.zip</code>): <em>“Set up git, commit everything, put this folder on GitHub as a private repository called finance-demo, and add [Ludvik’s username] as a collaborator.”</em> Ludvik accepts the invitation (it comes by email), then: <em>“Download JonasMoss/finance-demo into this folder.”</em></p>
+<p><strong>Setup, live (2–3 minutes):</strong> in a copy of the “Leave a trail” practice folder (<code>props/messy-project.zip</code>): <em>“Set up git, commit everything, put this folder on GitHub as a private repository called strategy-demo, and add [Ludvik’s username] as a collaborator.”</em> Ludvik accepts the invitation (it comes by email), then: <em>“Download JonasMoss/strategy-demo into this folder.”</em></p>
 <p><strong>The pull request:</strong></p>
 <ol type="1">
 <li><strong>You, first:</strong> start the watcher in Claude Code and let it sit: <code>/loop 1m check for new pull requests on this repository; when one appears, summarise it.</code> Test <code>/loop</code> beforehand. If it misbehaves, just ask <em>“any new pull requests?”</em> when Ludvik says he’s done.</li>
@@ -2772,10 +2774,10 @@ That’s why the rule has to be written down. Then: <em>“Comment: good catch, 
 <ul>
 <li><strong>Walk the room.</strong> Ask “what are you trying?”, not “is it working?”</li>
 <li><strong>Stuck people:</strong> suggest <em>“What’s here? What’s missing? What would you do first?”</em> on a real folder, after a commit.</li>
-<li><strong>The replication card</strong> is the one to push for this room: Ken French’s data library is public and agents can download from it, so a classic table plus “does it still hold today?” is doable in 20 minutes. The target: Fama and French (1993), <em>JFE</em> 33, Table 2, July 1963 to December 1991, 342 months. Published monthly means: RM−RF 0.43% (sd 4.54, t = 1.76), SMB 0.27% (2.89, t = 1.73), HML 0.40% (2.54, t = 2.91). Today’s library won’t match to the decimal (CRSP has been revised since, and the factor construction updated): close but not exact is the expected result, and “why not exact?” is a good question to ask the agent. “Does it still hold?” leads straight into the value-premium debate from <code>knows</code>.
+<li><strong>The luck-test card</strong> is the one to push for this room: no data, a classic strategy question (Henderson, Raynor and Ahmed 2012, <em>“How long must a firm be great to rule out chance?”</em>), and a punchline people find themselves.
 <ul>
-<li><strong>Checked 14 October</strong> (library file built from the August 2026 CRSP), monthly %, mean (t): same sample, RM−RF 0.41 (1.65), SMB 0.26 (1.67), HML 0.38 (2.75): within 0.02 of the paper.</li>
-<li><strong>After the paper, January 1992 to August 2026</strong> (416 months): RM−RF 0.76 (3.56), SMB 0.06 (0.36), HML 0.23 (1.40). The size premium is gone and value has halved, while the market did better. That’s the punchline people find themselves.</li>
+<li><strong>Tested 21 October (Codex, 52 seconds):</strong> 1,000 identical firms, a 50–50 year each, 30 years. <strong>51 beat the benchmark in 20 of 30 years by pure luck</strong> (49 expected); 8 had a 10-year winning streak; the longest was 14 years. Searching all firms and start years, an 18-year streak is the 5% bar, 20 years the 1% bar. Chosen <em>in advance</em>, 5 to 7 years would do. That last contrast is the point: picking the winners afterwards is what changes the arithmetic.</li>
+<li>Good follow-ups: <em>“Now let skill differ a little. How often does the most skilled firm come out on top?”</em> (Denrell and Liu’s question.)</li>
 </ul></li>
 <li><strong>Close:</strong> <em>“What will you try on Monday?”</em> Get three answers out loud. Remind them the handout has everything, including what we skipped.</li>
 </ul>
