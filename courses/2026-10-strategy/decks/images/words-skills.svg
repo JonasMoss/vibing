@@ -1,0 +1,18 @@
+<svg class="diagram" viewBox="0 0 1200 370" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A skill is a folder with a SKILL.md file: when to use it and the steps. The agent follows it when the task matches, or when you type its name.">
+<defs><marker id="skills-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="skills-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="60" y="40" width="420" height="270" rx="14" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="90" y="84" text-anchor="start" font-size="28" font-weight="800" fill="#17201f">check-quotes/</text>
+<rect x="90" y="106" width="360" height="180" rx="8" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="110" y="142" text-anchor="start" font-size="22" font-weight="800" fill="#17201f">SKILL.md</text>
+<text x="110" y="178" text-anchor="start" font-size="21" fill="#17201f">When: quotes in a report</text>
+<text x="110" y="210" text-anchor="start" font-size="21" fill="#17201f">1. pull out every quote</text>
+<text x="110" y="240" text-anchor="start" font-size="21" fill="#17201f">2. match it word for word</text>
+<text x="110" y="270" text-anchor="start" font-size="21" fill="#17201f">3. list what doesn't match</text>
+<line x1="500" y1="175" x2="700" y2="175" stroke="#f0674d" stroke-width="4" marker-end="url(#skills-c)"/>
+<text x="600" y="145" text-anchor="middle" font-size="21" fill="#5c6763">the task matches,</text>
+<text x="600" y="215" text-anchor="middle" font-size="21" fill="#5c6763">or you type its name</text>
+<rect x="720" y="95" width="420" height="160" rx="14" fill="#fbd9d1" stroke="#17201f" stroke-width="3"/>
+<text x="930" y="160" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">The agent follows it</text>
+<text x="930" y="200" text-anchor="middle" font-size="22" fill="#17201f">the same way, every time</text>
+<text x="600" y="350" text-anchor="middle" font-size="22" fill="#5c6763">A routine, written down once. Both tools use the same format.</text>
+</svg>

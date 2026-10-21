@@ -24,8 +24,9 @@ corner, paste it into Claude Code or Codex, and change the bits in
 
 **The shape of the two days:** Thursday gets you running, shows you save points and
 what the agent can touch, and has it do something tedious for you. Friday is about
-research: what it knows about you, your paper taken apart, and interviews coded. The blocks after
-that (sections 8–11) work in any order, on Friday or next week.
+research: what it knows about you, your paper taken apart, interviews coded, your
+references checked, and the words you've heard. Sections 10–16 are for any time:
+on Friday if you finish early, or next week.
 
 | | Section | What you get |
 |---|---|---|
@@ -36,14 +37,15 @@ that (sections 8–11) work in any order, on Friday or next week.
 | Friday | 5. What it knows about you | A profile that makes every answer fit you |
 | | 6. Take a paper apart | Its biggest problem, and an attempt at a fix |
 | | 7. Interviews | A codebook, eight transcripts coded, every quote checked |
-| Then, pick | 8. Referee panel | Simulated referee reports, and an editor's letter |
-| | 9. References | Searched, downloaded, DOI-checked, claim-checked |
-| | 10. Leave a trail | A folder a co-author can rerun |
-| | 11. Notes and structure | Where things go; a project file; notes the agent keeps |
-| Any time | 12. Your own work | Starting points for next week |
-| | 13. Teaching | Optional, end of Friday: exams, rubrics, a course page |
-| | 14. GitHub | A copy of the folder in the cloud; co-authors |
-| | 15. Connectors | Your email, calendar and files, if you want them |
+| | 8. References | Searched, downloaded, DOI-checked, claim-checked |
+| | 9. Words you've heard | Skills, subagents, worktrees and the rest, one at a time |
+| Any time | 10. Referee panel | Simulated referee reports, and an editor's letter |
+| | 11. Leave a trail | A folder a co-author can rerun |
+| | 12. Notes and structure | Where things go; a project file; notes the agent keeps |
+| | 13. Your own work | Starting points for next week |
+| | 14. Teaching | Optional, end of Friday: exams, rubrics, a course page |
+| | 15. GitHub | A copy of the folder in the cloud; co-authors |
+| | 16. Connectors | Your email, calendar and files, if you want them |
 
 ::: {.floor}
 **Two rules for both days.** Don't overthink it: just use it. And when you get
@@ -440,7 +442,7 @@ repositories. This course's page, vibing.jonasmoss.com, is one.
 Publish this folder as a web page with GitHub Pages.
 ```
 
-Setting up GitHub, co-authors and pull requests: section 14.
+Setting up GitHub, co-authors and pull requests: section 15.
 
 # What it can touch
 
@@ -830,7 +832,7 @@ A fix takes **5–10 minutes**: it writes and runs code. Let it work. If it asks
 install Python, say yes.
 
 **Then:** try it on your own working paper, before a referee does. **Keep the
-folder**: the blocks you choose next all start from it.
+folder**: References (section 8) starts from it.
 
 # Interviews
 
@@ -913,6 +915,196 @@ Make a table: founder by code, with counts. Which codes always come together?
 finds every instance and checks every quote. You decide what a code means, judge
 the themes, and own the interpretation and the ethics.
 
+# References
+
+Four jobs, one prompt each. Do them in any order, on your paper's reference list or
+your own draft.
+
+::: {.card}
+**Why bother.** An audit of 2.5 million biomedical papers found fabricated
+references in **1 in 277** papers in early 2026, up from 1 in 2,828 in 2023
+(Topaz et al., *The Lancet*, 2026; a letter, and its method has been questioned).
+Closer to home: a 2026 paper in *Structural Equation Modeling* cites Foldnes &
+Grønneberg (2024), and the DOI resolves to a 2022 "Editorial acknowledgement". The
+paper reports simulation results for methods from a source that doesn't exist.
+
+The models got better; the practice didn't. A current model **with search**
+doesn't invent DOIs. Its failures now are the wrong paper, or a paper it couldn't
+fetch, and both take seconds to catch.
+:::
+
+## Search
+
+Shallow and deep are two different requests, not two settings.
+
+**Shallow: one specific question.** The trick is to be specific. Mine, in a field I
+know well:
+
+```{.default .prompt}
+What's similar to Hjort–Glad density estimation with a parametric start? Other kernel estimators with something that could count as a parametric start, also on domains other than the real line? Do any outperform it? Download the papers into literature/, and give me the DOI for any you can't get.
+```
+
+Questions like this keep turning up important papers I didn't know existed. Yours:
+
+```{.default .prompt}
+What's similar to [your idea, in one exact sentence]? Has anyone built something like it? Does it beat [the usual approach]? Download the papers into literature/, and give me the DOI for any you can't get.
+```
+
+*"Papers on [your topic]"* gets you the famous ones you already know. A specific
+question gets you the one you missed.
+
+Also quick: pinning down a paper you half-remember.
+
+```{.default .prompt}
+Find the actual paper: full citation, all authors, journal, year and DOI. [what you remember]. If you can't find it, say so. Don't guess.
+```
+
+**Deep: every paper.** You're finalizing, not exploring: the related-work section,
+a grant application, a referee response.
+
+```{.default .prompt}
+I need every method since [year] related to [your idea]: working papers too, and other names for the same idea. Make a table: paper, what it does, how it relates to mine. Take your time.
+```
+
+It's slow, and it uses a good part of your usage limit. Start it, then get coffee.
+
+## Keep the papers in the folder
+
+The habit that makes everything else here work: every paper you need sits in the
+project folder, so the agent reads the paper itself instead of searching for it
+again, or relying on its memory of it. Make it a rule in the project file
+(section 12), once:
+
+```{.default .prompt}
+Add to the project file: papers go in literature/. Whenever we need one, download it there if you can get it. If you can't, give me the DOI so I can.
+```
+
+Catching up on a paper you've already written:
+
+```{.default .prompt}
+Do that for every paper in my reference list. Put the DOIs you couldn't get in literature/to-fetch.md.
+```
+
+- Paywalls stop it, and BI's library takes the DOI list.
+- SSRN blocks agents. Download in your browser, then *"Move it into literature/."*
+- Using git? *"Keep literature/ out of git."* Track the text you wrote, not the PDFs
+  you downloaded.
+
+## DOI check
+
+```{.default .prompt}
+Check every entry in the reference list. Does the DOI resolve to this exact paper: same title, authors and year? Make a table: OK, wrong paper, no DOI, not found. Fix what you can, and tell me how you know.
+```
+
+Then check three yourself: paste each DOI after `https://doi.org/`. Same paper?
+
+**Practice file.** A messy `.bib` handed over by a fictional co-author, with six
+planted traps (a DOI that points to the rebuttal, a sequel that was never written,
+and so on), plus two warm-up files. Ask the agent:
+
+```{.default .prompt}
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/references-practice.zip into this folder and unzip it. Then read messy-list.bib and do what the comment at the top says.
+```
+
+## Claim check
+
+The one nobody does: **does the cited paper say what it's cited for?** This is where
+the literature folder pays off: the papers are already there, so it quotes the real
+text instead of searching for it.
+
+```{.default .prompt}
+Take each citation in the introduction. Read the cited paper in literature/ and check whether it supports the sentence it is cited for. Quote the passage. Make a table: sentence, citation, supports / partly / doesn't / not in the folder, quote.
+```
+
+Papers not in the folder yet? On Friday, with the paper from section 6:
+
+```{.default .prompt}
+Take three citations from the introduction, download the cited papers into literature/, then check whether each supports the sentence it is cited for. Quote the passage.
+```
+
+- Run it on **your own draft** before you submit.
+- "Not in the folder" is not "doesn't exist". Get those through the library, put
+  them in literature/, and ask again.
+
+**A polished bibliography is not evidence of a correct bibliography.**
+
+# Words you've heard
+
+Skills, subagents, worktrees: words you've heard and half-wondered about. In the
+room we pick the ones most people raise a hand for. Each is a sentence and one
+thing to try. Unsure about a word that isn't here? Ask the tool:
+
+```{.default .prompt}
+What is [a word you've heard]? Two sentences, for a professor. Then: would it help with my research?
+```
+
+## Skills
+
+A routine, written down once: a name, when to use it, and the steps. The agent
+follows it when the task matches, or when you type its name. Both tools use the
+same format, and you never have to touch it:
+
+```{.default .prompt}
+Turn the quote check we just did into a skill called check-quotes.
+```
+
+Then *"What skills do you have?"*, and next time, in another folder: *"Check the
+quotes in this report."* More in section 12.
+
+## Connectors (MCP)
+
+Your email, calendar and Drive, if you switch them on: section 16.
+
+## Subagents
+
+The agent hands parts of a job to helpers that work in parallel, each with a fresh
+context; only their summaries come back. Faster, and it uses your limit faster.
+
+```{.default .prompt}
+Use subagents, one per transcript. Each returns three lines: what triggered the change, who pushed for it, and one quote. Then put them in one table.
+```
+
+## The project file
+
+`AGENTS.md` (and Claude's `CLAUDE.md`): what the agent reads every time it starts
+in this folder. Section 12.
+
+## Plan mode
+
+The agent reads, asks and proposes a plan, and changes nothing until you agree.
+For big or risky jobs. In Claude Code, press **Shift+Tab** until the bottom line
+says *plan mode*. Codex has one too: ask it how to switch.
+
+## Context and /compact
+
+Everything the agent knows in a session sits in one window (section 5). A long
+session fills it; `/compact` replaces the conversation with a summary, and
+`/clear` empties it. It compacts by itself when full, and details can go: for a
+long job, keep notes in a file. How full is it? Claude Code: `/context`. Codex:
+the bottom line.
+
+## Worktrees
+
+A second folder for the same git project, on its own branch, so two agents can
+work at once without touching each other's files. `claude -w experiment` or
+`codex --worktree`, or just ask:
+
+```{.default .prompt}
+Try this in a worktree; leave my folder as it is.
+```
+
+## GitHub and pull requests
+
+A copy of the folder in the cloud, and a way to propose changes to a co-author:
+section 15.
+
+## Agents in the cloud
+
+Claude Code on the web (`claude.ai/code`) and Codex cloud (`chatgpt.com/codex`) run
+the agent on a copy of your GitHub repository, on their computers. You can close
+the laptop and get a pull request back. The folder has to be on GitHub first, and
+the rules from section 3 apply: it runs on their machines.
+
 # Referee panel
 
 Who will referee your paper, and what will they say? Find out before you submit.
@@ -982,7 +1174,7 @@ one prompt: *"Run the referees as parallel subagents."*
 - *One page. No summary of the paper.*
 
 Then `/clear` and rerun. If you'll do this for every paper, make the procedure a
-skill (section 11):
+skill (section 12):
 
 ```{.default .prompt}
 Turn reviews/how-to-referee.md into a skill called referee-panel.
@@ -1008,113 +1200,6 @@ Draft a plan for each must-fix concern: new analysis, rewriting, or an argument.
   fine for practice.
 - Different tools and different runs find different problems. Compare with your
   neighbour, or run Claude and Codex on the same paper.
-
-# References
-
-Four jobs, one prompt each. Do them in any order, on your paper's reference list or
-your own draft.
-
-::: {.card}
-**Why bother.** An audit of 2.5 million biomedical papers found fabricated
-references in **1 in 277** papers in early 2026, up from 1 in 2,828 in 2023
-(Topaz et al., *The Lancet*, 2026; a letter, and its method has been questioned).
-Closer to home: a 2026 paper in *Structural Equation Modeling* cites Foldnes &
-Grønneberg (2024), and the DOI resolves to a 2022 "Editorial acknowledgement". The
-paper reports simulation results for methods from a source that doesn't exist.
-
-The models got better; the practice didn't. A current model **with search**
-doesn't invent DOIs. Its failures now are the wrong paper, or a paper it couldn't
-fetch, and both take seconds to catch.
-:::
-
-## Search
-
-Shallow and deep are two different requests, not two settings.
-
-**Shallow: one specific question.** The trick is to be specific. Mine, in a field I
-know well:
-
-```{.default .prompt}
-What's similar to Hjort–Glad density estimation with a parametric start? Other kernel estimators with something that could count as a parametric start, also on domains other than the real line? Do any outperform it? Download the papers into literature/, and give me the DOI for any you can't get.
-```
-
-Questions like this keep turning up important papers I didn't know existed. Yours:
-
-```{.default .prompt}
-What's similar to [your idea, in one exact sentence]? Has anyone built something like it? Does it beat [the usual approach]? Download the papers into literature/, and give me the DOI for any you can't get.
-```
-
-*"Papers on [your topic]"* gets you the famous ones you already know. A specific
-question gets you the one you missed.
-
-Also quick: pinning down a paper you half-remember.
-
-```{.default .prompt}
-Find the actual paper: full citation, all authors, journal, year and DOI. [what you remember]. If you can't find it, say so. Don't guess.
-```
-
-**Deep: every paper.** You're finalizing, not exploring: the related-work section,
-a grant application, a referee response.
-
-```{.default .prompt}
-I need every method since [year] related to [your idea]: working papers too, and other names for the same idea. Make a table: paper, what it does, how it relates to mine. Take your time.
-```
-
-It's slow, and it uses a good part of your usage limit. Start it, then get coffee.
-
-## Keep the papers in the folder
-
-The habit that makes everything else here work: every paper you need sits in the
-project folder, so the agent reads the paper itself instead of searching for it
-again, or relying on its memory of it. Make it a rule in the project file
-(section 11), once:
-
-```{.default .prompt}
-Add to the project file: papers go in literature/. Whenever we need one, download it there if you can get it. If you can't, give me the DOI so I can.
-```
-
-Catching up on a paper you've already written:
-
-```{.default .prompt}
-Do that for every paper in my reference list. Put the DOIs you couldn't get in literature/to-fetch.md.
-```
-
-- Paywalls stop it, and BI's library takes the DOI list.
-- SSRN blocks agents. Download in your browser, then *"Move it into literature/."*
-- Using git? *"Keep literature/ out of git."* Track the text you wrote, not the PDFs
-  you downloaded.
-
-## DOI check
-
-```{.default .prompt}
-Check every entry in the reference list. Does the DOI resolve to this exact paper: same title, authors and year? Make a table: OK, wrong paper, no DOI, not found. Fix what you can, and tell me how you know.
-```
-
-Then check three yourself: paste each DOI after `https://doi.org/`. Same paper?
-
-**Practice file.** A messy `.bib` handed over by a fictional co-author, with six
-planted traps (a DOI that points to the rebuttal, a sequel that was never written,
-and so on), plus two warm-up files. Ask the agent:
-
-```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/references-practice.zip into this folder and unzip it. Then read messy-list.bib and do what the comment at the top says.
-```
-
-## Claim check
-
-The one nobody does: **does the cited paper say what it's cited for?** This is where
-the literature folder pays off: the papers are already there, so it quotes the real
-text instead of searching for it.
-
-```{.default .prompt}
-Take each citation in the introduction. Read the cited paper in literature/ and check whether it supports the sentence it is cited for. Quote the passage. Make a table: sentence, citation, supports / partly / doesn't / not in the folder, quote.
-```
-
-- Run it on **your own draft** before you submit.
-- "Not in the folder" is not "doesn't exist". Get those through the library, put
-  them in literature/, and ask again.
-
-**A polished bibliography is not evidence of a correct bibliography.**
 
 # Leave a trail
 
@@ -1445,7 +1530,7 @@ Make a simple course web page from my notes: a schedule, the readings, and one p
 ```
 
 Then, if you like, *"Publish it with GitHub Pages"*: free, and this course's page is
-one (section 2, and section 14 for GitHub).
+one (section 2, and section 15 for GitHub).
 
 ## An animation
 

@@ -27,6 +27,10 @@ checklist in `courses/2026-10-strategy/README.md`.
    day, some of them substantial.
 5. **At least one participant never got Claude running** and sat through four hours
    without it.
+6. **The afternoon menu ("you choose") didn't work:** nobody had an opinion. People
+   can't choose between research workflows they haven't seen yet. Better: let them
+   choose among words they've heard (skills, connectors, subagents…), which needs
+   no prior knowledge, only curiosity. (Added 21 October.)
 
 ## Found afterwards
 

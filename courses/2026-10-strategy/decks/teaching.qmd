@@ -22,7 +22,7 @@ Optional, and short. What the terminal adds to the chat.
    case, four asking for a judgement. Then a rubric for the best four."*
 3. ***"Which learning outcome can't be assessed as it's written?"***
 
-**No course at hand?** A fictional one: handout, section 13.
+**No course at hand?** A fictional one: handout, section 14.
 
 ## A course page {#try-page .your-turn background-color="#f1c84b"}
 

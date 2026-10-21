@@ -442,3 +442,48 @@ $code-color: $ink;
   margin-top: 0.5em;
   padding-top: 0.45em;
 }
+
+/* Words you've heard: a grid of big word tiles that jump to a section. */
+.reveal .tiles {
+  display: grid;
+  gap: 0.45em 0.6em;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 0.3em;
+}
+
+.reveal .tiles a {
+  background: $white;
+  border: 3px solid $ink;
+  border-radius: 14px;
+  color: $ink;
+  display: block;
+  padding: 0.35em 0.5em 0.4em;
+  text-decoration: none;
+}
+
+.reveal .tiles a:hover {
+  background: $yellow;
+}
+
+.reveal .tiles b {
+  display: block;
+  font-size: 0.78em;
+  line-height: 1.15;
+}
+
+.reveal .tiles span {
+  color: $muted;
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.25;
+  margin-top: 0.15em;
+}
+
+.reveal .tiles a.deck {
+  border-color: $coral;
+}
+
+.reveal .back {
+  font-size: 0.5em;
+  font-weight: 700;
+}

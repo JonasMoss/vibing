@@ -96,7 +96,7 @@ paper: same title, authors and year? Make a table: OK, wrong paper, no DOI, not 
 :::
 
 - Then check three yourself: paste the DOI after `doi.org/`.
-- Practice file: a messy `.bib` with six planted traps (handout, section 9).
+- Practice file: a messy `.bib` with six planted traps (handout, section 8).
 
 ## Claim check {#claims}
 
@@ -108,8 +108,8 @@ whether it supports the sentence it is cited for. Quote the passage. Mark each:
 supports, partly, doesn't, not in the folder.
 :::
 
-- **This is where the folder pays off.** The papers are already there, so it quotes
-  the real text instead of searching for it.
+- **Papers not in the folder yet?** *"Take three citations from the introduction,
+  download the cited papers into literature/, then check each one."*
 - Run it on your own draft before you submit.
 
 ## Round-up
@@ -118,3 +118,5 @@ supports, partly, doesn't, not in the folder.
 - A citation that doesn't say what it's cited for?
 
 > A polished bibliography is not evidence of a correct bibliography.
+
+[Next: [words you've heard](words.html).]{.small}

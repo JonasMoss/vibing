@@ -1,0 +1,21 @@
+<svg class="diagram" viewBox="0 0 1200 365" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Agents in the cloud: the agent works on a copy of your GitHub repository in the provider's cloud while your laptop can be closed, and sends back a pull request for you to review.">
+<defs><marker id="cloud-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="cloud-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="40" y="110" width="250" height="150" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="165" y="170" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Your laptop</text>
+<text x="165" y="206" text-anchor="middle" font-size="22" fill="#5c6763">can be closed</text>
+<rect x="470" y="110" width="260" height="150" rx="14" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="600" y="170" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">GitHub</text>
+<text x="600" y="206" text-anchor="middle" font-size="22" fill="#17201f">your repository</text>
+<rect x="910" y="110" width="250" height="150" rx="14" fill="#fbd9d1" stroke="#17201f" stroke-width="3"/>
+<text x="1035" y="162" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Agent in</text>
+<text x="1035" y="196" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">the cloud</text>
+<text x="1035" y="230" text-anchor="middle" font-size="21" fill="#17201f">works on a copy</text>
+<path d="M 732 150 C 800 110, 840 110, 906 150" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#cloud-i)"/>
+<text x="820" y="98" text-anchor="middle" font-size="21" fill="#5c6763">a copy</text>
+<path d="M 906 225 C 840 265, 800 265, 734 225" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#cloud-c)"/>
+<text x="820" y="292" text-anchor="middle" font-size="21" font-weight="800" fill="#b8432d">a pull request</text>
+<path d="M 466 185 L 296 185" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#cloud-c)"/>
+<text x="380" y="172" text-anchor="middle" font-size="20" fill="#5c6763">you review it,</text>
+<text x="380" y="210" text-anchor="middle" font-size="20" fill="#5c6763">phone or laptop</text>
+<text x="600" y="345" text-anchor="middle" font-size="22" fill="#5c6763">Claude Code on the web (claude.ai/code) and Codex cloud (chatgpt.com/codex).</text>
+</svg>

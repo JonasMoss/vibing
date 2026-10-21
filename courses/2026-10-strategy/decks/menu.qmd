@@ -2,7 +2,8 @@
 title: "AI in the terminal"
 subtitle: "Two half-days for the Department of Strategy and Entrepreneurship"
 author: "Jonas Moss · Data Science and Analytics"
-date: "22 and 23 October 2026"
+date: 2026-10-22
+date-format: "[Thursday 22 and Friday 23 October 2026]"
 ---
 
 ## Two half-days {#menu}
@@ -23,20 +24,15 @@ date: "22 and 23 October 2026"
     <a class="card" href="knows.html"><b>What it knows about you</b><span>Your field, context, your profile</span></a>
     <a class="card" href="paper.html"><b>Take a paper apart</b><span>Its biggest problem, then a fix</span></a>
     <a class="card" href="interviews.html"><b>Interviews</b><span>A codebook, coding, every quote checked</span></a>
-    <div class="pick compact">
-    <p class="menu-head later">Then · you choose</p>
-    <a class="card" href="review.html"><b>Referee panel</b></a>
-    <a class="card" href="refs.html"><b>References</b></a>
-    <a class="card" href="trail.html"><b>Leave a trail</b></a>
-    <a class="card" href="notes.html"><b>Notes and structure</b></a>
-    </div>
+    <a class="card" href="refs.html"><b>References</b><span>Search, DOI check, claim check</span></a>
+    <a class="card" href="words.html"><b>Words you've heard</b><span>Skills, subagents, worktrees… you pick</span></a>
   </div>
   <div>
     <p class="menu-head">Any time</p>
     <a class="card" href="own.html"><b>Your own work</b><span>Bring the real thing</span></a>
-    <a class="card" href="agents.html"><b>The project file</b><span>AGENTS.md: tell it once</span></a>
-    <a class="card" href="github.html"><b>GitHub</b><span>A copy in the cloud, co-authors</span></a>
-    <a class="card" href="mcp.html"><b>Connectors</b><span>Email, calendar, Drive</span></a>
+    <a class="card" href="review.html"><b>Referee panel</b><span>Simulated referee reports</span></a>
+    <a class="card" href="trail.html"><b>Leave a trail</b><span>The rerun test</span></a>
+    <a class="card" href="notes.html"><b>Notes and structure</b><span>Where things go</span></a>
     <a class="card" href="teaching.html"><b>Teaching</b><span>Optional, end of Friday</span></a>
     <a class="card" href="more.html"><b>More capability</b><span>Security, benchmarks, demos</span></a>
   </div>
@@ -51,8 +47,8 @@ date: "22 and 23 October 2026"
   with the practice folders as one zip.
 - Every prompt from both days is in the handout, with a copy button, including
   what we don't get to. So are all the slides.
-- Thursday, and the start of Friday, are for everyone, in order. The coral blocks
-  work in any order: we pick them together.
+- Thursday and Friday are for everyone, in order. On Friday you pick the words
+  you've heard and want explained. The rest is in the handout, any time.
 
 ## Before we talk: start the install {#start}
 

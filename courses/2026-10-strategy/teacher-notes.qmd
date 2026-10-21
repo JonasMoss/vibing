@@ -23,9 +23,10 @@ service of that.
   runs an agent with git, and everyone has watched an undo. Not everyone comes
   both days, and Siri's line is that day one is what matters: so Thursday must
   stand on its own. It ends with 45 minutes on their own tedious thing.
-- **Friday 09–13: research.** Their field (as I imagine it), the profile, a paper
-  taken apart, interviews coded. Then one block they choose, own work, and the
-  short, optional teaching block at the end. Birgitte asked for it to be short:
+- **Friday 09–13: research, all of it mandatory up to the words.** Their field (as
+  I imagine it), the profile, a paper taken apart, interviews coded, references
+  checked. Then *Words you've heard*, own work, and the short, optional teaching
+  block at the end. Birgitte asked for it to be short:
   several of them have taken BI's AI-for-teaching course.
 - **Qualitative and quantitative, both.** Birgitte asked for it explicitly, and the
   invitation promises "interviews, documents and literature to data, with examples
@@ -33,8 +34,11 @@ service of that.
   papers in `paper`, the `interviews` block for everyone, quotes checked word for
   word. And the invitation says qualitative people are "especially welcome to share
   what works": ask them, out loud.
-- **There's no pressure to cover the menu.** The menu slide and the handout show
-  the whole range. That *is* the range lesson, even for blocks we never open.
+- **No research menu this time.** In Finance, "you choose" fell flat: nobody had an
+  opinion, because you can't choose between workflows you haven't seen (debrief,
+  note 6). So I decide the research blocks, and the room chooses only among *words
+  they've heard*, which needs nothing but curiosity. Referee panel, Leave a trail
+  and Notes and structure are in the handout for any time.
 
 **Where things are.** One deck per module in `decks/`. Open **`decks/menu.html`**
 first: every card opens a module's deck, and **Menu** in each deck's footer comes
@@ -53,9 +57,10 @@ slides.
 | `cleanup` | Do something tedious: the WISEflow export, with a git save point and an undo | 25 |
 | `knows` | Your field as I imagine it, tell me what I got wrong, context, who is asking, the Berger demo, does it matter in your field, how you work, your profile | 25 |
 | `paper` | Take a paper apart | 45 |
-| `interviews` | Interviews: a codebook, coded transcripts, every quote checked; ends on the choice of blocks | 35 |
-| `review` | Referee panel | ~40 |
-| `refs` | Search (exercise), papers in the folder, DOI check, claim check | 40–60 |
+| `interviews` | Interviews: a codebook, coded transcripts, every quote checked | 35 |
+| `refs` | References: search (exercise), papers in the folder, DOI check, claim check. Friday: the 30-minute version | 30 (40–60 for all) |
+| `words` | Words you've heard: nine tiles, the room picks three or four. Skills, subagents, plan mode, context and /compact, worktrees, agents in the cloud; connectors, the project file and GitHub open their own decks | 30 |
+| `review` | Referee panel, any time | ~40 |
 | `trail` | Organise a folder, the rerun test, what the rerun found | ~50 |
 | `notes` | Four questions, structure, notes, project file, skills | 20–30 |
 | `own` | Open lab and close | 30+ |
@@ -161,7 +166,7 @@ are built around those two.
 - **Nobody is idle for long.** Every exercise, sweep once for anyone not typing
   and ask what they're trying.
 - **The script for Thursday** is the handout, sections 1–4. Friday is sections
-  5–7.
+  5–9.
 
 # Derailments
 
@@ -211,16 +216,16 @@ at 14:55 are the buffer, not a luxury. Don't cut the git exercises or the undo.
 | 09:05 | **What it knows about you** | 25 | `knows`. The field slides first: ask, and let Leonardo write their examples down. |
 | 09:30 | **Take a paper apart** | 45 | `paper`. Demo 10, hands-on 25, round-up 10. Interview papers welcome. |
 | 10:15 | Break | 10 | |
-| 10:25 | **Interviews** | 35 | `interviews`. Codebook, coding, every quote checked. Ends on the choice. |
-| 11:00 | **One block, chosen** | 40 | Show of hands on "Next: you choose". Default below. |
-| 11:40 | Break | 5 | |
-| 11:45 | **Your own work** | 35 | `own`. Open lab. Walk the room. |
-| 12:20 | Teaching (optional) | 25 | `teaching`. The rest carry on with their own work. |
+| 10:25 | **Interviews** | 35 | `interviews`. Codebook, coding, every quote checked. |
+| 11:00 | **References** | 30 | `refs`. The "right now" slide, the search exercise, then the claim check on their paper folder. |
+| 11:30 | Break | 5 | |
+| 11:35 | **Words you've heard** | 30 | `words`. Hands up per tile; do the top three or four, five minutes each. |
+| 12:05 | **Your own work** | 20 | `own`. Open lab. Walk the room. |
+| 12:25 | Teaching (optional) | 20 | `teaching`. The rest carry on with their own work. |
 | 12:45 | Before you go | 15 | "What will you try on Monday?" Three answers aloud. The rest of the parking lot. |
 
-**If the room can't choose,** take References, with the claim check as the centre:
-everyone has a reference list, and catching one bad citation in your own field
-lands hard. Referee panel is the most "I didn't know it could do that".
+**When behind on Friday:** shorten the paper round-up and the words (two words is
+fine), never the interviews. Own work can shrink to nothing; the handout has it.
 
 # Module cards
 
@@ -532,7 +537,56 @@ with founders who changed direction early, and the interview guide. Built from
 - **Ask the qualitative people** what they'd do differently, out loud. The
   invitation says they're especially welcome to share what works.
 
-## Referee panel
+## References
+
+**Friday: 30 minutes, mandatory.** The "in the literature right now" slide (3), the
+search exercise on their own question (10), then the claim check on the paper
+folder from *Take a paper apart* (15): the slide's "papers not in the folder yet?"
+prompt downloads three cited papers and checks them. DOI check and the rest are in
+the handout. The full module is 40 minutes for two parts, 60 for all four.
+
+- **Search.** Tell the story first: shallow, specific questions have turned up
+  important papers you didn't know, in your own field (the Hjort–Glad prompt). Then
+  the exercise, about 10 minutes: everyone asks one specific question about their
+  own idea, and has it download the papers. The lesson is *be specific*. Deep ("I
+  need every method since 1995…") is a different request: finalizing, slow, and
+  expensive on usage. Show the prompt; don't run it in the room.
+- **Papers in the folder.** The practice to sell hardest in this module: one rule in
+  the project file (papers go in literature/; download what you can, a DOI for the
+  rest), and the agent stops searching for the same paper again and again. It's
+  also what makes the claim check work.
+- **DOI check.** The practice `.bib` has six planted traps. The full key is in
+  `scratch/examples/references/README.md`. Floor: three DOIs pasted into doi.org by
+  hand.
+- **Claim check.** The centrepiece. Run it on their *own* draft if they have one,
+  after the papers are in literature/. "Not in the folder" is not "doesn't exist".
+- **The line to end on:** *a polished bibliography is not evidence of a correct
+  bibliography.*
+
+## Words you've heard
+
+About 30 minutes on Friday, replacing Finance's research menu. Nine tiles; for each,
+ask *"who has heard this and never quite understood it?"*, count hands, and do the
+top three or four, five minutes each: the picture, one sentence, the prompt to try.
+
+- **New sections in the deck:** skills, subagents, plan mode, context and
+  /compact, worktrees, agents in the cloud. **Their own decks** (coral tiles):
+  connectors (`mcp`), the project file (`agents`), GitHub (`github`, with the
+  pull-request demo with Ludvik).
+- **Checked 21 October** against Claude Code 2.1.304 and Codex 0.163: both have
+  subagents, plan mode, `/compact`, and a worktree flag (`claude -w`, `codex
+  --worktree`); Codex's cloud tasks are marked experimental in the CLI. The skills
+  and subagents prompts use the `pivot-interviews` folder from the morning.
+- **Tested 21 October (Codex, on `pivot-interviews`):** the subagents prompt took
+  73 seconds, really used one helper per transcript, and returned the table (F06
+  flagged as "no change"). The skills prompt wrote a good `check-quotes/SKILL.md`
+  in 27 seconds. Saving it goes to the user's skills folder, outside the project,
+  so expect a permission question: say yes. That's Thursday's access deck in
+  action.
+- **End on the last slide:** any other word? Ask the tool. It's the same move as
+  Thursday's "Unsure what a word means? Ask."
+
+## Referee panel, any time
 
 New module, not yet run with a room. About 40 minutes.
 
@@ -559,29 +613,6 @@ New module, not yet run with a room. About 40 minutes.
   the skills slide in `notes`, if anyone asks.
 - **Demo:** the first two steps on a strategy paper, live. Then one referee from
   a fresh session.
-
-## References
-
-About 40 minutes for two of the four parts; 60 for all of them. Open with the
-"in the literature right now" slide (3 minutes), then let the room pick parts.
-
-- **Search.** Tell the story first: shallow, specific questions have turned up
-  important papers you didn't know, in your own field (the Hjort–Glad prompt). Then
-  the exercise, about 10 minutes: everyone asks one specific question about their
-  own idea, and has it download the papers. The lesson is *be specific*. Deep ("I
-  need every method since 1995…") is a different request: finalizing, slow, and
-  expensive on usage. Show the prompt; don't run it in the room.
-- **Papers in the folder.** The practice to sell hardest in this module: one rule in
-  the project file (papers go in literature/; download what you can, a DOI for the
-  rest), and the agent stops searching for the same paper again and again. It's
-  also what makes the claim check work.
-- **DOI check.** The practice `.bib` has six planted traps. The full key is in
-  `scratch/examples/references/README.md`. Floor: three DOIs pasted into doi.org by
-  hand.
-- **Claim check.** The centrepiece. Run it on their *own* draft if they have one,
-  after the papers are in literature/. "Not in the folder" is not "doesn't exist".
-- **The line to end on:** *a polished bibliography is not evidence of a correct
-  bibliography.*
 
 ## Leave a trail
 
@@ -670,7 +701,7 @@ Not taught. One slide at the end of the `notes` deck (`notes.html#/skills`) and 
 
 ## GitHub, if asked
 
-- **The deck:** `github.html`, about 10 minutes; section 14 of the handout.
+- **The deck:** `github.html`, about 10 minutes; section 15 of the handout.
 - **The one-liner:** git is save points on your laptop, GitHub is the copy in the
   cloud. OneDrive syncs files; GitHub keeps every version and who made it.
 - **Setup is one prompt** once they have an account: *"Install the GitHub
@@ -727,7 +758,7 @@ into this folder."*
 5. **Show the pull request page in the browser:** the description, the comment,
    the commits, the merge. *"That page is the whole history of the decision."*
 
-**Then the pairs exercise** (deck slide "Exercise: in pairs", handout section 14),
+**Then the pairs exercise** (deck slide "Exercise: in pairs", handout section 15),
 about 15 minutes: A puts a folder on GitHub and adds B; B accepts, downloads, and
 opens a pull request; A reviews and merges; swap. Everyone needs a GitHub account
 and `gh` logged in first, which is the slow part: start that during the demo.

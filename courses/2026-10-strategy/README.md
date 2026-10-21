@@ -72,9 +72,15 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
   `scratch/examples/pivot-interviews/`), a codebook, coding, themes, every quote
   checked by a script. Planted: three pseudonymisation slips, a contradiction, a
   planned-or-emergent story, a case that doesn't fit.
-- [x] **Teaching** (new deck `teaching`, handout section 13): optional, end of
+- [x] **Teaching** (new deck `teaching`, handout section 14): optional, end of
   Friday. The exam factory, a course page, an animation; a fictional syllabus as
   fallback (`props/ORG3402-organisational-behaviour.md`).
+- [x] **Friday without a research menu** (21 October; Finance debrief, note 6):
+  References is mandatory (30 minutes), and the room chooses among *Words you've
+  heard* instead (new deck `words`, handout section 9): skills, connectors,
+  subagents, the project file, plan mode, context and /compact, worktrees, GitHub,
+  agents in the cloud. Referee panel, Leave a trail, and Notes and structure move
+  to "Any time". The menu's title-slide "Invalid Date" is fixed.
 - [x] **Room:** Jonas handles it with Line (21 October). Background: Line wrote on
   5 October that A2 was nearly full and C2 had space.
 - [x] **Before Thursday, Jonas's part** (21 October): send the TA page to Ludvik and

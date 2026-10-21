@@ -61,5 +61,5 @@ A fix takes 5–10 minutes: it writes and runs code. If it asks to install Pytho
 - Best problem found?
 - Best fix?
 - Worst false alarm?
-- **Keep the folder.** The blocks you choose later all start from it.
+- **Keep the folder.** References starts from it, after Interviews.
 - **Next: interviews.**

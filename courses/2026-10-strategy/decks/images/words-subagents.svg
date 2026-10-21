@@ -1,0 +1,30 @@
+<svg class="diagram" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A main agent splits a job between four helper agents, each with its own context window. Only their summaries come back.">
+<defs><marker id="subagents-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="subagents-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="40" y="130" width="230" height="110" rx="14" fill="#fbd9d1" stroke="#17201f" stroke-width="3"/>
+<text x="155" y="178" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Main agent</text>
+<text x="155" y="212" text-anchor="middle" font-size="21" fill="#17201f">splits the job</text>
+<path d="M 272 185 C 330 185, 330 62, 388 62" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#subagents-i)"/>
+<rect x="400" y="30" width="300" height="66" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="550" y="61" text-anchor="middle" font-size="22" font-weight="800" fill="#17201f">helper: F01–F02</text>
+<text x="550" y="86" text-anchor="middle" font-size="18" fill="#5c6763">its own context</text>
+<path d="M 702 62 C 770 62, 770 185, 828 185" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#subagents-c)"/>
+<path d="M 272 185 C 330 185, 330 147, 388 147" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#subagents-i)"/>
+<rect x="400" y="115" width="300" height="66" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="550" y="146" text-anchor="middle" font-size="22" font-weight="800" fill="#17201f">helper: F03–F04</text>
+<text x="550" y="171" text-anchor="middle" font-size="18" fill="#5c6763">its own context</text>
+<path d="M 702 147 C 770 147, 770 185, 828 185" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#subagents-c)"/>
+<path d="M 272 185 C 330 185, 330 232, 388 232" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#subagents-i)"/>
+<rect x="400" y="200" width="300" height="66" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="550" y="231" text-anchor="middle" font-size="22" font-weight="800" fill="#17201f">helper: F05–F06</text>
+<text x="550" y="256" text-anchor="middle" font-size="18" fill="#5c6763">its own context</text>
+<path d="M 702 232 C 770 232, 770 185, 828 185" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#subagents-c)"/>
+<path d="M 272 185 C 330 185, 330 317, 388 317" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#subagents-i)"/>
+<rect x="400" y="285" width="300" height="66" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="550" y="316" text-anchor="middle" font-size="22" font-weight="800" fill="#17201f">helper: F07–F08</text>
+<text x="550" y="341" text-anchor="middle" font-size="18" fill="#5c6763">its own context</text>
+<path d="M 702 317 C 770 317, 770 185, 828 185" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#subagents-c)"/>
+<rect x="840" y="130" width="320" height="110" rx="14" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="1000" y="178" text-anchor="middle" font-size="28" font-weight="800" fill="#17201f">Summaries back</text>
+<text x="1000" y="212" text-anchor="middle" font-size="21" fill="#17201f">one line per founder</text>
+<text x="600" y="382" text-anchor="middle" font-size="21" fill="#5c6763">Faster, and the main conversation stays uncluttered. It also uses your limit faster.</text>
+</svg>
