@@ -75,9 +75,11 @@ follow. TAs: Ludvik Slipersæter and Leonardo.
 - [x] **Teaching** (new deck `teaching`, handout section 13): optional, end of
   Friday. The exam factory, a course page, an animation; a fictional syllabus as
   fallback (`props/ORG3402-organisational-behaviour.md`).
-- [ ] **Room:** check that it's booked. Line (5 October): A2 nearly full, C2 had
-  space, she'd book once the times were confirmed. No confirmation found in mail
-  (checked 21 October); ask Line.
+- [x] **Room:** Jonas handles it with Line (21 October). Background: Line wrote on
+  5 October that A2 was nearly full and C2 had space.
+- [x] **Before Thursday, Jonas's part** (21 October): send the TA page to Ludvik and
+  Leonardo (Ludvik: GitHub account and `gh` for the pull-request demo), test on a
+  BI-managed laptop, pre-run the backup demos.
 
 ## Open questions from email
 

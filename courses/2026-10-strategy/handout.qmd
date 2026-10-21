@@ -46,7 +46,7 @@ that (sections 8–11) work in any order, on Friday or next week.
 | | 15. Connectors | Your email, calendar and files, if you want them |
 
 ::: {.floor}
-**Two rules for the day.** Don't overthink it: just use it. And when you get
+**Two rules for both days.** Don't overthink it: just use it. And when you get
 stuck, ask the tool. *"How do I…?"*, *"What just happened?"*, *"Undo that."* It is
 its own best manual.
 :::

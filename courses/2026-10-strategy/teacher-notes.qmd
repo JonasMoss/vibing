@@ -231,7 +231,7 @@ lands hard. Referee panel is the most "I didn't know it could do that".
 - **Floor:** make a file, read it back, delete it.
 - **Git is required now.** If someone has no admin rights, the agent installs the
   portable Git for Windows into their user folder. **Untested on a BI-managed
-  laptop:** try it on Thursday. If it fails on the day, they pair with a neighbour
+  laptop:** try it before Thursday. If it fails on the day, they pair with a neighbour
   for the git steps.
 - **Watch for:**
   - the "x86" PowerShell;
@@ -240,7 +240,9 @@ lands hard. Referee panel is the most "I didn't know it could do that".
   - Codex's admin or sandbox prompt (choose unelevated);
   - git needing admin rights (the portable route, above).
 - **People with no subscription** pair up. Don't let them sit idle.
-- **Finished first?** They're the help desk. Say it out loud.
+- **Finished first?** They're the help desk. Say it out loud. Or the handout's
+  early task: a five-forces web page for Norwegian salmon farming (tested 21
+  October with Codex: about 3.5 minutes, a one-page site, opened in the browser).
 
 ## Save points (git)
 
@@ -514,7 +516,7 @@ with founders who changed direction early, and the interview guide. Built from
   - a contradiction in F03: "the investors had no influence", then the board
     pushing hard;
   - F04 calls the change planned in question 4, after telling a chance meeting at a
-    trade fair in questions 2 and 3: planned or emergent, from the morning;
+    trade fair in questions 2 and 3: planned or emergent, from `knows`;
   - F06 never pivoted: the case that doesn't fit.
 - **Tested 21 October (Codex, clean profile, prompts exactly as in the handout):**
   about five minutes of agent time in all. The anonymity check found all three
@@ -597,7 +599,7 @@ About 50 minutes. The full instructor key is in `scratch/examples/leave-a-trail/
 - **The folder is a practice project,** not their paper: Kari Nordmann's and their
   survey experiment on price framing (fictional), in `props/messy-project.zip`. The
   deck shows the link and the file tree. Those who finish go on to a copy of a real
-  folder of their own, or the morning's paper folder.
+  folder of their own, or their paper folder from *Take a paper apart*.
 
 - **Floor:** the rerun test passes after `/clear`.
 - **Opening:** a show of hands, LaTeX or Word? LaTeX users already write in text;
@@ -609,8 +611,8 @@ About 50 minutes. The full instructor key is in `scratch/examples/leave-a-trail/
 - **The last-but-one slide is the reveal** ("What the rerun found": N = 223,
   −292 NOK, p = 0.26 with the three rows; N = 220, +53 NOK, p = 0.02 without). Show
   it only after the room has run the test. The handout only hints at it.
-- **Git** was set up in the morning, so the exercise's first step is one prompt.
-  Anyone who skipped the morning: the agent asks for a name and email at the first
+- **Git** was set up on Thursday, so the exercise's first step is one prompt.
+  Anyone who missed Thursday: the agent asks for a name and email at the first
   commit.
 - **The test slide** is a diagram with two clicks: "Same numbers, done", then the
   loop back ("Not the same? Fix the README, run the test again").
@@ -689,7 +691,7 @@ types a git command.
 **Done live, from scratch.** No pre-made repository. If something breaks, narrate
 the fix: watching the agent recover is part of the lesson.
 
-**Before Friday:** Ludvik has a GitHub account, and `gh` installed and logged in.
+**Before Thursday:** Ludvik has a GitHub account, and `gh` installed and logged in.
 Have his username ready.
 
 **Setup, live (2–3 minutes):** in a copy of the "Leave a trail" practice folder
@@ -772,6 +774,9 @@ course folder, files out, reruns next year.
   the rubric for K2 comes back as "excellent / good / some / limited
   understanding", which is the point. More in
   `scratch/examples/syllabus/README.md`.
+  - **Tested 21 October (Codex, on the fictional syllabus):** questions and rubric,
+    then the outcome question, in 114 seconds. It named G2 first, then K2 and S3:
+    all three planted ones.
 - **A course page,** then GitHub Pages, ties back to Thursday's git deck.
 
 # Questions you'll get
