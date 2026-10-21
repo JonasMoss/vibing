@@ -1,8 +1,8 @@
 ---
-pagetitle: "Save points: git"
+pagetitle: "Git: save points"
 ---
 
-# Save points {#git background-color="#f0674d"}
+# Git: save points {#git background-color="#f0674d"}
 
 Git: mainly for the agent. Very, very good for you too.
 

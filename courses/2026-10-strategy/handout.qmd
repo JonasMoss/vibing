@@ -22,8 +22,8 @@ room. Every grey box with a coral edge is a **prompt**: click the copy icon in i
 corner, paste it into Claude Code or Codex, and change the bits in
 \[square brackets\].
 
-**The shape of the two days:** Thursday gets you running, shows you save points and
-what the agent can touch, and has it do something tedious for you. Friday is about
+**The shape of the two days:** Thursday gets you running, shows you git's save
+points and what the agent can touch, and has it do something tedious for you. Friday is about
 research: what it knows about you, your paper taken apart, interviews coded, your
 references checked, and the words you've heard. Sections 10–16 are for any time:
 on Friday if you finish early, or next week.
@@ -31,7 +31,7 @@ on Friday if you finish early, or next week.
 | | Section | What you get |
 |---|---|---|
 | Thursday | 1. Get it running | Claude Code or Codex, and git, working on your laptop |
-| | 2. Save points | Git: what it is, why the agent needs it, your first commits |
+| | 2. Git: save points | What git is, why the agent needs it, your first commits |
 | | 3. What it can touch | What it does without asking, and how to rein it in |
 | | 4. Do something tedious | A messy folder cleaned up, with a save point and an undo |
 | Friday | 5. What it knows about you | A profile that makes every answer fit you |
@@ -308,7 +308,7 @@ Speech-to-text makes long prompts painless, and long prompts get better answers.
   routine work runs and a second model stops risky steps. Codex works inside a
   sandbox. Both, and how to restrict them: section 3.
 
-# Save points (git)
+# Git: save points
 
 Git records the history of a folder: every change, when, and why. Almost all
 software is built with it (Linus Torvalds wrote it in 2005, for Linux), and here

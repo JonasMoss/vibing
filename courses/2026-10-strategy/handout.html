@@ -2221,7 +2221,7 @@ vertical-align: -.125em;
   <li><a href="#talk-instead-of-type" id="toc-talk-instead-of-type" class="nav-link" data-scroll-target="#talk-instead-of-type"><span class="header-section-number">1.8</span> Talk instead of type</a></li>
   <li><a href="#working-safely" id="toc-working-safely" class="nav-link" data-scroll-target="#working-safely"><span class="header-section-number">1.9</span> Working safely</a></li>
   </ul></li>
-  <li><a href="#save-points-git" id="toc-save-points-git" class="nav-link" data-scroll-target="#save-points-git"><span class="header-section-number">2</span> Save points (git)</a>
+  <li><a href="#git-save-points" id="toc-git-save-points" class="nav-link" data-scroll-target="#git-save-points"><span class="header-section-number">2</span> Git: save points</a>
   <ul class="collapse">
   <li><a href="#your-first-save-point" id="toc-your-first-save-point" class="nav-link" data-scroll-target="#your-first-save-point"><span class="header-section-number">2.1</span> Your first save point</a></li>
   <li><a href="#undo" id="toc-undo" class="nav-link" data-scroll-target="#undo"><span class="header-section-number">2.2</span> Undo</a></li>
@@ -2372,7 +2372,7 @@ vertical-align: -.125em;
 <section id="how-to-use-this" class="level1 unnumbered">
 <h1 class="unnumbered">How to use this</h1>
 <p>Everything from both days is in here, including the parts we don’t get to in the room. Every grey box with a coral edge is a <strong>prompt</strong>: click the copy icon in its corner, paste it into Claude Code or Codex, and change the bits in [square brackets].</p>
-<p><strong>The shape of the two days:</strong> Thursday gets you running, shows you save points and what the agent can touch, and has it do something tedious for you. Friday is about research: what it knows about you, your paper taken apart, interviews coded, your references checked, and the words you’ve heard. Sections 10–16 are for any time: on Friday if you finish early, or next week.</p>
+<p><strong>The shape of the two days:</strong> Thursday gets you running, shows you git’s save points and what the agent can touch, and has it do something tedious for you. Friday is about research: what it knows about you, your paper taken apart, interviews coded, your references checked, and the words you’ve heard. Sections 10–16 are for any time: on Friday if you finish early, or next week.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -2394,8 +2394,8 @@ vertical-align: -.125em;
 </tr>
 <tr class="even">
 <td></td>
-<td>2. Save points</td>
-<td>Git: what it is, why the agent needs it, your first commits</td>
+<td>2. Git: save points</td>
+<td>What git is, why the agent needs it, your first commits</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2715,8 +2715,8 @@ vertical-align: -.125em;
 </ul>
 </section>
 </section>
-<section id="save-points-git" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Save points (git)</h1>
+<section id="git-save-points" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Git: save points</h1>
 <p>Git records the history of a folder: every change, when, and why. Almost all software is built with it (Linus Torvalds wrote it in 2005, for Linux), and here it is <strong>mainly for the agent</strong>. The agent can change 40 files in 30 seconds; git lets it, and you, see exactly what changed, and put it all back in one step. You never type a git command. You ask.</p>
 <svg class="diagram" viewbox="0 0 1200 410" preserveaspectratio="xMidYMid meet" role="img" aria-label="Left: the folder you see, with notes.md, data.csv and draft.docx, and a hidden .git folder. Right: inside .git, a stack of save points, each a full copy of the files with a note. Commit copies every file into .git; revert copies a save point back over your files.">
 <defs><marker id="sp-c" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d" /></marker><marker id="sp-i" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f" /></marker></defs>

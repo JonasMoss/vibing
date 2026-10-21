@@ -2181,7 +2181,7 @@ vertical-align: -.125em;
   <li><a href="#module-cards" id="toc-module-cards" class="nav-link" data-scroll-target="#module-cards">Module cards</a>
   <ul class="collapse">
   <li><a href="#get-it-running" id="toc-get-it-running" class="nav-link" data-scroll-target="#get-it-running">Get it running</a></li>
-  <li><a href="#save-points-git" id="toc-save-points-git" class="nav-link" data-scroll-target="#save-points-git">Save points (git)</a></li>
+  <li><a href="#git-save-points" id="toc-git-save-points" class="nav-link" data-scroll-target="#git-save-points">Git: save points</a></li>
   <li><a href="#what-it-can-touch" id="toc-what-it-can-touch" class="nav-link" data-scroll-target="#what-it-can-touch">What it can touch</a></li>
   <li><a href="#do-something-tedious" id="toc-do-something-tedious" class="nav-link" data-scroll-target="#do-something-tedious">Do something tedious</a></li>
   <li><a href="#what-it-knows-about-you" id="toc-what-it-knows-about-you" class="nav-link" data-scroll-target="#what-it-knows-about-you">What it knows about you</a></li>
@@ -2230,7 +2230,7 @@ vertical-align: -.125em;
 <h1>The shape of the two days</h1>
 <p><strong>Two goals, as always:</strong> they leave knowing these tools do far more than they thought, and believing they can do it themselves on Monday. Everything else is in service of that.</p>
 <ul>
-<li><strong>Thursday 12–16: everyone running, safely. All of it is mandatory, in order.</strong> Setup, save points, what it can touch, something tedious. By 16:00 every laptop runs an agent with git, and everyone has watched an undo. Not everyone comes both days, and Siri’s line is that day one is what matters: so Thursday must stand on its own. It ends with 45 minutes on their own tedious thing.</li>
+<li><strong>Thursday 12–16: everyone running, safely. All of it is mandatory, in order.</strong> Setup, save points, what it can touch, something tedious. By 16:00 every laptop runs an agent with git, and everyone has watched an undo. Not everyone comes both days, and Siri’s line is that day one is what matters: so Thursday must stand on its own. It starts with the install, and ends with 50 minutes on their own tedious thing.</li>
 <li><strong>Friday 09–13: research, all of it mandatory up to the words.</strong> Their field (as I imagine it), the profile, a paper taken apart, interviews coded, references checked. Then <em>Words you’ve heard</em>, own work, and the short, optional teaching block at the end. Birgitte asked for it to be short: several of them have taken BI’s AI-for-teaching course.</li>
 <li><strong>Qualitative and quantitative, both.</strong> Birgitte asked for it explicitly, and the invitation promises “interviews, documents and literature to data, with examples from both traditions”. Every research block has a qualitative route: interview papers in <code>paper</code>, the <code>interviews</code> block for everyone, quotes checked word for word. And the invitation says qualitative people are “especially welcome to share what works”: ask them, out loud.</li>
 <li><strong>No research menu this time.</strong> In Finance, “you choose” fell flat: nobody had an opinion, because you can’t choose between workflows you haven’t seen (debrief, note 6). So I decide the research blocks, and the room chooses only among <em>words they’ve heard</em>, which needs nothing but curiosity. Referee panel, Leave a trail and Notes and structure are in the handout for any time.</li>
@@ -2252,27 +2252,27 @@ vertical-align: -.125em;
 <tbody>
 <tr class="odd">
 <td><code>menu</code></td>
-<td>Title, the menu, “one folder”, start the install</td>
-<td>10</td>
+<td>Title, the menu, “one folder”, the course files</td>
+<td>5</td>
 </tr>
 <tr class="even">
+<td><code>setup</code></td>
+<td>Install, log in, git (required), which model and limits, five keys, first contact. <strong>First thing on Thursday</strong></td>
+<td>45</td>
+</tr>
+<tr class="odd">
 <td><code>power</code></td>
 <td>Capability talk: two kinds of contest (algorithm vs heuristic, for the question Finance asked), programming, maths benchmarks, a released model on open problems, Navier–Stokes, the 6 October results, “the biggest day in history?”, Duminil-Copin; ends on a teaching slide (an animation written as code)</td>
 <td>~10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>how</code></td>
 <td>What an LLM is (training: pre-training, feedback, RL; use: thinking), prompt engineering (RIP), what an agent is, usage limits</td>
 <td>6</td>
 </tr>
-<tr class="even">
-<td><code>setup</code></td>
-<td>Install, log in, git (required), which model and limits, first contact</td>
-<td>45</td>
-</tr>
 <tr class="odd">
 <td><code>git</code></td>
-<td>Save points: what git is, where it comes from (timeline, two charts), for the agent, vs OneDrive, .gitignore, the cloud, five words, ask about the rest, GitHub and Pages. Four exercises</td>
+<td>Git: save points. What git is, where it comes from (timeline, two charts), for the agent, vs OneDrive, .gitignore, the cloud, five words, ask about the rest, GitHub and Pages. Four exercises</td>
 <td>30–35</td>
 </tr>
 <tr class="even">
@@ -2387,8 +2387,8 @@ vertical-align: -.125em;
 <p><strong>Ludvik: nobody is left without a working agent.</strong></p>
 <ul>
 <li><strong>Thursday 11:00–12:00: install drop-in</strong> in the room. Anyone can come early.</li>
-<li><strong>During setup (12:25–13:10):</strong> roam, Windows first. Common trouble: the “x86” PowerShell; not closing and reopening PowerShell after the install; Command Prompt instead of PowerShell; Codex’s admin or sandbox prompt (choose unelevated); git needing admin rights (ask the agent to install portable Git into the user folder).</li>
-<li><strong>At 13:05, the laptop check:</strong> walk every row. Every laptop shows an agent that answers, and <code>git --version</code> that answers. Write down who isn’t there yet.</li>
+<li><strong>During setup (12:05–12:50), first thing:</strong> roam, Windows first. Common trouble: the “x86” PowerShell; not closing and reopening PowerShell after the install; Command Prompt instead of PowerShell; Codex’s admin or sandbox prompt (choose unelevated); git needing admin rights (ask the agent to install portable Git into the user folder).</li>
+<li><strong>At 12:45, the laptop check:</strong> walk every row. Every laptop shows an agent that answers, and <code>git --version</code> that answers. Write down who isn’t there yet.</li>
 <li><strong>Friday 08:30–09:00: second drop-in</strong>, for Thursday’s stragglers and anyone who only comes on Friday. Then take Friday-only people through handout sections 1–3 at the side of the room, while the rest work.</li>
 </ul>
 <p><strong>Leonardo: the room stays on track.</strong></p>
@@ -2455,65 +2455,59 @@ vertical-align: -.125em;
 </tr>
 <tr class="odd">
 <td>12:05</td>
-<td><strong>Start the install</strong></td>
-<td>5</td>
-<td>Everyone pastes the lines for their tool and leaves the lid open. Downloads run during the talk.</td>
+<td><strong>Get it running</strong></td>
+<td>45</td>
+<td><code>setup</code>, first thing: install, log in, <strong>git for everyone</strong>, five keys, first contact. 12:45: Ludvik’s laptop check.</td>
 </tr>
 <tr class="even">
-<td>12:10</td>
+<td>12:50</td>
 <td>Capability talk</td>
 <td>~10</td>
-<td><code>power</code>. Ends on the animated teaching slide.</td>
+<td><code>power</code>. Stragglers keep installing with Ludvik while you talk: the talk is their buffer. Ends on the animated teaching slide.</td>
 </tr>
 <tr class="odd">
-<td>12:20</td>
+<td>13:00</td>
 <td>How it works</td>
 <td>5</td>
 <td><code>how</code>. Don’t elaborate.</td>
 </tr>
 <tr class="even">
-<td>12:25</td>
-<td><strong>Get it running</strong></td>
-<td>45</td>
-<td><code>setup</code>. Install, log in, <strong>git for everyone</strong>, first contact. 13:05: Ludvik’s laptop check.</td>
-</tr>
-<tr class="odd">
-<td>13:10</td>
-<td><strong>Save points</strong></td>
+<td>13:05</td>
+<td><strong>Git: save points</strong></td>
 <td>35</td>
 <td><code>git</code>. Four exercises, interspersed.</td>
 </tr>
-<tr class="even">
-<td>13:45</td>
+<tr class="odd">
+<td>13:40</td>
 <td>Break</td>
 <td>10</td>
 <td>Stragglers with Ludvik. Two parking-lot answers first.</td>
 </tr>
-<tr class="odd">
-<td>13:55</td>
+<tr class="even">
+<td>13:50</td>
 <td><strong>What it can touch</strong></td>
 <td>25</td>
 <td><code>access</code>. Three exercises.</td>
 </tr>
-<tr class="even">
-<td>14:20</td>
+<tr class="odd">
+<td>14:15</td>
 <td><strong>Do something tedious</strong></td>
 <td>25</td>
 <td><code>cleanup</code>. Names only; ends on “You decide what it reads”.</td>
 </tr>
-<tr class="odd">
-<td>14:45</td>
+<tr class="even">
+<td>14:40</td>
 <td>Break</td>
 <td>10</td>
 <td>Parking lot.</td>
 </tr>
-<tr class="even">
-<td>14:55</td>
+<tr class="odd">
+<td>14:50</td>
 <td><strong>Your own tedious thing</strong></td>
-<td>45</td>
+<td>50</td>
 <td>The last slide of <code>cleanup</code>, handout section 4. A copy of a real folder, commit first, then let it try. Slower people finish the cleanup. TAs sweep.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>15:40</td>
 <td>Tomorrow</td>
 <td>20</td>
@@ -2521,7 +2515,7 @@ vertical-align: -.125em;
 </tr>
 </tbody>
 </table>
-<p><strong>When behind:</strong> cut talk, never hands-on time. Setup will overrun; the 45 minutes at 14:55 are the buffer, not a luxury. Don’t cut the git exercises or the undo.</p>
+<p><strong>When behind:</strong> cut talk, never hands-on time. Setup will overrun; the 50 minutes at 14:50 are the buffer, not a luxury. Don’t cut the git exercises or the undo.</p>
 </section>
 <section id="run-sheet-friday-09001300" class="level1">
 <h1>Run sheet: Friday 09:00–13:00</h1>
@@ -2637,8 +2631,8 @@ vertical-align: -.125em;
 <li><strong>Finished first?</strong> They’re the help desk. Say it out loud. Or the handout’s early task: a five-forces web page for Norwegian salmon farming (tested 21 October with Codex: about 3.5 minutes, a one-page site, opened in the browser).</li>
 </ul>
 </section>
-<section id="save-points-git" class="level2">
-<h2 class="anchored" data-anchor-id="save-points-git">Save points (git)</h2>
+<section id="git-save-points" class="level2">
+<h2 class="anchored" data-anchor-id="git-save-points">Git: save points</h2>
 <p>About 30–35 minutes, mandatory, straight after setup: 25 short slides and four exercises (the yellow “Your turn” slides). New for Strategy: in Finance people couldn’t see how git differs from Dropbox or OneDrive.</p>
 <ul>
 <li><strong>The framing:</strong> <em>mainly for the agent, very good for you too.</em> Four lines on what git is, then where it comes from (a timeline, two charts), so it reads as the tool the software world runs on, not a quirk of mine. Keep moving: most slides are one idea.</li>

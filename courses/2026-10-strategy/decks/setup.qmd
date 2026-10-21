@@ -40,7 +40,7 @@ Mac, and everything that can go wrong: **handout, section 1**.
 - **Download blocked or hanging**: that's the network or security software. Hand up.
 - **No subscription**: pair up with your neighbour today.
 
-## Git: save points
+## Install git
 
 Git lets the agent save a snapshot before it changes anything, so nothing is ever
 lost. **Everyone installs it.** You never type git commands; you ask.
