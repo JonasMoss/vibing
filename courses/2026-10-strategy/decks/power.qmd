@@ -51,6 +51,42 @@ format:
     transition: none
 ---
 
+## Two kinds of contest {#contests}
+
+:::: {.columns}
+::: {.column width="48%"}
+### Algorithm
+
+- Several exact puzzles.
+- Each has a right answer. Hidden tests check it.
+- **Solved, or not.**
+
+*Like: the shortest route through a network.*
+:::
+::: {.column width="4%"}
+:::
+::: {.column width="48%"}
+### Heuristic
+
+- One big problem. Nobody knows the best answer.
+- Ten hours to do as well as you can.
+- **The score is how good it is.**
+
+*Like: routes for 1,000 delivery trucks, as cheap as possible.*
+:::
+::::
+
+[Heuristic is closer to real planning: no "solved", only better.]{.punch}
+
+::: {.notes}
+About 30 seconds, to pre-empt the question Finance asked. Algorithm problems are
+the classic kind: exact, each with a correct answer that the judges' hidden tests
+check, points per problem solved. Heuristic problems are open-ended optimisation
+(scheduling, routing, packing) where no one knows the optimum, so the score is the
+quality of the solution under the problem's scoring rule, over ten hours. That's
+why the next slide compares scores, and why humans held out longest in heuristic.
+:::
+
 ## Competitive programming: the world finals
 
 ::: {.pw-lead}

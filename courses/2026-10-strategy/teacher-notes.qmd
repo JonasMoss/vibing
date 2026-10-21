@@ -49,7 +49,7 @@ slides.
 | Deck | What | Minutes |
 |---|---|---|
 | `menu` | Title, the menu, "one folder", start the install | 10 |
-| `power` | Capability talk: programming, maths benchmarks, a released model on open problems, Navier–Stokes, the 6 October results, "the biggest day in history?", Duminil-Copin; ends on a teaching slide (an animation written as code) | ~10 |
+| `power` | Capability talk: two kinds of contest (algorithm vs heuristic, for the question Finance asked), programming, maths benchmarks, a released model on open problems, Navier–Stokes, the 6 October results, "the biggest day in history?", Duminil-Copin; ends on a teaching slide (an animation written as code) | ~10 |
 | `how` | What an LLM is (training: pre-training, feedback, RL; use: thinking), prompt engineering (RIP), what an agent is, usage limits | 6 |
 | `setup` | Install, log in, git (required), which model and limits, first contact | 45 |
 | `git` | Save points: what git is, where it comes from (timeline, two charts), for the agent, vs OneDrive, .gitignore, the cloud, five words, ask about the rest, GitHub and Pages. Four exercises | 30–35 |
