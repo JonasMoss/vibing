@@ -68,37 +68,19 @@ winget install --id Git.Git -e --source winget
   Haiku is cheap, but not at Luna's level.
 - Switch with `/model`.
 
-## The terminal: all you need {#terminal}
-
-:::: {.columns .cheat}
-::: {.column width="50%"}
-**Moving around**
+## Five keys {#terminal}
 
 | | |
 |---|---|
-| `cd name` | go into a folder |
-| `cd ..` | back out |
-| `ls` | what's here? |
-| `mkdir name` | make a folder |
-| `explorer .` | open it as a window |
-| `claude` | start the agent here |
-:::
-::: {.column width="50%"}
-**Keys**
-
-| | |
-|---|---|
-| **Tab** | finish the name |
-| **↑** | last command again |
-| **Ctrl+V** | paste |
-| **Ctrl+C** | stop |
-| **Ctrl+L** | clear the screen |
 | **Esc** | interrupt the agent |
-:::
-::::
+| **Ctrl+C** | stop. Twice: leave the agent |
+| **Ctrl+L** | clear the screen (the conversation stays) |
+| **↑** | your last prompt again |
+| **Ctrl+V** or right-click | paste |
 
-[No `cd` needed: right-click a folder → **Open in Terminal**. Mac: drag the folder
-onto Terminal in the Dock; `open .`; **Cmd+V**.]{.small .muted}
+[Open a folder: right-click it in Explorer → **Open in Terminal**. Anything else:
+ask the agent. The full list: handout, section 1. (Mac: **Cmd+V** to paste; drag
+the folder onto Terminal in the Dock.)]{.small .muted}
 
 ## First contact
 
