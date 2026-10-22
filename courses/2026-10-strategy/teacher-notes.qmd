@@ -1,6 +1,6 @@
 ---
 title: "Teacher notes"
-subtitle: "AI in the terminal · Department of Strategy and Entrepreneurship · 22 and 23 October 2026 · work in progress"
+subtitle: "AI in the terminal · Department of Strategy and Entrepreneurship · 22 and 23 October 2026"
 format:
   html:
     theme: [cosmo, docs.scss]

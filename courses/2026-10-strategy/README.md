@@ -1,6 +1,6 @@
 # AI in the terminal — Department of Strategy and Entrepreneurship
 
-**Status: in preparation.** Copied forward from Finance on 20 October, reworked
+**Status: ready, 22 October.** Copied forward from Finance on 20 October, reworked
 20–21 October; see the checklist below.
 
 ## Facts

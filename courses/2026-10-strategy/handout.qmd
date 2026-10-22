@@ -1,6 +1,6 @@
 ---
 title: "AI in the terminal"
-subtitle: "The handout · Department of Strategy and Entrepreneurship · 22 and 23 October 2026 · work in progress"
+subtitle: "The handout · Department of Strategy and Entrepreneurship · 22 and 23 October 2026"
 author: "Jonas Moss, Department of Data Science and Analytics"
 format:
   html:
