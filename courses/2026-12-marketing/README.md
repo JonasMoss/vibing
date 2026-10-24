@@ -43,9 +43,18 @@ Build list, from the plan:
   each, on the small models (Haiku, a mini GPT) to save usage. Published
   evidence collected and checked (`private/research/sycophancy-evidence.md`
   until checked).
-- [ ] **New decks:** `yourpaper` and `sycophancy` (stubs now); `review` rebuilt
-  as the blind panel; `paper` as a background job on your own paper; `setup`
-  for the app.
+- [x] **New decks** (24 October, drafts): `yourpaper` (which paper, training
+  off, open it, a save point); `paper` as a job you start and leave; `sycophancy`
+  (three forms, why, checked evidence as charts, our own measurement); `review`
+  as the blind panel (what gives you away, the package, the brief, three
+  referees in `review-room`, the editor, the comparison, pushing back); `setup`
+  for the apps (install, a folder, git by asking, the row under the prompt box).
+- [ ] **To test on a Windows laptop** (the setup deck is written from the docs,
+  not tried): the Claude app's install without admin rights; *Local → Open
+  folder…*; Ctrl+N for a new session; the mode names (*Manual*, *Accept edits*,
+  *Auto*); "Help → Check for updates"; the agent installing Git for Windows in
+  the user folder; whether Codex now lives in the ChatGPT app ("open a
+  folder"), and what it's called there.
 - [ ] **Marketing examples** instead of strategy ones (`knows`, `more`, `own`).
 - [ ] **Handout and teacher notes** rewritten for one afternoon, with a run sheet.
 - [ ] **Reminder email** a week before: bring a paper in progress, as a PDF plus
