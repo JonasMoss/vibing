@@ -39,10 +39,17 @@ Build list, from the plan:
   reference that doesn't exist.
 - [ ] **Leak test:** what a fresh session in a neutral folder knows about you.
   Terminal version here; the app's claude.ai preferences on a Windows laptop.
-- [ ] **Sycophancy, measured:** the fallback paper under four framings, ten runs
-  each, on the small models (Haiku, a mini GPT) to save usage. Published
-  evidence collected and checked (`private/research/sycophancy-evidence.md`
-  until checked).
+- [x] **Sycophancy, measured** (24 October; Claude Haiku and GPT-6-Luna, fresh
+  sessions, no profile; scripts and aggregates in
+  `scratch/examples/ai-label-paper/sycophancy/`, raw reports in
+  `private/sycophancy-runs/`). Asked for a score, four framings × 10: no
+  difference (means 3.0–3.2 out of 10); pushed back wrongly, 20 of 20 kept the
+  concern. Asked for *feedback* on "my paper, I'm proud of it" vs. blind: the
+  verdict disappears (Haiku 10 → 1 of 10, Luna 9 → 0) and praise comes first
+  (0 → 8, 0 → 10); a blind judge rated Luna's feedback 1.9 vs. 4.0 out of 10.
+  Published evidence checked against the sources: Liang et al. (overlap), Vasu
+  et al. (affiliation), the GPT-5 system card, Sharma et al. (Codex's notes in
+  `private/research/sycophancy-evidence.md`).
 - [x] **New decks** (24 October, drafts): `yourpaper` (which paper, training
   off, open it, a save point); `paper` as a job you start and leave; `sycophancy`
   (three forms, why, checked evidence as charts, our own measurement); `review`

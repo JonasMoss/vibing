@@ -86,6 +86,9 @@ This is my paper, and I'm about to submit it to [journal]. What do you think?
 
 Kinder than the panel? Same concerns? **Compare with your neighbour.**
 
+[When we tried it: praise first, and no verdict, from both models ([It wants to
+please you](sycophancy.html#/tone)).]{.small .muted}
+
 ## If you push back {#pushback}
 
 You will disagree with a referee. Fine, but watch what happens next.

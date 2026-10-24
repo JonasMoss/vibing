@@ -64,5 +64,72 @@ def gpt5():
     (OUT / "syco-gpt5.svg").write_text("\n".join(s) + "\n")
 
 
+def ours():
+    """Our framing experiment: mean score per framing and model (results.json)."""
+    import json
+    res = json.loads((Path(__file__).resolve().parents[1] / "examples" / "ai-label-paper" /
+                      "sycophancy" / "results.json").read_text())["framing"]
+    rows = [("blind", "\u201cYou are a referee\u201d"), ("colleague", "\u201cA colleague\u2019s paper\u201d"),
+            ("mine", "\u201cMy paper\u201d"), ("proud", "\u201cMy paper, I\u2019m proud of it\u201d")]
+    models = [("haiku", "Claude Haiku", CORAL, -9), ("luna", "GPT-6-Luna", GREY, 9)]
+    x0, x1, H = 430, 1150, 360
+    sx = lambda v: x0 + (v - 1) / 9 * (x1 - x0)
+    desc = "; ".join(f"{lab}: Haiku {res['haiku/' + k]['mean']}, Luna {res['luna/' + k]['mean']}" for k, lab in rows)
+    s = [f'<svg class="diagram" viewBox="0 0 1200 {H}" preserveAspectRatio="xMidYMid meet" role="img" '
+         f'aria-label="Dot plot. Mean referee score out of 10 for the same paper under four framings. {desc}.">']
+    for v in [1, 3, 5, 7, 10]:
+        s.append(f'<line x1="{sx(v):.1f}" y1="30" x2="{sx(v):.1f}" y2="270" stroke="{RULE}" stroke-width="1"/>')
+        s.append(f'<text x="{sx(v):.1f}" y="296" text-anchor="middle" font-size="22" fill="{MUTED}">{v}</text>')
+    y = 60
+    for k, lab in rows:
+        s.append(f'<text x="{x0 - 24}" y="{y + 9}" text-anchor="end" font-size="26" font-weight="700" fill="{INK}">{lab}</text>')
+        for m, mname, col, dy in models:
+            r = res[f"{m}/{k}"]
+            s.append(f'<g><title>{mname}, {lab}: mean {r["mean"]} (scores {", ".join(str(int(v)) for v in r["scores"])})</title>'
+                     f'<circle cx="{sx(r["mean"]):.1f}" cy="{y + dy}" r="9" fill="{col}" stroke="#fffdf8" stroke-width="2"/></g>')
+        y += 58
+    lx = sx(7.4)
+    for i, (m, mname, col, dy) in enumerate(models):
+        s.append(f'<circle cx="{lx}" cy="{80 + i * 34}" r="9" fill="{col}"/>'
+                 f'<text x="{lx + 18}" y="{88 + i * 34}" font-size="24" fill="{INK}">{mname}</text>')
+    s.append(f'<text x="{x0}" y="{H - 16}" font-size="20" fill="{MUTED}">Mean score out of 10 (10 = accept as is). Ten fresh sessions per framing and model.</text>')
+    s.append('</svg>')
+    (OUT / "syco-ours.svg").write_text("\n".join(s) + "\n")
+
+
+def tone():
+    """Free-form feedback, blind vs. "my paper, I'm proud of it" (results.json)."""
+    import json
+    t = json.loads((Path(__file__).resolve().parents[1] / "examples" / "ai-label-paper" /
+                    "sycophancy" / "results.json").read_text())["tone"]
+    rows = [("haiku", "blind", "Claude Haiku", "blind referee"), ("haiku", "proud", "", "\u201cmy paper, I\u2019m proud\u201d"),
+            ("luna", "blind", "GPT-6-Luna", "blind referee"), ("luna", "proud", "", "\u201cmy paper, I\u2019m proud\u201d")]
+    panels = [("says_reject_or_major_revision", "Gives a verdict", 470),
+              ("opens_with_praise", "Opens with praise", 860)]
+    H, bw, sc = 330, 300, 30   # 10 -> 300 px
+    desc = "; ".join(f"{m} {fr}: verdict {t[f'{m}/{fr}/text']['says_reject_or_major_revision']} of 10, "
+                     f"praise first {t[f'{m}/{fr}/text']['opens_with_praise']} of 10" for m, fr, *_ in rows)
+    s = [f'<svg class="diagram" viewBox="0 0 1200 {H}" preserveAspectRatio="xMidYMid meet" role="img" '
+         f'aria-label="Bar chart, out of 10 reports each. {desc}.">']
+    for key, title, x0 in panels:
+        s.append(f'<text x="{x0}" y="26" font-size="24" font-weight="800" fill="{INK}">{title}</text>')
+        s.append(f'<line x1="{x0}" y1="40" x2="{x0}" y2="{H - 50}" stroke="{RULE}" stroke-width="1"/>')
+    y = 52
+    for i, (m, fr, mname, lab) in enumerate(rows):
+        if mname:
+            s.append(f'<text x="20" y="{y + 26}" font-size="26" font-weight="800" fill="{INK}">{mname}</text>')
+        s.append(f'<text x="{panels[0][2] - 16}" y="{y + 24}" text-anchor="end" font-size="22" fill="{MUTED}">{lab}</text>')
+        for key, title, x0 in panels:
+            v = t[f"{m}/{fr}/text"][key]
+            col = CORAL if fr == "proud" else GREY
+            s.append(f'<g><title>{mname or rows[i-1][2]}, {lab}: {title.lower()}, {v} of 10</title>')
+            s.append(bar(x0, y + 4, v * sc, 28, col) if v else "")
+            s.append(f'<text x="{x0 + v * sc + 10}" y="{y + 26}" font-size="24" font-weight="800" fill="{INK}">{v}</text></g>')
+        y += 50 if fr == "blind" else 66
+    s.append(f'<text x="20" y="{H - 16}" font-size="20" fill="{MUTED}">Out of 10 fresh sessions each. Verdict: reject or major revision. The prompt asked for feedback, no score.</text>')
+    s.append('</svg>')
+    (OUT / "syco-tone.svg").write_text("\n".join(s) + "\n")
+
+
 if __name__ == "__main__":
-    overlap(); gpt5(); print("ok")
+    overlap(); gpt5(); ours(); tone(); print("ok")

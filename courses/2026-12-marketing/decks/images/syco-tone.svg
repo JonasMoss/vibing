@@ -1,0 +1,37 @@
+<svg class="diagram" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Bar chart, out of 10 reports each. haiku blind: verdict 10 of 10, praise first 0 of 10; haiku proud: verdict 1 of 10, praise first 8 of 10; luna blind: verdict 9 of 10, praise first 0 of 10; luna proud: verdict 0 of 10, praise first 10 of 10.">
+<text x="470" y="26" font-size="24" font-weight="800" fill="#17201f">Gives a verdict</text>
+<line x1="470" y1="40" x2="470" y2="280" stroke="#d9d1c4" stroke-width="1"/>
+<text x="860" y="26" font-size="24" font-weight="800" fill="#17201f">Opens with praise</text>
+<line x1="860" y1="40" x2="860" y2="280" stroke="#d9d1c4" stroke-width="1"/>
+<text x="20" y="78" font-size="26" font-weight="800" fill="#17201f">Claude Haiku</text>
+<text x="454" y="76" text-anchor="end" font-size="22" fill="#5c6763">blind referee</text>
+<g><title>Claude Haiku, blind referee: gives a verdict, 10 of 10</title>
+<path d="M470,56 H766.0 Q770.0,56 770.0,60 V80 Q770.0,84 766.0,84 H470 Z" fill="#8f877b"/>
+<text x="780" y="78" font-size="24" font-weight="800" fill="#17201f">10</text></g>
+<g><title>Claude Haiku, blind referee: opens with praise, 0 of 10</title>
+
+<text x="870" y="78" font-size="24" font-weight="800" fill="#17201f">0</text></g>
+<text x="454" y="126" text-anchor="end" font-size="22" fill="#5c6763">“my paper, I’m proud”</text>
+<g><title>Claude Haiku, “my paper, I’m proud”: gives a verdict, 1 of 10</title>
+<path d="M470,106 H496.0 Q500.0,106 500.0,110 V130 Q500.0,134 496.0,134 H470 Z" fill="#d4492f"/>
+<text x="510" y="128" font-size="24" font-weight="800" fill="#17201f">1</text></g>
+<g><title>Claude Haiku, “my paper, I’m proud”: opens with praise, 8 of 10</title>
+<path d="M860,106 H1096.0 Q1100.0,106 1100.0,110 V130 Q1100.0,134 1096.0,134 H860 Z" fill="#d4492f"/>
+<text x="1110" y="128" font-size="24" font-weight="800" fill="#17201f">8</text></g>
+<text x="20" y="194" font-size="26" font-weight="800" fill="#17201f">GPT-6-Luna</text>
+<text x="454" y="192" text-anchor="end" font-size="22" fill="#5c6763">blind referee</text>
+<g><title>GPT-6-Luna, blind referee: gives a verdict, 9 of 10</title>
+<path d="M470,172 H736.0 Q740.0,172 740.0,176 V196 Q740.0,200 736.0,200 H470 Z" fill="#8f877b"/>
+<text x="750" y="194" font-size="24" font-weight="800" fill="#17201f">9</text></g>
+<g><title>GPT-6-Luna, blind referee: opens with praise, 0 of 10</title>
+
+<text x="870" y="194" font-size="24" font-weight="800" fill="#17201f">0</text></g>
+<text x="454" y="242" text-anchor="end" font-size="22" fill="#5c6763">“my paper, I’m proud”</text>
+<g><title>GPT-6-Luna, “my paper, I’m proud”: gives a verdict, 0 of 10</title>
+
+<text x="480" y="244" font-size="24" font-weight="800" fill="#17201f">0</text></g>
+<g><title>GPT-6-Luna, “my paper, I’m proud”: opens with praise, 10 of 10</title>
+<path d="M860,222 H1156.0 Q1160.0,222 1160.0,226 V246 Q1160.0,250 1156.0,250 H860 Z" fill="#d4492f"/>
+<text x="1170" y="244" font-size="24" font-weight="800" fill="#17201f">10</text></g>
+<text x="20" y="314" font-size="20" fill="#5c6763">Out of 10 fresh sessions each. Verdict: reject or major revision. The prompt asked for feedback, no score.</text>
+</svg>
