@@ -110,179 +110,37 @@ minutes; `access` can shrink to its stance slide. Never cut the save point befor
 
 ## Get it running
 
-- **Aim:** a blinking cursor that answers, and `git --version` that answers, on
-  every laptop.
-- **Floor:** make a file, read it back, delete it.
-- **Git is required now.** If someone has no admin rights, the agent installs the
-  portable Git for Windows into their user folder. **Untested on a BI-managed
-  laptop:** try it before Thursday. If it fails on the day, they pair with a neighbour
-  for the git steps.
+About 25 minutes, first thing.
+
+- **Aim:** by 12:25, every laptop has the app open in a folder, answering, and git
+  installed.
+- **Floor:** make a file, read it back, delete it, with the folder open in File
+  Explorer so they watch it happen.
+- **New for Marketing: the app, not the terminal** (Strategy debrief, note 1). It's
+  the same agent: the Code tab *is* Claude Code, and the ChatGPT app has Codex. No
+  PowerShell, no PATH, no "close and reopen".
+- **Not tested on a BI-managed laptop yet:** the README's list. Above all: the
+  install without admin rights, and the agent installing git in the user folder.
+  The deck and handout are written from Anthropic's desktop docs
+  (code.claude.com/docs/en/desktop-quickstart, checked 24 October): the Code tab
+  needs Pro, Max, Team or Enterprise; *Local* → **Open folder…**; Ctrl+N for a new
+  session; modes *Manual*, *Accept edits*, *Plan*, *Auto*. On native Windows, git
+  is optional for the agent itself (it uses PowerShell without it), but we need it
+  for save points.
+- **Fallback, if the app won't install:** the terminal route at the end of handout
+  section 1. The Claude Code install was tested on a BI PC on 14 October: no admin
+  rights needed, and the second line puts it on the PATH.
 - **Watch for:**
-  - the "x86" PowerShell;
-  - skipping "close and reopen";
-  - Command Prompt instead of PowerShell;
-  - Codex's admin or sandbox prompt (choose unelevated);
-  - git needing admin rights (the portable route, above).
-- **People with no subscription** pair up. Don't let them sit idle.
-- **Finished first?** They're the help desk. Say it out loud. Or the handout's
-  early task: a five-forces web page for Norwegian salmon farming (tested 21
-  October with Codex: about 3.5 minutes, a one-page site, opened in the browser).
-
-## Git: save points
-
-About 30–35 minutes, mandatory, straight after setup: 25 short slides and four
-exercises (the yellow "Your turn" slides). New for Strategy: in Finance people
-couldn't see how git differs from Dropbox or OneDrive.
-
-- **The framing:** *mainly for the agent, very good for you too.* Four lines on
-  what git is, then where it comes from (a timeline, two charts), so it reads as
-  the tool the software world runs on, not a quirk of mine. Keep moving: most
-  slides are one idea.
-- **Talk, exercise, talk, exercise:**
-  1. *A first save point* (3 min): git set up, a commit, "what changed?".
-  2. *Undo* (2 min): revert, the history. "Done early?" is a branch.
-  3. *A research project* (10 min): `props/founders-study.zip`, tidy, write a
-     `.gitignore` with explanations, commit, then the privacy check.
-  4. *Ask* (1 min): pick a word from the chips, ask what it means.
-- **"What a save point is" is the slide people missed in Finance:** what a save
-  point has to do with the files on their computer. Two clicks: commit (a full
-  copy of every file goes into `.git`), then revert (a copy comes back out over
-  the files). Say: *the files you see are always the current version. Delete
-  `.git` and the history is gone, the files stay; copy the folder and the history
-  comes along.*
-- **The OneDrive slides are the ones to slow down on:** the per-file versions vs
-  whole-folder snapshots diagram, then "40 restores vs one sentence". The line:
-  *OneDrive is a backup, git is a lab notebook. Keep both.*
-- **The theme for all jargon:** *unsure what a word means? Ask.* The chips slide is
-  there to make the vocabulary look harmless, not to be learned. Worktree is the
-  example because agents use it a lot (Claude Code has `--worktree`; parallel
-  agents each get one).
-- **The `.gitignore` exercise** (key: `scratch/examples/founders-study/README.md`).
-  The folder has named transcripts, audio, consent forms, a survey with e-mails, a
-  7 MB registry file, fake PDFs, a fake API key and junk files. Tested 20 October
-  with Claude Code (one combined prompt, no approvals): 81 seconds; it moved
-  everything sensitive into an ignored `local/` folder, explained each line, and
-  on its own raised the two "v3 FINAL" drafts, the quotes in
-  `coded_excerpts.csv`, and the pilots. Those three are the round-up.
-  - **The bridge to the next deck:** ignored by git is *not* hidden from the agent.
-    It read the transcripts to sort them.
-  - **The download link** only works once Strategy is merged to `main` and pushed.
-    The zip is also in `course-files.zip` under `practice/`.
-- **"Revert to the last commit" was tested** on 20 October with Claude Code
-  2.1.302 and Codex 0.162: both discarded the uncommitted change and nothing else.
-  Claude also saved a backup patch first. *"Revert the last commit"* (no "to")
-  would undo the commit itself; that's the small print on "You'll hear them back".
-- **GitHub Pages:** free for public repositories on the free plan (GitHub's plans
-  page, checked 20 October). The course page is one: say so, and say how little it
-  took. Most teaching and personal pages are fine public. For private
-  repositories, academics can get GitHub's academic plan (GitHub Education); the
-  exact terms weren't checked (the docs pages had moved).
-- **The name, if you want a laugh:** "git" is British slang for an unpleasant
-  person. Torvalds: *"I'm an egotistical bastard, and I name all my projects after
-  myself. First Linux, now git."* (as quoted in Scott Chacon's *Git Internals*,
-  about 2008; the original occasion isn't pinned down).
-- **Sources** (checked 20 October 2026):
-  - Torvalds created git in April 2005 for Linux kernel development, after
-    BitKeeper's free licence ended; first commit 7 April 2005; Junio Hamano has
-    maintained it since July 2005. *Pro Git*, §1.2.
-  - The survey chart: Stack Overflow Developer Survey 2022, "Version control",
-    professional developers (53,374 answering): Git 96.65%, SVN 5.96%, "I don't
-    use one" 1.38%, Mercurial 1.22% (multiple answers allowed). All 71,379
-    respondents: Git 93.87%. Don't say it's the latest survey that asked.
-  - For a laugh, if it fits: in the 2018 survey, 7.9% of developers still listed
-    "zip file back-ups" and 7.9% "copying and pasting files to network shares".
-    That is how most of us still work.
-  - Windows on git: 3.5 million files, about 300 GB, about 4,000 engineers;
-    "the largest Git repo on the planet" is Microsoft's own title. Brian Harry,
-    Microsoft DevBlogs, 24 May 2017.
-  - The GitHub chart, milestones GitHub announced: over 40M developers (Octoverse,
-    November 2019), 56M (December 2020), 100M (January 2023), over 180M
-    (Octoverse 2025, 28 October 2025; 630M repositories). GitHub also said "over
-    150 million" in August 2025; it's left out because it's a rounded milestone
-    that makes a fake jump to October. Microsoft bought GitHub in 2018 for
-    \$7.5 billion.
-  - 2021 on the timeline is GitHub Copilot (technical preview, June 2021), which
-    ran on OpenAI's Codex model, trained on public GitHub code (the Codex paper:
-    54 million repositories; Chen et al. 2021). Not today's Codex agent.
-  - Codex: *"requires commands to run inside a Git repository to prevent
-    destructive changes"* (OpenAI, non-interactive mode docs; the override is
-    `--skip-git-repo-check`). The error on the slide is real (Codex 0.162).
-  - Claude Code checkpoints: *"Checkpointing does not track files modified by
-    Bash commands."* (code.claude.com, Checkpointing).
-  - Zenodo archives a GitHub *release* and gives it a DOI. The AEA Data Editor
-    describes the route, but doesn't count GitHub alone as a trusted archive.
-- **Handle with care:**
-  - **Copilot and training:** GitHub says Copilot won't train on the repositories
-    it indexes; what you send to Copilot on a personal plan can be used for
-    training unless you opt out (since 24 April 2026).
-  - **Git inside OneDrive** is advice, not established fact: no official
-    Microsoft or git source was found that says it breaks.
-
-## What it can touch
-
-About 20–25 minutes, straight after git: 19 slides, three exercises. New for
-Strategy: in Finance the room was far more worried about access than expected, and
-got worked up when the agent opened the PDFs in the cleanup.
-
-- **Why Finance got worked up:** since Claude Code 2.1.283 (September), *auto* is
-  the starting mode for interactive sessions on every plan. Reading files in the
-  folder needs no question, so the agent simply opened the PDFs. Say this out loud:
-  it explains what they saw.
-- **The stance, plainly:** lots of access, on purpose (my own `defaultMode` is
-  `auto`). The 50th "yes" is never read; git makes mistakes cheap; auto mode stops
-  what matters. Restrict the few things that matter, mostly by keeping them out of
-  the folder.
-- **Exercises:**
-  1. *Where am I?* (2 min): see the mode, Shift+Tab, ask what it may do unasked.
-  2. *A fence around the interviews* (5 min): a deny rule in `founders-study`,
-     restart, try to read a transcript.
-  3. *Check your switch* (1 min): the training setting on their own account.
-- **What we tried** (20 October, a throwaway folder, `claude -p` with every
-  prompt refused, so "asks" shows as blocked; Codex `exec` in `workspace-write`):
-  - Claude, manual: reads in the folder and read-only commands (`ls`,
-    `git status`) run; reading elsewhere (even via `cat`), writing, deleting and
-    web pages all ask.
-  - Claude, auto: edits, Python, reading outside the folder (interactive sessions
-    ask once first, with four choices), a web page, `rm -rf data`, even
-    `git reset --hard && git clean -fdx` went ahead. Posting a file to an outside
-    address was stopped: *"denied by the Claude Code auto mode classifier.
-    Reason: [Data Exfiltration]"*.
-  - "Revert to the last commit" also works in auto mode (tested): the classifier
-    weighs what you asked for. The docs list `git restore .` as blocked by
-    default, so the explicit request is what makes it go.
-  - Codex sandbox (Linux): reads anywhere, writes in the project and `/tmp`, a
-    write to the home folder failed ("read-only file system"), network off.
-  - The deny rule `Read(./interviews/**)`: blocked Claude's Read, `cat`, `cp` and
-    a Python one-liner, but `grep -r Kari .` printed the transcript. Hence "a
-    fence, not a wall".
-- **Sources** (official docs, checked 20 October 2026):
-  - Permission modes, starting mode, Shift+Tab order, auto mode's blocked and
-    allowed lists: code.claude.com/docs/en/permission-modes. Auto works on all
-    plans with recent models; Team and Enterprise admins can switch it off.
-  - Settings files and rule syntax (`deny`, then `ask`, then `allow`):
-    code.claude.com/docs/en/permissions and /settings. On Windows,
-    `~/.claude` is `%USERPROFILE%\.claude`.
-  - Claude's shell sandbox: off by default, and *"On native Windows, Claude Code
-    runs commands unsandboxed"* (WSL2 needed). code.claude.com/docs/en/sandboxing.
-  - Training: one consumer setting covers Claude Code; retention 5 years with
-    training on, 30 days off. code.claude.com/docs/en/data-usage.
-  - Codex presets (Ask for approval, Approve for me, Full access), the
-    auto-review reviewer agent, permission profiles that can deny reads, the
-    Windows sandbox (elevated and unelevated; unelevated can't deny reads):
-    learn.chatgpt.com/docs/sandboxing, /permissions, /windows/windows-sandbox.
-  - ChatGPT: training controls apply to Codex; Business, Edu and Enterprise don't
-    train by default. help.openai.com, "Using Codex with your ChatGPT plan".
-- **Handle with care:**
-  - **Labels on the settings pages** ("Help improve Claude", "Improve the model for
-    everyone") weren't verified for October 2026. That's why the exercise sends
-    people to the page instead of naming the switch. Check your own account
-    before Thursday.
-  - **"It sends what it reads"** is the honest short version, not a guarantee: a
-    command's output can include many files, and connectors add other data flows.
-  - **Personal data:** don't claim what BI's rules say unless you've checked.
-    "Your consent forms and data plan decide" is safe.
-- **If someone asks about `--dangerously-skip-permissions`:** it skips all checks;
-  only for a throwaway machine. Not something to try on a work laptop.
+  - a free-plan account (the Code tab asks them to upgrade);
+  - Documents synced to OneDrive (use the home folder instead);
+  - a session in the wrong folder (the folder control under the prompt box);
+  - an old app without the folder control (update it);
+  - ChatGPT users: where Codex sits in the ChatGPT app is unchecked. Ask them to
+    show you; note it for next time.
+- **People with no subscription** pair up. The department reimburses one (receipt
+  to Christine); say so.
+- **Finished first?** They're the help desk. Or the handout's customer-journey web
+  page (untested).
 
 ## Do something tedious
 
@@ -292,420 +150,297 @@ in submission order.
 
 - **Aim:** a reorganised folder, a grading table, and one deliberate undo.
 - **The framing:** a job the chat window can't do, because it can't touch your
-  files. Tedious, local, easy to judge.
-- **Names only (new for Strategy).** Group and participant ID are in every folder
-  name, so the job needs no reading. In Finance the agent opened the PDFs anyway
-  (auto mode reads freely) and the room got worked up. Now the prompts say *"Work
-  from the names only; don't open the submissions"*, and the last slide, "You decide
-  what it reads", makes it the point. It follows straight on from the access deck.
-- **The git beat:** they set up git an hour ago, so this is the habit, not the
-  lesson. Brief the task, then ask *"Before you hit enter, does anything about this
-  make you nervous?"* Answer with *"Set up git here and commit everything."*
+  files. Tedious, local, easy to judge. Kept as the first hands-on task (Strategy
+  debrief).
+- **Names only.** Group and participant ID are in every folder name, so the job
+  needs no reading. In Finance the agent opened the PDFs anyway and the room got
+  worked up. The prompts say *"Work from the names only; don't open the
+  submissions"*, and the last slide, "You decide what it reads", makes it the
+  point.
+- **The git beat:** this is their first save point of the day. Brief the task,
+  then ask *"Before you hit enter, does anything about this make you nervous?"*
+  Answer with *"Set up git here and commit everything."*
 - **The undo** is on purpose: delete the Marking guidance folder, then "revert to
-  the last commit". Watching it come back is what makes git stick.
-- **Done early?** Rename the fake papers in `founders-study/literature/` and make a
-  `.bib`, without opening `interviews/`. The opposite case: there it has to read,
-  and that's fine.
-- **Ties forward:** "Leave a trail" and the GitHub demo reuse the same save-point move.
+  the last commit", with File Explorer open. Watching it come back is what makes
+  git stick, and they need the habit for their paper twenty minutes later.
+
+## Your paper
+
+About 15 minutes. The pivot of the afternoon: from here on, everything runs on one
+paper.
+
+- **Aim:** everyone has a paper open in a session, described back correctly, with
+  a save point.
+- **The privacy slide comes first, and fast:** training off, leave out what you
+  can't share, tell co-authors. Then move on. The switch labels (*Help improve
+  Claude*, *Improve the model for everyone*) weren't verified for December: check
+  your own account before the day.
+- **Who uses `ai-label-paper`:** anyone without a paper, and anyone whose data they
+  can't share. A good hybrid: **their own PDF for the panel, our folder for *Take
+  it apart***. Say it out loud; it removes the excuse to sit idle.
+- **Watch for:**
+  - a Word-only draft: whether the app reads `.docx` without Python is untested.
+    If it struggles, *"save it as PDF"*, or let it install a converter;
+  - the paper folder inside OneDrive (copy it out);
+  - huge data folders (copy only what the paper needs).
+- **Done early:** the `AGENTS.md` prompt. It pays off in every later session.
+
+## Take it apart
+
+5 minutes to start, then the sycophancy talk, a break, and 20 minutes to collect.
+
+- **New for Marketing: start it and leave it** (Strategy debrief, note 3). At
+  Strategy this was the block that landed, but the room waited for it. The prompt
+  writes everything to `take-apart.md`, so the result survives the wait and the
+  break.
+- **The mode matters:** *Accept edits* or *Auto* before they leave it, or it sits
+  waiting for a "yes". Say it twice.
+- **On `ai-label-paper`** (the key: `scratch/examples/ai-label-paper/KEY.md`), a
+  good run finds:
+  - the exclusions beyond the preregistration: with only the preregistered one, the
+    candle effect goes from p = .030 to p = .166;
+  - the draft's numbers come from an older export (the draft says N = 476; the
+    script now gives 545);
+  - moderation claimed from simple effects, with no interaction test (p = .346 in
+    the draft's own data);
+  - the bonus, and the good news: `auth_3` is reverse-worded but not reversed;
+    reversed, α goes from .56 to .84.
+- **Not yet tested end to end** with this prompt. Pre-run it on `ai-label-paper`
+  before the day (Before the day, item 4), and keep the output for the projector.
+- **Snags:** the script is R. If R isn't installed, the agent translates it to
+  Python or asks to install R; either is fine.
+- **The round-up question that matters:** *"Did it find something good for your
+  paper?"* It turns the exercise from fault-finding into help.
+- **Honest framing:** *"I can't tell you whether a critique of a marketing paper is
+  right. You can."* A false alarm is a result too.
+
+## It wants to please you
+
+About 15 minutes, while *Take it apart* runs. A talk, no exercise.
+
+- **The order is the argument:** three forms; why; **the referees are worth having**
+  (capability before caveat); status (21%); the companies train against it; our
+  measurement; what we learned; what to do. Ends on the panel.
+- **Our measurement, said accurately:** two small models (Claude Haiku, GPT-6-Luna),
+  one fictional paper with a clear flaw, fresh sessions without profile or memory,
+  24 October.
+  - Asked for a score under four framings: no difference (means 3.0–3.2 out of 10).
+    Pushback, wrongly: 20 of 20 kept the concern.
+  - Asked for *feedback* on "my paper, I'm proud of it": the verdict disappears
+    (Haiku 10 → 1 of 10, Luna 9 → 0) and praise comes first (0 → 8, 0 → 10). A
+    blind judge (GPT-6-Luna, same family as one writer) rated Luna's feedback 1.9
+    vs. 4.0 out of 10. All 40 reports still asked for the interaction test.
+  - Scripts and aggregates: `scratch/examples/ai-label-paper/sycophancy/`; raw
+    reports in `private/sycophancy-runs/`.
+- **Don't oversell either way.** Not "they flatter", not "it's solved". The line:
+  *asked as a referee, for a verdict, they stayed honest; asked "what do you think
+  of my paper?", they coached.*
+- **Sources** (checked against the originals, 24 October 2026):
+  - Liang et al. (2023), arXiv:2310.01783: overlap 30.85% vs. 28.58% (Nature
+    journals), 39.23% vs. 35.25% (ICLR); 57.4% found the feedback helpful; 82.4%
+    more beneficial than at least some human reviewers.
+  - Vasu et al. (2025), arXiv:2509.13400, Table 2: QwQ-32B, 21.4% of rejects become
+    accepts with a stronger affiliation; 7.9% of accepts become rejects with a
+    weaker one. Other models differ (DeepSeek R1 8B: 19.05% and 23.02%). 252 ICLR
+    2025 papers.
+  - OpenAI, GPT-5 System Card (August 2025), section 3.3, Table 4: 0.145 (GPT-4o),
+    0.052 (gpt-5-main), 0.040 (gpt-5-thinking); online prevalence −69% (free) and
+    −75% (paid) vs. GPT-4o.
+  - Sharma et al. (2023), arXiv:2310.13548: the abstract's "both humans and
+    preference models prefer convincingly-written sycophantic responses over correct
+    ones a non-negligible fraction of the time"; section 3.2, Claude 1.3 wrongly
+    admits mistakes on 98% of questions.
+  - The GPT-4o rollback dates (rollout 24–25 April 2025, rollback from 28 April) are
+    from Codex's reading of OpenAI's two posts (29 April and 2 May); not re-checked
+    by hand. Codex's full notes: `private/research/sycophancy-evidence.md`.
+
+## Blind referee panel
+
+20 minutes (package and brief) before the break, 25 (editor and comparison) after.
+The centrepiece: at Strategy, the referee panel was the most engaged block of the
+two days.
+
+- **Aim:** three reports from fresh sessions in `review-room`, an editor's letter,
+  and the comparison with "my paper".
+- **Floor:** two reports, and one concern they hadn't thought of.
+- **Why a separate folder:** a session reads the project files in its folder and
+  the folders above it. `review-room` sits *next to* the paper folder, so the
+  referees never see the paper's folder, data or `AGENTS.md`.
+- **What else can leak** (tested 24 October, in the terminal, with Haiku in a
+  neutral folder): a fresh session sees the user's **profile** in full, the
+  **home-folder path** (with the user name), the **account e-mail**, and the list
+  of the user's skills. With the profile switched off, the e-mail and the path
+  remain. So the paper itself must carry no names (the package step), the brief
+  says the paper comes from the editor, and a profile that mentions the paper is a
+  leak. The app reads the same settings files; whether it adds more (claude.ai
+  preferences, memory) is untested.
+- **The check is built in:** the last line of every report answers *"What do you
+  know about who wrote or sent this?"* Read a few out in the round-up.
+- **Separate sessions, not subagents:** the room can see them, and a main session
+  briefing subagents would write their prompts itself ("the user's paper"). What a
+  subagent sees wasn't tested.
+- **On `ai-label-paper`:** the package step should catch every anonymisation slip
+  (KEY item 9), including the PDF's author field and the self-citation. Good
+  referees find the missing interaction test, the manipulation check before the
+  outcome, and the mediator measured after it.
+- **The comparison step** is the sycophancy talk made personal: expect praise first
+  and no verdict (our measurement).
+- **Skill hook:** "Turn what we just did into a skill called referee-panel". The
+  one skill worth making today.
+
+## What it can touch
+
+About 20 minutes, while the three referees run. Talk first; the fence exercise is
+optional (handout section 7).
+
+- **The stance, plainly:** lots of access, on purpose. The 50th "yes" is never
+  read; git makes mistakes cheap; auto mode stops what matters. Restrict the few
+  things that matter, mostly by keeping them out of the folder.
+- **In the app:** the mode is a dropdown under the prompt box (*Manual*, *Accept
+  edits*, *Plan*, *Auto*; there's also *Bypass permissions*: don't mention it).
+  Which mode the Code tab starts in wasn't checked.
+- **What we tried** (20 October, terminal versions: Claude Code 2.1.302, Codex
+  0.162; the apps run the same agents):
+  - Claude, manual: reads in the folder; reading elsewhere, writing, deleting and
+    web pages all ask.
+  - Claude, auto: edits, Python, reading outside the folder (asks once), a web page,
+    `rm -rf data`, even `git reset --hard && git clean -fdx` went ahead. Posting a
+    file to an outside address was stopped: *"denied by the Claude Code auto mode
+    classifier. Reason: [Data Exfiltration]"*.
+  - Codex sandbox (Linux): reads anywhere, writes in the project and `/tmp`,
+    network off.
+  - The deny rule `Read(./interviews/**)` blocked Claude's Read, `cat`, `cp` and a
+    Python one-liner, but `grep -r` printed a transcript. Hence "a fence, not a
+    wall".
+- **Sources** (official docs, checked 20 October 2026): permission modes and auto
+  mode, code.claude.com/docs/en/permission-modes; settings and rule syntax,
+  /permissions and /settings; *"On native Windows, Claude Code runs commands
+  unsandboxed"*, /sandboxing; training covers Claude Code, retention 5 years on,
+  30 days off, /data-usage; Codex presets and the Windows sandbox,
+  learn.chatgpt.com/docs/sandboxing; ChatGPT training controls apply to Codex,
+  help.openai.com.
+- **Handle with care:** "it sends what it reads" is the honest short version, not
+  a guarantee. On personal data, "your consent forms and data plan decide" is safe;
+  don't claim what BI's rules say unless you've checked.
+
+# Any time
+
+The handout has all of these (sections 8–17), and each has a deck. Use them for
+fast people, for questions, or not at all.
+
+## Git: save points
+
+The full deck (`git`, 25 slides, four exercises) was Strategy's mandatory block.
+Today git is one prompt in setup and a habit in the cleanup and the paper; the deck
+is for anyone who asks *"how is this different from OneDrive?"*
+
+- **The answer, in one line:** OneDrive is a backup, git is a lab notebook. Keep
+  both, but not git inside OneDrive.
+- **What a save point is** is the slide people missed in Finance: the files you see
+  are always the current version; a commit copies them into `.git`; a revert copies
+  a save point back.
+- **Sources** (checked 20 October 2026): Torvalds wrote git in April 2005 (*Pro
+  Git*, §1.2); Stack Overflow Developer Survey 2022, professional developers: Git
+  96.65%; Windows on git, about 300 GB (Brian Harry, Microsoft DevBlogs, May 2017);
+  Claude Code checkpoints *"do not track files modified by Bash commands"*
+  (code.claude.com, Checkpointing). That last one is why git, not the app's own
+  undo, protects the cleanup.
 
 ## What it knows about you
 
-About 20 minutes. Two halves, framed honestly.
-
-- **Opens with the field, as I imagine it (new for Strategy, 3–5 minutes).** Three
-  cards: interviews and cases, regressions on firm data, "is it just luck?". Say
-  plainly that you're a statistician guessing. Then *"Tell me what I got wrong"*:
-  ask what's missing and who is which, and write their examples on the parking-lot
-  board. Use those examples in the paper and referee blocks instead of yours. The
-  last line, "the agent is in the same spot", is the bridge into the deck.
-  - Sources for the cards: Burgelman's Intel fieldwork (*Strategy Is Destiny*, 2002;
-    "Fading Memories", *ASQ* 1994); Eisenhardt (1989), "Building theories from case
-    study research"; the diversification discount (Campa and Kedia 2002, Villalonga
-    2004); luck and the CEO effect (Denrell and Liu 2012, Fitza 2014, Henderson,
-    Raynor and Ahmed 2012). Background in `scratch/links/strategy-canon/`.
-- **"Who you are" is an open question for this room.** In stats, in the terminal,
-  you barely notice it; fields with schools may differ. Say exactly that, and let
-  the room find out. Pairs pick opposite schools on *"Is strategy mostly planned,
-  or does it emerge?"* (Ansoff and Porter vs Mintzberg and Burgelman). The round-up
-  is data: *did it change, and how much?*
-  - **Tested 21 October (Codex, three clean profiles):** all three answer "both".
-    The profile changes the emphasis and the vocabulary, not the verdict: the
-    planning profile defends deliberate direction and boundaries; the process
-    profile explains it through Burgelman's induced and autonomous processes. So
-    expect "it changed the framing", and ask the room whether that matters.
-  - Another question that splits schools: *"How much does the CEO matter for firm
-    performance?"* Tested the same day: every profile says "a lot, but no single
-    number"; a Denrell-and-Fitza profile leads with luck, an upper-echelons profile
-    with the bigger estimates.
-- **The Berger demo** is the tested example of a school changing the answer. The
-  A/B question with no profile, then one line in the folder's `AGENTS.md`:
-  *"My intellectual idol is Jim Berger."* `/clear`, ask again. (Tested with
-  `CLAUDE.md`; Claude reads `AGENTS.md` the same way as long as there's no
-  `CLAUDE.md` in the folder or above it, so demo in a clean folder.)
-  - Demo on **Claude**: Codex ignored the one-liner in testing.
-  - The backup result is on the slide after the demo.
-  - **If a statistician objects** that 0.91 is just 1 minus the one-sided p:
-    they're right; under a flat prior it's the same information. The point is that
-    the headline, the framing and the recommendation flip.
-- **"How you work" is the reliable win.** The slide shows two lines from your own
-  profile files (the 4-core rule, MathML). Your terminal profiles hold no "who I
-  am" at all, only working rules, and you can say so.
-- **The "who you are" profile belongs in the chat apps.** The homework slide says
-  so, with your chat profile as the example. The coffee table ("Four askers") is in
-  `more.html#/chat` if someone wants the chat-app version.
-
-## Take a paper apart
-
-- **Your demo:** a paper you can judge. Ask the three questions, and push at least
-  once on camera.
-- **Say these two sentences, no slide:**
-  - when the first answers come back: *"It turned the PDF into text before it
-    could read it"*;
-  - when the fix runs: *"That script is the record of what it did."*
-- **Snags:**
-  - SSRN returns 403 to the agent: download in the browser, then "move it here".
-  - The fix needs Python; let it install.
-  - Codex on bare Windows may need a PDF tool; say yes.
-- **Watch for:**
-  - People skip *"Do they address it anywhere?"* and report false alarms. Collect
-    one for the round-up.
-  - Generic first answers are normal; *"what's specific to this paper?"* fixes most.
-- **Honest framing:** *"I can't tell you whether a critique of a strategy paper is
-  right. You can."* If it fails on someone's paper, say so in the round-up. That's
-  a result too.
-- **From the September pilots on two NBER finance papers:**
-  - the critique took 1–1.5 minutes, the fix 5–7.5;
-  - the two tools picked different "biggest problems" in the same paper.
-- **Case studies and interview papers** work too, with different pushes (on the
-  slide): *"Which claims rest on the fewest interviews?"*, *"What else would explain
-  the same quotes?"* The "fix" is then a design (a comparison case, a sampling
-  rule), not code.
-
-## Interviews
-
-About 35 minutes, for everyone, on Friday after the paper. New for Strategy: the
-invitation promises qualitative work, and Birgitte asked for both traditions.
-`props/pivot-interviews.zip`: eight fictional, pseudonymised interviews (F01–F08)
-with founders who changed direction early, and the interview guide. Built from
-`scratch/examples/pivot-interviews/`; the key is `KEY.md` there.
-
-- **Aim:** a codebook they argued with, coded excerpts, three themes, and every
-  quote checked by a script.
-- **Four short exercises:** is it really anonymous (5), a codebook (8), code all
-  eight and find themes (10), check every quote (5). Then the pushes, and the
-  "who does what" slide.
-- **What's planted** (don't say beforehand):
-  - three pseudonymisation slips: a co-founder's first name in F02, the investor's
-    full name in F05, and F07's firm, identifiable from its description;
-  - a contradiction in F03: "the investors had no influence", then the board
-    pushing hard;
-  - F04 calls the change planned in question 4, after telling a chance meeting at a
-    trade fair in questions 2 and 3: planned or emergent, from `knows`;
-  - F06 never pivoted: the case that doesn't fit.
-- **Tested 21 October (Codex, clean profile, prompts exactly as in the handout):**
-  about five minutes of agent time in all. The anonymity check found all three
-  slips plus softer combinations of details (51 s); eight codes with boundaries
-  (29 s); 187 coded excerpts (51 s); three themes (53 s); the quote check passed
-  all 187 (32 s); the push found F06, F03's contradiction and F04's trade fair
-  (27 s).
-- **The quote check is the payoff.** It's the qualitative version of "rerun the
-  code": cheap, mechanical, and it makes the rest trustworthy. In the test every
-  quote matched; if someone's doesn't, that's the best possible round-up.
-- **Real transcripts:** only if their data plan allows a model to read them.
-  Pseudonymised copies, in a folder of their own. Point back to the access deck.
-- **Ask the qualitative people** what they'd do differently, out loud. The
-  invitation says they're especially welcome to share what works.
+- **The profile matters today in one way:** it's read in every session, the
+  referees' too. If someone has a profile that names their current paper, they
+  switch it off for the panel.
+- **The schools question** for marketing (*"grow by targeting a loyal niche, or by
+  reaching as many category buyers as possible?"*, Ehrenberg-Bass vs. brand
+  equity) is **untested**. Strategy's version changed the framing, not the verdict;
+  expect the same.
+- **The Berger demo** is the tested example of one line changing the school. Demo
+  on Claude: Codex ignored one-line profiles in testing.
+- **The deck** (`knows`) still opens with Strategy's "your field, as I imagine it";
+  it needs marketing cards before anyone sees it.
 
 ## References
 
-**Friday: 30 minutes, mandatory.** The "in the literature right now" slide (3), the
-search exercise on their own question (10), then the claim check on the paper
-folder from *Take a paper apart* (15): the slide's "papers not in the folder yet?"
-prompt downloads three cited papers and checks them. DOI check and the rest are in
-the handout. The full module is 40 minutes for two parts, 60 for all four.
-
-- **Search.** Tell the story first: shallow, specific questions have turned up
-  important papers you didn't know, in your own field (the Hjort–Glad prompt). Then
-  the exercise, about 10 minutes: everyone asks one specific question about their
-  own idea, and has it download the papers. The lesson is *be specific*. Deep ("I
-  need every method since 1995…") is a different request: finalizing, slow, and
-  expensive on usage. Show the prompt; don't run it in the room.
-- **Papers in the folder.** The practice to sell hardest in this module: one rule in
-  the project file (papers go in literature/; download what you can, a DOI for the
-  rest), and the agent stops searching for the same paper again and again. It's
-  also what makes the claim check work.
-- **DOI check.** The practice `.bib` has six planted traps. The full key is in
-  `scratch/examples/references/README.md`. Floor: three DOIs pasted into doi.org by
-  hand.
-- **Claim check.** The centrepiece. Run it on their *own* draft if they have one,
-  after the papers are in literature/. "Not in the folder" is not "doesn't exist".
-- **The line to end on:** *a polished bibliography is not evidence of a correct
-  bibliography.*
+- Search: be specific. Deep searches are slow and expensive on usage; show, don't
+  run.
+- DOI check: the practice `.bib` has six traps (key:
+  `scratch/examples/references/README.md`). On `ai-label-paper`, the fake reference
+  is Bergstrøm & Lind (2023): its DOI belongs to an unrelated 2024 paper.
+- Claim check: the centrepiece, on their own draft.
+- At Strategy, people were lukewarm about this block (debrief, note 4), so it's
+  here, not in the afternoon.
 
 ## Words you've heard
 
-About 30 minutes on Friday, replacing Finance's research menu. Nine tiles; for each,
-ask *"who has heard this and never quite understood it?"*, count hands, and do the
-top three or four, five minutes each: the picture, one sentence, the prompt to try.
-
-- **New sections in the deck:** skills, subagents, plan mode, context and
-  /compact, worktrees, agents in the cloud. **Their own decks** (coral tiles):
-  connectors (`mcp`), the project file (`agents`), GitHub (`github`, with the
-  pull-request demo with Ludvik).
-- **Checked 21 October** against Claude Code 2.1.304 and Codex 0.163: both have
-  subagents, plan mode, `/compact`, and a worktree flag (`claude -w`, `codex
-  --worktree`); Codex's cloud tasks are marked experimental in the CLI. The skills
-  and subagents prompts use the `pivot-interviews` folder from the morning.
-- **Tested 21 October (Codex, on `pivot-interviews`):** the subagents prompt took
-  73 seconds, really used one helper per transcript, and returned the table (F06
-  flagged as "no change"). The skills prompt wrote a good `check-quotes/SKILL.md`
-  in 27 seconds. Saving it goes to the user's skills folder, outside the project,
-  so expect a permission question: say yes. That's Thursday's access deck in
-  action.
-- **End on the last slide:** any other word? Ask the tool. It's the same move as
-  Thursday's "Unsure what a word means? Ask."
-
-## Referee panel, any time
-
-New module, not yet run with a room. About 40 minutes.
-
-- **Aim:** two or three independent referee reports from one agreed procedure,
-  plus an editor's letter.
-- **Floor:** two reports from fresh sessions, and one concern they hadn't thought of.
-- **The flow** (the diagram on the first slide):
-  1. Who would referee this?
-  2. **Ask how it's done:** a procedure, saved to `reviews/how-to-referee.md`.
-  3. `/clear`, then one referee at a time, following the procedure.
-  4. Not right? Change the procedure, not the report.
-  5. The editor.
-- **The lesson to sell beyond referees:** *ask the agent how a job should be done
-  before you ask it to do it.* It's the most underused move. Step 2 is the place to
-  say so out loud.
-- **Why `/clear` and not a new window:** it's the same in both tools and needs no
-  window juggling. After the procedure discussion, it's exactly right: each referee
-  starts with only the paper and the procedure.
-  - Parallel sessions are a one-liner for the eager: a second PowerShell window
-    with its own `claude`/`codex`, or Claude Code's parallel subagents.
-  - The agent can also start `claude -p` or `codex exec` in the background itself.
-    Don't teach that today.
-- **Skill hook:** "Turn the procedure into a skill called referee-panel" connects to
-  the skills slide in `notes`, if anyone asks.
-- **Demo:** the first two steps on a strategy paper, live. Then one referee from
-  a fresh session.
+Nine tiles: skills, connectors, subagents, the project file, plan mode, context and
+/compact, worktrees, GitHub, agents in the cloud. The handout now says where each
+lives in the app (plan mode in the mode control, Worktree before a session, Cloud
+under the prompt box), from the desktop docs; untested.
 
 ## Leave a trail
 
-About 50 minutes. The full instructor key is in `scratch/examples/leave-a-trail/README.md`.
+About 50 minutes; the key is `scratch/examples/leave-a-trail/README.md`.
 
-- **One story: Reinhart and Rogoff.** Economists remember it, so ask the room first:
-  *"Who remembers the 90% debt threshold?"* Keep it about their own interest, not
-  open science: you want your rerun to find it before a grad student does. The
-  facts, to stay accurate: above 90% debt to GDP they reported −0.1% average
-  growth; Herndon, Ash and Pollin (2013 working paper; *Cambridge Journal of
-  Economics* 2014) got +2.2%. The Excel range error (rows 30–44 instead of 30–49,
-  dropping Australia, Austria, Belgium, Canada, Denmark) accounts for only about
-  0.3 points of that; the rest is excluded years and the equal weighting by
-  country. Don't say the Excel error alone flipped the result.
-- **The folder is a practice project,** not their paper: Kari Nordmann's and their
-  survey experiment on price framing (fictional), in `props/messy-project.zip`. The
-  deck shows the link and the file tree. Those who finish go on to a copy of a real
-  folder of their own, or their paper folder from *Take a paper apart*.
-
-- **Floor:** the rerun test passes after `/clear`.
-- **Opening:** a show of hands, LaTeX or Word? LaTeX users already write in text;
-  for them the news is git and the rerun test.
-- **The practice folder** (`props/messy-project.zip`) has a planted problem. Three
-  willingness-to-pay outliers were deleted by hand in Excel, with no record. With
-  them in, the effect flips sign and stops being significant. Only the rerun test
-  finds it.
-- **The last-but-one slide is the reveal** ("What the rerun found": N = 223,
-  −292 NOK, p = 0.26 with the three rows; N = 220, +53 NOK, p = 0.02 without). Show
-  it only after the room has run the test. The handout only hints at it.
-- **Git** was set up on Thursday, so the exercise's first step is one prompt.
-  Anyone who missed Thursday: the agent asks for a name and email at the first
-  commit.
-- **The test slide** is a diagram with two clicks: "Same numbers, done", then the
-  loop back ("Not the same? Fix the README, run the test again").
-- **Not yet piloted** with an agent end to end.
+- **The practice folder** (`props/messy-project.zip`): three willingness-to-pay
+  outliers deleted by hand in Excel, no record. With them, the effect flips sign
+  and stops being significant (N = 223, −292 NOK, p = 0.26; without, N = 220, +53
+  NOK, p = 0.02). Only the rerun test finds it.
+- **Reinhart and Rogoff, accurately:** −0.1% reported above 90% debt to GDP;
+  Herndon, Ash and Pollin got +2.2%. The Excel range error accounts for only about
+  0.3 points; the rest is excluded years and the weighting. Don't say the Excel
+  error alone flipped it.
+- **The test** is now a new session, not `/clear`; the same thing in the app.
 
 ## Notes and structure
 
-About 20–30 minutes; lighter than the rest.
-
-- **The four questions** come from the `tidy-project` skill in this repo
-  (`.claude/skills/tidy-project/SKILL.md`). It's a good live demo if someone asks
-  "what does a real skill look like?"
-- **"My paper folder"** is your `paper-init` layout (five folders: manuscript,
-  code, results, dev, local), simplified: no justfile, Modal or Slurm. Say it's a
-  skill, which sets up the skills slide at the end.
-- **"dev/ or local/?"** is the one distinction worth slowing down for: `dev/` is
-  committed (backed up on GitHub, co-authors see it) but never published;
-  `local/` is in `.gitignore`, so git and GitHub never see it. It's also the
-  natural place to say what `.gitignore` is.
-- **Question 3** ("where are you allowed to be wrong?") is the one people stall
-  on, and the stall is informative.
-- **The log habit** (`notes/log.md`, then *"tell me where we left off"*) is the
-  most useful thing in this module for people who'll use the tool weekly.
-
-## Skills, if asked
-
-Not taught. One slide at the end of the `notes` deck (`notes.html#/skills`) and a box in the handout.
-
-- **The line:** memory is the AI remembering you; a skill is you writing it down.
-- **When it's worth it:** a routine you repeat, want identical every time, or want
-  to hand to a colleague.
-- **Live demo if pushed:** open the `tidy-project` skill and show it's a page of
-  plain English. Or, after any module: *"Turn what we just did into a skill called
-  X"*, and show the file it wrote.
-
-## The project file, if asked
-
-- **The deck:** `agents.html`, about 10 minutes. The short version is already the
-  last content slide of `notes`, and "Two files" in `knows`.
-- **The practical answer people want:** one file, `AGENTS.md`. Codex always read
-  it; Claude Code reads it since v2.1.277 (18 September 2026), but only when there's
-  no `CLAUDE.md` in the folder or above it. An older repo with a one-line
-  `CLAUDE.md` saying `@AGENTS.md` (like this course repo) still works.
-- **Changes go through the agent:** *"Add to AGENTS.md: …"*. Nobody needs to open
-  the file in an editor, though they can.
-- **The habit worth selling:** *"Add that to the project file"* after the second
-  identical correction.
-- **`/init`:** fine as a shortcut, but the draft only describes the folder. The
-  rules are the valuable part, and only they can write those. Claude Code's `/init`
-  writes a `CLAUDE.md`, which would then hide the `AGENTS.md`: ask for `AGENTS.md`
-  by name instead.
-- **The gotcha:** both tools also read project files from the folders above.
-  Starting the agent in Documents with a stray `AGENTS.md` there affects everything
-  below it.
-
-## GitHub, if asked
-
-- **The deck:** `github.html`, about 10 minutes; section 15 of the handout.
-- **The one-liner:** git is save points on your laptop, GitHub is the copy in the
-  cloud. OneDrive syncs files; GitHub keeps every version and who made it.
-- **Setup is one prompt** once they have an account: *"Install the GitHub
-  command-line tool and log me in."* On Windows the agent runs
-  `winget install --id GitHub.cli -e`, then `gh auth login`, which opens the
-  browser. Not tested on a BI-managed laptop; if winget is blocked, the installer
-  is at <https://cli.github.com>.
-- **The selling point for research:** replication packages. A repository archived
-  on Zenodo gets a DOI.
-- **Say once:** private by default; history is forever, so data and passwords
-  never go in.
-
-### The pull-request demo, with Ludvik
-
-About 10 minutes, live. It shows what collaboration *looks like* when neither of you
-types a git command.
-
-**Done live, from scratch.** No pre-made repository. If something breaks, narrate
-the fix: watching the agent recover is part of the lesson.
-
-**Before Thursday:** Ludvik has a GitHub account, and `gh` installed and logged in.
-Have his username ready.
-
-**Setup, live (2–3 minutes):** in a copy of the "Leave a trail" practice folder
-(`props/messy-project.zip`):
-*"Set up git, commit everything, put this folder on GitHub as a private repository
-called strategy-demo, and add [Ludvik's username] as a collaborator."* Ludvik
-accepts the invitation (it comes by email), then: *"Download JonasMoss/strategy-demo
-into this folder."*
-
-**The pull request:**
-
-1. **You, first:** start the watcher in Claude Code and let it sit:
-   `/loop 1m check for new pull requests on this repository; when one appears, summarise it.`
-   Test `/loop` beforehand. If it misbehaves, just ask *"any new pull requests?"*
-   when Ludvik says he's done.
-2. **Ludvik, on the projector or his own screen,** dictates or types:
-   *"Make a new branch, add the missing rule to the cleaning (drop willingness to
-   pay above 5,000 NOK; it was done by hand in Excel and never written down),
-   rerun the analysis, commit, push, and open a pull request to Jonas explaining
-   what you changed and why."* The practice folder has no cleaning script, so his
-   agent writes one. That's fine, and it's a bigger change to review.
-3. **You:** the watcher reports it. Then: *"Check out the pull request and test it.
-   Rerun everything from the raw export: do we get table1 (N = 220)? And what
-   happens without the new rule?"*
-   - With the rule: N = 220, +53 NOK, p ≈ 0.02. The hand-cleaned file is now
-     reproducible from raw.
-   - Without it: N = 223, the effect flips sign (about −292 NOK) and stops being
-     significant.
-
-   That's why the rule has to be written down. Then: *"Comment: good catch, add
-   the rule to the README too."*
-4. **Ludvik:** *"Address Jonas's comment and push."* **You:** *"Merge it."*
-5. **Show the pull request page in the browser:** the description, the comment,
-   the commits, the merge. *"That page is the whole history of the decision."*
-
-**Then the pairs exercise** (deck slide "Exercise: in pairs", handout section 15),
-about 15 minutes: A puts a folder on GitHub and adds B; B accepts, downloads, and
-opens a pull request; A reviews and merges; swap. Everyone needs a GitHub account
-and `gh` logged in first, which is the slow part: start that during the demo.
-Accepting the invitation through the agent goes through the GitHub API
-(`gh api user/repository_invitations`); if the agent fumbles, the invitation email
-has a button.
-
-**Optional, if set up beforehand:** comment `@claude` (or `@codex review`) on the
-pull request, and let the room watch a review appear on GitHub. This needs the
-Claude GitHub app (`/install-github-app` in Claude Code) or Codex's GitHub
-connection on the demo repository. Not yet tested.
+The four questions (from the `tidy-project` skill), the paper folder, `dev/` vs.
+`local/`, the log habit. Lighter than the rest.
 
 ## Your own work
 
-- **Walk the room.** Ask "what are you trying?", not "is it working?"
-- **Stuck people:** suggest *"What's here? What's missing? What would you do
-  first?"* on a real folder, after a commit.
-- **The luck-test card** is the one to push for this room: no data, a classic
-  strategy question (Henderson, Raynor and Ahmed 2012, *"How long must a firm be
-  great to rule out chance?"*), and a punchline people find themselves.
-  - **Tested 21 October (Codex, 52 seconds):** 1,000 identical firms, a 50–50 year
-    each, 30 years. **51 beat the benchmark in 20 of 30 years by pure luck**
-    (49 expected); 8 had a 10-year winning streak; the longest was 14 years.
-    Searching all firms and start years, an 18-year streak is the 5% bar, 20 years
-    the 1% bar. Chosen *in advance*, 5 to 7 years would do. That last contrast is
-    the point: picking the winners afterwards is what changes the arithmetic.
-  - Good follow-ups: *"Now let skill differ a little. How often does the most
-    skilled firm come out on top?"* (Denrell and Liu's question.)
-- **Close:** *"What will you try on Monday?"* Get three answers out loud. Remind
-  them the handout has everything, including what we skipped.
+- **The power-check card** (2 × 2, d = 0.3 vs. 0.1, power for the interaction) is
+  the one for this room: it's the `ai-label-paper` problem, in their own design.
+  Untested; expect a few hundred per cell, which is the point.
+- **Close:** *"What will you try on Monday?"* Three answers out loud.
 
-## Teaching
+## Interviews
 
-Optional, about 20–25 minutes at the end of Friday, while the rest carry on with
-their own work. Birgitte asked for it to be short: several of them have taken
-BI's AI-for-teaching course. So only what the terminal adds to the chat: the whole
-course folder, files out, reruns next year.
+Strategy's qualitative block: eight fictional founder interviews
+(`props/pivot-interviews.zip`; key: `scratch/examples/pivot-interviews/KEY.md`).
+Three pseudonymisation slips, a contradiction, a planned-or-emergent story, a case
+that doesn't fit. Tested 21 October with Codex: all found, every one of 187 quotes
+matched. For the qualitative people, if they ask.
 
-- **The exam factory** (from the old course-factory handout): five lines about the
-  course, out loud; twelve questions at three levels and a rubric; then *"Which
-  learning outcome can't be assessed as it's written?"* That's the payload.
-- **No course at hand:** `props/ORG3402-organisational-behaviour.md`, a fictional
-  bachelor course. Three of its eight outcomes are vague on purpose (K2, S3, G2);
-  the rubric for K2 comes back as "excellent / good / some / limited
-  understanding", which is the point. More in
-  `scratch/examples/syllabus/README.md`.
-  - **Tested 21 October (Codex, on the fictional syllabus):** questions and rubric,
-    then the outcome question, in 114 seconds. It named G2 first, then K2 and S3:
-    all three planted ones.
-- **A course page,** then GitHub Pages, ties back to Thursday's git deck.
+## GitHub, the project file, connectors
+
+If asked. Decks `github`, `agents`, `mcp`; handout sections 13, 16 and 17. One
+project file, `AGENTS.md`, for both tools (Claude reads it when there's no
+`CLAUDE.md`). GitHub setup is one prompt once they have an account.
 
 # Questions you'll get
 
 The longer prepared answers are in `scratch/august-course/grievance-answers.md`.
 The short versions:
 
+- **"Is it OK to upload my unpublished paper?"** It's your paper: training off,
+  co-authors told, and data you can't share left out. That's the privacy slide in
+  *Your paper*.
+- **"Can I use this when I referee someone else's paper?"** A different question.
+  Many publishers ask referees not to upload manuscripts they review into AI tools.
+  Check the journal's policy. Your own paper is yours.
 - **"Is my data safe?"** What it reads is sent to the company, like any cloud
   upload. Keep out personal data and confidential material.
 - **"Can it read my email?"** Yes, through connectors (MCP): Gmail, Google
-  Calendar and Drive connect in a few clicks at `claude.ai/customize/connectors`,
-  and Claude Code picks them up (`/mcp` lists them). Deck: `mcp.html`, five slides. BI
-  mail is Outlook: a Microsoft 365 connector exists, but BI IT would likely have to
-  approve it (not checked). Don't demo on your own work mail.
+  Calendar and Drive connect in a few clicks at `claude.ai/customize/connectors`.
+  BI mail is Outlook: a Microsoft 365 connector exists, but BI IT would likely have
+  to approve it (not checked). Don't demo on your own work mail.
 - **"Does it train on my data?"** It depends on the plan and changes over time, so
   check your plan's terms. When unsure, assume it could be retained.
 - **"Claude or ChatGPT?"** Both are excellent. Use the one you pay for. They aren't
-  interchangeable, so trying both on the same task is instructive.
-- **"Will the department pay?"** That's a question for Dagfinn. Marketing
-  reimburses its people via its administration.
-- **"Can I get the slides?"** Yes: each deck is one file. Zip `decks/*.html` and
-  send them to Dagfinn afterwards with the handout. Open `menu.html` first.
+  interchangeable, so trying both on the same paper is instructive: they find
+  different problems.
+- **"Will the department pay?"** Yes: Marketing reimburses a paid Claude or ChatGPT
+  subscription. Receipt to Christine.
+- **"Can I get the slides?"** Yes: everything is on vibing.jonasmoss.com →
+  Marketing, and the handout has every prompt.

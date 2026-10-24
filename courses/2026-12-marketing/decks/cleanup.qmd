@@ -20,7 +20,7 @@ Synthetic, so safe. You'd normally spend half an hour clicking through it.
 ## Get it, and save a point
 
 1. In your `practice` folder, paste the **download prompt from the handout,
-   section 4**. It fetches `decrap-me.zip` and unzips it.
+   section 2**. It fetches `decrap-me.zip` and unzips it.
 2. Then, **before it changes anything**:
 
 ::: {.prompt}

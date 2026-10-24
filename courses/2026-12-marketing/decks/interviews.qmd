@@ -16,7 +16,7 @@ Eight transcripts, a codebook, and every quote checked.
 
 ## Is it really anonymous? {#try-anon .your-turn background-color="#f1c84b"}
 
-1. Get it: the download prompt is in the handout, section 7. Then *"Set up git
+1. Get it: the download prompt is in the handout, section 15. Then *"Set up git
    here and commit everything."*
 2. ***"Read the transcripts. Is anything still identifying, even without the
    names? List it, with the file and line."***

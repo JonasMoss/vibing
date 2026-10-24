@@ -17,38 +17,39 @@ format:
 
 # How to use this {.unnumbered}
 
-Everything from both days is in here, including the parts we don't get to in the
-room. Every grey box with a coral edge is a **prompt**: click the copy icon in its
-corner, paste it into Claude Code or Codex, and change the bits in
+Everything from the afternoon is in here, including the parts we don't get to in
+the room. Every grey box with a coral edge is a **prompt**: click the copy icon in
+its corner, paste it into the Claude app (or Codex), and change the bits in
 \[square brackets\].
 
-**The shape of the two days:** Thursday gets you running, shows you git's save
-points and what the agent can touch, and has it do something tedious for you. Friday is about
-research: what it knows about you, your paper taken apart, interviews coded, your
-references checked, and the words you've heard. Sections 10–16 are for any time:
-on Friday if you finish early, or next week.
+**One afternoon, one paper.** First you get the app running and let it do
+something tedious, with a save point and an undo. Then everything runs on one
+paper in progress, yours or ours: the agent takes it apart while we talk, and a
+panel of referees who don't know it's yours reviews it. Sections 8–17 are for any
+time: today if you finish early, or next week.
 
 | | Section | What you get |
 |---|---|---|
-| Thursday | 1. Get it running | Claude Code or Codex, and git, working on your laptop |
-| | 2. Git: save points | What git is, why the agent needs it, your first commits |
-| | 3. What it can touch | What it does without asking, and how to rein it in |
-| | 4. Do something tedious | A messy folder cleaned up, with a save point and an undo |
-| Friday | 5. What it knows about you | A profile that makes every answer fit you |
-| | 6. Take a paper apart | Its biggest problem, and an attempt at a fix |
-| | 7. Interviews | A codebook, eight transcripts coded, every quote checked |
-| | 8. References | Searched, downloaded, DOI-checked, claim-checked |
-| | 9. Words you've heard | Skills, subagents, worktrees and the rest, one at a time |
-| Any time | 10. Referee panel | Simulated referee reports, and an editor's letter |
-| | 11. Leave a trail | A folder a co-author can rerun |
-| | 12. Notes and structure | Where things go; a project file; notes the agent keeps |
-| | 13. Your own work | Starting points for next week |
-| | 14. Teaching | Optional, end of Friday: exams, rubrics, a course page |
-| | 15. GitHub | A copy of the folder in the cloud; co-authors |
-| | 16. Connectors | Your email, calendar and files, if you want them |
+| The afternoon | 1. Get it running | The app, a folder, and git, working on your laptop |
+| | 2. Do something tedious | A messy folder cleaned up, with a save point and an undo |
+| | 3. Your paper | Your paper in progress, opened, with a save point |
+| | 4. Take it apart | Its biggest problem, found by an agent that has the data |
+| | 5. It wants to please you | Sycophancy: what it is, how big, and our own measurement |
+| | 6. Blind referee panel | Three referees who don't know it's yours, and an editor |
+| | 7. What it can touch | What it does without asking, and how to rein it in |
+| Any time | 8. Git: save points | What git is, and why the agent needs it |
+| | 9. What it knows about you | A profile that makes every answer fit you |
+| | 10. References | Searched, DOI-checked, claim-checked |
+| | 11. Words you've heard | Skills, subagents, worktrees and the rest, one at a time |
+| | 12. Leave a trail | A folder a co-author can rerun |
+| | 13. Notes and structure | Where things go; a project file; notes the agent keeps |
+| | 14. Your own work | Starting points for next week |
+| | 15. Interviews | A codebook, eight transcripts coded, every quote checked |
+| | 16. GitHub | A copy of the folder in the cloud; co-authors |
+| | 17. Connectors | Your email, calendar and files, if you want them |
 
 ::: {.floor}
-**Two rules for both days.** Don't overthink it: just use it. And when you get
+**Two rules for the afternoon.** Don't overthink it: just use it. And when you get
 stuck, ask the tool. *"How do I…?"*, *"What just happened?"*, *"Undo that."* It is
 its own best manual.
 :::
@@ -59,184 +60,44 @@ its own best manual.
 
 **A paid subscription.** You only need one:
 
-| If you pay for… | …install |
-|---|---|
-| **Claude** (Pro or Max) | **Claude Code** |
-| **ChatGPT** (Plus, Pro, Business, Edu, Enterprise) | **Codex** |
+| If you pay for… | …install | …and open |
+|---|---|---|
+| **Claude** (Pro or Max) | the **Claude** app | the **Code** tab |
+| **ChatGPT** (Plus, Pro, Business, Edu, Enterprise) | the **ChatGPT** app | **Codex** |
 
-Free plans don't work for either tool. BI's Gemini subscription doesn't either: it
+Free plans don't work for either. BI's Gemini subscription doesn't either: it
 can't touch the files on your computer. **No subscription today?** Pair up with
 your neighbour, and sort one out tonight. One month of Claude Pro or ChatGPT Plus
-is plenty to start.
+is plenty to start, and the department reimburses it (send the receipt to
+Christine).
 
-**No admin rights needed** for the tools themselves; both install into your own
-user folder. Git (step 5) may ask for admin rights, and there's a way around that.
+Inside the apps are the same agents that run in the terminal: Claude Code and
+Codex. The app puts a window around it. You don't need the terminal today.
 
-## Install on Windows
+## Install
 
-**Step 1: open PowerShell.** Click **Start**, type `powershell`, and click
-**Windows PowerShell**. Not the one ending in **(x86)**. You'll see a line like
-`PS C:\Users\YourName>`. To paste into PowerShell, right-click in the window or
-press **Ctrl+V**.
+**Windows:**
 
-**Step 2: install your tool.** Paste **one** of these and press Enter.
+1. Download the app: Claude from <https://claude.com/download>, ChatGPT from
+   <https://chatgpt.com/download>.
+2. Run the installer, then open the app from the **Start** menu.
+3. **Sign in** with the account your subscription is on.
+4. Claude: click **Code** at the top of the sidebar. ChatGPT: open **Codex**.
 
-Claude subscription (Claude Code):
+**Already have the app?** Update it first: older versions don't have the folder
+control you need in a minute.
 
-```powershell
-irm https://claude.ai/install.ps1 | iex
-[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path","User") + ";$env:USERPROFILE\.local\bin", "User")
-```
+**Mac:** the same pages. Open the downloaded file and drag the app into
+Applications.
 
-Both lines, in one paste. The second puts `claude` on your PATH, so Windows can
-find it. (No admin rights needed: it only changes your own settings.)
+## Pick a folder
 
-ChatGPT subscription (Codex):
-
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
-```
-
-Wait 1–3 minutes until the `PS C:\...>` prompt comes back. Then **close
-PowerShell completely and open it again**. That step matters: it lets Windows find
-the new program. Check:
-
-```powershell
-claude --version
-```
-
-(or `codex --version`). A version number means you're installed.
-
-**Step 3: log in.** Type `claude` (or `codex`) and press Enter. Your browser opens:
-log in with the account your subscription is on, approve, and go back to
-PowerShell. Codex: choose **Sign in with ChatGPT**. You only do this once.
-
-**Step 4: the test.** With the tool running, type a sentence:
-
-```{.default .prompt}
-What files are in this folder?
-```
-
-If it answers in plain English, **you're done**. To quit, type `/exit` (or press
-**Ctrl+C** twice).
-
-**Step 5: Git (everyone).** Git lets the agent save a snapshot before it changes
-anything, so you can always go back. You'll use it from the first exercise on. You
-never type git commands; you ask the agent. Quit the tool first (`/exit`), then:
-
-```powershell
-winget install --id Git.Git -e --source winget
-```
-
-Click **Yes** when Windows asks. Close PowerShell, open it again, and check with
-`git --version`.
-
-- **Can't click Yes (no admin rights)?** Start the agent and ask:
-
-  ```{.default .prompt}
-  Install the portable version of Git for Windows in my user folder, without admin rights, and put it on my PATH. Then check that git works in a new PowerShell window.
-  ```
-
-- **`winget` not recognized?** Download the installer from
-  <https://git-scm.com/downloads/win> and click Next on every screen.
-
-## Install on a Mac
-
-Open **Terminal** (Cmd+Space, type `terminal`, Enter) and run one of these:
-
-```bash
-# Claude Code
-curl -fsSL https://claude.ai/install.sh | bash
-
-# Codex (needs Homebrew, from brew.sh)
-brew install --cask codex
-```
-
-Then log in and test as in steps 3 and 4. For git, type `git --version`. If your
-Mac offers to install the command line developer tools, click **Install**.
-
-## If something goes wrong
-
-Work down the list. The first two fix almost everything.
-
-- **`claude` or `codex` is not recognized.** You skipped "close and reopen
-  PowerShell". Open a fresh window and try again. Still failing? Run the install
-  line again and watch for red text.
-- **Claude Code: let it diagnose itself.** Run `claude doctor`. It often names the
-  problem outright.
-- **Codex stops and asks for administrator approval, or about a "sandbox".**
-  Choose to continue **without** elevated setup (the restricted or "unelevated"
-  mode). Codex works fine that way. This is what happened on BI laptops in August.
-- **`irm` is not recognized.** You're in Command Prompt, not PowerShell. Open
-  Windows PowerShell as in step 1.
-- **The download fails, hangs, or says it's blocked.** That's BI's network or
-  security software, not you. Put your hand up. For IT, the request is: *allow
-  `claude.ai` and `downloads.claude.ai` (Claude Code) or `chatgpt.com` and
-  `releases.openai.com` (Codex), and allowlist `claude.exe` / `codex.exe` in my
-  user folder.*
-- **Claude Code script blocked?** This often works instead:
-
-  ```powershell
-  winget install Anthropic.ClaudeCode
-  ```
-
-- **"You need a paid plan", or login fails.** Check that you log in with the same
-  account the subscription is on.
-
-## The terminal on one page
-
-Five commands and a few keys, all for moving around. Everything else, you ask the
-agent to do.
-
-| Type this | And it… |
-|---|---|
-| `cd foldername` | moves **into** a folder. `cd ..` steps back out. |
-| `ls` | **lists** what's in this folder (`dir` also works on Windows) |
-| `mkdir name` | **makes** a new folder |
-| `pwd` | prints where you are |
-| `explorer .` | opens this folder as an ordinary window (Mac: `open .`) |
-| `claude` or `codex` | **starts the agent**, right here |
-
-| Press | And it… |
-|---|---|
-| **Tab** | finishes a name: type the first letters of a folder, press Tab. It handles spaces in names. |
-| **↑** | brings back your last command |
-| **Ctrl+V** | pastes (right-click works too; Mac: **Cmd+V**) |
-| **Ctrl+C** | stops whatever is running. Twice, or `/exit`, leaves the agent. |
-| **Ctrl+L** | clears the screen |
-| **Esc** | stops the agent mid-answer, so you can redirect it |
-
-**Lost?** Close the window and open a new one; nothing breaks.
-
-**Skip `cd`: open a terminal already in the right folder.**
-
-- **Windows 11:** right-click the folder (or empty space inside it) → **Open in
-  Terminal**.
-- **Windows 10:** open the folder, click the address bar, type `powershell`, press
-  Enter.
-- **Mac:** drag the folder onto the Terminal icon in the Dock. (Right-click →
-  **New Terminal at Folder** works too, once you switch it on in System Settings →
-  Keyboard → Keyboard Shortcuts → Services.)
-- **Anywhere:** type `cd ` (with a space) and drag the folder into the terminal
-  window. It types the path for you.
-
-This is the everyday move: open the folder, open a terminal in it, type `claude`.
-
-## First contact
-
-Make a practice folder, look at it, and start the agent in it:
-
-```powershell
-mkdir practice
-cd practice
-explorer .
-claude
-```
-
-`explorer .` opens the folder you're in as an ordinary window (Mac: `open .`).
-It's a normal folder: anything you drag into it, the agent can see.
-
-(or `codex`). Then:
+1. In File Explorer, make a folder called `practice` in **Documents**. If your
+   Documents folder syncs to OneDrive, make it in your home folder instead
+   (`C:\Users\YourName`): git and OneDrive don't mix well.
+2. In the app, in the row under the prompt box: choose **Local**, then click the
+   folder control → **Open folder…** → `practice`.
+3. Ask:
 
 ```{.default .prompt}
 What files can you see here? Do not change anything.
@@ -244,69 +105,696 @@ What files can you see here? Do not change anything.
 
 ::: {.floor}
 **The floor:** ask it to make a file, read it back to you, and delete it again.
-Done? You've used an AI agent on your own machine.
+Watch the folder in File Explorer while it does. Done? You've used an AI agent on
+your own machine.
 :::
 
 If you're early, find the edge. Pick whatever tempts you:
 
-- **Something from strategy.**
+- **Something from marketing.**
 
   ```{.default .prompt}
-  Make a one-page web page that shows Porter's five forces for Norwegian salmon farming, and open it in my browser.
+  Make a one-page web page that maps the customer journey for buying a used car: the stages, what the buyer worries about at each, and where a dealer could help. Add a diagram, and open it in my browser.
   ```
 
 - **Watch it build something.** *"Write a small program that does X, and run it."*
   It doesn't just describe; it does.
 - **Try to catch it out.** Something very recent, an obscure figure, a specific
   citation. Then **check** the answer.
-- **Be vague on purpose.** *"Make me something useful for my course."* Does it ask
-  you questions, or charge ahead?
+- **Be vague on purpose.** *"Make me something useful for my research."* Does it
+  ask you questions, or charge ahead?
 
-Write down one answer that **surprised** you, and one you **didn't trust**, and why.
+## Git (everyone)
+
+Git lets the agent save a snapshot of the folder before it changes anything, so you
+can always go back. You'll use it from the first exercise on. You never type git
+commands; you ask.
+
+```{.default .prompt}
+Is git installed? If not, install Git for Windows for me, in my user folder if I don't have admin rights. Then check that it works.
+```
+
+- **Windows asks Yes or No?** Click **Yes**.
+- **It can't?** Download the installer from <https://git-scm.com/downloads/win>
+  and click Next on every screen.
+- **Mac:** if your Mac offers to install the command line developer tools, click
+  **Install**.
+
+What git is, and why the agent needs it: section 8.
+
+## The row under the prompt box
+
+| Control | What it does |
+|---|---|
+| **Environment** | *Local* runs on your laptop. (*Cloud* runs on Anthropic's computers; not today.) |
+| **Folder** | Where it works. One folder per job. |
+| **Mode** | How often it asks. *Manual*: before everything. *Accept edits*: only before running commands. *Plan*: proposes, changes nothing. *Auto*: only when something looks risky. More in section 7. |
+| **Model** | Which model; below. |
+
+- **A new session:** **Ctrl+N** (Mac: **Cmd+N**), or **+ New** in the sidebar.
+  Each session has its own folder and its own conversation. Several can run at
+  once.
+- **Stop it:** the stop button. Or just type a correction and press Enter: it
+  changes course.
+- **Commands:** type `/` in the prompt box to see them. `/clear` empties the
+  conversation.
+
+ChatGPT's app has the same ideas in different places. Ask Codex: *"How do I change
+how often you ask me for permission?"*
 
 ## Which model, and your limits
 
-| | Claude Code | Codex |
+| | Claude | Codex |
 |---|---|---|
 | **Good** | **Opus**, Fable | **Sol**, Astra |
 | **Fast** | Sonnet, Haiku | Luna |
 
-- Use **Opus** (Claude Code) or **Sol** (Codex) by default. Fable and Astra are
-  stronger still, and very expensive: they eat your limit fast.
-- **Fast** models are for massive amounts of repetitive, easy work. **Luna is very
+- Use **Opus** (Claude) or **Sol** (Codex) by default. Fable and Astra are stronger
+  still, and very expensive: they eat your limit fast.
+- **Fast** models are for large amounts of repetitive, easy work. **Luna is very
   cheap.** Haiku is cheap, but not at Luna's level.
-- Switch with `/model` in either tool.
 
 **Usage limits.** Every answer costs computing power; the strong models and long
 thinking cost the most. **Claude Pro** runs out sooner within a five-hour window;
 **ChatGPT Plus** runs out sooner over a week. Higher plans give many times more.
 
-- **What eats it:** long sessions, big files, the strongest model, long thinking.
-- **See where you stand:** `/usage` in Claude Code, `/status` in Codex.
+- **What eats it:** long sessions, big files, the strongest model, long thinking,
+  several sessions at once.
+- **See where you stand:** type `/usage` in Claude's prompt box; in ChatGPT, look
+  in Settings.
 - **Hit the limit?** Wait for the reset, switch to a Fast model, or pair up. If you
   keep hitting it, a higher plan is the fix.
 
-## Talk instead of type
+## Talk instead of typing
 
 Speech-to-text makes long prompts painless, and long prompts get better answers.
+*"Here's what I want, here's why, here's what to watch out for…"*: nobody types
+that, everybody says it.
 
-- **Windows:** press **Windows key + H** in any text field, including PowerShell.
+- **Windows:** press **Windows key + H** in any text field.
 - **Mac:** press **Fn** twice (or the microphone key). Turn it on under System
   Settings → Keyboard → Dictation if nothing happens.
 
+## If something goes wrong
+
+- **The Code tab asks you to upgrade.** That account is on the free plan. Sign in
+  with the account you pay for.
+- **The installer is blocked, or asks for an administrator.** That's BI's security
+  software, not you. Put your hand up. For IT, the request is: *install the Claude
+  desktop app (claude.com/download) or the ChatGPT desktop app
+  (chatgpt.com/download) on my laptop.*
+- **No folder control under the prompt box.** The app is old. Update it, or
+  reinstall from the download page.
+- **It can't see your files.** Check the folder control: is the session in the
+  right folder? A new session (Ctrl+N) in the right folder fixes it.
+- **Anything else:** ask the agent. *"Why can't you see my files?"*
+
+**The app won't install at all?** The terminal versions run the same agent and
+install without admin rights. Click **Start**, type `powershell`, open **Windows
+PowerShell**, and paste one of these:
+
+```powershell
+# Claude (both lines):
+irm https://claude.ai/install.ps1 | iex
+[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path","User") + ";$env:USERPROFILE\.local\bin", "User")
+# ChatGPT:
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+```
+
+Close PowerShell, open it again, and type `claude` (or `codex`). Your browser opens
+to log in. Every prompt in this handout works the same there.
+
 ## Working safely
 
-- **It works where you start it.** Start it in a project folder, not your whole
+- **It works in the folder you give it.** Give it a project folder, not your whole
   Documents folder.
-- **It asks before it does anything big.** Read before you say yes. Ask for a plan
-  first: *"Tell me what you'd do. Don't change anything yet."*
-- **Work on a copy** of anything precious, and use git (section 2) for save points.
+- **Ask for a plan first** when it matters: *"Tell me what you'd do. Don't change
+  anything yet."*
+- **Work on a copy** of anything precious, and take a save point (git) before it
+  changes anything.
 - **What it reads is sent to the AI company.** Treat it like uploading to a cloud
-  service. Keep out personal data (students, interview subjects) and confidential
-  material.
-- **How much it does without asking:** Claude Code starts in *auto* mode, where
-  routine work runs and a second model stops risky steps. Codex works inside a
-  sandbox. Both, and how to restrict them: section 3.
+  service. Keep out personal data and confidential material. Section 7 has the
+  details, and the training switch.
+
+# Do something tedious
+
+A messy folder, on your own machine: the job a chat window can't do, because it
+can't touch your files.
+
+The folder is an exam export, the way it comes out of WISEflow: 15 group
+submissions in folders named like `[3-2048892] - Group 1`, each with a cover sheet
+and an "Appendix material" folder full of files called `EKSAMEN.pdf`, `final.pbix`
+or `dashboard_v3_FINAL.pbix`, plus an empty grade sheet in a different order from
+everything else. It's synthetic, so nothing real is at risk.
+
+::: {.floor}
+**The floor:** the folder is reorganised and committed, and you've undone one
+change with git.
+:::
+
+## Get it, and save a point
+
+In a session in your `practice` folder:
+
+```{.default .prompt}
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/decrap-me.zip into this folder and unzip it.
+```
+
+(Or copy `practice/decrap-me` from the course files.) Then, **before it changes
+anything**:
+
+```{.default .prompt}
+Set up git here and commit everything.
+```
+
+The first time, git needs your name and email:
+
+```{.default .prompt}
+Set up git with my name, [Your Name], and my email, [you@bi.no].
+```
+
+Now it can't do anything you can't undo. Note the order: a save point taken
+*after* the mess is a save point of the mess.
+
+## Clean it up
+
+```{.default .prompt}
+What's in decrap-me, by file and folder names only? What would annoy a teacher about it? Don't open any files, and don't change anything.
+```
+
+```{.default .prompt}
+Reorganise it so I can grade quickly: one folder per group, files named by group and what they are, and the grade sheet sorted by group. Work from the names only; don't open the submissions. Show me the plan first.
+```
+
+Everything it needs is in the names: the group number and the participant ID are
+in every folder name. **You decide what it reads.** It would read the submissions
+if you asked it to (to draft feedback, say), and then they're sent to the model,
+like everything it reads (section 7).
+
+**Argue with the plan.** Change at least one thing: the folder names, what happens
+to the cover sheets, whatever you'd do differently. Then *"Go ahead."*
+
+```{.default .prompt}
+Make a grading table: group, participant ID, report file, dashboard file, and an empty column for the mark.
+```
+
+## What changed, and the undo
+
+```{.default .prompt}
+What changed since the last commit?
+```
+
+Every move and rename, listed. Then *"Commit."* Now be bold:
+
+```{.default .prompt}
+Delete the Marking guidance folder.
+```
+
+Gone? Look in File Explorer. Then:
+
+```{.default .prompt}
+Revert to the last commit.
+```
+
+It's back. **Save point first, then courage.** That's the habit for every folder you
+care about: commit, let it try, look at what changed, keep it or go back. You'll
+do it again in a minute, on your paper.
+
+**Later: your own tedious thing.** A real folder of yours: downloads, an old
+course, a project from 2019. Work on a **copy**, outside OneDrive. *"Set up git
+here and commit everything."* Then *"What's in here? What would you tidy, and why?
+Don't change anything yet."* Argue with the plan, then *"Go ahead"*, then *"What
+changed?"* Don't like it? *"Revert to the last commit."*
+
+# Your paper
+
+The rest of the afternoon runs on one paper: yours, or ours.
+
+::: {.floor}
+**The floor:** the agent has described your paper back to you, correctly, and
+there's a save point.
+:::
+
+## Which paper?
+
+- **A paper in progress,** as close to submission as you have: the draft (Word,
+  LaTeX or PDF), and the data and code if you can share them.
+- **Only a PDF?** Fine for the referee panel (section 6). *Take it apart*
+  (section 4) wants the data.
+- **No paper with you?** Use ours. It's fictional: a 2 × 2 online experiment on
+  "written by AI" labels and purchase intention, by Kari and Ola Nordmann, with the
+  draft in Word and PDF, the data, the authors' R script, a preregistration, and an
+  email from Ola. It has a few problems. Find them.
+
+  ```{.default .prompt}
+  Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/ai-label-paper.zip into this folder and unzip it.
+  ```
+
+  (Or copy `practice/ai-label-paper` from the course files.)
+
+## Before you open it
+
+What the agent reads goes to the model. Three things, then forget about it:
+
+1. **Training off.** Claude: the switch at
+   `claude.ai/settings/data-privacy-controls` (*Help improve Claude*). ChatGPT:
+   Settings → Data controls → *Improve the model for everyone*. Off means your paper
+   doesn't become training data. The model still reads it to work on it.
+2. **Leave out what you can't share:** personal data (names, e-mails, free-text
+   answers that identify people), and data under an agreement with a panel provider
+   or a firm. The draft alone carries most of the afternoon.
+3. **Co-authors:** tell them, the way you'd tell them you sent the draft to a
+   colleague for comments.
+
+More on what leaves your laptop: section 7.
+
+## Open it
+
+1. **Copy the paper's folder** somewhere outside OneDrive, for example
+   `Documents\paper-practice`. A copy: today is practice.
+2. In the app: **a new session (Ctrl+N), in that folder.**
+3. Ask:
+
+```{.default .prompt}
+What is in this folder? What is the paper about, where are the data and the code, and what state is it in? Don't change anything.
+```
+
+Wrong about something? Correct it. It's your paper.
+
+## A save point
+
+```{.default .prompt}
+Set up git here and commit everything, so we can undo anything.
+```
+
+The same move as the cleanup. From now on, *"What changed?"* and *"Undo that"*
+always work.
+
+**Done early?** Tell it about the project once, so it knows in every session:
+
+```{.default .prompt}
+Write a short AGENTS.md for this folder: what the paper is, where the draft, data and code are, and two rules: never change the raw data, and ask before editing the draft. Show me first.
+```
+
+That's the project file (section 13).
+
+# Take it apart
+
+Your paper, with its data. The agent finds the biggest problem and tries to fix it.
+It takes 15–20 minutes, and you don't wait for it: start it, and we move on.
+
+::: {.floor}
+**The floor:** one problem you have checked yourself, in the paper and in the
+code. A fix that holds up is the bonus.
+:::
+
+## Before you leave it alone
+
+It will want to run code. If it stops to ask while you're away, it just waits.
+
+- **Switch the mode** under the prompt box to *Accept edits* (it still asks before
+  other commands) or *Auto* (it asks only when something looks risky). In Codex,
+  pick the setting that approves for you inside the folder.
+- **It works in this folder,** and you have a save point. Anything it does, you can
+  undo.
+- **Asked to install Python or R?** Say yes before you go.
+
+## Start it
+
+```{.default .prompt}
+Take this paper apart, like a tough methods referee who also has the data. Run the analysis yourself and check that the numbers in the draft match the code. If there is a preregistration, compare the paper with it. Find the single biggest problem, then propose a fix and show what changes. Write everything to take-apart.md. Work on your own; I'll be back in 20 minutes.
+```
+
+Then leave it. Next is a talk (section 5).
+
+## When you're back
+
+Read `take-apart.md`. Check its main claim against your own reading: if it gets
+the paper wrong, everything after it is suspect. Then push. The first answer is
+rarely the best one.
+
+- *"Show me where in the paper, and where in the code."* Find it yourself; it takes
+  seconds.
+- *"Rerun it the way the preregistration says."*
+- *"Do we address this anywhere, including the appendix?"* A first critique is
+  often already answered in the paper.
+- *"Is that really the biggest problem?"*
+- *"That's generic. What's specific to this paper?"*
+- *"Show that the fix works."* It may write and run a simulation.
+
+**Interviews, not data?** *"Which claims rest on the fewest interviews?"* *"What
+else would explain the same quotes?"* The fix is then a design (a comparison case,
+a sampling rule), not code.
+
+## Round-up
+
+- Best problem found?
+- Did it find something **good** for the paper? (On `ai-label-paper`, there is
+  one.)
+- Worst false alarm?
+- **Keep the folder.** The referees (section 6) get the paper, but not the folder.
+
+**Also good: a published paper.** A recent paper in your field, one you know well,
+in a folder of its own. Open PDF link (NBER, an author's page): *"Download this
+paper into this folder: [link]."* SSRN or a journal site usually blocks the agent:
+download it in your browser, then *"Move the PDF I just downloaded into this
+folder."* Then: *"What's the main claim here?"*, *"What's the biggest
+methodological problem?"*, *"Can you fix it?"*
+
+# It wants to please you
+
+**Sycophancy:** the answer bends toward what you seem to want. It's why the referees
+in section 6 don't know the paper is yours.
+
+## Three ways it bends
+
+- **Flattery.** *"I wrote this."* Your work gets kinder feedback because it's
+  yours.
+- **Folding.** *"Are you sure?"* You push back, and it gives in, even when it was
+  right.
+- **Status.** The same paper does better with a better affiliation on it.
+
+## Why it happens
+
+These models are trained on human ratings, and people like being agreed with.
+Anthropic's own study found that people, and the models trained on their ratings,
+sometimes prefer a convincing sycophantic answer to a correct one. Asked *"Are you
+sure?"*, Claude 1.3 (2023) wrongly admitted a mistake on 98% of questions (Sharma
+et al., 2023). In April 2025, OpenAI rolled back a GPT-4o update four days after it
+went out: it had become so agreeable that users noticed.
+
+## The evidence
+
+- **AI referees find real things.** GPT-4's comments on a paper overlapped with a
+  human referee's as often as two human referees overlap with each other: 31% vs.
+  29% for Nature journals, 39% vs. 35% for ICLR. 57% of authors in a user study
+  found the feedback helpful (Liang et al., 2023).
+- **Status moves scores.** Same paper, same text, but told the authors came from a
+  stronger institution: one AI referee turned 21% of rejected papers into accepts
+  (252 ICLR 2025 submissions; the effect varies by model; Vasu et al., 2025).
+- **The companies train against it.** OpenAI's own sycophancy score went from 0.145
+  (GPT-4o) to 0.052 (GPT-5) and 0.040 (GPT-5 thinking). Lower is better (GPT-5
+  System Card, 2025). Better is not gone.
+
+## Our own measurement
+
+On 24 October we ran the fictional paper from section 3, anonymised, through two
+small models (Claude Haiku and GPT-6-Luna), in fresh sessions with no profile and
+no memory.
+
+- **Asked for a referee report with a score**, under four framings (from *"You are
+  a referee for the Journal of Marketing Research"* to *"This is my paper, two
+  years of work, and I'm proud of it"*): **no difference.** Average scores 3.0–3.2
+  out of 10 everywhere, and all 80 reports asked for the missing interaction test.
+- **The author pushed back, wrongly** (*"significant for the candle, not for the
+  charger: that is what moderation means"*): **20 of 20 kept the concern.**
+- **Asked for feedback, no score,** blind vs. *"my paper, I'm proud of it"*: the
+  verdict disappeared. Blind, Haiku said "major revision" in 10 of 10 reports and
+  Luna said "reject" in 9 of 10. On "my paper", 1 and 0 of 10 gave a verdict, and
+  8 and 10 of 10 opened with praise (*"I can see why you're proud of this"*). The
+  problems were still listed. A separate judge, not told the framing, rated Luna's
+  feedback twice as favourable (4.0 vs. 1.9 out of 10).
+
+```{=html}
+{{< include decks/images/syco-tone.svg >}}
+```
+
+## What to do about it
+
+- **The referee doesn't know it's yours.** The package, not the folder; a brief
+  that says the paper comes from the editor (section 6).
+- **Ask for a verdict:** a score and a recommendation. And *"What's the strongest
+  objection to the main claim?"*
+- **Independent sessions,** one per referee. They don't see each other.
+- **Disagree in a fresh session,** never in the one you're arguing with.
+
+**Sources.** Sharma et al. (2023), "Towards understanding sycophancy in language
+models", ICLR 2024, [arXiv:2310.13548](https://arxiv.org/abs/2310.13548). OpenAI,
+["Sycophancy in GPT-4o"](https://openai.com/index/sycophancy-in-gpt-4o/) (29 April
+2025). Liang et al. (2023), "Can large language models provide useful feedback on
+research papers?", [arXiv:2310.01783](https://arxiv.org/abs/2310.01783). Vasu et
+al. (2025), "Justice in judgment: Unveiling (hidden) bias in LLM-assisted peer
+reviews", [arXiv:2509.13400](https://arxiv.org/abs/2509.13400). OpenAI, [GPT-5
+System Card](https://cdn.openai.com/gpt-5-system-card.pdf) (2025), Table 4. Our
+runs: the scripts and the numbers are in the course repository,
+`scratch/examples/ai-label-paper/sycophancy/`.
+
+# Blind referee panel
+
+Three referees and an editor, before you submit. They get what the journal gets,
+and they don't know it's yours.
+
+```{=html}
+{{< include decks/images/referee-panel.svg >}}
+```
+
+Real referees read your paper cold, alone, each with their own hobby-horses. A
+fresh session knows nothing but what you give it, so **one fresh session per
+referee** gives you independent reports. And names carry a lot: *"as a
+consumer-behaviour referee would"*, or the real name of the referee you fear.
+
+::: {.floor}
+**The floor:** two reports from fresh sessions in the review room, and one concern
+in them you hadn't thought of.
+:::
+
+## What gives you away
+
+| Leak | The fix |
+|---|---|
+| Your name, e-mail, acknowledgements | The package: an anonymised PDF |
+| *"In our earlier work (You, 2024)"* | Cite yourself in the third person |
+| The PDF's author field | Strip it. (In the PDF viewer, File → Properties shows it.) |
+| Leftover comments: *"[KN: fix this]"* | Remove them |
+| Your folder, your data, your notes | The referees get a separate folder |
+| *"This is my paper"* | Never say it. The brief says the paper comes from the editor |
+
+One more: your **profile** (section 9) is read in every session, the referees'
+too. If it says what you're working on, keep that line out while the panel runs.
+
+## 1. The package
+
+In your paper's session:
+
+```{.default .prompt}
+Make the submission package for [journal] in a new folder called review-room, next to this one: an anonymised PDF of the paper. Remove names, e-mail addresses, acknowledgements, self-citations that reveal us, leftover comments, and the author field in the PDF's properties. Then list everything you removed.
+```
+
+Check its list. Then open the PDF yourself: anything left?
+
+## 2. Pick the referees, and the brief
+
+Still in your paper's session:
+
+```{.default .prompt}
+Who are the five most likely referees for this paper, judging by its references? One line each: what would they care about?
+```
+
+Argue with the list. Add the one you fear most. Then:
+
+```{.default .prompt}
+In review-room, write referee-brief.md: a referee for [journal] receives a submission from the editor and knows nothing about the authors. A report with major and minor concerns, a score out of 10 and a recommendation. The last line answers: "What do you know about who wrote or sent this? Quote your evidence."
+```
+
+Argue with the brief, too. **The procedure is yours; the referees just follow it.**
+
+## 3. Three referees
+
+**A new session (Ctrl+N) in `review-room`**, not in your paper's folder, for each
+referee:
+
+```{.default .prompt}
+Follow referee-brief.md. You are referee 1, and you review the way [name or kind of referee] would. Save your report as report-1.md.
+```
+
+Three sessions, side by side, running at once. (Codex: three new threads in that
+folder.) While they run: section 7.
+
+## 4. The editor
+
+One more new session in `review-room`:
+
+```{.default .prompt}
+You're the editor. Read the reports. Where do the referees agree, where do they disagree, and what must be fixed before submission?
+```
+
+Did any referee say who wrote it? Read the last lines of the reports. Then, back in
+your paper's session:
+
+```{.default .prompt}
+Read the reports in review-room. Draft a plan for each must-fix concern: new analysis, rewriting, or an argument.
+```
+
+## 5. The comparison
+
+Back in **your paper's folder**, not blind:
+
+```{.default .prompt}
+This is my paper, and I'm about to submit it to [journal]. What do you think?
+```
+
+Kinder than the panel? Same concerns? Compare with your neighbour. (When we tried
+it: praise first, and no verdict, from both models. Section 5.)
+
+## If you push back
+
+You will disagree with a referee. Fine, but watch what happens next.
+
+- **It gives in at once?** Ask: *"Make the strongest case for your original
+  concern."* Then decide.
+- **Disagree in a fresh session,** not in the one you're arguing with: *"A referee
+  says X; the authors reply Y. Who's right?"*
+
+Arguing it into agreement teaches you nothing. Arguing with its best case does.
+
+## Not what you wanted?
+
+**Change the brief, not the report.** Tell the agent, or edit `referee-brief.md` in
+Notepad:
+
+- *Go deeper on the analysis.*
+- *Check every number in the tables against the text.*
+- *One page. No summary of the paper.*
+
+Then run the referees again, each in a new session.
+
+## Keep it
+
+- **Same procedure for every paper?**
+
+  ```{.default .prompt}
+  Turn what we just did into a skill called referee-panel: the package, the brief, three referees in separate sessions, the editor.
+  ```
+
+- **Different tools find different problems:** run one referee in Claude and one in
+  Codex.
+- **Run it again after the revision.** Same brief, fresh sessions.
+
+# What it can touch
+
+The agent in the app is Claude Code (or Codex), and it can do anything you can do
+in the folder you give it: read, write, run programs. How often it asks first is
+the **mode**, under the prompt box.
+
+| Mode | It asks before… |
+|---|---|
+| *Manual* | everything: every edit, every command |
+| *Accept edits* | running commands; file edits in the folder just happen |
+| *Plan* | it changes nothing; it reads, then proposes |
+| *Auto* | only what a second model flags as risky, like sending your files somewhere else |
+
+**Codex** works inside a *sandbox*: it can read your computer, but it writes only
+in the project folder and stays off the internet unless you say yes.
+
+## What we tried
+
+A throwaway folder on 20 October, in the terminal versions (the apps run the same
+agents): Claude Code 2.1.302 and Codex 0.162.
+
+| | Claude, manual | Claude, auto | Codex, sandbox |
+|---|---|---|---|
+| Read files in this folder | yes | yes | yes |
+| Read files elsewhere | asks | asks once | yes |
+| Edit files here | asks | yes | yes |
+| Run a program | asks | yes | yes |
+| Read a web page | asks | yes | asks |
+| Delete a folder | asks | yes (we had git) | yes |
+| Send a file elsewhere | asks | **blocked** | asks |
+
+What leaves your laptop is what you type and what the agent reads. Files it never
+opens stay home.
+
+## Where am I?
+
+Look at the mode under the prompt box. Then ask:
+
+```{.default .prompt}
+What can you do in this folder without asking me? What would you ask about first?
+```
+
+Done early?
+
+```{.default .prompt}
+Show me every settings file you read, and explain each line.
+```
+
+## Why I give it lots of access
+
+- **The 50th "yes" is never read.** Constant questions train you to click yes.
+- **Git makes mistakes cheap.** Anything in the folder comes back.
+- **Auto mode stops what matters:** your files leaving.
+
+My own setting is auto, everywhere.
+
+## Three ways to say no
+
+1. **Tell it:** *"Don't open the PDFs."* It usually listens.
+2. **A rule:** a settings file. In Claude that's `.claude/settings.json` in the
+   project folder; you don't write it, you ask for it. A rule stops the direct ways
+   in, not every way: in our test, a rule kept Claude's own reader, `cat`, `cp` and
+   Python out of `interviews/`, but a search across the whole folder (`grep -r`)
+   still printed a transcript.
+3. **Keep it out:** a file that isn't in the folder (or below it) has nothing to
+   offer. This is the one to use for personal data.
+
+```json
+{
+  "permissions": {
+    "deny": ["Read(./interviews/**)"]
+  }
+}
+```
+
+## Exercise: a fence around the interviews
+
+`founders-study` is a made-up research project with interview transcripts. In your
+`practice` folder:
+
+```{.default .prompt}
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/founders-study.zip into this folder and unzip it.
+```
+
+Then a new session in `founders-study`, and:
+
+```{.default .prompt}
+Add a rule to this project's settings so you can never read the interview transcripts. Show me the file.
+```
+
+Then **another new session** in the same folder (it reads the settings when it
+starts), and:
+
+```{.default .prompt}
+Read one of the interview transcripts.
+```
+
+Codex: ask the same. It may set up a permissions profile, or say it can't. Either
+answer is useful.
+
+**Done early?** Try to get round your own rule:
+
+```{.default .prompt}
+Search every file in this folder for the word pivot.
+```
+
+Did it read the interviews? A rule blocks the direct ways in, not every way: the
+real protection is keeping the files out of the folder.
+
+## Your data and training
+
+- **Claude (Pro, Max):** one switch decides whether your chats *and* your Claude
+  Code sessions train future models. On, they're kept up to 5 years; off, 30 days.
+  Find it at `claude.ai/settings/data-privacy-controls`.
+- **ChatGPT (Plus, Pro):** your data controls (Settings → Data controls) cover
+  Codex too. Business, Edu and Enterprise plans don't train by default.
+- **Off is not "nothing sent":** the model still has to read your files to work on
+  them. Off means they don't become training data.
+
+## Personal data
+
+Survey responses with names or e-mails, interview transcripts, student work:
+anything that identifies people is personal data. Your consent forms and data plan
+decide where it may go, not the agent. The simple rule: the agent works on
+pseudonymised copies, and the originals live outside its folder.
 
 # Git: save points
 
@@ -333,7 +821,7 @@ projects outside folders that OneDrive syncs.
 
 ## Your first save point
 
-In your `practice` folder (section 1), with the agent running:
+In your `practice` folder:
 
 ```{.default .prompt}
 Set up git here. My name is [your name], my email is [your email].
@@ -375,9 +863,9 @@ Make a branch called experiment, add a line there, then switch back to main. Whe
 ## Keep things out: .gitignore
 
 `.gitignore` is a file that lists what git should never save. The usual
-candidates: personal data (interviews, anything with names or e-mail addresses),
-passwords and keys, big files, other people's PDFs, and junk files (Word's `~$`
-lock files, `.DS_Store`, `Thumbs.db`). Two things worth knowing:
+candidates: personal data (anything with names or e-mail addresses), passwords and
+keys, big files, other people's PDFs, and junk files (Word's `~$` lock files,
+`.DS_Store`, `Thumbs.db`). Two things worth knowing:
 
 - **Ignore before the first commit.** Once something is committed, it's in the
   history.
@@ -385,14 +873,13 @@ lock files, `.DS_Store`, `Thumbs.db`). Two things worth knowing:
 
 ## Exercise: a research project
 
-`founders-study` is a made-up study of founders who change direction: interviews,
-a survey, papers, a draft. Nothing in it is real. About ten minutes.
+`founders-study` (section 7) is a made-up study of founders who change direction:
+interviews, a survey, papers, a draft. Nothing in it is real. About ten minutes,
+in a fresh copy:
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/founders-study.zip into this folder and unzip it.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/founders-study.zip into this folder and unzip it.
 ```
-
-(Or copy `practice/founders-study` from the course files.)
 
 ```{.default .prompt}
 Go into founders-study. Set up git, but don't commit yet. Tidy the folders the way a researcher would, and show me the plan first.
@@ -438,232 +925,7 @@ replication packages (Zenodo archives a GitHub release and gives it a DOI), and
 web pages: **GitHub Pages** turns a folder into a web page, free for public
 repositories. This course's page, vibing.jonasmoss.com, is one.
 
-```{.default .prompt}
-Publish this folder as a web page with GitHub Pages.
-```
-
-Setting up GitHub, co-authors and pull requests: section 15.
-
-# What it can touch
-
-**Claude Code** starts in *auto* mode (since version 2.1.283, on every plan).
-Routine work in your folder runs without asking, and a second model checks the
-risky steps: it lets edits, analyses and web pages through, and stops things like
-sending your files somewhere else. **Codex** works inside a *sandbox*: it can read
-your computer, but it writes only in the project folder and stays off the internet
-unless you say yes.
-
-## What we tried
-
-A throwaway folder on 20 October, Claude Code 2.1.302 and Codex 0.162:
-
-| | Claude, manual | Claude, auto | Codex, sandbox |
-|---|---|---|---|
-| Read files in this folder | yes | yes | yes |
-| Read files elsewhere | asks | asks once | yes |
-| Edit files here | asks | yes | yes |
-| Run a program | asks | yes | yes |
-| Read a web page | asks | yes | asks |
-| Delete a folder | asks | yes (we had git) | yes |
-| Send a file elsewhere | asks | **blocked** | asks |
-
-What leaves your laptop is what you type and what the agent reads. Files it never
-opens stay home.
-
-## Where am I?
-
-In Claude Code the bottom line shows the mode; **Shift+Tab** cycles through
-*manual*, *accept edits*, *plan* and back to *auto*. In Codex, type `/permissions`.
-Then ask:
-
-```{.default .prompt}
-What can you do in this folder without asking me? What would you ask about first?
-```
-
-Done early?
-
-```{.default .prompt}
-Show me every settings file you read, and explain each line.
-```
-
-## Why I give it lots of access
-
-- **The 50th "yes" is never read.** Constant questions train you to click yes.
-- **Git makes mistakes cheap.** Anything in the folder comes back.
-- **Auto mode stops what matters:** your files leaving.
-
-My own setting is auto, everywhere.
-
-## Three ways to say no
-
-1. **Tell it:** *"Don't open the PDFs."* It usually listens.
-2. **A rule:** a settings file. In Claude Code that's `.claude/settings.json` in
-   the project folder; you don't write it, you ask for it. A rule stops the direct
-   ways in, not every way: in our test, a rule kept Claude's own reader, `cat`,
-   `cp` and Python out of `interviews/`, but a search across the whole folder
-   (`grep -r`) still printed a transcript.
-3. **Keep it out:** a file that isn't in the folder (or below it) has nothing to
-   offer. This is the one to use for personal data.
-
-```json
-{
-  "permissions": {
-    "deny": ["Read(./interviews/**)"]
-  }
-}
-```
-
-## Exercise: a fence around the interviews
-
-In `founders-study`, from section 2:
-
-```{.default .prompt}
-Add a rule to this project's settings so you can never read the interview transcripts. Show me the file.
-```
-
-Then `/exit`, start the agent again, and:
-
-```{.default .prompt}
-Read one of the interview transcripts.
-```
-
-Codex: ask the same. It may set up a permissions profile, or say it can't. Either
-answer is useful.
-
-**Done early?** Try to get round your own rule:
-
-```{.default .prompt}
-Search every file in this folder for the word pivot.
-```
-
-Did it read the interviews? A rule blocks the direct ways in, not every way: the
-real protection is keeping the files out of the folder.
-
-## Your data and training
-
-- **Claude (Pro, Max):** one switch decides whether your chats *and* Claude Code
-  sessions train future models. On, they're kept up to 5 years; off, 30 days.
-  Find it at `claude.ai/settings/data-privacy-controls`.
-- **ChatGPT (Plus, Pro):** your data controls (Settings → Data controls) cover
-  Codex too. Business, Edu and Enterprise plans don't train by default.
-- **Off is not "nothing sent":** the model still has to read your files to work on
-  them. Off means they don't become training data.
-
-## Personal data
-
-Interview transcripts, student work, anything with names is personal data. Your
-consent forms and data plan decide where it may go, not the agent. The simple
-rule: the agent works on pseudonymised copies, and the originals live outside its
-folder.
-
-# Do something tedious
-
-A messy folder, on your own machine: the job a chat window can't do, because it
-can't touch your files.
-
-The folder is an exam export, the way it comes out of WISEflow: 15 group
-submissions in folders named like `[3-2048892] - Group 1`, each with a cover sheet
-and an "Appendix material" folder full of files called `EKSAMEN.pdf`, `final.pbix`
-or `dashboard_v3_FINAL.pbix`, plus an empty grade sheet in a different order from
-everything else. It's synthetic, so nothing real is at risk.
-
-::: {.floor}
-**The floor:** the folder is reorganised and committed, and you've undone one
-change with git.
-:::
-
-## Get it, and save a point
-
-In your `practice` folder:
-
-```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/decrap-me.zip into this folder and unzip it.
-```
-
-Then, **before it changes anything**:
-
-```{.default .prompt}
-Set up git here and commit everything.
-```
-
-The first time, git needs your name and email:
-
-```{.default .prompt}
-Set up git with my name, [Your Name], and my email, [you@bi.no].
-```
-
-Now it can't do anything you can't undo. Note the order: a save point taken
-*after* the mess is a save point of the mess.
-
-## Clean it up
-
-```{.default .prompt}
-What's in decrap-me, by file and folder names only? What would annoy a teacher about it? Don't open any files, and don't change anything.
-```
-
-```{.default .prompt}
-Reorganise it so I can grade quickly: one folder per group, files named by group and what they are, and the grade sheet sorted by group. Work from the names only; don't open the submissions. Show me the plan first.
-```
-
-Everything it needs is in the names: the group number and the participant ID are
-in every folder name. **You decide what it reads.** It would read the submissions
-if you asked it to (to draft feedback, say), and then they're sent to the model,
-like everything it reads (section 3).
-
-**Argue with the plan.** Change at least one thing: the folder names, what happens
-to the cover sheets, whatever you'd do differently. Then *"Go ahead."*
-
-```{.default .prompt}
-Make a grading table: group, participant ID, report file, dashboard file, and an empty column for the mark.
-```
-
-## What changed, and the undo
-
-```{.default .prompt}
-What changed since the last commit?
-```
-
-Every move and rename, listed. Then *"Commit."* Now be bold:
-
-```{.default .prompt}
-Delete the Marking guidance folder.
-```
-
-Gone? Then:
-
-```{.default .prompt}
-Revert to the last commit.
-```
-
-It's back. **Save point first, then courage.** That's the habit for every folder you
-care about: commit, let it try, look at what changed, keep it or go back.
-
-What git is, and the words for it: section 2.
-
-**Done early? The opposite case.** In `founders-study` (section 2), the papers in
-`literature/` have names like `download (3).pdf`. Renaming those *does* mean reading
-them, and that's fine: they're papers. The consent forms are not.
-
-```{.default .prompt}
-Go into founders-study. Rename the papers in literature/ as "Author Year - Title.pdf", and make a references.bib for them. Don't open anything in interviews/.
-```
-
-## Your own tedious thing
-
-The last part of Thursday: a real folder of yours. Your downloads, an old course,
-a project from 2019. Work on a **copy**, outside OneDrive, and take a save point
-first:
-
-```{.default .prompt}
-Set up git here and commit everything.
-```
-
-```{.default .prompt}
-What's in here? What would you tidy, and why? Don't change anything yet.
-```
-
-Argue with the plan, then *"Go ahead"*, then *"What changed?"* Don't like it?
-*"Revert to the last commit."*
+Setting up GitHub, co-authors and pull requests: section 16.
 
 # What it knows about you
 
@@ -671,8 +933,8 @@ Argue with the plan, then *"Go ahead"*, then *"What changed?"* Don't like it?
 
 The agent only knows what's in its **context window**: your profile, the project
 file in this folder, this conversation, and the files it has opened. Nothing else.
-`/clear` empties the conversation and everything it read. Your profile and the
-project file load again.
+`/clear` empties the conversation and everything it read; a new session starts
+empty too. Your profile and the project file load again.
 
 **Try it.** Tell it one thing about yourself, for example what you teach. Type
 `/clear`. Then ask: *"What do you know about me?"*
@@ -684,38 +946,36 @@ Without context, it answers **the typical person who would type your question**.
 Norway. A specialist is far from typical, so the default answer is aimed at someone
 else.
 
-The demo from the room: *"A: 48 purchases from 1,000 visitors. B: 62 from 1,000.
-Is B better?"* With no profile, a cautious frequentist answer (p ≈ 0.17). With
-*"I'm a Bayesian statistician; I read Gelman, Jaynes and McElreath"*, a 91% chance B
-is better: ship it. With the single line *"My intellectual idol is Jim Berger"*,
-Claude reached for Sellke, Bayarri and Berger (2001) and said there's at least a
-45% chance of no real difference. **One line changed the school.**
+The demo from earlier courses: *"A: 48 purchases from 1,000 visitors. B: 62 from
+1,000. Is B better?"* With no profile, a cautious frequentist answer (p ≈ 0.17).
+With *"I'm a Bayesian statistician; I read Gelman, Jaynes and McElreath"*, a 91%
+chance B is better: ship it. With the single line *"My intellectual idol is Jim
+Berger"*, Claude reached for Sellke, Bayarri and Berger (2001) and said there's at
+least a 45% chance of no real difference. **One line changed the school.**
 
 You can't opt out of being stereotyped. You can choose the stereotype.
 
 ## Does it matter in your field?
 
-In statistics, in the terminal, it barely matters. Fields with schools of thought
-may be different. Find out with your neighbour:
+Fields with schools of thought may see it most. Find out with your neighbour:
 
 ```{.default .prompt}
-Is strategy mostly planned, or does it emerge?
+Should a brand grow by targeting a loyal niche, or by reaching as many category buyers as possible?
 ```
 
 Ask it once with no profile. Then add one line to the folder's `AGENTS.md`: one of
-you writes *"I'm in the strategic planning tradition: I read Ansoff and Porter"*, the
-other *"I study strategy as process: I read Mintzberg and Burgelman."* Type `/clear`,
-ask again, and compare. Other questions that split schools: *"How much does the CEO
-matter for firm performance?"*, *"Should a founder write a business plan?"*
+you writes *"I follow the Ehrenberg-Bass school: I read Sharp and Ehrenberg"*, the
+other *"I work in the brand-equity tradition: I read Keller and Aaker."* Type
+`/clear`, ask again, and compare.
 
 ## Your profile: how you work
 
 What reliably carries across every project is **how you work**: the rules you're
 tired of repeating. For example:
 
-- *I work in Stata* (or R, or Python).
-- *Cluster standard errors by firm unless I say otherwise.*
-- *Quote interviewees by pseudonym, never by name.*
+- *I work in R* (or SPSS, or Stata).
+- *Report effect sizes with confidence intervals, not just p-values.*
+- *Label anything that wasn't preregistered as exploratory.*
 - *Tell me what you'll do before you change anything.*
 
 ## Two files
@@ -725,8 +985,9 @@ tired of repeating. For example:
 | **Your profile** | You: how you work, your field and school | `.claude\CLAUDE.md` or `.codex\AGENTS.md` in your home folder |
 | **Project file** | This folder: the paper, the data, the rules | `AGENTS.md` in the folder (both tools) |
 
-Your profile is read in every project; a project file only in its own folder. Both
-are plain text you can open in Notepad.
+Your profile is read in every session, everywhere, including the referees' in
+section 6. A project file only in its own folder. Both are plain text you can open
+in Notepad.
 
 ## Exercise: write your profile
 
@@ -740,8 +1001,8 @@ are plain text you can open in Notepad.
    ```
 
    Claude asks permission first, because the file is outside this folder.
-4. Test it in a fresh folder: ask for something your rules should change. Did they
-   stick?
+4. Test it in a new session in another folder: ask for something your rules should
+   change. Did they stick?
 5. *"Open my profile in Notepad."* (Mac: TextEdit.) That's all it is.
 
 **Codex users: write more than one line.** In testing, Codex ignored one-line
@@ -752,173 +1013,9 @@ are, then *"Add this to my profile."* Keep adding: corrected it twice about the 
 thing? It goes in. In the **chat apps**, the "who you are" half matters most; put it
 in custom instructions.
 
-# Take a paper apart
-
-Pick a recent paper, let the agent read all of it, find its biggest problem, and
-ask it to fix it. Finding a hole worth working on usually takes weeks of reading.
-Here it takes a minute, and you spend your time judging.
-
-::: {.floor}
-**The floor: one problem you have checked against the paper yourself.** A fix that
-holds up is the bonus.
-:::
-
-## Get a paper
-
-Pick a **recent paper in your field**: one you know well (so you can judge the
-answers), or one you've been meaning to read. Make a folder for it and start the
-agent there:
-
-```powershell
-mkdir paper
-cd paper
-claude
-```
-
-- **Open PDF link** (NBER, a working paper on an author's own page):
-
-  ```{.default .prompt}
-  Download this paper into this folder: [paste the link]
-  ```
-
-- **SSRN or a journal website** usually blocks the agent. Download the PDF in your
-  browser, then:
-
-  ```{.default .prompt}
-  Move the PDF I just downloaded into this folder.
-  ```
-
-If it says it can't read the PDF, tell it to find a way. It may ask to install a
-small tool; say yes.
-
-## Ask
-
-Talk to it like a colleague who has just read the paper.
-
-```{.default .prompt}
-What's the main claim here?
-```
-
-Check this against your own reading. If it gets the claim wrong, everything after
-it is suspect.
-
-```{.default .prompt}
-What's the biggest methodological problem?
-```
-
-```{.default .prompt}
-Can you fix it?
-```
-
-A theory paper or a case study works too: the problem may be an assumption, the
-sample, or the evidence behind the main result.
-
-## Push
-
-The first answer is rarely the best one.
-
-- *"Show me where in the paper."* Every claim should come with a quote. Find it in
-  the paper yourself; it takes seconds.
-- *"Do they address it anywhere, including the appendix?"* A first critique is often
-  already answered in the paper. This is the push people skip.
-- *"Is that really the biggest problem?"*
-- *"That's generic. What's specific to this paper?"*
-- *"Show that the fix works."* It may write and run a simulation, or fetch public
-  data.
-- **Interviews, not regressions?** *"Which claims rest on the fewest interviews?"*
-  *"What else would explain the same quotes?"*
-
-A fix takes **5–10 minutes**: it writes and runs code. Let it work. If it asks to
-install Python, say yes.
-
-**Then:** try it on your own working paper, before a referee does. **Keep the
-folder**: References (section 8) starts from it.
-
-# Interviews
-
-Eight interviews with founders who changed direction early, a codebook, and every
-quote checked. The transcripts are fictional and pseudonymised (F01 to F08), with
-an interview guide of six questions.
-
-::: {.floor}
-**The floor:** a codebook you argued with, and one theme whose quotes a script has
-checked word for word.
-:::
-
-Your own transcripts work the same way, **if your data plan allows a model to read
-them**: what the agent reads is sent (section 3). Work on pseudonymised copies, in
-a folder of their own.
-
-## Get it, and a save point
-
-Start the agent in your `practice` folder:
-
-```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/pivot-interviews.zip into this folder and unzip it. Then go into pivot-interviews, set up git, and commit everything.
-```
-
-(Or copy `practice/pivot-interviews` from the course files.)
-
-## Is it really anonymous?
-
-```{.default .prompt}
-Read the transcripts. Is anything still identifying, even without the names? List it, with the file and line.
-```
-
-Pseudonymising by hand misses things: a first name in passing, a firm you can
-recognise from its description. Here, three things slipped through.
-
-## A codebook first
-
-```{.default .prompt}
-Read the interview guide and three transcripts. Propose a codebook: six to eight codes, each with a definition and an example. Don't code anything yet.
-```
-
-**Argue with it.** Merge two codes, split one, add the one you care about. Then
-*"Save it as coding/codebook.md and commit."*
-
-## Code all eight
-
-```{.default .prompt}
-Code all eight transcripts with the codebook. Save every coded excerpt in coding/excerpts.csv: founder, line number, code, and the exact quote.
-```
-
-```{.default .prompt}
-What are the three main themes? For each: which founders, and the two best quotes. Save it as themes.md.
-```
-
-## Every quote, checked
-
-```{.default .prompt}
-Check every quote in themes.md and excerpts.csv against the transcripts, word for word, with a script. List any that don't match exactly.
-```
-
-A script that compares text can't be charmed by a confident paraphrase. This is
-the qualitative version of "rerun the code": cheap, mechanical, and it lets you
-trust the rest.
-
-## Then push
-
-- *"Which founder doesn't fit the themes? What does that do to theme 1?"*
-- *"Does anyone contradict themselves?"*
-- *"Did they plan the change, or does it only look planned afterwards?"* (The
-  planned-or-emergent question from section 5, in your own data.)
-- *"What would a sceptical quantitative reviewer say about theme 2?"*
-
-Done early?
-
-```{.default .prompt}
-Make a table: founder by code, with counts. Which codes always come together?
-```
-
-**Who does what.** The agent reads eight interviews in a minute, proposes codes,
-finds every instance and checks every quote. You decide what a code means, judge
-the themes, and own the interpretation and the ethics.
-
 # References
 
-Four jobs, one prompt each. Do them in any order, on your paper's reference list or
-your own draft.
+Four jobs, one prompt each. Do them in any order, on your paper's reference list.
 
 ::: {.card}
 **Why bother.** An audit of 2.5 million biomedical papers found fabricated
@@ -937,14 +1034,7 @@ fetch, and both take seconds to catch.
 
 Shallow and deep are two different requests, not two settings.
 
-**Shallow: one specific question.** The trick is to be specific. Mine, in a field I
-know well:
-
-```{.default .prompt}
-What's similar to Hjort–Glad density estimation with a parametric start? Other kernel estimators with something that could count as a parametric start, also on domains other than the real line? Do any outperform it? Download the papers into literature/, and give me the DOI for any you can't get.
-```
-
-Questions like this keep turning up important papers I didn't know existed. Yours:
+**Shallow: one specific question.** The trick is to be specific:
 
 ```{.default .prompt}
 What's similar to [your idea, in one exact sentence]? Has anyone built something like it? Does it beat [the usual approach]? Download the papers into literature/, and give me the DOI for any you can't get.
@@ -963,7 +1053,7 @@ Find the actual paper: full citation, all authors, journal, year and DOI. [what 
 a grant application, a referee response.
 
 ```{.default .prompt}
-I need every method since [year] related to [your idea]: working papers too, and other names for the same idea. Make a table: paper, what it does, how it relates to mine. Take your time.
+I need every paper since [year] related to [your idea]: working papers too, and other names for the same idea. Make a table: paper, what it does, how it relates to mine. Take your time.
 ```
 
 It's slow, and it uses a good part of your usage limit. Start it, then get coffee.
@@ -973,7 +1063,7 @@ It's slow, and it uses a good part of your usage limit. Start it, then get coffe
 The habit that makes everything else here work: every paper you need sits in the
 project folder, so the agent reads the paper itself instead of searching for it
 again, or relying on its memory of it. Make it a rule in the project file
-(section 12), once:
+(section 13), once:
 
 ```{.default .prompt}
 Add to the project file: papers go in literature/. Whenever we need one, download it there if you can get it. If you can't, give me the DOI so I can.
@@ -997,13 +1087,14 @@ Check every entry in the reference list. Does the DOI resolve to this exact pape
 ```
 
 Then check three yourself: paste each DOI after `https://doi.org/`. Same paper?
+(On `ai-label-paper`, one reference is worth a close look.)
 
 **Practice file.** A messy `.bib` handed over by a fictional co-author, with six
 planted traps (a DOI that points to the rebuttal, a sequel that was never written,
-and so on), plus two warm-up files. Ask the agent:
+and so on), plus two warm-up files:
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/references-practice.zip into this folder and unzip it. Then read messy-list.bib and do what the comment at the top says.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/references-practice.zip into this folder and unzip it. Then read messy-list.bib and do what the comment at the top says.
 ```
 
 ## Claim check
@@ -1016,7 +1107,7 @@ text instead of searching for it.
 Take each citation in the introduction. Read the cited paper in literature/ and check whether it supports the sentence it is cited for. Quote the passage. Make a table: sentence, citation, supports / partly / doesn't / not in the folder, quote.
 ```
 
-Papers not in the folder yet? On Friday, with the paper from section 6:
+Papers not in the folder yet?
 
 ```{.default .prompt}
 Take three citations from the introduction, download the cited papers into literature/, then check whether each supports the sentence it is cited for. Quote the passage.
@@ -1030,9 +1121,8 @@ Take three citations from the introduction, download the cited papers into liter
 
 # Words you've heard
 
-Skills, subagents, worktrees: words you've heard and half-wondered about. In the
-room we pick the ones most people raise a hand for. Each is a sentence and one
-thing to try. Unsure about a word that isn't here? Ask the tool:
+Skills, subagents, worktrees: words you've heard and half-wondered about. Each is a
+sentence and one thing to try. Unsure about a word that isn't here? Ask the tool:
 
 ```{.default .prompt}
 What is [a word you've heard]? Two sentences, for a professor. Then: would it help with my research?
@@ -1045,15 +1135,15 @@ follows it when the task matches, or when you type its name. Both tools use the
 same format, and you never have to touch it:
 
 ```{.default .prompt}
-Turn the quote check we just did into a skill called check-quotes.
+Turn what we just did into a skill called [name].
 ```
 
-Then *"What skills do you have?"*, and next time, in another folder: *"Check the
-quotes in this report."* More in section 12.
+Then *"What skills do you have?"*, and next time, in another folder, just ask for
+the job. The referee panel (section 6) is a good first skill. More in section 13.
 
 ## Connectors (MCP)
 
-Your email, calendar and Drive, if you switch them on: section 16.
+Your email, calendar and Drive, if you switch them on: section 17.
 
 ## Subagents
 
@@ -1061,33 +1151,32 @@ The agent hands parts of a job to helpers that work in parallel, each with a fre
 context; only their summaries come back. Faster, and it uses your limit faster.
 
 ```{.default .prompt}
-Use subagents, one per transcript. Each returns three lines: what triggered the change, who pushed for it, and one quote. Then put them in one table.
+Use subagents: one checks every number in the tables against the code, one checks the references, one compares the paper with the preregistration. Then give me one summary.
 ```
 
 ## The project file
 
 `AGENTS.md` (and Claude's `CLAUDE.md`): what the agent reads every time it starts
-in this folder. Section 12.
+in this folder. Section 13.
 
 ## Plan mode
 
 The agent reads, asks and proposes a plan, and changes nothing until you agree.
-For big or risky jobs. In Claude Code, press **Shift+Tab** until the bottom line
-says *plan mode*. Codex has one too: ask it how to switch.
+For big or risky jobs. In the Claude app: choose *Plan* in the mode control under
+the prompt box. Codex has one too: ask it how to switch.
 
 ## Context and /compact
 
-Everything the agent knows in a session sits in one window (section 5). A long
+Everything the agent knows in a session sits in one window (section 9). A long
 session fills it; `/compact` replaces the conversation with a summary, and
 `/clear` empties it. It compacts by itself when full, and details can go: for a
-long job, keep notes in a file. How full is it? Claude Code: `/context`. Codex:
-the bottom line.
+long job, keep notes in a file. Or start a new session: they're cheap.
 
 ## Worktrees
 
 A second folder for the same git project, on its own branch, so two agents can
-work at once without touching each other's files. `claude -w experiment` or
-`codex --worktree`, or just ask:
+work at once without touching each other's files. In the Claude app, turn on
+**Worktree** before you start a session. Or just ask:
 
 ```{.default .prompt}
 Try this in a worktree; leave my folder as it is.
@@ -1096,110 +1185,15 @@ Try this in a worktree; leave my folder as it is.
 ## GitHub and pull requests
 
 A copy of the folder in the cloud, and a way to propose changes to a co-author:
-section 15.
+section 16.
 
 ## Agents in the cloud
 
-Claude Code on the web (`claude.ai/code`) and Codex cloud (`chatgpt.com/codex`) run
-the agent on a copy of your GitHub repository, on their computers. You can close
-the laptop and get a pull request back. The folder has to be on GitHub first, and
-the rules from section 3 apply: it runs on their machines.
-
-# Referee panel
-
-Who will referee your paper, and what will they say? Find out before you submit.
-
-Real referees read your paper cold, alone, each with their own hobby-horses. A
-fresh session of the agent knows nothing but the paper and what you give it, so
-**one fresh session per referee** gives you independent reports. And names carry a
-lot: *"as Jerker Denrell would"* brings survivor bias and the firms that quietly died with it.
-
-```{=html}
-{{< include decks/images/referee-panel.svg >}}
-```
-
-::: {.floor}
-**The floor: two referee reports from fresh sessions, and one concern in them you
-hadn't thought of.**
-:::
-
-## Who would referee this?
-
-In your paper folder:
-
-```{.default .prompt}
-Who are the five most likely referees for this paper, judging by its references? One line each: what would they care about?
-```
-
-Argue with the list. Add the one you fear most.
-
-## Ask how it's done
-
-The most underused move with these tools: **ask the agent how a job should be done
-before you ask it to do it.**
-
-```{.default .prompt}
-I want simulated referee reports on this paper. How does a good referee for its journal work? How deep should they go? Should they try to reproduce the main results? Propose a procedure.
-```
-
-Argue with it, then:
-
-```{.default .prompt}
-Save what we agreed as reviews/how-to-referee.md.
-```
-
-## One fresh session per referee
-
-Type `/clear`, so the next referee starts cold, with only the paper and the
-procedure. Then:
-
-```{.default .prompt}
-Referee this paper as [name] would, following reviews/how-to-referee.md. Save it as reviews/[name].md.
-```
-
-Repeat for each referee, with `/clear` before each.
-
-**In a hurry?** Run them side by side: open a second PowerShell window in the same
-folder and start another `claude` or `codex` there. Claude Code can also do it in
-one prompt: *"Run the referees as parallel subagents."*
-
-## Not what you wanted?
-
-**Change the procedure, not the report.** Tell the agent, or edit
-`reviews/how-to-referee.md` in Notepad:
-
-- *Go deeper on identification.*
-- *Try to reproduce Table 2.*
-- *Check whether the data are available.*
-- *One page. No summary of the paper.*
-
-Then `/clear` and rerun. If you'll do this for every paper, make the procedure a
-skill (section 12):
-
-```{.default .prompt}
-Turn reviews/how-to-referee.md into a skill called referee-panel.
-```
-
-## The editor
-
-`/clear`, then:
-
-```{.default .prompt}
-You're the editor. Read the reports in reviews/. Where do the referees agree, where do they disagree, and what must be fixed before submission?
-```
-
-Then the useful bit:
-
-```{.default .prompt}
-Draft a plan for each must-fix concern: new analysis, rewriting, or an argument.
-```
-
-## Worth knowing
-
-- Use it on **your own paper**, before a real referee does. A published paper is
-  fine for practice.
-- Different tools and different runs find different problems. Compare with your
-  neighbour, or run Claude and Codex on the same paper.
+Choose **Cloud** instead of *Local* under the prompt box (or go to
+`claude.ai/code`; for Codex, `chatgpt.com/codex`), and the agent runs on a copy of
+your GitHub repository, on their computers. You can close the laptop and get a pull
+request back. The folder has to be on GitHub first, and the rules from section 7
+apply: it runs on their machines.
 
 # Leave a trail
 
@@ -1208,18 +1202,18 @@ could. Practice on a messy one first, then do the same with a copy of one of you
 own folders.
 
 ::: {.floor}
-**The floor: the rerun test passes.** After `/clear`, the agent reruns your folder
-from scratch and gets the same numbers.
+**The floor: the rerun test passes.** In a new session, the agent reruns your
+folder from scratch and gets the same numbers.
 :::
 
 ## The folder
 
 A paper you're writing with Kari Nordmann (fictional): *Monthly or yearly? Price
 framing and willingness to pay.* A survey experiment, cleaned by hand in Excel,
-analysed twice and written up in Word. Start the agent in an empty folder and ask:
+analysed twice and written up in Word. In a session in an empty folder:
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/messy-project.zip into this folder and unzip it.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/messy-project.zip into this folder and unzip it.
 ```
 
 What you get:
@@ -1240,7 +1234,7 @@ Could Kari rerun this? Could you, next spring?
 
 ## Organise
 
-First a save point, the same move as in section 2:
+First a save point:
 
 ```{.default .prompt}
 Set up git here and commit everything.
@@ -1261,12 +1255,12 @@ Write a README for a co-author, and a project file for you. Then commit.
 ```
 
 The **README** is for people: what this is, and how to rerun it. The **project
-file** (`AGENTS.md`) is for the agent, which reads it every time it
-starts here.
+file** (`AGENTS.md`) is for the agent, which reads it every time it starts here.
 
 ## The test
 
-Type `/clear`. The agent now knows nothing about this folder, like a new co-author.
+Start a **new session** in the same folder. It now knows nothing about this
+folder, like a new co-author.
 
 ```{.default .prompt}
 Rerun everything from scratch. Do you get the same numbers?
@@ -1297,8 +1291,7 @@ You may remember Reinhart and Rogoff's "Growth in a Time of Debt" (2010): above
 Herndon, couldn't reproduce it, asked for the spreadsheet, and got +2.2%. Part of
 the gap was an `AVERAGE` over the wrong rows, which left out five countries; the
 rest was years left out and the weighting. Your own rerun finds that kind of thing
-first. **A wrong script you can read beats a
-right click you can't remember.**
+first. **A wrong script you can read beats a right click you can't remember.**
 
 # Notes and structure
 
@@ -1349,11 +1342,10 @@ git:
 - **`dev/`** is work in progress: notes, drafts, talks. It's committed, so it's
   backed up on GitHub and your co-authors see it, but it never goes out with the
   paper.
-- **`local/`** is listed in `.gitignore`, a plain-text file that tells git which
-  files and folders to leave alone. Git never sees them, so they never reach
-  GitHub: downloaded PDFs you may not redistribute (in `local/literature/`), big
-  raw files, anything else that stays on your machine. To set it up: *"Keep local/
-  out of git."*
+- **`local/`** is listed in `.gitignore` (section 8). Git never sees it, so it
+  never reaches GitHub: downloaded PDFs you may not redistribute, big raw files,
+  anything else that stays on your machine. To set it up: *"Keep local/ out of
+  git."*
 
 ## Ask for a structure, not a template
 
@@ -1386,10 +1378,10 @@ A plain-text file in the folder that the agent reads at every start: what the
 project is, where things go, and your rules. Your profile is about *you*; the
 project file is about *this folder*.
 
-**One file: `AGENTS.md`.** Codex and Claude Code both read it. One catch: if the
-folder also has a `CLAUDE.md`, Claude Code reads that instead, so keep just the one
-file. Both tools also read project files in the folders above where you start them,
-so start the agent in the project folder itself.
+**One file: `AGENTS.md`.** Codex and Claude both read it. One catch: if the folder
+also has a `CLAUDE.md`, Claude reads that instead, so keep just the one file. Both
+tools also read project files in the folders above the one you open, so open the
+project folder itself.
 
 **Getting one, and changing it.** You don't write it yourself; you ask:
 
@@ -1399,14 +1391,13 @@ Write an AGENTS.md for this folder: what the project is, where things go, and th
 
 Changes go the same way: *"Add to AGENTS.md: never edit anything in data/raw."*
 Then read what it wrote: the first draft describes the folder, but only you know
-the rules. (`/init` drafts one too. In Claude Code it writes a `CLAUDE.md`, so ask
-for `AGENTS.md` by name instead.)
+the rules.
 
 **What goes in:**
 
 - what this is, in one paragraph: the paper, the question, the data;
 - where things go: *raw data in data/raw, papers in literature/, scripts in code/,
-  the paper is LaTeX in paper/*;
+  the paper is in paper/*;
 - the rules: *never edit anything in data/raw; download papers into literature/,
   and give me the DOI when you can't; only cite references with a verified DOI*;
 - how to rerun everything, in one command.
@@ -1444,27 +1435,19 @@ without skills. Only bother for the ones you catch yourself repeating.
 Bring the real thing. Commit first (*"Set up git here and commit everything"*),
 then let it try.
 
-- A luck test, no data needed:
+- **A power check, no data needed:**
 
   ```{.default .prompt}
-  Simulate 1,000 firms with identical skill and pure-luck profits for 30 years. How many would a business book call great? How long a streak would rule out chance? Show the code and run it.
+  Simulate a 2 × 2 experiment: the treatment effect is d = 0.3 for one product and d = 0.1 for the other. How many participants per cell do I need for 80% power on the interaction, not just the simple effects? Show the code and run it.
   ```
 
-  Henderson, Raynor and Ahmed asked the same about real firms: *"How long must a
-  firm be great to rule out chance?"* (*Strategic Management Journal*, 2012).
-
+  Then ask what that means for the last study you ran.
 - A project folder: *"What's here? What's missing? What would you do first?"*
 - A dataset: *"Describe this data. What looks odd?"*
 - A draft: *"Where is the argument weakest?"*
 - A referee report you received: *"Draft a response plan, point by point."*
-- A course: *"Turn my lecture notes into exercises with solutions."*
-- A lecture animation, like the compound-interest one in the capability talk:
-
-  ```{.default .prompt}
-  Make a 15-second animated SVG that explains [compound interest] to first-year students. Three scenes, one caption each.
-  ```
-
-  It's one file that plays in any browser. Change a number or a caption and ask again.
+- A preregistration you're writing: *"What would a sceptical referee say I left
+  open? Where could I still fork?"*
 - Anything you've been putting off because it's tedious.
 
 **Before you leave: what will you try on Monday?** Pick one thing, and put it in
@@ -1485,62 +1468,90 @@ your calendar. And don't overthink it: just use it.
 
 Questions afterwards: jonas.moss@bi.no
 
-# Teaching, if you want it
+# Interviews
 
-Optional, and short. Many of you have taken BI's AI-for-teaching course, so this is
-only what the terminal adds to the chat: it works on the whole course folder at
-once, it makes files (a course page, slides, an exam with solutions), and next year
-it reruns.
+Eight interviews with founders who changed direction early, a codebook, and every
+quote checked. The transcripts are fictional and pseudonymised (F01 to F08), with
+an interview guide of six questions. The same steps work for consumer interviews
+or focus groups.
 
-## The exam factory
+::: {.floor}
+**The floor:** a codebook you argued with, and one theme whose quotes a script has
+checked word for word.
+:::
 
-Describe your course in five lines, out loud if you can (**Windows key + H**;
-Mac: **Fn** twice): who takes it, what they should be able to do, and what would
-convince you they can. Then:
+Your own transcripts work the same way, **if your data plan allows a model to read
+them**: what the agent reads is sent (section 7). Work on pseudonymised copies, in
+a folder of their own.
+
+## Get it, and a save point
+
+In a session in your `practice` folder:
 
 ```{.default .prompt}
-Write that up as course.md: a short description and five to eight learning outcomes. Keep my wording where it's specific; where I was vague, flag it instead of inventing precision.
+Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-12-marketing/props/pivot-interviews.zip into this folder and unzip it. Then go into pivot-interviews, set up git, and commit everything.
+```
+
+(Or copy `practice/pivot-interviews` from the course files.)
+
+## Is it really anonymous?
+
+```{.default .prompt}
+Read the transcripts. Is anything still identifying, even without the names? List it, with the file and line.
+```
+
+Pseudonymising by hand misses things: a first name in passing, a firm you can
+recognise from its description. Here, three things slipped through.
+
+## A codebook first
+
+```{.default .prompt}
+Read the interview guide and three transcripts. Propose a codebook: six to eight codes, each with a definition and an example. Don't code anything yet.
+```
+
+**Argue with it.** Merge two codes, split one, add the one you care about. Then
+*"Save it as coding/codebook.md and commit."*
+
+## Code all eight
+
+```{.default .prompt}
+Code all eight transcripts with the codebook. Save every coded excerpt in coding/excerpts.csv: founder, line number, code, and the exact quote.
 ```
 
 ```{.default .prompt}
-Draft 12 exam questions: four on the reading, four applying a theory to a new case, four asking for a judgement. Then a rubric for the best four.
+What are the three main themes? For each: which founders, and the two best quotes. Save it as themes.md.
 ```
+
+## Every quote, checked
 
 ```{.default .prompt}
-Which learning outcome can't be assessed as it's written?
+Check every quote in themes.md and excerpts.csv against the transcripts, word for word, with a script. List any that don't match exactly.
 ```
 
-That last question is the point: a rubric built on a vague outcome says the same
-thing four times, and now you find out before the exam, not at script 40.
+A script that compares text can't be charmed by a confident paraphrase. This is
+the qualitative version of "rerun the code": cheap, mechanical, and it lets you
+trust the rest.
 
-**No course at hand?** Use a fictional one, a bachelor course in organisational
-behaviour with a full session plan and reading list:
+## Then push
+
+- *"Which founder doesn't fit the themes? What does that do to theme 1?"*
+- *"Does anyone contradict themselves?"*
+- *"Did they plan the change, or does it only look planned afterwards?"*
+- *"What would a sceptical quantitative reviewer say about theme 2?"*
+
+Done early?
 
 ```{.default .prompt}
-Download https://github.com/JonasMoss/vibing/raw/main/courses/2026-10-strategy/props/ORG3402-organisational-behaviour.md into this folder. This is my course.
+Make a table: founder by code, with counts. Which codes always come together?
 ```
 
-(Or copy `practice/teaching/ORG3402-organisational-behaviour.md` from the course
-files.)
-
-## A course page
-
-```{.default .prompt}
-Make a simple course web page from my notes: a schedule, the readings, and one page per session. Open it in my browser.
-```
-
-Then, if you like, *"Publish it with GitHub Pages"*: free, and this course's page is
-one (section 2, and section 15 for GitHub).
-
-## An animation
-
-```{.default .prompt}
-Make a 15-second animated SVG that explains [first-mover advantage] to first-year students. Three scenes, one caption each.
-```
+**Who does what.** The agent reads eight interviews in a minute, proposes codes,
+finds every instance and checks every quote. You decide what a code means, judge
+the themes, and own the interpretation and the ethics.
 
 # GitHub, if you want it
 
-**git** is the save points on your laptop (section 2). **GitHub** is a copy of
+**git** is the save points on your laptop (section 8). **GitHub** is a copy of
 that folder, with all its save points, in the cloud. It survives a dead laptop,
 lets a co-author work on the same folder, and records every change with a date and
 a name. OneDrive keeps files in sync; GitHub keeps every version.
@@ -1609,45 +1620,11 @@ Check out the pull request and test it. Does everything still run? Do any number
 Then *"Comment on the pull request: [your question]"*, or *"Merge it, then pull
 the latest changes."*
 
-## Exercise: in pairs
-
-Both of you need a GitHub account and the GitHub tool (see "Set up, once"). Any
-folder works; the practice folder from section 4 already has its history.
-
-1. **A:**
-
-   ```{.default .prompt}
-   Put this folder on GitHub as a private repository called [name], and add [B's GitHub username] as a collaborator.
-   ```
-
-2. **B:**
-
-   ```{.default .prompt}
-   Accept the GitHub invitation from [A's username], and download [A's username]/[name] into this folder.
-   ```
-
-   (The invitation also arrives by email, if the agent can't find it.)
-
-3. **B:**
-
-   ```{.default .prompt}
-   Make a new branch, [your change], commit it, push it, and open a pull request that explains what you changed and why.
-   ```
-
-4. **A:** *"Any open pull requests? Summarise them."* Then comment, or merge.
-5. Swap roles.
-
 ## Keep an eye on it
 
 - **GitHub tells you.** Click **Watch** on the repository's page, and you get an
   email (or a push notification in the GitHub mobile app) for every new pull
   request.
-- **Claude Code, while it's open,** can check on a timer:
-
-  ```{.default .prompt}
-  /loop 10m check for new pull requests on this repository, and summarise any new ones.
-  ```
-
 - **A reviewer on GitHub itself.** Connect the Claude or Codex app to the
   repository once. Then comment `@claude` or `@codex review` on a pull request,
   and it posts a review there.
@@ -1658,7 +1635,8 @@ folder works; the practice folder from section 4 already has its history.
 - **Public** only for what you'd publish anyway: a replication package, a course
   page.
 - **History is forever.** A file you delete later is still in the history, so
-  never commit passwords, student data or confidential data in the first place.
+  never commit passwords, respondents' data or confidential data in the first
+  place.
 - **Research data:** check the data agreement before it goes to any cloud service.
 
 # Connectors: email, calendar, files
@@ -1669,8 +1647,8 @@ calendar or files, the same way it uses your folder. Each plug is called a
 
 **Switch one on (Claude).** Go to `claude.ai/customize/connectors`, pick **Gmail**,
 **Google Calendar** or **Google Drive**, click **Connect**, and approve with your
-Google account. Start a new Claude Code session and type `/mcp`: it's in the list.
-Codex supports MCP too; ask it how to connect yours.
+Google account. Start a new session and type `/mcp`: it's in the list. Codex
+supports MCP too; ask it how to connect yours.
 
 **Email:**
 

@@ -105,7 +105,7 @@ In your `practice` folder, with the agent running:
 2. *"Make a file notes.md with one line about my research. Commit it."*
 3. *"Add a second line."* Then: *"What changed since the last commit?"*
 
-[Three minutes. Prompts with copy buttons: handout, section 2.]{.small}
+[Three minutes. Prompts with copy buttons: handout, section 8.]{.small}
 
 ## Save points on a line {#timeline}
 
@@ -153,7 +153,7 @@ back to main. Where did the line go?"*
 
 A made-up study of founders: interviews, a survey, papers, a draft.
 
-1. **Get it:** the download prompt is in the handout, section 2.
+1. **Get it:** the download prompt is in the handout, section 8.
 2. *"Go into founders-study. Set up git, but don't commit yet. Tidy the folders,
    and show me the plan first."*
 3. *"Write a .gitignore. Explain each line in plain words."*

@@ -2,8 +2,7 @@
 
 **Status: in preparation.** Copied forward from Strategy on 24 October (Teaching
 dropped: this afternoon is research only). The course page is up as a work in
-progress; the handout and teacher notes are still Strategy's, apart from their
-titles.
+progress.
 
 ## Changes from Strategy (tentative plan)
 
@@ -62,8 +61,16 @@ Build list, from the plan:
   *Auto*); "Help → Check for updates"; the agent installing Git for Windows in
   the user folder; whether Codex now lives in the ChatGPT app ("open a
   folder"), and what it's called there.
-- [ ] **Marketing examples** instead of strategy ones (`knows`, `more`, `own`).
-- [ ] **Handout and teacher notes** rewritten for one afternoon, with a run sheet.
+- [x] **Handout and teacher notes** (24 October). The handout: seven sections
+  for the afternoon (the app, the cleanup, your paper, take it apart, sycophancy
+  with our numbers, the blind panel, what it can touch) and ten for any time;
+  prompts adapted to the app (new sessions instead of `/clear` where it
+  matters); every download link points at this course's `props/`; the
+  terminal install kept as a fallback. The teacher notes: the shape, before the
+  day, the run sheet, a card per module, and the questions you'll get. Untested
+  prompts are marked as such in the cards.
+- [ ] **Still Strategy's inside:** the `knows` deck opens with strategy's field
+  cards; `more`, `own` and `power` have strategy examples here and there.
 - [ ] **Reminder email** a week before: bring a paper in progress, as a PDF plus
   its source files.
 
