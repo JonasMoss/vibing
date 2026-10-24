@@ -1,7 +1,10 @@
 # AI in the terminal — Department of Strategy and Entrepreneurship
 
-**Status: ready, 22 October.** Copied forward from Finance on 20 October, reworked
-20–21 October; see the checklist below.
+**Status: held 22 and 23 October 2026, frozen.** Tagged `held/2026-10-strategy`.
+Change nothing here except `debrief.md`; fixes go forward into the next course.
+
+Copied forward from Finance on 20 October, reworked 20–21 October; see the
+checklist below.
 
 ## Facts
 

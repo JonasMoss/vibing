@@ -10,7 +10,7 @@ its own.
 | Course | When | Length | Status |
 |---|---|---|---|
 | [Finance](courses/2026-10-finance/) | Fri 16 Oct 2026, 09–16 | 1 day | held, frozen |
-| [Strategy & Entrepreneurship](courses/2026-10-strategy/) | Thu 22 Oct 12–16 + Fri 23 Oct 09–13 | 2 × 4 h | ready |
+| [Strategy & Entrepreneurship](courses/2026-10-strategy/) | Thu 22 Oct 12–16 + Fri 23 Oct 09–13 | 2 × 4 h | held, frozen |
 | [Marketing](courses/2026-12-marketing/) | Thu 3 Dec 2026, 12–16 | 4 h | not started |
 | [Economics](courses/2026-12-economics/) | Fri 4 Dec 2026 (to be confirmed) | not known | not started |
 | [All faculty, 2027](courses/2027-01-faculty/) | January 2027, dates TBD | probably 3 days | not started |
