@@ -1,0 +1,27 @@
+Qualtrics survey flow, "AI label study (KN/ON)", exported 26 Aug 2026
+
+Block: Consent
+Block: Product page
+    Randomizer (evenly present 1 of 4):
+        candle_AI       (description + badge "This description was written by AI")
+        candle_none     (description, no badge)
+        charger_AI      (description + badge "This description was written by AI")
+        charger_none    (description, no badge)
+Block: Manipulation check
+    manip_check   "Was the product description you just read written by AI?"
+                  Yes, by AI / No / Not sure
+Block: Purchase intention
+    pi_1  "How likely would you be to buy this product?"            1-7
+    pi_2  "How interested are you in this product?"                 1-7
+    pi_3  "Would you consider buying this product?"                 1-7
+Block: Authenticity
+    auth_1  "This product feels genuine."                           1-7
+    auth_2  "There is real care behind this product."               1-7
+    auth_3  "The description feels artificial."                     1-7
+    auth_4  "This product is true to what it claims to be."         1-7
+Block: Willingness to pay
+    wtp_raw  "What is the most you would pay for this product, in US dollars?"  (text)
+Block: Attention check
+    attn_check  "To show that you are reading, please select 'Somewhat disagree'."  1-7 (3 = Somewhat disagree)
+Block: Demographics
+    age, gender

@@ -1,0 +1,7 @@
+FICTIONAL PRACTICE MATERIAL for "AI in the terminal" (BI Norwegian Business School, 2026).
+
+The study, the data, Kari and Ola Nordmann, and their 2024 EMAC paper are made
+up. The other references in the draft are real papers.
+
+Treat this folder as if it were your own paper in progress: ask the agent what's
+in it, take it apart, and send it to a referee panel.

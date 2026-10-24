@@ -1,0 +1,15 @@
+From: Ola Nordmann
+To: Kari Nordmann
+Date: 9 Sep 2026, 22:41
+Subject: Re: candle results
+
+Kari,
+
+Ran it again with the cleaning we talked about (speeders out, and the silly WTP
+answers). Much cleaner, the candle is now p = .018! Charger still nothing,
+which is exactly what we want. WTP is n.s., so I put it in a footnote.
+
+The top-up (the last 80 to get to 640) runs this week. I'll rerun when it's in,
+but the numbers in v7 are fine for EMAC.
+
+Ola

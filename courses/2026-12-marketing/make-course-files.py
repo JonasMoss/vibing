@@ -15,7 +15,7 @@ TOP = "ai-in-the-terminal"
 FILES = {
     "handout.html": HERE / "handout.html",
 }
-PROPS = ["founders-study", "decrap-me", "pivot-interviews", "messy-project", "references-practice"]
+PROPS = ["ai-label-paper", "decrap-me", "founders-study", "pivot-interviews", "messy-project", "references-practice"]
 README = """AI in the terminal: Claude Code and Codex. BI, Department of Marketing,
 3 December 2026.
 

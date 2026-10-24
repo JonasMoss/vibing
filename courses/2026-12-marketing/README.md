@@ -29,9 +29,14 @@ decided yet; the open questions are under each item.
 
 Build list, from the plan:
 
-- [ ] **The fallback paper** (`props/`): a fictional marketing paper in progress
-  (an online experiment), with data, a script, a Word draft and planted problems
-  for *Take it apart* and the panel to find. Everything else depends on it.
+- [x] **The fallback paper** (24 October): `props/ai-label-paper.zip`, built by
+  `scratch/examples/ai-label-paper/` (the key is `KEY.md` there). An "AI-written"
+  label on product descriptions, 2 × 2 online experiment, Word draft and PDF,
+  data, the authors' R script, a preregistration, the survey flow, a co-author's
+  email. Planted: moderation claimed from simple effects, exclusions beyond the
+  preregistration (with only the preregistered ones, p goes from .030 to .166),
+  numbers from an older export, an unreversed item, anonymisation slips, a
+  reference that doesn't exist.
 - [ ] **Leak test:** what a fresh session in a neutral folder knows about you.
   Terminal version here; the app's claude.ai preferences on a Windows laptop.
 - [ ] **Sycophancy, measured:** the fallback paper under four framings, ten runs
