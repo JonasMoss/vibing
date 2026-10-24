@@ -12,219 +12,99 @@ format:
     code-overflow: wrap
 ---
 
-# The shape of the two days
+# The shape of the afternoon
 
 **Two goals, as always:** they leave knowing these tools do far more than they
-thought, and believing they can do it themselves on Monday. Everything else is in
-service of that.
+thought, and believing they can do it themselves on Monday.
 
-- **Thursday 12–16: everyone running, safely. All of it is mandatory, in order.**
-  Setup, save points, what it can touch, something tedious. By 16:00 every laptop
-  runs an agent with git, and everyone has watched an undo. Not everyone comes
-  both days, and Siri's line is that day one is what matters: so Thursday must
-  stand on its own. It starts with the install, and ends with 50 minutes on their own tedious thing.
-- **Friday 09–13: research, all of it mandatory up to the words.** Their field (as
-  I imagine it), the profile, a paper taken apart, interviews coded, references
-  checked. Then *Words you've heard*, own work, and the short, optional teaching
-  block at the end. Birgitte asked for it to be short:
-  several of them have taken BI's AI-for-teaching course.
-- **Qualitative and quantitative, both.** Birgitte asked for it explicitly, and the
-  invitation promises "interviews, documents and literature to data, with examples
-  from both traditions". Every research block has a qualitative route: interview
-  papers in `paper`, the `interviews` block for everyone, quotes checked word for
-  word. And the invitation says qualitative people are "especially welcome to share
-  what works": ask them, out loud.
-- **No research menu this time.** In Finance, "you choose" fell flat: nobody had an
-  opinion, because you can't choose between workflows you haven't seen (debrief,
-  note 6). So I decide the research blocks, and the room chooses only among *words
-  they've heard*, which needs nothing but curiosity. Referee panel, Leave a trail
-  and Notes and structure are in the handout for any time.
-
-**Where things are.** One deck per module in `decks/`. Open **`decks/menu.html`**
-first: every card opens a module's deck, and **Menu** in each deck's footer comes
-back. Inside a deck, press **M** for the slide list and **Esc** for the overview.
-`handout.html` has every prompt with a copy button, section-numbered to match the
-slides.
+- **One afternoon, one paper.** After setup, the cleanup and a short capability
+  talk, everything runs on one paper: theirs, or `ai-label-paper` from the course
+  files. At Strategy, people sat idle and didn't see the point of the exercises
+  (debrief, note 2). On their own paper, every exercise has an obvious point, and
+  there is always a next thing to do.
+- **The app, not the terminal.** Strategy struggled with the terminal and it
+  coloured the rest (debrief, note 1). The Claude app's Code tab is the same agent
+  with a window around it; ChatGPT users get Codex in the ChatGPT app.
+- **Start a job, talk while it runs, then collect.** *Take it apart* runs while
+  you give the sycophancy talk; the three referees run while you give *What it
+  can touch*. The talks cost no hands-on time, and nobody waits for an agent
+  (debrief, note 3).
+- **The referee panel is the centrepiece** (the most engaged block at Strategy),
+  now blind, and with sycophancy said out loud (debrief, note 5).
+- **Research only.** Francesco: "4 hours methodology only". No teaching block.
+  References and DOI checks are in the handout, not the main line (debrief, note 4).
+- **No parking lot** (debrief, note 6). Answer at the laptop, or at the very next
+  break, the same day.
 
 | Deck | What | Minutes |
 |---|---|---|
-| `menu` | Title, the menu, "one folder", the course files | 5 |
-| `setup` | Install, log in, git (required), which model and limits, five keys, first contact. **First thing on Thursday** | 45 |
-| `power` | Capability talk: two kinds of contest (algorithm vs heuristic, for the question Finance asked), programming, maths benchmarks, a released model on open problems, Navier–Stokes, the 6 October results, "the biggest day in history?", Duminil-Copin; ends on a teaching slide (an animation written as code) | ~10 |
-| `how` | What an LLM is (training: pre-training, feedback, RL; use: thinking), prompt engineering (RIP), what an agent is, usage limits | 6 |
-| `git` | Git: save points. What git is, where it comes from (timeline, two charts), for the agent, vs OneDrive, .gitignore, the cloud, five words, ask about the rest, GitHub and Pages. Four exercises | 30–35 |
-| `access` | What it can touch: how far each tool reaches, what leaves the laptop, the dial, auto mode, what we tried, why lots of access, three ways to say no, training switches, personal data. Three exercises | 20–25 |
-| `cleanup` | Do something tedious: the WISEflow export, with a git save point and an undo | 25 |
-| `knows` | Your field as I imagine it, tell me what I got wrong, context, who is asking, the Berger demo, does it matter in your field, how you work, your profile | 25 |
-| `paper` | Take a paper apart | 45 |
-| `interviews` | Interviews: a codebook, coded transcripts, every quote checked | 35 |
-| `refs` | References: search (exercise), papers in the folder, DOI check, claim check. Friday: the 30-minute version | 30 (40–60 for all) |
-| `words` | Words you've heard: nine tiles, the room picks three or four. Skills, subagents, plan mode, context and /compact, worktrees, agents in the cloud; connectors, the project file and GitHub open their own decks | 30 |
-| `review` | Referee panel, any time | ~40 |
-| `trail` | Organise a folder, the rerun test, what the rerun found | ~50 |
-| `notes` | Four questions, structure, notes, project file, skills | 20–30 |
-| `own` | Open lab and close | 30+ |
-| `teaching` | Optional, end of Friday: course material from plain text | 20–25 |
-| `agents` | If asked: the project file, one `AGENTS.md` for both tools, asking for changes | 10 |
-| `github` | If asked: git vs GitHub, setup, co-authors, public or private | 10 |
-| `mcp` | If asked: connectors (MCP), switching one on, one example each for email, calendar, Drive | 5 |
-| `more` | Backup: security, benchmarks, Eco, Concord, prompting; the long capability talk | as needed |
+| `menu` | Title, the menu, the course files | 5 |
+| `setup` | The app, sign in, a folder, git by asking, the row under the prompt box, voice | 25 |
+| `power` | Capability talk | ~10 |
+| `cleanup` | Do something tedious: the WISEflow export, a save point, an undo | 25 |
+| `yourpaper` | Which paper, training off, open it, a save point | 15 |
+| `paper` | Take it apart: a mode for working alone, start it, leave it; then push | 5 + 20 |
+| `sycophancy` | It wants to please you: three forms, why, the evidence, our measurement | 15 |
+| `review` | Blind referee panel: the package, the brief, three referees, the editor, the comparison | 20 + 25 |
+| `access` | What it can touch, while the referees run | 20 |
+| `own`, `refs`, `git`, `words`, `more`, … | Any time; the handout has them all | |
 
-# Before Thursday
+# Before the day
 
-1. **Room.** Not booked as of 5 October (A2 nearly full; Line said C2 had space).
-   Confirm with Line, and put the room on the course page. Check that power
-   reaches every seat; bring extension cords.
-2. **Brief Ludvik and Leonardo** (the page below). Send it Wednesday evening.
-   Before Thursday they each have Claude Code or Codex running on their own laptop,
-   have done the git and access exercises once (handout sections 2 and 3), and
-   Ludvik has a GitHub account with `gh` logged in, for the pull-request demo.
-3. **Bring:** sticky notes in two colours (yellow and pink, two per person), a
-   flipchart or whiteboard and pens for the parking lot, extension cords, and the
+1. **Room:** A2 Blue 9 (Christine's invitation). Power at every seat; bring
+   extension cords.
+2. **Reminder email, a week before** (via Christine): *bring a paper in progress,
+   as close to submission as you have: a PDF of the draft, plus the Word or LaTeX
+   file and the data and code if you can share them. No paper? We have one.*
+   And: install the Claude or ChatGPT app beforehand if you can.
+3. **Test on a BI-managed Windows laptop:** the list in the README ("To test on a
+   Windows laptop"). Above all: does the Claude app install without admin rights,
+   and can the agent install git in the user folder?
+4. **Pre-run on `ai-label-paper`:** one *Take it apart* and one blind panel, and
+   keep the outputs as backups for the projector. The key to what's planted:
+   `scratch/examples/ai-label-paper/KEY.md`.
+5. **Bring:** sticky notes in two colours (two per person), extension cords, the
    course zip on a USB stick.
-4. **Course files.** `course-files.zip` (the handout and the practice folders,
-   unpacked) is what people download from **vibing.jonasmoss.com** → Strategy and
-   Entrepreneurship (on the menu deck's "Get the course files" slide). After any
-   change to the handout or a prop: re-render, then `python3 make-course-files.py`,
-   commit, push.
-5. **Test on a BI-managed Windows laptop**, on campus wifi: install, log in, one
-   prompt, one PDF read, and **git without admin rights** (the portable route).
-   Also check that `/usage` (Claude Code) and `/status` (Codex) still show the plan
-   limits in this week's versions. Dagfinn's Codex install stalled in August until
-   he picked the restricted (unelevated) mode.
-   - **Tested 14 October on a BI PC:** the Claude Code install needed no admin
-     rights, but asked for `.local\bin` to be added to PATH by hand. Fixed: the
-     Claude install is now two lines, the second adds it to the user PATH.
-   - **Not tested on a BI PC:** right-click → **Open in Terminal**, `explorer .`,
-     and whether **Documents** sits in OneDrive. If it does, keep practice folders
-     in the home folder (where `mkdir practice` puts them): git and OneDrive
-     syncing don't mix well.
-6. **Demo papers.**
-   - "Take a paper apart": your own pick, or one the room names on Friday morning.
-   - Referee panel: Denrell and Liu (2012), "Top performers are not the most
-     impressive when extreme performance indicates unreliability", *PNAS* 109(24),
-     doi:10.1073/pnas.1116048109. Six pages, on the luck theme from the field
-     slide. **Getting it live:** PNAS refuses scripted downloads (403, checked 21
-     October), and PubMed Central's PDF sits behind a browser check, but its
-     article page has the full text: *"Save the full text of
-     https://pmc.ncbi.nlm.nih.gov/articles/PMC3386112/ into this folder."* Backup:
-     your local copy, `scratch/links/strategy-canon/pdfs/denrell-liu-2012.pdf`
-     (gitignored).
-   - Luck-test card: no paper needed (see "Your own work" below).
-7. **The Foldnes example.** Make only the airtight claim: *the paper they cite does
-   not exist; the DOI resolves to a 2022 editorial acknowledgement.* Details are in
-   `scratch/examples/references/README.md`.
-8. **Pre-run the backups** on Claude: the Berger demo (one-line profile), plus one
-   referee report from a fresh session.
-9. **Leave a trail** overlaps with the cleanup: both organise a messy folder with a
-   git save point. If it's picked, lean on the rerun test, not the tidying.
-
-# For Ludvik and Leonardo
-
-Thank you for helping. In Finance, two things went wrong that you can fix: **one
-person never got the agent running and sat idle for four hours**, and **the room
-was derailed about 15 times** by questions that mattered to one laptop. Your jobs
-are built around those two.
-
-**Ludvik: nobody is left without a working agent.**
-
-- **Thursday 11:00–12:00: install drop-in** in the room. Anyone can come early.
-- **During setup (12:05–12:50), first thing:** roam, Windows first. Common trouble: the "x86"
-  PowerShell; not closing and reopening PowerShell after the install; Command
-  Prompt instead of PowerShell; Codex's admin or sandbox prompt (choose
-  unelevated); git needing admin rights (ask the agent to install portable Git
-  into the user folder).
-- **At 12:45, the laptop check:** walk every row. Every laptop shows an agent that
-  answers, and `git --version` that answers. Write down who isn't there yet.
-- **Friday 08:30–09:00: second drop-in**, for Thursday's stragglers and anyone
-  who only comes on Friday. Then take Friday-only people through handout sections
-  1–3 at the side of the room, while the rest work.
-
-**Leonardo: the room stays on track.**
-
-- **One-laptop questions go to you, not the front.** "Why does mine say X?" gets
-  answered at the laptop. If it's interesting, tell Jonas at the next break.
-- **The parking lot:** a flipchart. Any question that would take the room off
-  course goes on it, with the asker's name. Jonas answers two or three before
-  each break, and the rest at the end of Friday. Write down the field examples
-  people give on Friday morning, too: they get used in the paper block.
-- **Watch the fast ones.** Done early? Point them at the "Done early?" task on the
-  exercise slide, then the "Any time" column of the menu. Fast people with nothing
-  to do are where derailments come from.
-
-**Both of you:**
-
-- **Sticky notes:** everyone gets a yellow and a pink one. Yellow on the lid: done,
-  or fine. Pink: stuck. A pink note gets a visit within two minutes, from whoever is
-  free.
-- **Fifteen minutes stuck means a fallback, never more waiting:**
-  1. pair with a neighbour and work on their laptop for this exercise;
-  2. or use claude.ai or chatgpt.com in the browser for now (the profile and paper
-     exercises work there, minus the files);
-  3. and keep fixing the install during the next talk, not the next exercise.
-- **Let them type their own prompts.** Typing install commands for them is fine.
-- **Nobody is idle for long.** Every exercise, sweep once for anyone not typing
-  and ask what they're trying.
-- **The script for Thursday** is the handout, sections 1–4. Friday is sections
-  5–9.
+6. **Course files:** `course-files.zip` (the handout and the practice folders,
+   including `ai-label-paper`). After any change to the handout or a prop:
+   re-render, `python3 make-course-files.py`, commit, push.
 
 # Derailments
 
-About 15 in Finance, some substantial. The rule: **the room's time is for the
-room.**
+The rule: **the room's time is for the room.**
 
-- **One-laptop questions** go to a TA at the laptop.
-- **Good questions at the wrong time** go on the parking lot, answered before the
-  next break.
-- **Privacy and access** have their own deck now (`access`), straight after git.
-  Most of Finance's worried questions are answered there; point back to it.
-- **The big debates** ("is this cheating?", "will it replace us?") go on the
-  parking lot, for the end of Friday.
-- **Level differences:** never wait for the slowest; never let the fastest set the
-  pace. Every exercise has a "Done early?" task, and the "Any time" column is the
-  overflow.
-- **Quick answers** are ready: the two FAQ slides in `git`, the FAQ slide in
-  `access`, and `more` for capability questions.
+- **One-laptop questions** are answered at the laptop.
+- **Good questions at the wrong time:** one sentence now, or "at the break", and
+  then really at the break. (At Strategy, parked questions were never answered.)
+- **Privacy and access:** the privacy slide comes before anyone opens their paper,
+  and `access` runs while the referees work.
+- **Level differences:** fast people get the next step on their own paper. There
+  is always one.
 
-# Run sheet: Thursday 12:00–16:00
+# Run sheet: Thursday 3 December, 12:00–16:00
 
 | Time | Block | Minutes | Notes |
 |---|---|---|---|
-| 11:00 | Install drop-in | 60 | Ludvik and Leonardo, in the room. |
-| 12:00 | Welcome, menu, "one folder" | 5 | Show the menu: this is the whole range. Hand out the sticky notes; say what they're for. |
-| 12:05 | **Get it running** | 45 | `setup`, first thing: install, log in, **git for everyone**, five keys, first contact. 12:45: Ludvik's laptop check. |
-| 12:50 | Capability talk | ~10 | `power`. Stragglers keep installing with Ludvik while you talk: the talk is their buffer. Ends on the animated teaching slide. |
-| 13:00 | How it works | 5 | `how`. Don't elaborate. |
-| 13:05 | **Git: save points** | 35 | `git`. Four exercises, interspersed. |
-| 13:40 | Break | 10 | Stragglers with Ludvik. Two parking-lot answers first. |
-| 13:50 | **What it can touch** | 25 | `access`. Three exercises. |
-| 14:15 | **Do something tedious** | 25 | `cleanup`. Names only; ends on "You decide what it reads". |
-| 14:40 | Break | 10 | Parking lot. |
-| 14:50 | **Your own tedious thing** | 50 | The last slide of `cleanup`, handout section 4. A copy of a real folder, commit first, then let it try. Slower people finish the cleanup. TAs sweep. |
-| 15:40 | Tomorrow | 20 | Three people show what they did. Parking lot. "Tomorrow: bring a paper you know well, and transcripts if you have any (pseudonymised)." |
+| 11:30 | Install drop-in | 30 | Anyone can come early. |
+| 12:00 | Welcome, menu | 5 | "One afternoon, one paper." Sticky notes: yellow fine, pink stuck. |
+| 12:05 | **Get it running** | 25 | `setup`. At 12:25, walk the rows: an app that answers, and git. |
+| 12:30 | Capability talk | 10 | `power`. Stragglers keep installing. |
+| 12:40 | **Do something tedious** | 25 | `cleanup`: a save point, the cleanup, an undo. |
+| 13:05 | **Your paper** | 15 | `yourpaper`: training off, open it, "what is this?", a save point. |
+| 13:20 | **Start: Take it apart** | 5 | `paper`: the mode, the prompt, leave it. |
+| 13:25 | Talk: **It wants to please you** | 15 | `sycophancy`, while it runs. |
+| 13:40 | Break | 10 | |
+| 13:50 | **Back to Take it apart** | 20 | Read `take-apart.md`, push, round-up. |
+| 14:10 | **Blind panel: package and brief** | 20 | `review` 1–2. Check the PDF properties. |
+| 14:30 | **Start three referees** · talk: **What it can touch** | 20 | `review` 3, then `access` while they run. |
+| 14:50 | Break | 10 | |
+| 15:00 | **The editor, the comparison** | 25 | `review` 4–6. "Did any referee know who wrote it?" |
+| 15:25 | **Keep it** | 20 | The skill; own work; the handout for the rest. |
+| 15:45 | Before you go | 15 | "What will you try on Monday?" Three answers aloud. |
 
-**When behind:** cut talk, never hands-on time. Setup will overrun; the 50 minutes
-at 14:50 are the buffer, not a luxury. Don't cut the git exercises or the undo.
-
-# Run sheet: Friday 09:00–13:00
-
-| Time | Block | Minutes | Notes |
-|---|---|---|---|
-| 08:30 | Install drop-in | 30 | Ludvik: Thursday's stragglers, and anyone new. |
-| 09:00 | Welcome back | 5 | Parking-lot answers from Thursday. |
-| 09:05 | **What it knows about you** | 25 | `knows`. The field slides first: ask, and let Leonardo write their examples down. |
-| 09:30 | **Take a paper apart** | 45 | `paper`. Demo 10, hands-on 25, round-up 10. Interview papers welcome. |
-| 10:15 | Break | 10 | |
-| 10:25 | **Interviews** | 35 | `interviews`. Codebook, coding, every quote checked. |
-| 11:00 | **References** | 30 | `refs`. The "right now" slide, the search exercise, then the claim check on their paper folder. |
-| 11:30 | Break | 5 | |
-| 11:35 | **Words you've heard** | 30 | `words`. Hands up per tile; do the top three or four, five minutes each. |
-| 12:05 | **Your own work** | 20 | `own`. Open lab. Walk the room. |
-| 12:25 | Teaching (optional) | 20 | `teaching`. The rest carry on with their own work. |
-| 12:45 | Before you go | 15 | "What will you try on Monday?" Three answers aloud. The rest of the parking lot. |
-
-**When behind on Friday:** shorten the paper round-up and the words (two words is
-fine), never the interviews. Own work can shrink to nothing; the handout has it.
+**When behind:** cut talk, never hands-on time. `power` can shrink to five
+minutes; `access` can shrink to its stance slide. Never cut the save point before
+*Take it apart*.
 
 # Module cards
 
