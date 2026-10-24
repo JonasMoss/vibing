@@ -1,0 +1,24 @@
+<svg class="diagram" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Your repository is a line of commits. Your co-author branches off and makes two commits. The branch becomes a pull request, with comments, review and revisions. Only when you merge does the change join your repository.">
+<defs><marker id="pr-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker><marker id="pr-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker></defs>
+<text x="40" y="58" font-size="24" font-weight="800" letter-spacing="2" fill="#5c6763">YOUR REPOSITORY</text>
+<line x1="40" y1="100" x2="1160" y2="100" stroke="#17201f" stroke-width="5"/>
+<circle cx="90" cy="100" r="20" fill="#17201f"/>
+<circle cx="220" cy="100" r="20" fill="#17201f"/>
+<circle cx="1120" cy="100" r="20" fill="#17201f"/>
+<g class="fragment" data-fragment-index="1">
+<path d="M 220 100 C 260 220, 280 230, 320 230 L 470 230" fill="none" stroke="#f0674d" stroke-width="5"/>
+<circle cx="340" cy="230" r="18" fill="#f0674d"/><circle cx="440" cy="230" r="18" fill="#f0674d"/>
+<text x="390" y="300" text-anchor="middle" font-size="22" font-weight="700" fill="#f0674d">your co-author's branch</text>
+</g>
+<g class="fragment" data-fragment-index="2">
+<line x1="470" y1="230" x2="532" y2="230" stroke="#f0674d" stroke-width="5" marker-end="url(#pr-c)"/>
+<rect x="540" y="175" width="330" height="110" rx="16" fill="#fffdf8" stroke="#f0674d" stroke-width="4"/>
+<text x="705" y="222" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Pull request</text>
+<text x="705" y="257" text-anchor="middle" font-size="21" fill="#5c6763">comments, review, revisions</text>
+</g>
+<g class="fragment" data-fragment-index="3">
+<path d="M 870 230 C 930 230, 960 180, 975 128" fill="none" stroke="#17201f" stroke-width="5" marker-end="url(#pr-a)"/>
+<circle cx="990" cy="100" r="24" fill="#f0674d" stroke="#17201f" stroke-width="4"/>
+<text x="990" y="52" text-anchor="middle" font-size="26" font-weight="800" fill="#17201f">you merge</text>
+</g>
+</svg>

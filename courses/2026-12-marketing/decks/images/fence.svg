@@ -1,0 +1,34 @@
+<svg class="diagram" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A fence around interviews/: Claude's Read, cat, cp and python were all stopped by the rule. grep -r over the whole folder got through a gap and printed the transcript.">
+<defs><marker id="f-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="f-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="600" y="40" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="80" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="120" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="160" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="200" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="240" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="320" width="16" height="30" rx="3" fill="#17201f"/>
+<rect x="600" y="360" width="16" height="30" rx="3" fill="#17201f"/>
+<line x1="608" y1="34" x2="608" y2="270" stroke="#17201f" stroke-width="3"/>
+<line x1="608" y1="306" x2="608" y2="380" stroke="#17201f" stroke-width="3"/>
+<rect x="760" y="120" width="380" height="170" rx="18" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="950" y="180" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">interviews/</text>
+<text x="950" y="216" text-anchor="middle" font-size="22" fill="#5c6763">denied by a rule</text>
+<path d="M890,236 h17 l7,7 v25 h-24 z" fill="#fffdf8" stroke="#17201f" stroke-width="2"/><path d="M907,236 v7 h7" fill="none" stroke="#17201f" stroke-width="2"/>
+<path d="M926,236 h17 l7,7 v25 h-24 z" fill="#fffdf8" stroke="#17201f" stroke-width="2"/><path d="M943,236 v7 h7" fill="none" stroke="#17201f" stroke-width="2"/>
+<path d="M962,236 h17 l7,7 v25 h-24 z" fill="#fffdf8" stroke="#17201f" stroke-width="2"/><path d="M979,236 v7 h7" fill="none" stroke="#17201f" stroke-width="2"/>
+<line x1="300" y1="70" x2="586" y2="70" stroke="#17201f" stroke-width="4" marker-end="url(#f-i)"/>
+<text x="280" y="78" text-anchor="end" font-size="25" font-family="Cascadia Code, Consolas, monospace" fill="#17201f">Claude’s Read</text>
+<text x="560" y="60" text-anchor="end" font-size="22" font-weight="800" fill="#5c6763">no</text>
+<line x1="300" y1="122" x2="586" y2="122" stroke="#17201f" stroke-width="4" marker-end="url(#f-i)"/>
+<text x="280" y="130" text-anchor="end" font-size="25" font-family="Cascadia Code, Consolas, monospace" fill="#17201f">cat</text>
+<text x="560" y="112" text-anchor="end" font-size="22" font-weight="800" fill="#5c6763">no</text>
+<line x1="300" y1="174" x2="586" y2="174" stroke="#17201f" stroke-width="4" marker-end="url(#f-i)"/>
+<text x="280" y="182" text-anchor="end" font-size="25" font-family="Cascadia Code, Consolas, monospace" fill="#17201f">cp</text>
+<text x="560" y="164" text-anchor="end" font-size="22" font-weight="800" fill="#5c6763">no</text>
+<line x1="300" y1="226" x2="586" y2="226" stroke="#17201f" stroke-width="4" marker-end="url(#f-i)"/>
+<text x="280" y="234" text-anchor="end" font-size="25" font-family="Cascadia Code, Consolas, monospace" fill="#17201f">python</text>
+<text x="560" y="216" text-anchor="end" font-size="22" font-weight="800" fill="#5c6763">no</text>
+<line x1="300" y1="288" x2="752" y2="288" stroke="#f0674d" stroke-width="5" marker-end="url(#f-c)"/>
+<text x="280" y="296" text-anchor="end" font-size="25" font-family="Cascadia Code, Consolas, monospace" font-weight="800" fill="#b8432d">grep -r .</text>
+<text x="450" y="272" text-anchor="middle" font-size="22" font-weight="800" fill="#b8432d">got through</text>
+</svg>

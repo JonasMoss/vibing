@@ -1,0 +1,129 @@
+---
+pagetitle: "Words you've heard"
+---
+
+# Words you've heard {#words-title background-color="#f0674d"}
+
+Pick the ones you've heard and never quite understood.
+
+## Which have you heard? {#words}
+
+```{=html}
+<div class="tiles">
+  <a href="#/skills"><b>Skills</b><span>a routine, written down once</span></a>
+  <a class="deck" href="mcp.html"><b>Connectors (MCP)</b><span>email, calendar, Drive</span></a>
+  <a href="#/subagents"><b>Subagents</b><span>agents in parallel</span></a>
+  <a class="deck" href="agents.html"><b>The project file</b><span>AGENTS.md, CLAUDE.md</span></a>
+  <a href="#/plan"><b>Plan mode</b><span>think first, then act</span></a>
+  <a href="#/compact"><b>Context and /compact</b><span>why it forgets</span></a>
+  <a href="#/worktrees"><b>Worktrees</b><span>two agents, one project</span></a>
+  <a class="deck" href="github.html"><b>GitHub, pull requests</b><span>a copy in the cloud, co-authors</span></a>
+  <a href="#/cloud"><b>Agents in the cloud</b><span>while your laptop is closed</span></a>
+</div>
+```
+
+[Hands up for each one. We do the top three or four, five minutes each. Coral
+tiles open a deck of their own.]{.small .muted}
+
+## Skills {#skills}
+
+```{=html}
+{{< include images/words-skills.svg >}}
+```
+
+[← All words](#/words){.back}
+
+## Try: a skill {#try-skills .your-turn background-color="#f1c84b"}
+
+In `pivot-interviews`, after the quote check:
+
+::: {.prompt}
+Turn the quote check we just did into a skill called check-quotes.
+:::
+
+Then: *"What skills do you have?"* And next time, in another folder: *"Check the
+quotes in this report."*
+
+[You never touch the file format. Most things work fine without skills.]{.small}
+
+## Subagents {#subagents}
+
+```{=html}
+{{< include images/words-subagents.svg >}}
+```
+
+[← All words](#/words){.back}
+
+## Try: subagents {#try-subagents .your-turn background-color="#f1c84b"}
+
+In `pivot-interviews`:
+
+::: {.prompt}
+Use subagents, one per transcript. Each returns three lines: what triggered the
+change, who pushed for it, and one quote. Then put them in one table.
+:::
+
+[Both tools can do this. Watch the helpers start and finish.]{.small}
+
+## Plan mode {#plan}
+
+::: {.diagram-sm}
+```{=html}
+{{< include images/words-plan.svg >}}
+```
+:::
+
+- **Claude Code:** Shift+Tab until the bottom line says *plan mode*.
+- **Codex:** has one too. Ask it: *"How do I switch to plan mode?"*
+
+[← All words](#/words){.back}
+
+## Context and /compact {#compact}
+
+::: {.diagram-sm}
+```{=html}
+{{< include images/words-compact.svg >}}
+```
+:::
+
+- **It compacts by itself** when full, and details can go. Long job? Notes in a file.
+- **How full is it?** Claude Code: `/context`. Codex: the bottom line.
+
+[← All words](#/words){.back}
+
+## Worktrees {#worktrees}
+
+::: {.diagram-sm}
+```{=html}
+{{< include images/words-worktrees.svg >}}
+```
+:::
+
+- `claude -w experiment` or `codex --worktree`
+- Or ask: *"Try this in a worktree; leave my folder as it is."*
+
+[← All words](#/words){.back}
+
+## Agents in the cloud {#cloud}
+
+::: {.diagram-sm}
+```{=html}
+{{< include images/words-cloud.svg >}}
+```
+:::
+
+- **The folder has to be on GitHub** first (the GitHub tile).
+- **It runs on their computers:** the same rules as Thursday's *What it can touch*.
+
+[← All words](#/words){.back}
+
+## Any other word? {#other}
+
+**Ask the tool.** Two sentences, for a professor:
+
+::: {.prompt}
+What is [a word you've heard]? Two sentences, for a professor. Then: would it
+help with my research?
+:::
+
+[The same move as Thursday: unsure what something is? Ask.]{.punch}

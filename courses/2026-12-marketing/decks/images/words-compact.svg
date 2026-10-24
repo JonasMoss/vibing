@@ -1,0 +1,27 @@
+<svg class="diagram" viewBox="0 0 1200 365" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The context window fills up during a long session with the conversation and the files read. Compact replaces the conversation with a short summary and frees room. Clear empties it.">
+<defs><marker id="compact-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="compact-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<text x="60" y="46" text-anchor="start" font-size="22" font-weight="800" fill="#17201f">A long session: the window is almost full</text>
+<rect x="60" y="60" width="110" height="64" fill="#e8e0d3" stroke="#17201f" stroke-width="2"/>
+<text x="115.0" y="100" text-anchor="middle" font-size="20" fill="#17201f">profile</text>
+<rect x="170" y="60" width="130" height="64" fill="#e8e0d3" stroke="#17201f" stroke-width="2"/>
+<text x="235.0" y="100" text-anchor="middle" font-size="20" fill="#17201f">project</text>
+<rect x="300" y="60" width="520" height="64" fill="#fbd9d1" stroke="#17201f" stroke-width="2"/>
+<text x="560.0" y="100" text-anchor="middle" font-size="20" fill="#17201f">the conversation so far</text>
+<rect x="820" y="60" width="250" height="64" fill="#fffdf8" stroke="#17201f" stroke-width="2"/>
+<text x="945.0" y="100" text-anchor="middle" font-size="20" fill="#17201f">files it read</text>
+<rect x="1070" y="60" width="70" height="64" fill="#f4f0e8" stroke="#17201f" stroke-width="2"/>
+<rect x="60" y="60" width="1080" height="64" rx="0" fill="none" stroke="#17201f" stroke-width="3"/>
+<text x="60" y="216" text-anchor="start" font-size="22" font-weight="800" fill="#17201f">After /compact</text>
+<rect x="60" y="230" width="110" height="64" fill="#e8e0d3" stroke="#17201f" stroke-width="2"/>
+<text x="115.0" y="270" text-anchor="middle" font-size="20" fill="#17201f">profile</text>
+<rect x="170" y="230" width="130" height="64" fill="#e8e0d3" stroke="#17201f" stroke-width="2"/>
+<text x="235.0" y="270" text-anchor="middle" font-size="20" fill="#17201f">project</text>
+<rect x="300" y="230" width="180" height="64" fill="#fbd9d1" stroke="#17201f" stroke-width="2"/>
+<text x="390.0" y="270" text-anchor="middle" font-size="20" fill="#17201f">a summary</text>
+<rect x="480" y="230" width="660" height="64" fill="#f4f0e8" stroke="#17201f" stroke-width="2"/>
+<text x="810.0" y="270" text-anchor="middle" font-size="20" fill="#17201f">room to work</text>
+<rect x="60" y="230" width="1080" height="64" rx="0" fill="none" stroke="#17201f" stroke-width="3"/>
+<line x1="600" y1="140" x2="600" y2="196" stroke="#f0674d" stroke-width="4" marker-end="url(#compact-c)"/>
+<text x="620" y="176" text-anchor="start" font-size="22" font-weight="800" fill="#b8432d">/compact</text>
+<text x="600" y="345" text-anchor="middle" font-size="22" fill="#5c6763">/compact keeps a summary and frees room. /clear empties it: a fresh start.</text>
+</svg>

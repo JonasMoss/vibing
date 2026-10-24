@@ -1,0 +1,12 @@
+<svg class="diagram" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The agent on your laptop connects through MCP, a standard plug, to your email, your calendar and your files.">
+<rect x="20" y="95" width="290" height="110" rx="16" fill="#fffdf8" stroke="#17201f" stroke-width="3"/><text x="165" y="145" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">The agent</text><text x="165" y="180" text-anchor="middle" font-size="21" fill="#5c6763">Claude Code or Codex</text>
+<line x1="310" y1="150" x2="380" y2="150" stroke="#17201f" stroke-width="5"/>
+<rect x="380" y="115" width="130" height="70" rx="14" fill="#f0674d" stroke="#17201f" stroke-width="3"/><text x="445" y="161" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">MCP</text>
+<path d="M 510 150 C 560 150, 570 60, 640 60" fill="none" stroke="#17201f" stroke-width="5"/>
+<line x1="510" y1="150" x2="640" y2="150" stroke="#17201f" stroke-width="5"/>
+<path d="M 510 150 C 560 150, 570 240, 640 240" fill="none" stroke="#17201f" stroke-width="5"/>
+<rect x="640" y="22" width="300" height="76" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/><text x="790" y="58" text-anchor="middle" font-size="27" font-weight="800" fill="#17201f">Your email</text><text x="790" y="86" text-anchor="middle" font-size="20" fill="#5c6763">Gmail</text>
+<rect x="640" y="112" width="300" height="76" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/><text x="790" y="148" text-anchor="middle" font-size="27" font-weight="800" fill="#17201f">Your calendar</text><text x="790" y="176" text-anchor="middle" font-size="20" fill="#5c6763">Google Calendar</text>
+<rect x="640" y="202" width="300" height="76" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/><text x="790" y="238" text-anchor="middle" font-size="27" font-weight="800" fill="#17201f">Your files</text><text x="790" y="266" text-anchor="middle" font-size="20" fill="#5c6763">Google Drive</text>
+<text x="1070" y="145" text-anchor="middle" font-size="23" font-weight="700" fill="#5c6763">and many</text><text x="1070" y="175" text-anchor="middle" font-size="23" font-weight="700" fill="#5c6763">more</text>
+</svg>

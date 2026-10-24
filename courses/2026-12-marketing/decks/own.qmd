@@ -1,0 +1,28 @@
+---
+pagetitle: "Your own work"
+---
+
+# Your own work {#own background-color="#f0674d"}
+
+Bring the real thing. Commit first, then let it try.
+
+## Some starting points
+
+```{=html}
+<div class="starters">
+  <div class="card lead"><b>A luck test</b><span>Simulate 1,000 firms with identical skill and pure-luck profits for 30 years. How many would a business book call great? How long a streak would rule out chance? Henderson, Raynor and Ahmed asked this in 2012.</span></div>
+  <div class="card"><b>A project folder</b><span>What's here? What's missing? What would you do first?</span></div>
+  <div class="card"><b>A draft</b><span>Where is the argument weakest?</span></div>
+  <div class="card"><b>A referee report you got</b><span>Draft a response plan, point by point.</span></div>
+  <div class="card"><b>A course</b><span>Turn my lecture notes into exercises with solutions. Or: animate [compound interest] for first-years, like the one in the capability talk.</span></div>
+  <div class="card"><b>The tedious thing</b><span>Whatever you've been putting off. It's probably a folder.</span></div>
+</div>
+```
+
+## Before you go
+
+- **What will you try on Monday?**
+- Everything is in the handout, including what we didn't get to.
+- Questions later: jonas.moss@bi.no
+
+> Don't overthink it: just use it.

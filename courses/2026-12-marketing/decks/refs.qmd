@@ -1,0 +1,122 @@
+---
+pagetitle: "References"
+---
+
+# References {#refs background-color="#f0674d"}
+
+Search, download, check. Four jobs, one prompt each.
+
+## Pick one
+
+```{=html}
+<div class="menu" style="grid-template-columns: 1fr 1fr;">
+  <div class="pick">
+    <a class="card" href="#/search"><b>Search</b><span>One specific question, or every paper since 1995</span></a>
+    <a class="card" href="#/download"><b>Papers in the folder</b><span>Download what it can, a DOI for the rest. One rule, once.</span></a>
+  </div>
+  <div class="pick">
+    <a class="card" href="#/doi"><b>DOI check</b><span>Does each DOI resolve to this exact paper?</span></a>
+    <a class="card" href="#/claims"><b>Claim check</b><span>Does the cited paper say what it's cited for?</span></a>
+  </div>
+</div>
+```
+
+## This is in the literature right now
+
+- An audit of 2.5 million biomedical papers found fabricated references in **1 in
+  277** papers in early 2026, up from 1 in 2,828 in 2023. (A *Lancet* letter; its
+  method has been questioned.)
+- In my own field: a 2026 paper in *Structural Equation Modeling* cites Foldnes &
+  Grønneberg (2024). The DOI resolves to a 2022 **"Editorial acknowledgement"**.
+  The paper reports simulation results for methods from a source that does not exist.
+
+> The models got better. The practice didn't.
+
+## Search: one specific question {#search}
+
+In fields I know well, questions like this keep turning up important papers I
+didn't know existed:
+
+::: {.prompt}
+What's similar to Hjort–Glad density estimation with a parametric start? Other kernel
+estimators with something that could count as a parametric start, also on domains
+other than the real line? Do any outperform it? Download the papers into literature/,
+and give me the DOI for any you can't get.
+:::
+
+[Hjort and Glad (1995) is a density estimator. Notice how specific the question is.]{.small .muted}
+
+*"Papers on density estimation"* gets you the textbook. A specific question gets you
+the paper you missed.
+
+## Exercise: ask yours
+
+1. Take the idea at the heart of your paper.
+2. Ask one specific question about it:
+
+::: {.prompt}
+What's similar to [your idea, in one exact sentence]? Has anyone built something
+like it? Does it beat [the usual approach]? Download the papers into literature/,
+and give me the DOI for any you can't get.
+:::
+
+3. Anything you didn't know? Tell your neighbour.
+4. For contrast: *"Papers on [your topic]?"* Which answer is better?
+
+## Deep: when you need everything
+
+A different request: you're **finalizing**, not exploring.
+
+::: {.prompt}
+I need every method since 1995 related to Hjort–Glad: working papers too, and other
+names for the same idea. A table: paper, what it does, how it relates. Take your time.
+:::
+
+- For the related-work section, the grant application, the referee response.
+- Slow, and it eats your usage limit. Start it, then get coffee.
+
+## Keep the papers in the folder {#download}
+
+Asking for that every time? Make it a rule in the project file, once:
+
+::: {.prompt}
+Add to the project file: papers go in literature/. Whenever we need one, download it
+there if you can get it. If you can't, give me the DOI so I can.
+:::
+
+- It reads the paper, not its memory of it. And never hunts for it twice.
+- Catching up? *"Do that for every paper in my reference list."*
+- Paywall, or SSRN (blocks agents)? Your browser, then *"Move it into literature/."*
+
+## DOI check {#doi}
+
+::: {.prompt}
+Check every entry in the reference list. Does the DOI resolve to this exact
+paper: same title, authors and year? Make a table: OK, wrong paper, no DOI, not found.
+:::
+
+- Then check three yourself: paste the DOI after `doi.org/`.
+- Practice file: a messy `.bib` with six planted traps (handout, section 8).
+
+## Claim check {#claims}
+
+The one nobody does: **does the cited paper say what it's cited for?**
+
+::: {.prompt}
+Take each citation in the introduction. Read the cited paper in literature/ and check
+whether it supports the sentence it is cited for. Quote the passage. Mark each:
+supports, partly, doesn't, not in the folder.
+:::
+
+- **Papers not in the folder yet?** *"Take three citations from the introduction,
+  download the cited papers into literature/, then check each one."*
+- Run it on your own draft before you submit.
+
+## Round-up
+
+- Anything wrong in your paper's reference list?
+- A citation that doesn't say what it's cited for?
+
+> A polished bibliography is not evidence of a correct bibliography.
+
+[Next: [words you've heard](words.html).]{.small}

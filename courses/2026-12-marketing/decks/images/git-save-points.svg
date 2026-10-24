@@ -1,0 +1,22 @@
+<svg class="diagram" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Three commits on a line: started the paper, coded twelve interviews, added Table 2. Then an unsaved change, deleted the data folder, with an arrow labelled revert going back to the last commit.">
+<defs><marker id="save-back" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<line x1="60" y1="120" x2="690" y2="120" stroke="#17201f" stroke-width="5"/>
+<line x1="690" y1="120" x2="938" y2="120" stroke="#17201f" stroke-width="4" stroke-dasharray="10 8"/>
+<circle cx="150" cy="120" r="22" fill="#17201f"/>
+<text x="150" y="52" text-anchor="middle" font-size="26" font-weight="700" fill="#17201f">Started</text>
+<text x="150" y="82" text-anchor="middle" font-size="26" font-weight="700" fill="#17201f">the paper</text>
+<text x="150" y="174" text-anchor="middle" font-size="22" fill="#5c6763">commit · Monday</text>
+<circle cx="420" cy="120" r="22" fill="#17201f"/>
+<text x="420" y="52" text-anchor="middle" font-size="26" font-weight="700" fill="#17201f">Coded</text>
+<text x="420" y="82" text-anchor="middle" font-size="26" font-weight="700" fill="#17201f">12 interviews</text>
+<text x="420" y="174" text-anchor="middle" font-size="22" fill="#5c6763">commit · Tuesday</text>
+<circle cx="690" cy="120" r="22" fill="#17201f"/>
+<text x="690" y="52" text-anchor="middle" font-size="26" font-weight="700" fill="#17201f">Added</text>
+<text x="690" y="82" text-anchor="middle" font-size="26" font-weight="700" fill="#17201f">Table 2</text>
+<text x="690" y="174" text-anchor="middle" font-size="22" fill="#5c6763">commit · 10:31 today</text>
+<circle cx="960" cy="120" r="22" fill="#fffdf8" stroke="#f0674d" stroke-width="4" stroke-dasharray="7 5"/>
+<text x="960" y="52" text-anchor="middle" font-size="26" font-weight="700" fill="#f0674d">Deleted the</text>
+<text x="960" y="82" text-anchor="middle" font-size="26" font-weight="700" fill="#f0674d">data folder</text>
+<text x="960" y="174" text-anchor="middle" font-size="22" fill="#f0674d">not committed</text>
+<g class="fragment" data-fragment-index="1"><path d="M 955 194 Q 825 290 700 196" fill="none" stroke="#f0674d" stroke-width="5" marker-end="url(#save-back)"/><text x="828" y="305" text-anchor="middle" font-size="28" font-weight="800" fill="#f0674d">revert</text></g>
+</svg>

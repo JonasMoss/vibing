@@ -1,0 +1,17 @@
+---
+pagetitle: "Your paper"
+---
+
+# Your paper {#yourpaper background-color="#f0674d"}
+
+The rest of the afternoon runs on one paper: yours, or ours.
+
+## Being written {#plan}
+
+- **Before you open it:** the training switch off; leave out data you can't share;
+  ask your co-authors. The draft alone carries most of the afternoon.
+- **No paper with you?** The course files have one: a fictional paper in progress,
+  with its data and a few problems.
+- **Open the folder in the app.** *"What is this paper? Where is everything?"*
+- **A save point** before anything changes.
+- **Then start a job and keep going:** *Take it apart* runs while we talk.

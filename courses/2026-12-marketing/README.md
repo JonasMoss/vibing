@@ -1,7 +1,9 @@
 # AI in the terminal — Department of Marketing
 
-**Status: planning (24 October).** Build by copying forward from Strategy, once
-the plan below is settled.
+**Status: in preparation.** Copied forward from Strategy on 24 October (Teaching
+dropped: this afternoon is research only). The course page is up as a work in
+progress; the handout and teacher notes are still Strategy's, apart from their
+titles.
 
 ## Changes from Strategy (tentative plan)
 
@@ -24,6 +26,25 @@ decided yet; the open questions are under each item.
   come back.
 - [ ] **Literature and DOI checks** move out of the main line.
 - [ ] **No parking lot.**
+
+Build list, from the plan:
+
+- [ ] **The fallback paper** (`props/`): a fictional marketing paper in progress
+  (an online experiment), with data, a script, a Word draft and planted problems
+  for *Take it apart* and the panel to find. Everything else depends on it.
+- [ ] **Leak test:** what a fresh session in a neutral folder knows about you.
+  Terminal version here; the app's claude.ai preferences on a Windows laptop.
+- [ ] **Sycophancy, measured:** the fallback paper under four framings, ten runs
+  each, on the small models (Haiku, a mini GPT) to save usage. Published
+  evidence collected and checked (`private/research/sycophancy-evidence.md`
+  until checked).
+- [ ] **New decks:** `yourpaper` and `sycophancy` (stubs now); `review` rebuilt
+  as the blind panel; `paper` as a background job on your own paper; `setup`
+  for the app.
+- [ ] **Marketing examples** instead of strategy ones (`knows`, `more`, `own`).
+- [ ] **Handout and teacher notes** rewritten for one afternoon, with a run sheet.
+- [ ] **Reminder email** a week before: bring a paper in progress, as a PDF plus
+  its source files.
 
 ## Facts
 

@@ -1,0 +1,18 @@
+<svg class="diagram" viewBox="0 0 1200 345" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Plan mode: the agent reads, asks and proposes a plan without changing anything. You approve or change the plan. Then it acts.">
+<defs><marker id="plan-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="plan-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="40" y="70" width="330" height="190" rx="14" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="205" y="122" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Plan mode</text>
+<text x="205" y="162" text-anchor="middle" font-size="22" fill="#17201f">reads, asks, proposes</text>
+<text x="205" y="196" text-anchor="middle" font-size="22" font-weight="800" fill="#b8432d">changes nothing</text>
+<line x1="375" y1="165" x2="445" y2="165" stroke="#17201f" stroke-width="4" marker-end="url(#plan-i)"/>
+<rect x="455" y="90" width="290" height="150" rx="14" fill="#fbd9d1" stroke="#f0674d" stroke-width="4"/>
+<text x="600" y="145" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">You</text>
+<text x="600" y="182" text-anchor="middle" font-size="22" fill="#17201f">approve the plan,</text>
+<text x="600" y="210" text-anchor="middle" font-size="22" fill="#17201f">or change it</text>
+<line x1="750" y1="165" x2="820" y2="165" stroke="#17201f" stroke-width="4" marker-end="url(#plan-i)"/>
+<rect x="830" y="70" width="330" height="190" rx="14" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="995" y="122" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Then it acts</text>
+<text x="995" y="162" text-anchor="middle" font-size="22" fill="#17201f">edits, runs, commits</text>
+<text x="995" y="196" text-anchor="middle" font-size="22" fill="#17201f">the plan you agreed</text>
+<text x="600" y="320" text-anchor="middle" font-size="22" fill="#5c6763">For big or risky jobs: read the plan before anything changes.</text>
+</svg>

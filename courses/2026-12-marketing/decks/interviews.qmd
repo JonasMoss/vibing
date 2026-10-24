@@ -1,0 +1,79 @@
+---
+pagetitle: "Interviews"
+---
+
+# Interviews {#interviews background-color="#f0674d"}
+
+Eight transcripts, a codebook, and every quote checked.
+
+## The folder {#folder}
+
+- **Eight interviews** with founders who changed direction early. Fictional, and
+  pseudonymised: F01 to F08.
+- **The interview guide:** six questions.
+- **Your own transcripts work the same way.** Only if your data plan allows it:
+  what it reads is sent (*What it can touch*, Thursday).
+
+## Is it really anonymous? {#try-anon .your-turn background-color="#f1c84b"}
+
+1. Get it: the download prompt is in the handout, section 7. Then *"Set up git
+   here and commit everything."*
+2. ***"Read the transcripts. Is anything still identifying, even without the
+   names? List it, with the file and line."***
+
+[Pseudonymising by hand misses things. Here, three things slipped through.]{.small}
+
+## A codebook first {#try-codebook .your-turn background-color="#f1c84b"}
+
+::: {.prompt}
+Read the interview guide and three transcripts. Propose a codebook: six to eight
+codes, each with a definition and an example. Don't code anything yet.
+:::
+
+**Argue with it.** Merge two codes, split one, add the one you care about. Then:
+*"Save it as coding/codebook.md and commit."*
+
+## Code all eight {#try-code .your-turn background-color="#f1c84b"}
+
+::: {.prompt}
+Code all eight transcripts with the codebook. Save every coded excerpt in
+coding/excerpts.csv: founder, line number, code, and the exact quote.
+:::
+
+::: {.prompt}
+What are the three main themes? For each: which founders, and the two best
+quotes. Save it as themes.md.
+:::
+
+## Every quote, checked {#try-check .your-turn background-color="#f1c84b"}
+
+::: {.prompt}
+Check every quote in themes.md and excerpts.csv against the transcripts, word for
+word, with a script. List any that don't match exactly.
+:::
+
+[A script that compares text can't be charmed by a confident paraphrase.]{.punch}
+
+## Then push {#push}
+
+- *"Which founder doesn't fit the themes? What does that do to theme 1?"*
+- *"Does anyone contradict themselves?"*
+- *"Did they plan the change, or does it only look planned afterwards?"*
+- *"What would a sceptical quantitative reviewer say about theme 2?"*
+
+**Done early?** *"Make a table: founder by code, with counts. Which codes always
+come together?"*
+
+## Who does what {#split}
+
+```{=html}
+<div class="qa">
+  <div><b>The agent</b><span>Reads eight interviews in a minute. Proposes codes. Finds every instance. Checks every quote, mechanically.</span></div>
+  <div><b>You</b><span>Decide what a code means. Judge the themes. Own the interpretation, and the ethics.</span></div>
+</div>
+```
+
+[Coding was the slow part. Now the slow part is thinking, which is the part you're
+good at.]{.punch}
+
+[Next: [References](refs.html), on your paper folder.]{.small}

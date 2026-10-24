@@ -1,0 +1,15 @@
+<svg class="diagram" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Three ways to say no, from weakest to strongest: tell it (it usually listens), a rule in a settings file (stops the direct ways in), keep it out of the folder (nothing there to read).">
+<line x1="60" y1="360" x2="1140" y2="360" stroke="#c9c0b2" stroke-width="2"/>
+<path d="M100,360 V244 Q100,240 104,240 H376 Q380,240 380,244 V360 Z" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="240" y="282" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Tell it</text>
+<text x="240" y="316" text-anchor="middle" font-size="22" fill="#17201f">“Don’t open the PDFs.”</text>
+<text x="240" y="392" text-anchor="middle" font-size="22" fill="#5c6763">it usually listens</text>
+<path d="M460,360 V154 Q460,150 464,150 H736 Q740,150 740,154 V360 Z" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="600" y="192" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">A rule</text>
+<text x="600" y="226" text-anchor="middle" font-size="22" fill="#17201f">a settings file</text>
+<text x="600" y="392" text-anchor="middle" font-size="22" fill="#5c6763">stops the direct ways in</text>
+<path d="M820,360 V64 Q820,60 824,60 H1096 Q1100,60 1100,64 V360 Z" fill="#fbd9d1" stroke="#17201f" stroke-width="3"/>
+<text x="960" y="102" text-anchor="middle" font-size="30" font-weight="800" fill="#17201f">Keep it out</text>
+<text x="960" y="136" text-anchor="middle" font-size="22" fill="#17201f">not in the folder</text>
+<text x="960" y="392" text-anchor="middle" font-size="22" fill="#5c6763">nothing there to read</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg class="diagram" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The five words in one picture. On your laptop, a line of commits; revert goes back to the last commit. GitHub is the remote; push sends commits there, pull fetches them.">
+<defs><marker id="fw-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker><marker id="fw-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker></defs>
+<text x="40" y="50" font-size="22" font-weight="800" letter-spacing="2" fill="#5c6763">YOUR LAPTOP</text>
+<line x1="40" y1="190" x2="440" y2="190" stroke="#17201f" stroke-width="5"/>
+<line x1="440" y1="190" x2="622" y2="190" stroke="#17201f" stroke-width="4" stroke-dasharray="9 7"/>
+<circle cx="80" cy="190" r="17" fill="#17201f"/>
+<circle cx="170" cy="190" r="17" fill="#17201f"/>
+<circle cx="260" cy="190" r="17" fill="#17201f"/>
+<circle cx="350" cy="190" r="17" fill="#17201f"/>
+<circle cx="440" cy="190" r="17" fill="#17201f"/>
+<circle cx="640" cy="190" r="17" fill="#fffdf8" stroke="#f0674d" stroke-width="4" stroke-dasharray="6 5"/>
+<line x1="260" y1="146" x2="260" y2="168" stroke="#5c6763" stroke-width="2"/>
+<text x="260" y="104" text-anchor="middle" font-size="38" font-weight="800" fill="#b8432d">commit</text>
+<text x="260" y="134" text-anchor="middle" font-size="22" fill="#5c6763">a save point</text>
+<path d="M 632 214 Q 540 310 452 218" fill="none" stroke="#f0674d" stroke-width="5" marker-end="url(#fw-c)"/>
+<text x="542" y="318" text-anchor="middle" font-size="38" font-weight="800" fill="#b8432d">revert</text>
+<text x="542" y="348" text-anchor="middle" font-size="22" fill="#5c6763">back to a save point</text>
+<rect x="880" y="130" width="280" height="120" rx="18" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="1020" y="202" text-anchor="middle" font-size="38" font-weight="800" fill="#17201f">GitHub</text>
+<text x="1020" y="66" text-anchor="middle" font-size="38" font-weight="800" fill="#b8432d">remote</text>
+<text x="1020" y="96" text-anchor="middle" font-size="22" fill="#5c6763">the copy elsewhere</text>
+<line x1="700" y1="168" x2="868" y2="168" stroke="#f0674d" stroke-width="5" marker-end="url(#fw-c)"/>
+<text x="784" y="150" text-anchor="middle" font-size="34" font-weight="800" fill="#b8432d">push</text>
+<line x1="868" y1="218" x2="700" y2="218" stroke="#17201f" stroke-width="5" marker-end="url(#fw-i)"/>
+<text x="784" y="262" text-anchor="middle" font-size="34" font-weight="800" fill="#b8432d">pull</text>
+</svg>

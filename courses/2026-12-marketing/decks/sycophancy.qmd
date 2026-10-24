@@ -1,0 +1,16 @@
+---
+pagetitle: "It wants to please you"
+---
+
+# It wants to please you {#sycophancy background-color="#f0674d"}
+
+Sycophancy: what it is, how big it is, and how to get the honest report anyway.
+
+## Being written {#plan}
+
+- **What it is:** the answer bends toward what you seem to want.
+- **How big:** the published evidence, as graphs.
+- **Our own measurement:** the same paper, four framings, from "a blind submission" to
+  "my paper, I'm proud of it". Same model, different scores?
+- **What works against it:** the referee doesn't know it's yours.
+  Next: the blind referee panel.

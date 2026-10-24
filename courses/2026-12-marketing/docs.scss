@@ -1,0 +1,89 @@
+/*-- scss:defaults --*/
+$body-bg: #fbf9f4;
+$body-color: #17201f;
+$link-color: #b8432d;
+$font-family-sans-serif: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight: 800;
+$code-block-bg: #fffdf8;
+
+/*-- scss:rules --*/
+h1.title {
+  letter-spacing: -0.03em;
+}
+
+main h1:not(.title) {
+  border-top: 4px solid #17201f;
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding-top: 0.7rem;
+}
+
+main h2 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+}
+
+blockquote {
+  border-left: 5px solid #f0674d;
+  color: #17201f;
+}
+
+/* Prompts are code blocks so they get a copy button. Style them like prose:
+   sans font, wrapped, no syntax colours. Shell commands keep a code font. */
+div.sourceCode pre,
+pre.sourceCode {
+  border-left: 5px solid #f0674d;
+}
+
+pre.prompt code,
+pre.prompt code span {
+  color: #17201f !important;
+  font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-style: normal !important;
+  font-weight: normal !important;
+  white-space: pre-wrap !important;
+}
+
+pre.sourceCode code {
+  font-size: 0.95rem;
+}
+
+/* Keep text clear of the copy icon. */
+pre.sourceCode {
+  padding-right: 2.6rem !important;
+}
+
+.floor {
+  background: #fff4cc;
+  border-left: 5px solid #f1c84b;
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+}
+
+.card {
+  background: #fffdf8;
+  border: 1px solid rgba(23, 32, 31, 0.2);
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+}
+
+@media print {
+  main h1:not(.title) {
+    break-before: page;
+  }
+}
+
+/* Inline SVG diagrams shared with the decks. */
+svg.diagram {
+  display: block;
+  height: auto;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+svg.diagram text {
+  font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+

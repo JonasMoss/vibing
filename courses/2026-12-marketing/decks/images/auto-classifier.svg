@@ -1,0 +1,20 @@
+<svg class="diagram" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Auto mode: the agent wants to do something; a second model checks the risky steps. Goes ahead: edit files, run analyses, read web pages, delete what git can restore. Stopped: send your files somewhere else, run code downloaded from the internet, overwrite history others rely on.">
+<defs><marker id="cl-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17201f"/></marker><marker id="cl-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f0674d"/></marker></defs>
+<rect x="20" y="150" width="230" height="100" rx="16" fill="#fffdf8" stroke="#17201f" stroke-width="3"/>
+<text x="135" y="195" text-anchor="middle" font-size="27" font-weight="800" fill="#17201f">The agent</text>
+<text x="135" y="227" text-anchor="middle" font-size="21" fill="#5c6763">wants to do something</text>
+<line x1="256" y1="200" x2="322" y2="200" stroke="#17201f" stroke-width="4" marker-end="url(#cl-i)"/>
+<rect x="330" y="130" width="270" height="140" rx="16" fill="#e8e0d3" stroke="#17201f" stroke-width="3"/>
+<text x="465" y="190" text-anchor="middle" font-size="27" font-weight="800" fill="#17201f">A second model</text>
+<text x="465" y="224" text-anchor="middle" font-size="21" fill="#5c6763">checks the risky steps</text>
+<path d="M 606 170 C 640 170, 640 90, 676 90" fill="none" stroke="#17201f" stroke-width="4" marker-end="url(#cl-i)"/>
+<path d="M 606 230 C 640 230, 640 300, 676 300" fill="none" stroke="#f0674d" stroke-width="4" marker-end="url(#cl-c)"/>
+<text x="690" y="44" font-size="27" font-weight="800" fill="#17201f">Goes ahead</text>
+<text x="690" y="250" font-size="27" font-weight="800" fill="#b8432d">Stopped</text>
+<text x="710" y="86" font-size="23" fill="#17201f">· edit files, run analyses</text>
+<text x="710" y="120" font-size="23" fill="#17201f">· read web pages</text>
+<text x="710" y="154" font-size="23" fill="#17201f">· delete what git can restore</text>
+<text x="710" y="292" font-size="23" fill="#17201f">· send your files somewhere else</text>
+<text x="710" y="326" font-size="23" fill="#17201f">· run code downloaded from the internet</text>
+<text x="710" y="360" font-size="23" fill="#17201f">· overwrite history others rely on</text>
+</svg>

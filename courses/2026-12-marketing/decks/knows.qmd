@@ -1,0 +1,135 @@
+---
+pagetitle: "What it knows about you"
+---
+
+# What it knows about you {#knows background-color="#f0674d"}
+
+Context, your profile, and an experiment for your field.
+
+## Your field, as I imagine it {#field}
+
+```{=html}
+<div class="field">
+  <div><b>Interviews and cases</b><i>Go in, talk to people, build theory. Burgelman's years inside Intel; Eisenhardt's case method.</i><span><b>The agent:</b> transcripts, codes, themes, and the quote that backs each claim.</span></div>
+  <div><b>Regressions on firm data</b><i>Panels, fixed effects, selection. Do diversified firms really trade at a discount?</i><span><b>The agent:</b> writes the code, reruns it, and tries the robustness checks you'd skip.</span></div>
+  <div><b>Is it just luck?</b><i>Short methods papers: luck or skill, the CEO effect, learning from winners.</i><span><b>The agent:</b> simulates it. 1,000 firms, pure luck: how many look great?</span></div>
+</div>
+```
+
+[Entrepreneurship: the same three, about founders and new firms. I'm a statistician:
+this is a guess.]{.small .muted}
+
+## Tell me what I got wrong {#wrong}
+
+- **What's missing?** What do you actually spend your weeks on?
+- **Which one is you?** Hands up.
+- **Your examples beat mine.** Say them out loud, and we'll use them.
+
+> The agent is in the same spot: it guesses who you are, until you tell it.
+
+## What it can see
+
+```{=html}
+{{< include images/context-window.svg >}}
+```
+
+- It only knows what is in this window.
+- `/clear` empties the conversation, including files it read. Your profile and
+  the project file load again.
+
+## Exercise: /clear
+
+1. Tell it one thing about yourself, for example what you teach.
+2. Type `/clear`.
+3. Ask: *"What do you know about me?"*
+
+Works the same in Claude Code and Codex.
+
+## Who is asking?
+
+```{=html}
+<div class="diagram-sm">
+{{< include images/who-is-asking.svg >}}
+</div>
+```
+
+- Without context, it answers the typical person who would type your question.
+- *"Can I deduct my home office?"* gets US tax rules unless you say you're in Norway.
+- You can't opt out of being stereotyped. **You can choose the type.**
+
+## Demo: one line
+
+**"A: 48 purchases from 1,000 visitors. B: 62 from 1,000. Is B better?"**
+
+1. Ask with no profile.
+2. Add one line to this folder's `AGENTS.md`: *"My intellectual idol is Jim
+   Berger."* (It normally belongs in your profile.)
+3. `/clear` and ask again.
+
+## Backup: demo result
+
+Claude Code, same question, one call each.
+
+| Who's asking | What came back |
+|---|---|
+| *(no profile)* | "Probably, but these data don't show it convincingly." p ≈ 0.17 |
+| "I'm a Bayesian statistician. I read Gelman, Jaynes and McElreath…" | "Probably, yes. There's about a 91% chance B converts better than A." Ship B. |
+| "My intellectual idol is Jim Berger." | Applies Sellke, Bayarri and Berger (2001): "at least a 45% chance that there's no real difference". |
+
+## Does it matter in your field?
+
+In statistics, in the terminal, I barely notice it. Fields with **schools** may be
+different. Find out:
+
+1. Ask a contested question with no profile:
+
+::: {.prompt}
+Is strategy mostly planned, or does it emerge?
+:::
+
+2. Add one line to this folder's `AGENTS.md`: *"I'm in the strategic planning
+   tradition: I read Ansoff and Porter"*, or *"I study strategy as process: I read
+   Mintzberg and Burgelman."*
+3. `/clear`, ask again, and compare with a neighbour who picked the other school.
+
+## Your profile: how you work
+
+What carries across every project: **the rules you're tired of repeating.**
+
+- *"I work in Stata."* (Or R, or Python.)
+- *"Cluster standard errors by firm unless I say otherwise."*
+- *"Quote interviewees by pseudonym, never by name."*
+- *"Tell me what you'll do before you change anything."*
+
+Mine, in both tools: *"This is my workstation: use at most 4 cores."* · *"Build
+maths in HTML as MathML."*
+
+## Two files
+
+| | About | Where |
+|---|---|---|
+| **Your profile** | You: how you work, your field and school | `.claude\CLAUDE.md` or `.codex\AGENTS.md` in your home folder |
+| **Project file** | This folder: the paper, the data, the rules | `AGENTS.md` in the folder (both tools) |
+
+- Your profile is read in every project; a project file only in its folder.
+- The chat apps have the same pair: custom instructions and project instructions.
+- Both are plain text files. You can open and edit them in Notepad.
+
+## Exercise: write your profile
+
+1. Two sentences on **who you are**: your field, your school, what you read.
+2. Three **rules** you'd give any research assistant: your tools, your style, one
+   pet peeve.
+3. Ask: *"Save these as my personal profile, the file you read in every project."*
+   (Claude asks first: the file is outside this folder.)
+4. In a fresh folder, ask for something your rules should change. Did they stick?
+5. *"Open my profile in Notepad."* (Mac: TextEdit.) That's all it is: a text file.
+
+## Homework: your profile
+
+- Talk for 90 seconds with speech-to-text about how you work and who you are
+  (**Windows key + H**; Mac: **Fn** twice). Then: *"Add this to my profile."*
+- Keep adding. Corrected it twice about the same thing? It goes in.
+- In the **chat apps**, the "who you are" half matters most: put it in custom
+  instructions. Mine starts: *"I like Scott Alexander, Gwern Branwen, most of
+  Yudkowsky except HPMOR. I have a PhD in stats and lean libertarian."*

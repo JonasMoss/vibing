@@ -1,0 +1,26 @@
+<svg class="diagram" viewBox="0 0 1200 350" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Timeline: 2005 Linus Torvalds writes git for Linux. 2008 GitHub opens. 2017 Windows moves to git. 2018 Microsoft buys GitHub for 7.5 billion dollars. 2021 GitHub Copilot, an AI that learned to code from GitHub. 2026 your agent commits for you.">
+<line x1="60" y1="175" x2="1170" y2="175" stroke="#17201f" stroke-width="5"/>
+<circle cx="90" cy="175" r="16" fill="#17201f"/>
+<text x="62" y="66" font-size="30" font-weight="800" fill="#b8432d">2005</text>
+<text x="62" y="100" font-size="24" font-weight="700" fill="#17201f">Linus Torvalds</text>
+<text x="62" y="130" font-size="24" fill="#17201f">writes git, for Linux</text>
+<circle cx="240" cy="175" r="16" fill="#17201f"/>
+<text x="240" y="236" text-anchor="middle" font-size="30" font-weight="800" fill="#b8432d">2008</text>
+<text x="240" y="270" text-anchor="middle" font-size="24" fill="#17201f">GitHub opens</text>
+<circle cx="690" cy="175" r="16" fill="#17201f"/>
+<text x="690" y="66" text-anchor="middle" font-size="30" font-weight="800" fill="#b8432d">2017</text>
+<text x="690" y="100" text-anchor="middle" font-size="24" fill="#17201f">Windows</text>
+<text x="690" y="130" text-anchor="middle" font-size="24" fill="#17201f">moves to git</text>
+<circle cx="740" cy="175" r="16" fill="#17201f"/>
+<text x="740" y="236" text-anchor="middle" font-size="30" font-weight="800" fill="#b8432d">2018</text>
+<text x="740" y="270" text-anchor="middle" font-size="24" fill="#17201f">Microsoft buys</text>
+<text x="740" y="300" text-anchor="middle" font-size="24" fill="#17201f">GitHub, $7.5 billion</text>
+<circle cx="890" cy="175" r="16" fill="#17201f"/>
+<text x="900" y="66" text-anchor="middle" font-size="30" font-weight="800" fill="#b8432d">2021</text>
+<text x="900" y="100" text-anchor="middle" font-size="24" fill="#17201f">GitHub Copilot</text>
+<text x="900" y="130" text-anchor="middle" font-size="24" fill="#17201f">learned from GitHub</text>
+<circle cx="1140" cy="175" r="18" fill="#f0674d"/>
+<text x="1170" y="236" text-anchor="end" font-size="30" font-weight="800" fill="#b8432d">Today</text>
+<text x="1170" y="270" text-anchor="end" font-size="24" fill="#17201f">Your agent</text>
+<text x="1170" y="300" text-anchor="end" font-size="24" fill="#17201f">commits for you</text>
+</svg>

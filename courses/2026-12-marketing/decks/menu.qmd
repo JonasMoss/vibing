@@ -1,0 +1,47 @@
+---
+title: "AI in the terminal"
+subtitle: "An afternoon for the Department of Marketing"
+author: "Jonas Moss · Data Science and Analytics"
+date: 2026-12-03
+date-format: "[Thursday 3 December 2026]"
+---
+
+## One afternoon, one paper {#menu}
+
+```{=html}
+<div class="menu">
+  <div>
+    <p class="menu-head">First</p>
+    <a class="card" href="setup.html"><b>Get it running</b><span>The app, sign in, a folder</span></a>
+    <a class="card" href="power.html"><b>What these things can do</b><span>The frontier, in ten minutes</span></a>
+    <a class="card" href="cleanup.html"><b>Do something tedious</b><span>Clean up a messy folder, with a save point</span></a>
+  </div>
+  <div>
+    <p class="menu-head">Your paper</p>
+    <a class="card" href="yourpaper.html"><b>Your paper</b><span>What it sees, what stays private</span></a>
+    <a class="card" href="paper.html"><b>Take it apart</b><span>The biggest problem, then a fix</span></a>
+    <a class="card" href="sycophancy.html"><b>It wants to please you</b><span>Sycophancy, measured</span></a>
+    <a class="card" href="review.html"><b>Blind referee panel</b><span>Referees who don't know it's yours</span></a>
+    <a class="card" href="access.html"><b>What it can touch</b><span>Permissions, your data</span></a>
+  </div>
+  <div>
+    <p class="menu-head">Any time</p>
+    <a class="card" href="git.html"><b>Git: save points</b><span>In depth</span></a>
+    <a class="card" href="refs.html"><b>References</b><span>DOI check, claim check</span></a>
+    <a class="card" href="words.html"><b>Words you've heard</b><span>Skills, subagents, worktrees…</span></a>
+    <a class="card" href="own.html"><b>Your own work</b><span>Bring the real thing</span></a>
+    <a class="card" href="more.html"><b>More capability</b><span>Security, benchmarks, demos</span></a>
+  </div>
+</div>
+```
+
+## Get the course files {#files}
+
+[vibing.jonasmoss.com]{style="font-size: 1.4em; font-weight: 800; color: #f0674d;"}
+
+- Click **Marketing**. The **handout** is there, and **Course files** downloads it
+  with the practice folders as one zip.
+- Every prompt from the afternoon is in the handout, with a copy button, including
+  what we don't get to. So are all the slides.
+- **No paper with you?** The course files have one: a fictional paper in progress,
+  with its data.

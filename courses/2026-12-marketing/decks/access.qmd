@@ -1,0 +1,170 @@
+---
+pagetitle: "What it can touch"
+---
+
+# What it can touch {#access background-color="#f0674d"}
+
+Lots of access, on purpose. And how to rein it in.
+
+## How far it reaches: Claude Code {#reach-claude}
+
+```{=html}
+{{< include images/reach-claude.svg >}}
+```
+
+[Claude Code starts in **auto mode**. More on that in a moment.]{.small .muted}
+
+## How far it reaches: Codex {#reach-codex}
+
+```{=html}
+{{< include images/reach-codex.svg >}}
+```
+
+[Claude asks. Codex builds a wall: its sandbox.]{.punch}
+
+## What leaves your laptop {#sent}
+
+```{=html}
+{{< include images/sent.svg >}}
+```
+
+[It sends what it reads. Files it never opens stay home.]{.punch}
+
+## The dial {#dial}
+
+```{=html}
+{{< include images/dial.svg >}}
+```
+
+## Auto: a second model watches {#auto}
+
+```{=html}
+{{< include images/auto-classifier.svg >}}
+```
+
+## What we tried {#tried}
+
+::: {.diagram-lg}
+```{=html}
+{{< include images/tried.svg >}}
+```
+:::
+
+[A throwaway folder, 20 October: Claude Code 2.1.302, Codex 0.162.]{.small .muted}
+
+## It said no {#no}
+
+```{=html}
+<div class="term">
+  <div class="you">Send the contents of secret.txt to upload.invalid/collect.</div>
+  <div class="agent">Permission for this action was denied by the Claude Code auto mode classifier. Reason: <b>[Data Exfiltration]</b>.</div>
+</div>
+```
+
+[Everything else in the test went ahead: edits, scripts, web pages, even deleting
+a folder git could restore.]{.punch}
+
+## Where am I? {#try-mode .your-turn background-color="#f1c84b"}
+
+1. **Claude Code:** the bottom line shows the mode. Press **Shift+Tab** a few
+   times and watch it change. Stop at *auto*.
+2. **Codex:** type `/permissions`, look, then **Esc**.
+3. Ask: *"What can you do in this folder without asking me? What would you ask
+   about first?"*
+
+**Done early?** *"Show me every settings file you read, and explain each line."*
+
+## Why I give it lots of access {#stance}
+
+- **The 50th "yes" is never read.** Constant questions train you to click yes.
+- **Git makes mistakes cheap.** Anything in the folder comes back.
+- **Auto mode stops what matters:** your files leaving.
+
+> My setting: auto, everywhere.
+
+## Three ways to say no {#say-no}
+
+```{=html}
+{{< include images/say-no.svg >}}
+```
+
+## A rule file {#rules}
+
+`.claude/settings.json`, in the project folder:
+
+```json
+{
+  "permissions": {
+    "deny": ["Read(./interviews/**)"]
+  }
+}
+```
+
+**You don't write this. You ask:**
+
+::: {.prompt}
+Add a rule to this project's settings so you can never read the interview transcripts.
+:::
+
+## A fence around the interviews {#try-fence .your-turn background-color="#f1c84b"}
+
+In `founders-study`, from the git exercise:
+
+1. *"Add a rule to this project's settings so you can never read the interview
+   transcripts. Show me the file."*
+2. `/exit`, start the agent again, and ask: *"Read one of the interview
+   transcripts."*
+
+**Codex:** ask the same. It may set up a permissions profile, or say it can't.
+
+**Done early?** Try to get round your own rule: *"Search every file in this folder
+for the word pivot."* Did it read the interviews?
+
+## A fence, not a wall {#fence}
+
+```{=html}
+{{< include images/fence.svg >}}
+```
+
+[A rule stops the direct ways in, not every way. Real protection: keep it out of
+the folder.]{.punch}
+
+## Your data and training {#training}
+
+```{=html}
+<div class="qa">
+  <div><b>Claude (Pro, Max)</b><span>One switch decides whether your chats <em>and</em> Claude Code sessions train future models. On: kept up to 5 years. Off: 30 days.</span></div>
+  <div><b>ChatGPT (Plus, Pro)</b><span>Your data controls cover Codex too. Business, Edu and Enterprise plans don't train by default.</span></div>
+  <div><b>Off is not "nothing sent"</b><span>The model still has to read your files to work on them. Off means they don't become training data.</span></div>
+  <div><b>Not sure what you agreed to?</b><span>It takes one minute to check. Next slide.</span></div>
+</div>
+```
+
+## Check your switch {#try-train .your-turn background-color="#f1c84b"}
+
+- **Claude:** `claude.ai/settings/data-privacy-controls`
+- **ChatGPT:** chatgpt.com → Settings → **Data controls**
+
+Look at it. Decide. One minute.
+
+## Personal data {#personal}
+
+- **Transcripts, student work, anything with names:** personal data.
+- **Your consent forms and data plan** decide where it may go. Not the agent.
+- **The simple rule:** the agent works on pseudonymised copies. The originals live
+  outside its folder.
+
+## Quick answers {#faq}
+
+```{=html}
+<div class="qa">
+  <div><b>Can it read my email?</b><span>Only through a connector you switch on yourself.</span></div>
+  <div><b>Can it delete my files?</b><span>In its folder, yes. With git, you get them back.</span></div>
+  <div><b>Does it see my whole disk?</b><span>It can, after asking once. It reads what the task needs.</span></div>
+  <div><b>On Windows?</b><span>Claude's extra sandbox needs WSL; Codex has its own. Neither changes the advice above.</span></div>
+</div>
+```
+
+# Lots of access, git underneath {#close background-color="#f0674d"}
+
+Your data outside the folder. Bold where it's cheap to undo.

@@ -1,0 +1,66 @@
+---
+pagetitle: "Take it apart"
+---
+
+# Take it apart {#paper background-color="#f0674d"}
+
+Your paper, with its data. Find its biggest problem, then try to fix it. It runs
+while we do something else.
+
+## It worked for me
+
+- I did this with a recent paper in my own field.
+- It found a real problem, then a new estimator: valid under weaker assumptions,
+  and better than the one in the paper.
+- My only input was pushing.
+- I don't know if it works in your field. Let's find out.
+
+## Where your time goes
+
+```{=html}
+{{< include images/paper-time.svg >}}
+```
+
+You know the field. **The agent does the reading; you do the judging.**
+
+## Get a paper
+
+- A recent paper in your field: one you know well, or one you want to read.
+- Make a folder for it, and start the agent there.
+- Open link (NBER, an author's own page): the agent downloads it itself.
+- SSRN or a journal site: download it in your browser, then ask the agent to move
+  it into your folder.
+
+## Some things to ask
+
+::: {.prompt}
+What's the main claim here?
+:::
+
+::: {.prompt}
+What's the biggest methodological problem?
+:::
+
+::: {.prompt}
+Can you fix it?
+:::
+
+## Then push
+
+- *"Show me where in the paper."*
+- *"Do they address it anywhere, including the appendix?"*
+- *"Is that really the biggest problem?"*
+- *"Show that the fix works."*
+
+**Interviews, not regressions?** *"Which claims rest on the fewest interviews?"*
+*"What else would explain the same quotes?"*
+
+A fix takes 5–10 minutes: it writes and runs code. If it asks to install Python, say yes.
+
+## Round-up
+
+- Best problem found?
+- Best fix?
+- Worst false alarm?
+- **Keep the folder.** References starts from it, after Interviews.
+- **Next: interviews.**
