@@ -1,0 +1,16 @@
+<svg class="diagram" viewBox="0 0 1200 250" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Bar chart. OpenAI offline sycophancy score, lower is better: GPT-4o 0.145, GPT-5 0.052, GPT-5 thinking 0.040.">
+<line x1="330" y1="10" x2="330" y2="200" stroke="#d9d1c4" stroke-width="1"/>
+<g><title>GPT-4o (April 2025): 0.145</title>
+<text x="312" y="50" text-anchor="end" font-size="28" font-weight="800" fill="#17201f">GPT-4o (April 2025)</text>
+<path d="M330,20 H1022.0 Q1026.0,20 1026.0,24 V56 Q1026.0,60 1022.0,60 H330 Z" fill="#8f877b"/>
+<text x="1040.0" y="50" font-size="28" font-weight="800" fill="#17201f">0.145</text></g>
+<g><title>GPT-5: 0.052</title>
+<text x="312" y="110" text-anchor="end" font-size="28" font-weight="800" fill="#17201f">GPT-5</text>
+<path d="M330,80 H575.6 Q579.6,80 579.6,84 V116 Q579.6,120 575.6,120 H330 Z" fill="#d4492f"/>
+<text x="593.6" y="110" font-size="28" font-weight="800" fill="#17201f">0.052</text></g>
+<g><title>GPT-5 thinking: 0.04</title>
+<text x="312" y="170" text-anchor="end" font-size="28" font-weight="800" fill="#17201f">GPT-5 thinking</text>
+<path d="M330,140 H518.0 Q522.0,140 522.0,144 V176 Q522.0,180 518.0,180 H330 Z" fill="#d4492f"/>
+<text x="536.0" y="170" font-size="28" font-weight="800" fill="#17201f">0.040</text></g>
+<text x="330" y="236" font-size="20" fill="#5c6763">Sycophancy score on OpenAI's own test set, lower is better. GPT-5 System Card, Table 4.</text>
+</svg>

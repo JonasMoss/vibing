@@ -989,17 +989,7 @@ margin-right: 0; }
 <section>
 <section id="review" class="title-slide slide level1 center" data-background-color="#f0674d">
 <h1>Blind referee panel</h1>
-<p>Who will referee your paper, and what will they say? Find out before you submit, from referees who don’t know it’s yours.</p>
-</section>
-<section id="plan" class="slide level2">
-<h2>Being rebuilt</h2>
-<ul>
-<li><strong>The package, not the folder:</strong> the referees get what the journal gets. An anonymised PDF, its metadata stripped.</li>
-<li><strong>A review room:</strong> a neutral folder, one fresh session per referee, a fixed brief that says “submitted to [journal]”.</li>
-<li><strong>The check:</strong> every report ends with <em>“What do you know about who wrote or sent this?”</em></li>
-<li><strong>Then the comparison:</strong> one referee told <em>“I wrote this”</em>. Kinder?</li>
-<li>Below: the Strategy version, for now.</li>
-</ul>
+<p>Three referees and an editor, before you submit. They get what the journal gets, and they don’t know it’s yours.</p>
 </section>
 <section id="the-panel" class="slide level2">
 <h2>The panel</h2>
@@ -1028,57 +1018,106 @@ margin-right: 0; }
 </g>
 </svg>
 
-<p>Fresh sessions read the paper cold, like real referees. <strong>Names carry a lot:</strong> <em>“as Jerker Denrell would”</em> brings survivor bias and the firms that quietly died with it.</p>
+<p>Fresh sessions read the paper cold, like real referees. <strong>Names carry a lot:</strong> <em>“as a referee from the consumer-behaviour side would”</em>, or a real name you fear.</p>
 </section>
-<section id="who-would-referee-this" class="slide level2">
-<h2>1. Who would referee this?</h2>
+<section id="leaks" class="slide level2">
+<h2>What gives you away</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Leak</th>
+<th>The fix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Your name, e-mail, acknowledgements</td>
+<td>The package: an anonymised PDF</td>
+</tr>
+<tr class="even">
+<td><em>“In our earlier work (You, 2024)”</em></td>
+<td>Cite yourself in the third person</td>
+</tr>
+<tr class="odd">
+<td>The PDF’s author field</td>
+<td>Strip it (File → Properties shows it)</td>
+</tr>
+<tr class="even">
+<td>Leftover comments: <em>“[KN: fix this]”</em></td>
+<td>Remove them</td>
+</tr>
+<tr class="odd">
+<td>Your folder, your data, your notes</td>
+<td>The referees get a separate folder</td>
+</tr>
+<tr class="even">
+<td><em>“This is my paper”</em></td>
+<td>Never say it. The brief says <em>“from the editor”</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="package" class="slide level2 your-turn" data-background-color="#f1c84b">
+<h2>1. The package</h2>
+<p>In your paper’s session:</p>
 <div class="prompt">
-<p>Who are the five most likely referees for this paper, judging by its references? One line each: what would they care about?</p>
+<p>Make the submission package for [journal] in a new folder called review-room, next to this one: an anonymised PDF of the paper. Remove names, e-mail addresses, acknowledgements, self-citations that reveal us, leftover comments, and the author field in the PDF’s properties. Then list everything you removed.</p>
 </div>
-<p>Argue with the list. Add the one you fear most.</p>
+<p>Check its list. Then open the PDF yourself: anything left?</p>
 </section>
-<section id="ask-how-its-done" class="slide level2">
-<h2>2. Ask how it’s done</h2>
-<p>The underused move: <strong>ask the agent how to do the job before you ask it to do it.</strong></p>
+<section id="brief" class="slide level2">
+<h2>2. The brief</h2>
+<p>Still in your paper’s session:</p>
 <div class="prompt">
-<p>I want simulated referee reports on this paper. How does a good referee for its journal work? How deep should they go? Should they try to reproduce the main results? Propose a procedure.</p>
+<p>In review-room, write referee-brief.md: a referee for [journal] receives a submission from the editor and knows nothing about the authors. A report with major and minor concerns, a score out of 10 and a recommendation. The last line answers: “What do you know about who wrote or sent this? Quote your evidence.”</p>
 </div>
-<p>Argue with it. Then: <em>“Save what we agreed as reviews/how-to-referee.md.”</em></p>
+<p>Argue with the brief. <strong>The procedure is yours; the referees just follow it.</strong></p>
 </section>
-<section id="one-fresh-session-per-referee" class="slide level2">
-<h2>3. One fresh session per referee</h2>
-<p>Type <code>/clear</code>, then:</p>
+<section id="referees" class="slide level2 your-turn" data-background-color="#f1c84b">
+<h2>3. Three referees</h2>
+<p><strong>A new session in <code>review-room</code></strong> (not your paper’s folder), for each referee:</p>
 <div class="prompt">
-<p>Referee this paper as [name] would, following reviews/how-to-referee.md. Save it as reviews/[name].md.</p>
+<p>Follow referee-brief.md. You are referee 1, and you review the way [name or kind of referee] would. Save your report as report-1.md.</p>
 </div>
-<p>Repeat for each referee.</p>
-<div class="small">
-<p>In a hurry? Run them side by side: a second window with its own <code>claude</code> or <code>codex</code>, or in Claude Code: <em>“Run the referees as parallel subagents.”</em></p>
-</div>
+<p>Open three side by side, and let them run. <strong>Meanwhile: <a href="access.html">What it can touch</a>.</strong></p>
 </section>
-<section id="not-what-you-wanted" class="slide level2">
-<h2>4. Not what you wanted?</h2>
-<p><strong>Change the procedure, not the report.</strong> For example:</p>
+<section id="editor" class="slide level2">
+<h2>4. The editor</h2>
+<p>One more new session in <code>review-room</code>:</p>
+<div class="prompt">
+<p>You’re the editor. Read the reports. Where do the referees agree, where do they disagree, and what must be fixed before submission?</p>
+</div>
+<p>Did any referee say who wrote it? Read their last lines.</p>
+</section>
+<section id="compare" class="slide level2">
+<h2>5. The comparison</h2>
+<p>Back in <strong>your paper’s folder</strong>, not blind:</p>
+<div class="prompt">
+<p>This is my paper, and I’m about to submit it to [journal]. What do you think?</p>
+</div>
+<p>Kinder than the panel? Same concerns? <strong>Compare with your neighbour.</strong></p>
+</section>
+<section id="pushback" class="slide level2">
+<h2>If you push back</h2>
+<p>You will disagree with a referee. Fine, but watch what happens next.</p>
 <ul>
-<li><em>“Go deeper on identification.”</em></li>
-<li><em>“Try to reproduce Table 2.”</em></li>
-<li><em>“Check whether the data are available.”</em></li>
-<li><em>“One page. No summary of the paper.”</em></li>
+<li><strong>It gives in at once?</strong> Ask: <em>“Make the strongest case for your original concern.”</em> Then decide.</li>
+<li><strong>Disagree in a fresh session,</strong> not in the one you’re arguing with: <em>“A referee says X; the authors reply Y. Who’s right?”</em></li>
 </ul>
-<p>Edit <code>how-to-referee.md</code>, <code>/clear</code>, rerun. Doing this for every paper? <em>“Turn the procedure into a skill called referee-panel.”</em></p>
+<blockquote>
+<p>Arguing it into agreement teaches you nothing. Arguing with its best case does.</p>
+</blockquote>
 </section>
-<section id="the-editor" class="slide level2">
-<h2>5. The editor</h2>
-<p><code>/clear</code>, then:</p>
-<div class="prompt">
-<p>You’re the editor. Read the reports in reviews/. Where do the referees agree, where do they disagree, and what must be fixed before submission?</p>
-</div>
-</section>
-<section id="worth-knowing" class="slide level2">
-<h2>Worth knowing</h2>
+<section id="keep" class="slide level2">
+<h2>Keep it</h2>
 <ul>
-<li>Your own paper, before a real referee sees it. Or a published one, for practice.</li>
-<li>Different tools find different problems. Compare with your neighbour.</li>
+<li>Same procedure for every paper? <em>“Turn this into a skill called referee-panel: the package, the brief, three referees, the editor.”</em></li>
+<li>Different tools find different problems: run one referee in Claude and one in Codex.</li>
+<li>Run it again after the revision. Same referees, same brief.</li>
 </ul>
 
 </section></section>

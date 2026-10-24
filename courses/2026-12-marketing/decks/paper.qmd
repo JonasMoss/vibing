@@ -4,8 +4,8 @@ pagetitle: "Take it apart"
 
 # Take it apart {#paper background-color="#f0674d"}
 
-Your paper, with its data. Find its biggest problem, then try to fix it. It runs
-while we do something else.
+Your paper, with its data. The agent finds the biggest problem and tries to fix
+it, while we do something else.
 
 ## It worked for me
 
@@ -13,7 +13,8 @@ while we do something else.
 - It found a real problem, then a new estimator: valid under weaker assumptions,
   and better than the one in the paper.
 - My only input was pushing.
-- I don't know if it works in your field. Let's find out.
+- At Strategy in October, this was the exercise that landed. **The catch was
+  waiting for it.** So today, we don't wait.
 
 ## Where your time goes
 
@@ -23,44 +24,45 @@ while we do something else.
 
 You know the field. **The agent does the reading; you do the judging.**
 
-## Get a paper
+## Before you leave it alone {#mode}
 
-- A recent paper in your field: one you know well, or one you want to read.
-- Make a folder for it, and start the agent there.
-- Open link (NBER, an author's own page): the agent downloads it itself.
-- SSRN or a journal site: download it in your browser, then ask the agent to move
-  it into your folder.
+It will want to run code. If it stops to ask, it waits for you while you're away.
 
-## Some things to ask
+- **Switch the mode** under the prompt box to *Accept edits* (it still asks before
+  other commands) or *Auto* (it asks only when something looks risky).
+- **It works in this folder,** and you have a save point. Anything it does, you
+  can undo.
+- Asked to install Python or R? Say yes before you go.
 
-::: {.prompt}
-What's the main claim here?
-:::
+## Start it {#start .your-turn background-color="#f1c84b"}
 
 ::: {.prompt}
-What's the biggest methodological problem?
+Take this paper apart, like a tough methods referee who also has the data. Run the
+analysis yourself and check that the numbers in the draft match the code. If there
+is a preregistration, compare the paper with it. Find the single biggest problem,
+then propose a fix and show what changes. Write everything to take-apart.md. Work
+on your own; I'll be back in 20 minutes.
 :::
 
-::: {.prompt}
-Can you fix it?
-:::
+Then leave it. **Next: [It wants to please you](sycophancy.html).**
 
-## Then push
+## When you're back {#back}
 
-- *"Show me where in the paper."*
-- *"Do they address it anywhere, including the appendix?"*
+Read `take-apart.md`. Then push:
+
+- *"Show me where in the paper, and where in the code."*
+- *"Rerun it the way the preregistration says."*
 - *"Is that really the biggest problem?"*
 - *"Show that the fix works."*
 
-**Interviews, not regressions?** *"Which claims rest on the fewest interviews?"*
-*"What else would explain the same quotes?"*
+**Interviews, not data?** *"Which claims rest on the fewest interviews?"* *"What
+else would explain the same quotes?"*
 
-A fix takes 5–10 minutes: it writes and runs code. If it asks to install Python, say yes.
-
-## Round-up
+## Round-up {#roundup}
 
 - Best problem found?
-- Best fix?
+- Did it find something **good** for the paper?
 - Worst false alarm?
-- **Keep the folder.** References starts from it, after Interviews.
-- **Next: interviews.**
+- **Keep the folder.** The referees get the paper next, but not the folder.
+
+**Next: [the blind referee panel](review.html).**

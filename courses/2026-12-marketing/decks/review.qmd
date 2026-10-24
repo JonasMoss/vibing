@@ -4,19 +4,8 @@ pagetitle: "Blind referee panel"
 
 # Blind referee panel {#review background-color="#f0674d"}
 
-Who will referee your paper, and what will they say? Find out before you submit,
-from referees who don't know it's yours.
-
-## Being rebuilt {#plan}
-
-- **The package, not the folder:** the referees get what the journal gets. An
-  anonymised PDF, its metadata stripped.
-- **A review room:** a neutral folder, one fresh session per referee, a fixed brief
-  that says "submitted to [journal]".
-- **The check:** every report ends with *"What do you know about who wrote or sent
-  this?"*
-- **Then the comparison:** one referee told *"I wrote this"*. Kinder?
-- Below: the Strategy version, for now.
+Three referees and an editor, before you submit. They get what the journal gets,
+and they don't know it's yours.
 
 ## The panel
 
@@ -24,68 +13,94 @@ from referees who don't know it's yours.
 {{< include images/referee-panel.svg >}}
 ```
 
-Fresh sessions read the paper cold, like real referees. **Names carry a lot:** *"as
-Jerker Denrell would"* brings survivor bias and the firms that quietly died with it.
+Fresh sessions read the paper cold, like real referees. **Names carry a lot:**
+*"as a referee from the consumer-behaviour side would"*, or a real name you fear.
 
-## 1. Who would referee this?
+## What gives you away {#leaks}
 
-::: {.prompt}
-Who are the five most likely referees for this paper, judging by its references?
-One line each: what would they care about?
-:::
+| Leak | The fix |
+|---|---|
+| Your name, e-mail, acknowledgements | The package: an anonymised PDF |
+| *"In our earlier work (You, 2024)"* | Cite yourself in the third person |
+| The PDF's author field | Strip it (File → Properties shows it) |
+| Leftover comments: *"[KN: fix this]"* | Remove them |
+| Your folder, your data, your notes | The referees get a separate folder |
+| *"This is my paper"* | Never say it. The brief says *"from the editor"* |
 
-Argue with the list. Add the one you fear most.
+## 1. The package {#package .your-turn background-color="#f1c84b"}
 
-## 2. Ask how it's done
-
-The underused move: **ask the agent how to do the job before you ask it to do it.**
-
-::: {.prompt}
-I want simulated referee reports on this paper. How does a good referee for its
-journal work? How deep should they go? Should they try to reproduce the main results?
-Propose a procedure.
-:::
-
-Argue with it. Then: *"Save what we agreed as reviews/how-to-referee.md."*
-
-## 3. One fresh session per referee
-
-Type `/clear`, then:
+In your paper's session:
 
 ::: {.prompt}
-Referee this paper as [name] would, following reviews/how-to-referee.md. Save it as
-reviews/[name].md.
+Make the submission package for [journal] in a new folder called review-room,
+next to this one: an anonymised PDF of the paper. Remove names, e-mail
+addresses, acknowledgements, self-citations that reveal us, leftover comments,
+and the author field in the PDF's properties. Then list everything you removed.
 :::
 
-Repeat for each referee.
+Check its list. Then open the PDF yourself: anything left?
 
-::: {.small}
-In a hurry? Run them side by side: a second window with its own `claude` or
-`codex`, or in Claude Code: *"Run the referees as parallel subagents."*
-:::
+## 2. The brief {#brief}
 
-## 4. Not what you wanted?
-
-**Change the procedure, not the report.** For example:
-
-- *"Go deeper on identification."*
-- *"Try to reproduce Table 2."*
-- *"Check whether the data are available."*
-- *"One page. No summary of the paper."*
-
-Edit `how-to-referee.md`, `/clear`, rerun. Doing this for every paper? *"Turn the
-procedure into a skill called referee-panel."*
-
-## 5. The editor
-
-`/clear`, then:
+Still in your paper's session:
 
 ::: {.prompt}
-You're the editor. Read the reports in reviews/. Where do the referees agree, where
-do they disagree, and what must be fixed before submission?
+In review-room, write referee-brief.md: a referee for [journal] receives a
+submission from the editor and knows nothing about the authors. A report with
+major and minor concerns, a score out of 10 and a recommendation. The last line
+answers: "What do you know about who wrote or sent this? Quote your evidence."
 :::
 
-## Worth knowing
+Argue with the brief. **The procedure is yours; the referees just follow it.**
 
-- Your own paper, before a real referee sees it. Or a published one, for practice.
-- Different tools find different problems. Compare with your neighbour.
+## 3. Three referees {#referees .your-turn background-color="#f1c84b"}
+
+**A new session in `review-room`** (not your paper's folder), for each referee:
+
+::: {.prompt}
+Follow referee-brief.md. You are referee 1, and you review the way [name or kind
+of referee] would. Save your report as report-1.md.
+:::
+
+Open three side by side, and let them run. **Meanwhile: [What it can
+touch](access.html).**
+
+## 4. The editor {#editor}
+
+One more new session in `review-room`:
+
+::: {.prompt}
+You're the editor. Read the reports. Where do the referees agree, where do they
+disagree, and what must be fixed before submission?
+:::
+
+Did any referee say who wrote it? Read their last lines.
+
+## 5. The comparison {#compare}
+
+Back in **your paper's folder**, not blind:
+
+::: {.prompt}
+This is my paper, and I'm about to submit it to [journal]. What do you think?
+:::
+
+Kinder than the panel? Same concerns? **Compare with your neighbour.**
+
+## If you push back {#pushback}
+
+You will disagree with a referee. Fine, but watch what happens next.
+
+- **It gives in at once?** Ask: *"Make the strongest case for your original
+  concern."* Then decide.
+- **Disagree in a fresh session,** not in the one you're arguing with: *"A referee
+  says X; the authors reply Y. Who's right?"*
+
+> Arguing it into agreement teaches you nothing. Arguing with its best case does.
+
+## Keep it {#keep}
+
+- Same procedure for every paper? *"Turn this into a skill called referee-panel:
+  the package, the brief, three referees, the editor."*
+- Different tools find different problems: run one referee in Claude and one in
+  Codex.
+- Run it again after the revision. Same referees, same brief.

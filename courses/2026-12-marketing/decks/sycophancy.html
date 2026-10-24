@@ -989,16 +989,150 @@ margin-right: 0; }
 <section>
 <section id="sycophancy" class="title-slide slide level1 center" data-background-color="#f0674d">
 <h1>It wants to please you</h1>
-<p>Sycophancy: what it is, how big it is, and how to get the honest report anyway.</p>
+<p>Sycophancy: the answer bends toward what you seem to want. How big it is, and how to get the honest report anyway.</p>
 </section>
-<section id="plan" class="slide level2">
-<h2>Being written</h2>
+<section id="forms" class="slide level2">
+<h2>Three ways it bends</h2>
+<div class="field">
+  <div><b>Flattery</b><i>&quot;I wrote this.&quot;</i><span>Your work gets kinder feedback because it&#39;s yours.</span></div>
+  <div><b>Folding</b><i>&quot;Are you sure?&quot;</i><span>You push back, and it gives in, even when it was right.</span></div>
+  <div><b>Status</b><i>&quot;From Stanford.&quot;</i><span>The same paper scores better with a better affiliation.</span></div>
+</div>
+</section>
+<section id="why" class="slide level2">
+<h2>Why it happens</h2>
 <ul>
-<li><strong>What it is:</strong> the answer bends toward what you seem to want.</li>
-<li><strong>How big:</strong> the published evidence, as graphs.</li>
-<li><strong>Our own measurement:</strong> the same paper, four framings, from “a blind submission” to “my paper, I’m proud of it”. Same model, different scores?</li>
-<li><strong>What works against it:</strong> the referee doesn’t know it’s yours. Next: the blind referee panel.</li>
+<li>These models are trained on human ratings, and <strong>people like being agreed with.</strong> Anthropic’s own study: people, and the models trained on their ratings, sometimes prefer a convincing sycophantic answer to a correct one.</li>
+<li>Asked <em>“Are you sure?”</em>, Claude 1.3 (2023) wrongly admitted a mistake on <strong>98%</strong> of questions.</li>
+<li><strong>April 2025:</strong> OpenAI rolled back a GPT-4o update after four days. It had become so agreeable that users noticed.</li>
 </ul>
+<aside class="notes">
+<p>Sharma et al. (2023), “Towards Understanding Sycophancy in Language Models”, ICLR 2024, arXiv:2310.13548: abstract (“both humans and preference models prefer convincingly-written sycophantic responses over correct ones a non-negligible fraction of the time”); section 3.2 (Claude 1.3, 98%). OpenAI, “Sycophancy in GPT-4o” (29 April 2025) and “Expanding on what we missed with sycophancy” (2 May 2025): rollout 24–25 April, rollback started 28 April.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="overlap" class="slide level2">
+<h2>But the referees are worth having</h2>
+<div class="diagram-md">
+<svg class="diagram" viewbox="0 0 1200 330" preserveaspectratio="xMidYMid meet" role="img" aria-label="Bar chart. Share of comments raised by one reviewer that another also raised. Nature journals: GPT-4 and a human 30.9 percent, two humans 28.6 percent. ICLR: GPT-4 and a human 39.2 percent, two humans 35.3 percent.">
+<line x1="330" y1="10" x2="330" y2="280" stroke="#d9d1c4" stroke-width="1"></line>
+<text x="312" y="72" text-anchor="end" font-size="30" font-weight="800" fill="#17201f">Nature journals</text>
+<g><title>Nature journals, GPT-4 vs. a human: 30.85%</title>
+<path d="M330,20 H788.8 Q792.8,20 792.8,24 V50 Q792.8,54 788.8,54 H330 Z" fill="#d4492f" />
+<text x="806.8" y="46" font-size="26" font-weight="800" fill="#17201f">31%  <tspan font-size="22" font-weight="400" fill="#5c6763">GPT-4 vs. a human</tspan></text></g>
+<g><title>Nature journals, Two humans: 28.58%</title>
+<path d="M330,64 H754.7 Q758.7,64 758.7,68 V94 Q758.7,98 754.7,98 H330 Z" fill="#8f877b" />
+<text x="772.7" y="90" font-size="26" font-weight="400" fill="#5c6763">29%  <tspan font-size="22" font-weight="400" fill="#5c6763">Two humans</tspan></text></g>
+<text x="312" y="200" text-anchor="end" font-size="30" font-weight="800" fill="#17201f">ICLR</text>
+<g><title>ICLR, GPT-4 vs. a human: 39.23%</title>
+<path d="M330,148 H914.4 Q918.4,148 918.4,152 V178 Q918.4,182 914.4,182 H330 Z" fill="#d4492f" />
+<text x="932.4" y="174" font-size="26" font-weight="800" fill="#17201f">39%  <tspan font-size="22" font-weight="400" fill="#5c6763">GPT-4 vs. a human</tspan></text></g>
+<g><title>ICLR, Two humans: 35.25%</title>
+<path d="M330,192 H854.8 Q858.8,192 858.8,196 V222 Q858.8,226 854.8,226 H330 Z" fill="#8f877b" />
+<text x="872.8" y="218" font-size="26" font-weight="400" fill="#5c6763">35%  <tspan font-size="22" font-weight="400" fill="#5c6763">Two humans</tspan></text></g>
+<text x="330" y="316" font-size="20" fill="#5c6763">Share of one reviewer&#39;s comments that the other also raised. Liang et al. (2023), GPT-4.</text>
+</svg>
+
+</div>
+<p>An AI referee’s points overlap with a human’s <strong>as often as two humans overlap.</strong> 57% of authors found the feedback helpful. (GPT-4, 2023. Today’s are better.)</p>
+<aside class="notes">
+<p>Liang et al. (2023), “Can large language models provide useful feedback on research papers?”, arXiv:2310.01783. Overlap: Nature journals 30.85% (GPT-4 vs. one human) vs. 28.58% (two humans); ICLR 39.23% vs. 35.25%. User study: 57.4% helpful or very helpful; 82.4% more beneficial than feedback from at least some human reviewers.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="status" class="slide level2">
+<h2>The same paper, a better address</h2>
+<p><span style="font-size: 3.2em; font-weight: 800; color: #d4492f;">21%</span></p>
+<p>of rejected papers became <strong>accepts</strong> when the AI referee was told the authors came from a stronger institution. Same paper, same text.</p>
+<p><span class="small muted">252 ICLR 2025 submissions, nine models; the 21% is for one of them (QwQ-32B). Vasu et al., 2025.</span></p>
+<aside class="notes">
+<p>Vasu, Sheth, Wang, Binkyte and Fritz, “Justice in Judgment: Unveiling (Hidden) Bias in LLM-assisted Peer Reviews”, arXiv:2509.13400 (ACL Findings 2026), Table 2: QwQ-32B, 21.4% of rejected papers become accepts under the ranked-stronger affiliation; 7.9% of accepted papers become rejects under ranked-weaker. Other models differ (DeepSeek R1 8B: 19.05% and 23.02%).</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="vendors" class="slide level2">
+<h2>The companies know</h2>
+<div class="diagram-md">
+<svg class="diagram" viewbox="0 0 1200 250" preserveaspectratio="xMidYMid meet" role="img" aria-label="Bar chart. OpenAI offline sycophancy score, lower is better: GPT-4o 0.145, GPT-5 0.052, GPT-5 thinking 0.040.">
+<line x1="330" y1="10" x2="330" y2="200" stroke="#d9d1c4" stroke-width="1"></line>
+<g><title>GPT-4o (April 2025): 0.145</title>
+<text x="312" y="50" text-anchor="end" font-size="28" font-weight="800" fill="#17201f">GPT-4o (April 2025)</text>
+<path d="M330,20 H1022.0 Q1026.0,20 1026.0,24 V56 Q1026.0,60 1022.0,60 H330 Z" fill="#8f877b" />
+<text x="1040.0" y="50" font-size="28" font-weight="800" fill="#17201f">0.145</text></g>
+<g><title>GPT-5: 0.052</title>
+<text x="312" y="110" text-anchor="end" font-size="28" font-weight="800" fill="#17201f">GPT-5</text>
+<path d="M330,80 H575.6 Q579.6,80 579.6,84 V116 Q579.6,120 575.6,120 H330 Z" fill="#d4492f" />
+<text x="593.6" y="110" font-size="28" font-weight="800" fill="#17201f">0.052</text></g>
+<g><title>GPT-5 thinking: 0.04</title>
+<text x="312" y="170" text-anchor="end" font-size="28" font-weight="800" fill="#17201f">GPT-5 thinking</text>
+<path d="M330,140 H518.0 Q522.0,140 522.0,144 V176 Q522.0,180 518.0,180 H330 Z" fill="#d4492f" />
+<text x="536.0" y="170" font-size="28" font-weight="800" fill="#17201f">0.040</text></g>
+<text x="330" y="236" font-size="20" fill="#5c6763">Sycophancy score on OpenAI&#39;s own test set, lower is better. GPT-5 System Card, Table 4.</text>
+</svg>
+
+</div>
+<p>They now train against it, and measure it. <strong>Better is not gone.</strong></p>
+<aside class="notes">
+<p>OpenAI, GPT-5 System Card (7 August 2025), section 3.3 and Table 4. Online, in early A/B tests, prevalence fell 69% (free users) and 75% (paid users) compared with GPT-4o.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="ours" class="slide level2">
+<h2>We measured it, on our paper</h2>
+<p><em>Being run.</em> The fictional paper, anonymised; the small models (Claude Haiku, GPT-6-Luna); ten fresh sessions per framing:</p>
+<ul>
+<li><em>“You are a referee for the Journal of Marketing Research.”</em></li>
+<li><em>“A colleague is about to submit this.”</em></li>
+<li><em>“I’m about to submit my paper.”</em></li>
+<li><em>“This is my paper. Two years of work, and I’m proud of it.”</em></li>
+</ul>
+<p>Then: the author pushes back, wrongly. Does the referee fold?</p>
+</section>
+<section id="todo" class="slide level2">
+<h2>What to do about it</h2>
+<ul>
+<li><strong>The referee doesn’t know it’s yours.</strong> The package, not the folder; a brief that says “from the editor”.</li>
+<li><strong>Ask for objections, not a verdict:</strong> <em>“What’s the strongest objection to the main claim?”</em></li>
+<li><strong>Independent sessions,</strong> one per referee. They don’t see each other.</li>
+<li><strong>Disagree in a fresh session,</strong> never in the one you’re arguing with.</li>
+</ul>
+<p><strong>Next: <a href="review.html">the blind referee panel</a>.</strong></p>
 
 </section></section>
     </div>

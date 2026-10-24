@@ -1,0 +1,18 @@
+<svg class="diagram" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Bar chart. Share of comments raised by one reviewer that another also raised. Nature journals: GPT-4 and a human 30.9 percent, two humans 28.6 percent. ICLR: GPT-4 and a human 39.2 percent, two humans 35.3 percent.">
+<line x1="330" y1="10" x2="330" y2="280" stroke="#d9d1c4" stroke-width="1"/>
+<text x="312" y="72" text-anchor="end" font-size="30" font-weight="800" fill="#17201f">Nature journals</text>
+<g><title>Nature journals, GPT-4 vs. a human: 30.85%</title>
+<path d="M330,20 H788.8 Q792.8,20 792.8,24 V50 Q792.8,54 788.8,54 H330 Z" fill="#d4492f"/>
+<text x="806.8" y="46" font-size="26" font-weight="800" fill="#17201f">31%  <tspan font-size="22" font-weight="400" fill="#5c6763">GPT-4 vs. a human</tspan></text></g>
+<g><title>Nature journals, Two humans: 28.58%</title>
+<path d="M330,64 H754.7 Q758.7,64 758.7,68 V94 Q758.7,98 754.7,98 H330 Z" fill="#8f877b"/>
+<text x="772.7" y="90" font-size="26" font-weight="400" fill="#5c6763">29%  <tspan font-size="22" font-weight="400" fill="#5c6763">Two humans</tspan></text></g>
+<text x="312" y="200" text-anchor="end" font-size="30" font-weight="800" fill="#17201f">ICLR</text>
+<g><title>ICLR, GPT-4 vs. a human: 39.23%</title>
+<path d="M330,148 H914.4 Q918.4,148 918.4,152 V178 Q918.4,182 914.4,182 H330 Z" fill="#d4492f"/>
+<text x="932.4" y="174" font-size="26" font-weight="800" fill="#17201f">39%  <tspan font-size="22" font-weight="400" fill="#5c6763">GPT-4 vs. a human</tspan></text></g>
+<g><title>ICLR, Two humans: 35.25%</title>
+<path d="M330,192 H854.8 Q858.8,192 858.8,196 V222 Q858.8,226 854.8,226 H330 Z" fill="#8f877b"/>
+<text x="872.8" y="218" font-size="26" font-weight="400" fill="#5c6763">35%  <tspan font-size="22" font-weight="400" fill="#5c6763">Two humans</tspan></text></g>
+<text x="330" y="316" font-size="20" fill="#5c6763">Share of one reviewer's comments that the other also raised. Liang et al. (2023), GPT-4.</text>
+</svg>

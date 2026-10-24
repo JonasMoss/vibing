@@ -6,12 +6,52 @@ pagetitle: "Your paper"
 
 The rest of the afternoon runs on one paper: yours, or ours.
 
-## Being written {#plan}
+## Which paper? {#which}
 
-- **Before you open it:** the training switch off; leave out data you can't share;
-  ask your co-authors. The draft alone carries most of the afternoon.
-- **No paper with you?** The course files have one: a fictional paper in progress,
-  with its data and a few problems.
-- **Open the folder in the app.** *"What is this paper? Where is everything?"*
-- **A save point** before anything changes.
-- **Then start a job and keep going:** *Take it apart* runs while we talk.
+- **A paper in progress,** as close to submission as you have. The draft (Word,
+  LaTeX or PDF), and the data and code if you can share them.
+- **No paper with you?** Use ours: `ai-label-paper` in the course files. A
+  fictional experiment on "written by AI" labels, with its data, a script, a
+  preregistration, and a few problems.
+- **Only a PDF?** Fine for the referee panel. *Take it apart* wants the data.
+
+## Before you open it {#private}
+
+What it reads goes to the model. Three things, then forget about it:
+
+1. **Training off.** Claude: *Settings → Privacy → Help improve Claude*.
+   ChatGPT: *Settings → Data controls → Improve the model for everyone*.
+2. **Leave out what you can't share:** personal data, data under an agreement.
+   The draft alone carries most of the afternoon.
+3. **Co-authors:** tell them, the way you'd tell them you sent it to a friend.
+
+## Open it {#open .your-turn background-color="#f1c84b"}
+
+1. **Copy the folder** somewhere outside OneDrive, for example
+   `Documents\paper-practice`.
+2. In the app: **a new session, in that folder.**
+3. Ask:
+
+::: {.prompt}
+What is in this folder? What is the paper about, where are the data and the code,
+and what state is it in? Don't change anything.
+:::
+
+Wrong about something? Correct it. It's your paper.
+
+## A save point {#save}
+
+::: {.prompt}
+Set up git here and commit everything, so we can undo anything.
+:::
+
+Same move as the cleanup. From now on, *"What changed?"* and *"Undo that"* always
+work.
+
+## Then let it work {#launch}
+
+Next, the agent takes the paper apart on its own, for 15–20 minutes.
+
+**You don't wait for it.** Start it, and we move on: a talk, then the referees.
+
+**Next: [Take it apart](paper.html).**
