@@ -20,15 +20,12 @@
   .course b { display: block; font-size: 22px; }
   .course span { display: block; color: var(--muted); font-size: 15px; margin-top: 3px; }
   div.course { opacity: 0.55; }
-  .course span.badge { display: inline-block; color: #f1c84b; font-size: 12px; margin-top: 0; }
   a.course.wip { border-style: dashed; }
-  .badge { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 6px; background: var(--ink);
-           color: #f1c84b; font-size: 12px; font-weight: 800; letter-spacing: 1px; vertical-align: middle; }
   h2.group { margin: 34px 0 12px; color: var(--muted); font-size: 13px; font-weight: 800;
              letter-spacing: 1.5px; text-transform: uppercase; }
   .sub + h2.group { margin-top: 0; }
-  a.course.done { position: relative; padding-right: 76px; }
-  .done-mark { position: absolute; right: 20px; top: 50%; width: 38px; height: 38px; margin-top: -19px; }
+  a.course.done, a.course.wip { position: relative; padding-right: 76px; }
+  .mark { position: absolute; right: 20px; top: 50%; width: 38px; height: 38px; margin-top: -19px; }
   footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
   .head { display: flex; align-items: center; gap: 18px; margin: 0 0 8px; }
   .head h1 { margin: 0; }
@@ -55,7 +52,8 @@
 
   <h2 class="group">Upcoming</h2>
   <a class="course wip" href="courses/2026-12-marketing/index.html">
-    <b>Marketing <span class="badge">WIP</span></b>
+    <svg class="mark" viewBox="0 0 38 38" role="img" aria-label="Work in progress"><title>Work in progress</title><circle cx="19" cy="19" r="18" fill="#17201f"/><text x="19" y="23" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="0.3" fill="#f1c84b">WIP</text></svg>
+    <b>Marketing</b>
     <span>Thu 3 December 2026 · work in progress, a preview</span>
   </a>
   <div class="course">
@@ -69,12 +67,12 @@
 
   <h2 class="group">Finished</h2>
   <a class="course done" href="courses/2026-10-strategy/index.html">
-    <svg class="done-mark" viewBox="0 0 38 38" role="img" aria-label="Finished: held 22 and 23 October 2026"><title>Finished: held 22 and 23 October 2026</title><circle cx="19" cy="19" r="18" fill="#17201f"/><polyline points="11,19.5 16.5,25 27,13.5" fill="none" stroke="#f4f0e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="mark" viewBox="0 0 38 38" role="img" aria-label="Finished: held 22 and 23 October 2026"><title>Finished: held 22 and 23 October 2026</title><circle cx="19" cy="19" r="18" fill="#17201f"/><polyline points="11,19.5 16.5,25 27,13.5" fill="none" stroke="#f4f0e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <b>Strategy and Entrepreneurship</b>
     <span>Thu 22 and Fri 23 October 2026 · slides, handout, course files</span>
   </a>
   <a class="course done" href="courses/2026-10-finance/index.html">
-    <svg class="done-mark" viewBox="0 0 38 38" role="img" aria-label="Finished: held 16 October 2026"><title>Finished: held 16 October 2026</title><circle cx="19" cy="19" r="18" fill="#17201f"/><polyline points="11,19.5 16.5,25 27,13.5" fill="none" stroke="#f4f0e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="mark" viewBox="0 0 38 38" role="img" aria-label="Finished: held 16 October 2026"><title>Finished: held 16 October 2026</title><circle cx="19" cy="19" r="18" fill="#17201f"/><polyline points="11,19.5 16.5,25 27,13.5" fill="none" stroke="#f4f0e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <b>Finance</b>
     <span>Fri 16 October 2026 · slides, handout, course files</span>
   </a>
