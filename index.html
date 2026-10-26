@@ -31,7 +31,11 @@
   .holder + h2.group { margin-top: 0; }
   a.course.done, a.course.wip { position: relative; padding-right: 76px; }
   .mark { position: absolute; right: 20px; top: 50%; width: 38px; height: 38px; margin-top: -19px; }
-  footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid #d9d2c5;
+           color: var(--muted); font-size: 14px; line-height: 1.6; }
+  footer .label { display: block; font-size: 12px; font-weight: 800; letter-spacing: 1.5px;
+                  text-transform: uppercase; margin-bottom: 2px; }
+  footer a { color: var(--muted); }
   .head { display: flex; align-items: center; gap: 18px; margin: 0 0 8px; }
   .head h1 { margin: 0; }
   .logo { width: 68px; height: 68px; flex: none; }
@@ -88,6 +92,11 @@
     <span>Fri 16 October 2026</span>
   </a>
 
+  <footer>
+    <span class="label">Teaching assistants</span>
+    Ludvik Slipersæter · <a href="mailto:ludvik.slipersater@bi.no">ludvik.slipersater@bi.no</a><br>
+    Leonardo Mario di Gennaro · <a href="mailto:leonardo.m.d.gennaro@bi.no">leonardo.m.d.gennaro@bi.no</a>
+  </footer>
 </div>
 </body>
 </html>
